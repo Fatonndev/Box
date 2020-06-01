@@ -19,8 +19,8 @@ package com.badlogic.gdx.graphics.g2d;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.Affine2;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Affine2;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.utils.Disposable;
 
 /** A Batch is used to draw 2D rectangles that reference a texture (region). The class will batch the drawing commands and optimize

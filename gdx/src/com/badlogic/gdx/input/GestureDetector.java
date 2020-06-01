@@ -19,7 +19,7 @@ package com.badlogic.gdx.input;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.InputAdapter;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.math.Vector2;
+import ru.obvilion.box.math.Vector2;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.Timer.Task;

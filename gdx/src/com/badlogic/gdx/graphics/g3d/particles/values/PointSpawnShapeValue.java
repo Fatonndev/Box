@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.particles.values;
 
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 
 /** Encapsulate the formulas to spawn a particle on a point shape.
  * @author Inferno */

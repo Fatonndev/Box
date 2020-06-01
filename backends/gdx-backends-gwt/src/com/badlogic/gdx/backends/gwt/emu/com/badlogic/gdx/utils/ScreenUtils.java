@@ -25,7 +25,7 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.google.gwt.canvas.dom.client.Context2d;
 import com.google.gwt.typedarrays.shared.ArrayBufferView;
 

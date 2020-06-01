@@ -23,7 +23,7 @@ import org.jbox2d.common.Settings;
 import org.jbox2d.common.Vec2;
 import org.jbox2d.dynamics.joints.JointEdge;
 
-import com.badlogic.gdx.math.Vector2;
+import ru.obvilion.box.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.JointDef.JointType;
 import com.badlogic.gdx.physics.box2d.joints.DistanceJoint;

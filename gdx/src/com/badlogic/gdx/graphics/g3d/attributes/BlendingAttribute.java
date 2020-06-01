@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.g3d.attributes;
 
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g3d.Attribute;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.NumberUtils;
 
 public class BlendingAttribute extends Attribute {

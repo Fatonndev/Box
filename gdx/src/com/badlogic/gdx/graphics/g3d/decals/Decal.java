@@ -19,9 +19,9 @@ package com.badlogic.gdx.graphics.g3d.decals;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector2;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.NumberUtils;
 
 /** <p/>

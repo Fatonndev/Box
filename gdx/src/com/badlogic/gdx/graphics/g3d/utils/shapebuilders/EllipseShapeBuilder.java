@@ -19,8 +19,8 @@ package com.badlogic.gdx.graphics.g3d.utils.shapebuilders;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder;
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** Helper class with static methods to build ellipse shapes using {@link MeshPartBuilder}.

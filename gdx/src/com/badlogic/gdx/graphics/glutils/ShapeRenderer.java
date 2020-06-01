@@ -20,10 +20,10 @@ import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Vector2;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Disposable;
 
 /** Renders points, lines, shape outlines and filled shapes.

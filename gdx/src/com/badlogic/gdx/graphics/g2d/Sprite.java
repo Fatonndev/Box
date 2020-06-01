@@ -20,8 +20,8 @@ import static com.badlogic.gdx.graphics.g2d.SpriteBatch.*;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Rectangle;
 import com.badlogic.gdx.utils.NumberUtils;
 
 /** Holds the geometry, color, and texture information for drawing 2D sprites using {@link Batch}. A Sprite has a position and a

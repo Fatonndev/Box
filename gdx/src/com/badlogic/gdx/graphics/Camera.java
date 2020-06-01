@@ -20,11 +20,11 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Graphics;
 import ru.obvilion.box.constructors.Input;
 import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.math.Frustum;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.math.collision.Ray;
+import ru.obvilion.box.math.Frustum;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector3;
+import ru.obvilion.box.math.collision.Ray;
 
 /** Base class for {@link OrthographicCamera} and {@link PerspectiveCamera}.
  * @author mzechner */

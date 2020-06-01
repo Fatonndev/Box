@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.physics.box2d;
 
-import com.badlogic.gdx.math.Vector2;
+import ru.obvilion.box.math.Vector2;
 
 /** A circle shape.
  * @author mzechner */

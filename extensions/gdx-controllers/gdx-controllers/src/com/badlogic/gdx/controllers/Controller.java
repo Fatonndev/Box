@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.controllers;
 
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 
 /** Represents a connected controller. Provides methods to query the state of buttons, axes, POVs, sliders and accelerometers on
  * the controller. Multiple {@link ControllerListener} instances can be registered with the Controller to receive events in case
