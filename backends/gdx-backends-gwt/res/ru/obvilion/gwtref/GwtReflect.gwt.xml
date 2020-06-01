@@ -7,9 +7,9 @@
 	<define-configuration-property name="gdx.reflect.exclude"
 		is-multi-valued="true" />
 	<extend-configuration-property name="gdx.reflect.include"
-		value="com.badlogic.gdx.scenes.scene2d" />
+		value="ru.obvilion.box.scenes.scene2d" />
 	<extend-configuration-property name="gdx.reflect.include"
-		value="com.badlogic.gdx.math" />
+		value="ru.obvilion.box.math" />
 	<extend-configuration-property name="gdx.reflect.include"
 		value="ru.obvilion.box.graphics.g2d.GlyphLayout" />
 	<extend-configuration-property name="gdx.reflect.include"
