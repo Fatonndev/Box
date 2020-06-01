@@ -1,4 +1,4 @@
-#include <ru.obvilion.box.graphics.g2d.Gdx2DPixmap.h>
+#include <com.badlogic.gdx.graphics.g2d.Gdx2DPixmap.h>
 
 //@line:274
 
