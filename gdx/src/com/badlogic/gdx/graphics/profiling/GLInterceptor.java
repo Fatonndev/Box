@@ -17,6 +17,7 @@
 package com.badlogic.gdx.graphics.profiling;
 
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.math.FloatCounter;
 
 public abstract class GLInterceptor implements GL20 {
 

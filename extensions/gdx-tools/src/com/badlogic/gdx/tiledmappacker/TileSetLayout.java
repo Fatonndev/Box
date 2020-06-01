@@ -23,7 +23,7 @@ import javax.imageio.ImageIO;
 
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.maps.tiled.TiledMapTileSet;
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.IntMap;
 
 /** Contains extra information that can only be calculated after a Tiled Map's tile set images are loaded.

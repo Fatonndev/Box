@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.physics.box2d;
 
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Vector2;
 
 public class ChainShape extends Shape {
 	// @off

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.actions;
 
-import ru.obvilion.box.math.Interpolation;
+import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.utils.Null;
 import com.badlogic.gdx.utils.Pool;

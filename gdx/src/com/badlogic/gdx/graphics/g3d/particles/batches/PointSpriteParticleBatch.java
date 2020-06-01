@@ -38,7 +38,7 @@ import com.badlogic.gdx.graphics.g3d.particles.ResourceData;
 import com.badlogic.gdx.graphics.g3d.particles.ResourceData.SaveData;
 import com.badlogic.gdx.graphics.g3d.particles.renderers.PointSpriteControllerRenderData;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import ru.obvilion.box.math.Vector3;
+import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
 

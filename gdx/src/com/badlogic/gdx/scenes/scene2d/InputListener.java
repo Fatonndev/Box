@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d;
 
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Null;
 
 /** EventListener for low-level input events. Unpacks {@link InputEvent}s and calls the appropriate method. By default the methods

@@ -17,7 +17,7 @@
 package com.badlogic.gdx.utils;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.math.FloatCounter;
+import com.badlogic.gdx.math.FloatCounter;
 
 /** Class to keep track of the time and load (percentage of total time) a specific task takes. Call {@link #start()} just before
  * starting the task and {@link #stop()} right after. You can do this multiple times if required. Every render or update call

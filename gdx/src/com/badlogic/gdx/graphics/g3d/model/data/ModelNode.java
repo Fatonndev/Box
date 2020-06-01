@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.graphics.g3d.model.data;
 
-import ru.obvilion.box.math.Quaternion;
-import ru.obvilion.box.math.Vector3;
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Vector3;
 
 public class ModelNode {
 	public String id;

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.utils;
 
-import ru.obvilion.box.math.MathUtils;
+import com.badlogic.gdx.math.MathUtils;
 
 import java.util.Arrays;
 

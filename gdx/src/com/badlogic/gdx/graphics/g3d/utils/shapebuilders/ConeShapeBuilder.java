@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.g3d.utils.shapebuilders;
 
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder;
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import ru.obvilion.box.math.MathUtils;
+import com.badlogic.gdx.math.MathUtils;
 
 /** Helper class with static methods to build cone shapes using {@link MeshPartBuilder}.
  * @author xoppa */

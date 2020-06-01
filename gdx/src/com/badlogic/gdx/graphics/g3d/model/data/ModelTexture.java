@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.model.data;
 
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Vector2;
 
 public class ModelTexture {
 	public final static int USAGE_UNKNOWN = 0;

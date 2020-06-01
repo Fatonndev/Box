@@ -16,13 +16,14 @@
 
 package com.badlogic.gdx.graphics.g3d.utils.shapebuilders;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.VertexAttributes.Usage;
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder;
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import ru.obvilion.box.math.Matrix4;
-import ru.obvilion.box.math.Vector3;
-import ru.obvilion.box.math.collision.BoundingBox;
+import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.collision.BoundingBox;
 
 /** Helper class with static methods to build box shapes using {@link MeshPartBuilder}.
  * @author realitix, xoppa */

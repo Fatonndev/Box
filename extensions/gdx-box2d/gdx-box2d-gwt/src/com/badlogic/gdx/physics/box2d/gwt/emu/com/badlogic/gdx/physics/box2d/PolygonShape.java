@@ -18,7 +18,7 @@ package com.badlogic.gdx.physics.box2d;
 
 import org.jbox2d.common.Vec2;
 
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Vector2;
 
 public class PolygonShape extends Shape {
 	org.jbox2d.collision.shapes.PolygonShape shape;

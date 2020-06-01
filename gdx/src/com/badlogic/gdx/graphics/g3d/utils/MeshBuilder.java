@@ -33,16 +33,18 @@ import com.badlogic.gdx.graphics.g3d.utils.shapebuilders.EllipseShapeBuilder;
 import com.badlogic.gdx.graphics.g3d.utils.shapebuilders.PatchShapeBuilder;
 import com.badlogic.gdx.graphics.g3d.utils.shapebuilders.SphereShapeBuilder;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import ru.obvilion.box.math.MathUtils;
-import ru.obvilion.box.math.Matrix3;
-import ru.obvilion.box.math.Matrix4;
-import ru.obvilion.box.math.Vector2;
-import ru.obvilion.box.math.Vector3;
-import ru.obvilion.box.math.collision.BoundingBox;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.collision.BoundingBox;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.FloatArray;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.IntIntMap;
+import com.badlogic.gdx.utils.NumberUtils;
+import com.badlogic.gdx.utils.Pool;
 import com.badlogic.gdx.utils.ShortArray;
 
 /** Class to construct a mesh, optionally splitting it into one or more mesh parts. Before you can call any other method you must

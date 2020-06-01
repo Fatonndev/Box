@@ -16,7 +16,9 @@
 
 package com.badlogic.gdx.controllers;
 
-import ru.obvilion.box.math.Vector3;
+import java.util.ResourceBundle.Control;
+
+import com.badlogic.gdx.math.Vector3;
 
 /** Registered with {@link Controllers} or a specific {@link Controller} instance to receive events.
  * @author Nathan Sweet */

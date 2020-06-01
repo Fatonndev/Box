@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import ru.obvilion.box.math.MathUtils;
+import com.badlogic.gdx.math.MathUtils;
 
 /** An unordered set where the keys are objects. Null keys are not allowed. No allocation is done except when growing the table
  * size.
