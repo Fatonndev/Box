@@ -27,20 +27,20 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import ru.obvilion.box.graphics.Mesh;
-import ru.obvilion.box.graphics.g3d.Model;
-import ru.obvilion.box.graphics.g3d.particles.influencers.SpawnInfluencer;
-import ru.obvilion.box.graphics.g3d.particles.values.CylinderSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.EllipseSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.LineSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.PointSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.PrimitiveSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.PrimitiveSpawnShapeValue.SpawnSide;
-import ru.obvilion.box.graphics.g3d.particles.values.RectangleSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.SpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.UnweightedMeshSpawnShapeValue;
-import ru.obvilion.box.graphics.g3d.particles.values.WeightMeshSpawnShapeValue;
-import ru.obvilion.box.utils.Array;
+import com.badlogic.gdx.graphics.Mesh;
+import com.badlogic.gdx.graphics.g3d.Model;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.SpawnInfluencer;
+import com.badlogic.gdx.graphics.g3d.particles.values.CylinderSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.EllipseSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.LineSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.PointSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.PrimitiveSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.PrimitiveSpawnShapeValue.SpawnSide;
+import com.badlogic.gdx.graphics.g3d.particles.values.RectangleSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.SpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.UnweightedMeshSpawnShapeValue;
+import com.badlogic.gdx.graphics.g3d.particles.values.WeightMeshSpawnShapeValue;
+import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */
 class SpawnInfluencerPanel extends InfluencerPanel<SpawnInfluencer> implements TemplatePickerPanel.Listener<Model> {

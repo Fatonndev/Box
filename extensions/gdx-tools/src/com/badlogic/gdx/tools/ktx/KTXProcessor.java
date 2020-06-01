@@ -7,22 +7,22 @@ import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.util.zip.GZIPOutputStream;
 
-import ru.obvilion.box.ApplicationAdapter;
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.backends.headless.HeadlessApplication;
-import ru.obvilion.box.backends.lwjgl.LwjglNativesLoader;
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.Pixmap.Blending;
-import ru.obvilion.box.graphics.Pixmap.Filter;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.glutils.ETC1;
-import ru.obvilion.box.graphics.glutils.ETC1.ETC1Data;
-import ru.obvilion.box.graphics.glutils.KTXTextureData;
-import ru.obvilion.box.math.MathUtils;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.backends.headless.HeadlessApplication;
+import com.badlogic.gdx.backends.lwjgl.LwjglNativesLoader;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Pixmap.Blending;
+import com.badlogic.gdx.graphics.Pixmap.Filter;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.glutils.ETC1;
+import com.badlogic.gdx.graphics.glutils.ETC1.ETC1Data;
+import com.badlogic.gdx.graphics.glutils.KTXTextureData;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class KTXProcessor {
 

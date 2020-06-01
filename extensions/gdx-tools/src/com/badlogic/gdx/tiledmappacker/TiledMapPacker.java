@@ -38,27 +38,27 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import ru.obvilion.box.ApplicationListener;
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.assets.loaders.resolvers.AbsoluteFileHandleResolver;
-import ru.obvilion.box.backends.lwjgl.LwjglApplication;
-import ru.obvilion.box.backends.lwjgl.LwjglApplicationConfiguration;
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.graphics.g2d.TextureAtlas;
-import ru.obvilion.box.maps.MapLayer;
-import ru.obvilion.box.maps.tiled.TiledMap;
-import ru.obvilion.box.maps.tiled.TiledMapTile;
-import ru.obvilion.box.maps.tiled.TiledMapTileLayer;
-import ru.obvilion.box.maps.tiled.TiledMapTileSet;
-import ru.obvilion.box.maps.tiled.TmxMapLoader;
-import ru.obvilion.box.maps.tiled.tiles.AnimatedTiledMapTile;
-import ru.obvilion.box.maps.tiled.tiles.StaticTiledMapTile;
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.assets.loaders.resolvers.AbsoluteFileHandleResolver;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.maps.MapLayer;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTile;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.TiledMapTileSet;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
+import com.badlogic.gdx.maps.tiled.tiles.AnimatedTiledMapTile;
+import com.badlogic.gdx.maps.tiled.tiles.StaticTiledMapTile;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import ru.obvilion.box.utils.GdxRuntimeException;
-import ru.obvilion.box.utils.IntArray;
-import ru.obvilion.box.utils.ObjectMap;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.IntArray;
+import com.badlogic.gdx.utils.ObjectMap;
 
 /** Given one or more TMX tilemaps, packs all tileset resources used across the maps, or the resources used per map, into a single,
  * or multiple (one per map), {@link TextureAtlas} and produces a new TMX file to be loaded with an AtlasTiledMapLoader loader.

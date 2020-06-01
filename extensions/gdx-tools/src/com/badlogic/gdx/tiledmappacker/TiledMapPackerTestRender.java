@@ -18,19 +18,19 @@ package com.badlogic.gdx.tiledmappacker;
 
 import java.io.File;
 
-import ru.obvilion.box.ApplicationAdapter;
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.Input.Keys;
-import ru.obvilion.box.assets.loaders.resolvers.InternalFileHandleResolver;
-import ru.obvilion.box.backends.lwjgl.LwjglApplication;
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.OrthographicCamera;
-import ru.obvilion.box.maps.tiled.AtlasTmxMapLoader;
-import ru.obvilion.box.maps.tiled.TiledMap;
-import ru.obvilion.box.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import ru.obvilion.box.utils.viewport.FitViewport;
-import ru.obvilion.box.utils.viewport.Viewport;
+import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.maps.tiled.AtlasTmxMapLoader;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.Viewport;
 
 /** Renders and, optionally, deletes maps processed by TiledMapPackerTest. Run TiledMapPackerTest before running this */
 public class TiledMapPackerTestRender extends ApplicationAdapter {

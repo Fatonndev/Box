@@ -16,13 +16,13 @@
 
 package com.badlogic.gdx.tools.bmfont;
 
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.PixmapIO;
-import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
-import ru.obvilion.box.graphics.g2d.BitmapFont.Glyph;
-import ru.obvilion.box.graphics.g2d.PixmapPacker.Page;
-import ru.obvilion.box.utils.Array;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.PixmapIO;
+import com.badlogic.gdx.graphics.g2d.BitmapFont.BitmapFontData;
+import com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph;
+import com.badlogic.gdx.graphics.g2d.PixmapPacker.Page;
+import com.badlogic.gdx.utils.Array;
 
 /** A utility to output BitmapFontData to a FNT file. This can be useful for caching the result from TrueTypeFont, for faster load
  * times.

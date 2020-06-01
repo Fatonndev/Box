@@ -34,17 +34,17 @@ import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
 
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.Texture.TextureFilter;
-import ru.obvilion.box.graphics.Texture.TextureWrap;
-import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData;
-import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
-import ru.obvilion.box.math.MathUtils;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.FloatArray;
-import ru.obvilion.box.utils.GdxRuntimeException;
-import ru.obvilion.box.utils.Json;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.Texture.TextureFilter;
+import com.badlogic.gdx.graphics.Texture.TextureWrap;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.FloatArray;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.Json;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

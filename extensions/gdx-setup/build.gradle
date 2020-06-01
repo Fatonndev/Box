@@ -19,7 +19,7 @@ plugins {
 }
 
 application {
-	mainClassName = 'ru.obvilion.box.setup.GdxSetup'
+	mainClassName = 'com.badlogic.gdx.setup.GdxSetup'
 }
 
 jar {

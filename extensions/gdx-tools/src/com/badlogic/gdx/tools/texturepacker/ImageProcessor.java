@@ -37,7 +37,7 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker.Alias;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Resampling;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import ru.obvilion.box.utils.Array;
+import com.badlogic.gdx.utils.Array;
 
 public class ImageProcessor {
 	static private final BufferedImage emptyImage = new BufferedImage(1, 1, BufferedImage.TYPE_4BYTE_ABGR);

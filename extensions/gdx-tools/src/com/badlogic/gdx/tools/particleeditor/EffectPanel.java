@@ -31,11 +31,11 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.graphics.g2d.ParticleEffect;
-import ru.obvilion.box.graphics.g2d.ParticleEmitter;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.StreamUtils;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.ParticleEffect;
+import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.StreamUtils;
 
 class EffectPanel extends JPanel {
 	ParticleEditor editor;

@@ -31,6 +31,6 @@ dependencies {
 
 task runBulletBuild (type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = "ru.obvilion.box.physics.bullet.BulletBuild"
+    main = "com.badlogic.gdx.physics.bullet.BulletBuild"
     standardInput = System.in
 }

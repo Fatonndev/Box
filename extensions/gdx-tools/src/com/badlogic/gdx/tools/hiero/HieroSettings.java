@@ -26,12 +26,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import ru.obvilion.box.Gdx;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** Holds the settings needed to configure a UnicodeFont.
  * @author Nathan Sweet */

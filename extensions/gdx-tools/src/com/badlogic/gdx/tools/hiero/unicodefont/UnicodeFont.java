@@ -33,21 +33,21 @@ import java.util.Map;
 
 import org.lwjgl.opengl.GL11;
 
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.BitmapFont;
-import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
-import ru.obvilion.box.graphics.g2d.BitmapFontCache;
-import ru.obvilion.box.graphics.g2d.GlyphLayout;
-import ru.obvilion.box.graphics.g2d.GlyphLayout.GlyphRun;
-import ru.obvilion.box.graphics.g2d.TextureRegion;
-import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator;
-import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.BitmapFont.BitmapFontData;
+import com.badlogic.gdx.graphics.g2d.BitmapFontCache;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout.GlyphRun;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.badlogic.gdx.tools.hiero.HieroSettings;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.Effect;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
 // BOZO - Look at actual pixels to determine glyph size, current size sometimes selects blank pixels (eg Calibri, 45, 'o').
 

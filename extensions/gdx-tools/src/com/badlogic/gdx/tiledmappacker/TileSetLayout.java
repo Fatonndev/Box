@@ -21,10 +21,10 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.maps.tiled.TiledMapTileSet;
-import ru.obvilion.box.math.Vector2;
-import ru.obvilion.box.utils.IntMap;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.maps.tiled.TiledMapTileSet;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.utils.IntMap;
 
 /** Contains extra information that can only be calculated after a Tiled Map's tile set images are loaded.
  * @author David Fraska */

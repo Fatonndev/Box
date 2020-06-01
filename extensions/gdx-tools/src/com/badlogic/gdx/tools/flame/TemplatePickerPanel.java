@@ -11,7 +11,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
-import ru.obvilion.box.utils.Array;
+import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */
 public class TemplatePickerPanel<T> extends EditorPanel<Array<T>> implements LoaderButton.Listener<T> {

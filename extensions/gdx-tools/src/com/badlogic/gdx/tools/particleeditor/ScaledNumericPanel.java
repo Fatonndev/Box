@@ -31,8 +31,8 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import ru.obvilion.box.graphics.g2d.ParticleEmitter;
-import ru.obvilion.box.graphics.g2d.ParticleEmitter.ScaledNumericValue;
+import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
+import com.badlogic.gdx.graphics.g2d.ParticleEmitter.ScaledNumericValue;
 
 class ScaledNumericPanel extends EditorPanel {
 	final ScaledNumericValue value;

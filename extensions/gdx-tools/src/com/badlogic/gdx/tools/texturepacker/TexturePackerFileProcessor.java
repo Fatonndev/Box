@@ -28,11 +28,11 @@ import java.util.regex.Pattern;
 import com.badlogic.gdx.tools.FileProcessor;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import ru.obvilion.box.utils.GdxRuntimeException;
-import ru.obvilion.box.utils.Json;
-import ru.obvilion.box.utils.JsonReader;
-import ru.obvilion.box.utils.JsonValue;
-import ru.obvilion.box.utils.ObjectMap;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.Json;
+import com.badlogic.gdx.utils.JsonReader;
+import com.badlogic.gdx.utils.JsonValue;
+import com.badlogic.gdx.utils.ObjectMap;
 
 /** @author Nathan Sweet */
 public class TexturePackerFileProcessor extends FileProcessor {

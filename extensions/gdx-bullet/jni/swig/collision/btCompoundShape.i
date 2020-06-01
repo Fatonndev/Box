@@ -5,11 +5,11 @@
 %}
 
 %typemap(javaimports) btCompoundShape %{
-import Array;
-import Vector3;
-import Quaternion;
-import Matrix3;
-import Matrix4;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
 %}
 
 %rename(internalAddChildShape) btCompoundShape::addChildShape;

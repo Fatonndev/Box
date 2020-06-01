@@ -86,20 +86,20 @@ import javax.swing.event.ListSelectionListener;
 
 import org.lwjgl.opengl.GL11;
 
-import ru.obvilion.box.ApplicationAdapter;
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.backends.lwjgl.LwjglCanvas;
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.BitmapFont;
-import ru.obvilion.box.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.backends.lwjgl.LwjglCanvas;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ColorEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
-import ru.obvilion.box.utils.StringBuilder;
+import com.badlogic.gdx.utils.StringBuilder;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.DistanceFieldEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.EffectUtil;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.GradientEffect;

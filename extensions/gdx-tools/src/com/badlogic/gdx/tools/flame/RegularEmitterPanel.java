@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 import javax.swing.SwingConstants;
 
-import ru.obvilion.box.graphics.g3d.particles.emitters.RegularEmitter;
+import com.badlogic.gdx.graphics.g3d.particles.emitters.RegularEmitter;
 
 /** @author Inferno */
 public class RegularEmitterPanel extends EditorPanel<RegularEmitter> {

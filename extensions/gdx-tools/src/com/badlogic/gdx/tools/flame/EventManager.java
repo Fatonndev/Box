@@ -1,7 +1,7 @@
 package com.badlogic.gdx.tools.flame;
 
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.ObjectMap;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.ObjectMap;
 
 /** @author Inferno */
 public class EventManager 

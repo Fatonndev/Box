@@ -18,18 +18,18 @@ package com.badlogic.gdx.tools.texturepacker;
 
 import java.util.Random;
 
-import ru.obvilion.box.ApplicationAdapter;
-import ru.obvilion.box.Gdx;
-import ru.obvilion.box.backends.lwjgl.LwjglApplication;
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.glutils.ShapeRenderer;
-import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
-import ru.obvilion.box.math.Matrix4;
+import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import ru.obvilion.box.utils.Array;
+import com.badlogic.gdx.utils.Array;
 
 /** @author Nathan Sweet */
 public class TexturePackerTest extends ApplicationAdapter {

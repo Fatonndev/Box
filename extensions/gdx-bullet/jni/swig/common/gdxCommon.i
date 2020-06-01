@@ -45,7 +45,7 @@
 %include "../common/gdxDownCast.i"
 
 /*
- * Use Buffer where Bullet wants btScalar * and alike.  This gets disabled
+ * Use java.nio.Buffer where Bullet wants btScalar * and alike.  This gets disabled
  * for some types (and re-enabled right after).
  */
 %include "../common/gdxBuffers.i"

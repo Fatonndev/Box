@@ -18,14 +18,14 @@ package com.badlogic.gdx.tools.texturepacker;
 
 import java.util.Comparator;
 
-import ru.obvilion.box.math.MathUtils;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Packer;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.Sort;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Sort;
 
 /** Packs pages of images using the maximal rectangles bin packing algorithm by Jukka Jylänki. A brute force binary search is
  * used to pack into the smallest bin possible.
