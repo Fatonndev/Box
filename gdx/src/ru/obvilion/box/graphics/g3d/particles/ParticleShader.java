@@ -88,7 +88,7 @@ public class ParticleShader extends BaseShader {
 
 	public static String getDefaultVertexShader () {
 		if (defaultVertexShader == null)
-			defaultVertexShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl").readString();
+			defaultVertexShader = Gdx.files.classpath("ru/obvilion/obvilion/gdx/graphics/g3d/particles/particles.vertex.glsl").readString();
 		return defaultVertexShader;
 	}
 
@@ -96,7 +96,7 @@ public class ParticleShader extends BaseShader {
 
 	public static String getDefaultFragmentShader () {
 		if (defaultFragmentShader == null)
-			defaultFragmentShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl")
+			defaultFragmentShader = Gdx.files.classpath("ru/obvilion/obvilion/gdx/graphics/g3d/particles/particles.fragment.glsl")
 				.readString();
 		return defaultFragmentShader;
 	}

@@ -28,7 +28,7 @@
 		final int len = (int)fileHandle.length();
 		if (len <= 0)
 			throw new GdxRuntimeException("Incorrect file specified");
-		java.nio.ByteBuffer buff = BufferUtils.newUnsafeByteBuffer(len);
+		ByteBuffer buff = BufferUtils.newUnsafeByteBuffer(len);
 		buff.put(fileHandle.readBytes());
 		buff.position(0);
 		boolean result = loadFileFromMemory(buff, len);

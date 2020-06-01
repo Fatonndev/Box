@@ -119,7 +119,7 @@ A couple of guidelines:
   * Do not make defensive copies
   * Avoid locking. libGDX classes are, by default, not thread-safe unless explicitly specified
   * Do not use boxed primitives
-  * Use the collection classes in the [`com.badlogic.gdx.utils` package](https://github.com/libgdx/libgdx/tree/master/gdx/src/com/badlogic/gdx/utils)
+  * Use the collection classes in the [`ru.obvilion.obvilion.gdx.utils` package](https://github.com/libgdx/libgdx/tree/master/gdx/src/com/badlogic/gdx/utils)
   * Do not perform argument checks for methods that may be called thousands of times per frame
   * Use pooling if necessary, if possible, avoid exposing the pooling to the user as it complicates the API
 

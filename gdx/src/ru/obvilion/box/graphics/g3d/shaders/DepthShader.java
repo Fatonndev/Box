@@ -48,7 +48,7 @@ public class DepthShader extends DefaultShader {
 
 	public final static String getDefaultVertexShader () {
 		if (defaultVertexShader == null)
-			defaultVertexShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl").readString();
+			defaultVertexShader = Gdx.files.classpath("ru/obvilion/obvilion/gdx/graphics/g3d/shaders/depth.vertex.glsl").readString();
 		return defaultVertexShader;
 	}
 
@@ -56,7 +56,7 @@ public class DepthShader extends DefaultShader {
 
 	public final static String getDefaultFragmentShader () {
 		if (defaultFragmentShader == null)
-			defaultFragmentShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl").readString();
+			defaultFragmentShader = Gdx.files.classpath("ru/obvilion/obvilion/gdx/graphics/g3d/shaders/depth.fragment.glsl").readString();
 		return defaultFragmentShader;
 	}
 

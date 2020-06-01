@@ -390,7 +390,7 @@ public class DefaultShader extends BaseShader {
 
 	public static String getDefaultVertexShader () {
 		if (defaultVertexShader == null)
-			defaultVertexShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl").readString();
+			defaultVertexShader = Gdx.files.classpath("ru/obvilion/obvilion/gdx/graphics/g3d/shaders/default.vertex.glsl").readString();
 		return defaultVertexShader;
 	}
 
@@ -398,7 +398,7 @@ public class DefaultShader extends BaseShader {
 
 	public static String getDefaultFragmentShader () {
 		if (defaultFragmentShader == null)
-			defaultFragmentShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl").readString();
+			defaultFragmentShader = Gdx.files.classpath("ru/obvilion/obvilion/gdx/graphics/g3d/shaders/default.fragment.glsl").readString();
 		return defaultFragmentShader;
 	}
 

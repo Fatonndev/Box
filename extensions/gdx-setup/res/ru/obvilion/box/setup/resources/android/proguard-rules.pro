@@ -24,11 +24,11 @@
 -dontwarn android.support.**
 -dontwarn AndroidFragmentApplication
 -dontwarn GdxBuild
--dontwarn com.badlogic.gdx.physics.box2d.utils.Box2DBuild
--dontwarn com.badlogic.gdx.jnigen.BuildTarget*
--dontwarn com.badlogic.gdx.graphics.g2d.freetype.FreetypeBuild
+-dontwarn ru.obvilion.obvilion.gdx.physics.box2d.utils.Box2DBuild
+-dontwarn ru.obvilion.obvilion.gdx.jnigen.BuildTarget*
+-dontwarn ru.obvilion.obvilion.gdx.graphics.g2d.freetype.FreetypeBuild
 
--keep class com.badlogic.gdx.controllers.android.AndroidControllers
+-keep class ru.obvilion.obvilion.gdx.controllers.android.AndroidControllers
 
 -keepclassmembers class AndroidInput* {
    <init>(Application, android.content.Context, java.lang.Object, AndroidApplicationConfiguration);

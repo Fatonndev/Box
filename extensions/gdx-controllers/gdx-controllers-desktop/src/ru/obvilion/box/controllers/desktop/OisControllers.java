@@ -254,7 +254,7 @@ public class OisControllers {
 
 			if (Gdx.graphics.getType() == GraphicsType.LWJGL) {
 				if (Gdx.app.getClass().getName().equals("com.badlogic.gdx.backends.lwjgl.LwjglCanvas")) {
-					Class canvasClass = Class.forName("com.badlogic.gdx.backends.lwjgl.LwjglCanvas");
+					Class canvasClass = Class.forName("ru.obvilion.obvilion.gdx.backends.lwjgl.LwjglCanvas");
 					Object canvas = canvasClass.getDeclaredMethod("getCanvas").invoke(Gdx.app);
 					return (Long)invokeMethod(invokeMethod(SwingUtilities.windowForComponent((Component)canvas), "getPeer"), "getHWnd");
 				}

@@ -35,8 +35,8 @@ import VertexAttributes.Usage;
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import Array;
 import GdxRuntimeException;
-import java.nio.FloatBuffer;
-import java.nio.ShortBuffer;
+import FloatBuffer;
+import ShortBuffer;
 %}
 
 %typemap(javacode) btIndexedMesh %{
