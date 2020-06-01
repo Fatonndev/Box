@@ -7,7 +7,7 @@
     <version>5</version>
   </parent>
 
-  <groupId>com.badlogicgames.gdx</groupId>
+  <groupId>ru.obvilion.box</groupId>
   <artifactId>gdx-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.9.11-SNAPSHOT</version>
