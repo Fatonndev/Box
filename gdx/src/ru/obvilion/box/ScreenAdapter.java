@@ -14,7 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
+
+import com.badlogic.gdx.Screen;
 
 /** Convenience implementation of {@link Screen}. Derive from this and only override what you need.
  * @author semtiko */
