@@ -16,14 +16,8 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.backends.gwt.soundmanager2.SMSound;
-import com.badlogic.gdx.backends.gwt.soundmanager2.SMSoundOptions;
-import com.badlogic.gdx.backends.gwt.soundmanager2.SoundManager;
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.BooleanArray;
 
 public class GwtSound implements Sound {
 	

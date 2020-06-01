@@ -18,7 +18,7 @@ package com.badlogic.gdx.maps.tiled.renderers;
 
 import static com.badlogic.gdx.graphics.g2d.Batch.*;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -138,8 +138,8 @@ public class OrthoCachedTiledMapRenderer implements TiledMapRenderer, Disposable
 		}
 
 		if (blending) {
-			Gdx.gl.glEnable(GL20.GL_BLEND);
-			Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+			Box.gl.glEnable(GL20.GL_BLEND);
+			Box.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
 		}
 		spriteCache.begin();
 		MapLayers mapLayers = map.getLayers();
@@ -151,7 +151,7 @@ public class OrthoCachedTiledMapRenderer implements TiledMapRenderer, Disposable
 			}
 		}
 		spriteCache.end();
-		if (blending) Gdx.gl.glDisable(GL20.GL_BLEND);
+		if (blending) Box.gl.glDisable(GL20.GL_BLEND);
 	}
 
 	@Override
@@ -180,8 +180,8 @@ public class OrthoCachedTiledMapRenderer implements TiledMapRenderer, Disposable
 		}
 
 		if (blending) {
-			Gdx.gl.glEnable(GL20.GL_BLEND);
-			Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+			Box.gl.glEnable(GL20.GL_BLEND);
+			Box.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
 		}
 		spriteCache.begin();
 		MapLayers mapLayers = map.getLayers();
@@ -193,7 +193,7 @@ public class OrthoCachedTiledMapRenderer implements TiledMapRenderer, Disposable
 			}
 		}
 		spriteCache.end();
-		if (blending) Gdx.gl.glDisable(GL20.GL_BLEND);
+		if (blending) Box.gl.glDisable(GL20.GL_BLEND);
 	}
 
 	@Override

@@ -20,8 +20,6 @@ import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
-import java.nio.ByteOrder;
-import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,20 +35,15 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import com.badlogic.gdx.Input.Buttons;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.IntSet;
 
-import org.lwjgl.LWJGLException;
-import org.lwjgl.input.Cursor;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.utils.Pool;
 
 /** An implementation of the {@link LwjglInput} interface hooking a LWJGL panel for input.
@@ -221,7 +214,7 @@ final public class DefaultLwjglInput implements LwjglInput {
 	}
 
 	public int getY () {
-		return Gdx.graphics.getHeight() - 1 - (int)(Mouse.getY() * Display.getPixelScaleFactor());
+		return Box.graphics.getHeight() - 1 - (int)(Mouse.getY() * Display.getPixelScaleFactor());
 	}
 
 	public boolean isAccelerometerAvailable () {
@@ -834,7 +827,7 @@ final public class DefaultLwjglInput implements LwjglInput {
 			while (Mouse.next()) {
 				events++;
 				int x = (int)(Mouse.getEventX() * Display.getPixelScaleFactor());
-				int y = Gdx.graphics.getHeight() - (int)(Mouse.getEventY() * Display.getPixelScaleFactor()) - 1;
+				int y = Box.graphics.getHeight() - (int)(Mouse.getEventY() * Display.getPixelScaleFactor()) - 1;
 				int button = Mouse.getEventButton();
 				int gdxButton = toGdxButton(button);
 				if (button != -1 && gdxButton == -1) continue; // Ignore unknown button.
@@ -880,7 +873,7 @@ final public class DefaultLwjglInput implements LwjglInput {
 				deltaX = 0;
 				deltaY = 0;
 			} else {
-				Gdx.graphics.requestRendering();
+				Box.graphics.requestRendering();
 			}
 		}
 	}
@@ -903,7 +896,7 @@ final public class DefaultLwjglInput implements LwjglInput {
 				event.type = KeyEvent.KEY_TYPED;
 				event.timeStamp = System.nanoTime(); // FIXME this should use the repeat time plus the timestamp of the original
 				keyEvents.add(event);
-				Gdx.graphics.requestRendering();
+				Box.graphics.requestRendering();
 			}
 		}
 
@@ -955,7 +948,7 @@ final public class DefaultLwjglInput implements LwjglInput {
 					pressedKeys--;
 					lastKeyCharPressed = 0;
 				}
-				Gdx.graphics.requestRendering();
+				Box.graphics.requestRendering();
 			}
 		}
 	}
@@ -1083,7 +1076,7 @@ final public class DefaultLwjglInput implements LwjglInput {
 
 	@Override
 	public void setCursorPosition (int x, int y) {
-		Mouse.setCursorPosition(x, Gdx.graphics.getHeight() - 1 - y);
+		Mouse.setCursorPosition(x, Box.graphics.getHeight() - 1 - y);
 	}
 
 	@Override

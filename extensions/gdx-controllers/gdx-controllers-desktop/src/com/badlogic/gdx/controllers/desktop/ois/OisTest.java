@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.controllers.desktop.ois;
 
-import com.badlogic.gdx.ApplicationAdapter;
+import ru.obvilion.box.ApplicationAdapter;
 import com.badlogic.gdx.controllers.desktop.DesktopControllersBuild;
 import com.badlogic.gdx.controllers.desktop.OisControllers;
 import com.badlogic.gdx.controllers.desktop.ois.OisJoystick.OisPov;

@@ -54,8 +54,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.utils.IntSet;
 import com.badlogic.gdx.utils.Pool;
 

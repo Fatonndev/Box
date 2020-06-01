@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.shaders;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.VertexAttribute;
@@ -390,7 +390,7 @@ public class DefaultShader extends BaseShader {
 
 	public static String getDefaultVertexShader () {
 		if (defaultVertexShader == null)
-			defaultVertexShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl").readString();
+			defaultVertexShader = Box.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl").readString();
 		return defaultVertexShader;
 	}
 
@@ -398,7 +398,7 @@ public class DefaultShader extends BaseShader {
 
 	public static String getDefaultFragmentShader () {
 		if (defaultFragmentShader == null)
-			defaultFragmentShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl").readString();
+			defaultFragmentShader = Box.files.classpath("com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl").readString();
 		return defaultFragmentShader;
 	}
 
@@ -756,7 +756,7 @@ public class DefaultShader extends BaseShader {
 			spotLight.set(0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0);
 		lightsSet = false;
 
-		if (has(u_time)) set(u_time, time += Gdx.graphics.getDeltaTime());
+		if (has(u_time)) set(u_time, time += Box.graphics.getDeltaTime());
 	}
 
 	@Override

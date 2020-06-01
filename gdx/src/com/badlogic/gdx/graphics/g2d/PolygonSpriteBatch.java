@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.g2d;
 
 import static com.badlogic.gdx.graphics.g2d.Sprite.*;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Mesh;
@@ -127,7 +127,7 @@ public class PolygonSpriteBatch implements PolygonBatch {
 			throw new IllegalArgumentException("Can't have more than 32767 vertices per batch: " + maxVertices);
 
 		Mesh.VertexDataType vertexDataType = Mesh.VertexDataType.VertexArray;
-		if (Gdx.gl30 != null) {
+		if (Box.gl30 != null) {
 			vertexDataType = VertexDataType.VertexBufferObjectWithVAO;
 		}
 		mesh = new Mesh(vertexDataType, false, maxVertices, maxTriangles * 3,
@@ -144,7 +144,7 @@ public class PolygonSpriteBatch implements PolygonBatch {
 		} else
 			shader = defaultShader;
 
-		projectionMatrix.setToOrtho2D(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		projectionMatrix.setToOrtho2D(0, 0, Box.graphics.getWidth(), Box.graphics.getHeight());
 	}
 
 	@Override
@@ -152,7 +152,7 @@ public class PolygonSpriteBatch implements PolygonBatch {
 		if (drawing) throw new IllegalStateException("PolygonSpriteBatch.end must be called before begin.");
 		renderCalls = 0;
 
-		Gdx.gl.glDepthMask(false);
+		Box.gl.glDepthMask(false);
 		if (customShader != null)
 			customShader.bind();
 		else
@@ -169,7 +169,7 @@ public class PolygonSpriteBatch implements PolygonBatch {
 		lastTexture = null;
 		drawing = false;
 
-		GL20 gl = Gdx.gl;
+		GL20 gl = Box.gl;
 		gl.glDepthMask(true);
 		if (isBlendingEnabled()) gl.glDisable(GL20.GL_BLEND);
 	}
@@ -1209,10 +1209,10 @@ public class PolygonSpriteBatch implements PolygonBatch {
 		mesh.setVertices(vertices, 0, vertexIndex);
 		mesh.setIndices(triangles, 0, trianglesInBatch);
 		if (blendingDisabled) {
-			Gdx.gl.glDisable(GL20.GL_BLEND);
+			Box.gl.glDisable(GL20.GL_BLEND);
 		} else {
-			Gdx.gl.glEnable(GL20.GL_BLEND);
-			if (blendSrcFunc != -1) Gdx.gl.glBlendFuncSeparate(blendSrcFunc, blendDstFunc, blendSrcFuncAlpha, blendDstFuncAlpha);
+			Box.gl.glEnable(GL20.GL_BLEND);
+			if (blendSrcFunc != -1) Box.gl.glBlendFuncSeparate(blendSrcFunc, blendDstFunc, blendSrcFuncAlpha, blendDstFuncAlpha);
 		}
 
 		mesh.render(customShader != null ? customShader : shader, GL20.GL_TRIANGLES, 0, trianglesInBatch);

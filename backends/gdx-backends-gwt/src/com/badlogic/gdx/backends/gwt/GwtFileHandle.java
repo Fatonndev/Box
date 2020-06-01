@@ -31,8 +31,8 @@ import java.io.Writer;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-import com.badlogic.gdx.Files.FileType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
@@ -52,7 +52,7 @@ public class GwtFileHandle extends FileHandle {
 
 	public GwtFileHandle (String path) {
 		this.type = FileType.Internal;
-		this.preloader = ((GwtApplication)Gdx.app).getPreloader();
+		this.preloader = ((GwtApplication) Box.app).getPreloader();
 		this.file = fixSlashes(path);
 	}
 

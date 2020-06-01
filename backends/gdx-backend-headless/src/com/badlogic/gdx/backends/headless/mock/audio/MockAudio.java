@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.headless.mock.audio;
 
-import com.badlogic.gdx.Audio;
+import ru.obvilion.box.constructors.Audio;
 import com.badlogic.gdx.audio.AudioDevice;
 import com.badlogic.gdx.audio.AudioRecorder;
 import com.badlogic.gdx.audio.Music;

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
@@ -70,7 +70,7 @@ public class OrthographicCamera extends Camera {
 	 * (Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2), with the y-axis pointing up or down.
 	 * @param yDown whether y should be pointing down */
 	public void setToOrtho (boolean yDown) {
-		setToOrtho(yDown, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		setToOrtho(yDown, Box.graphics.getWidth(), Box.graphics.getHeight());
 	}
 
 	/** Sets this camera to an orthographic projection, centered at (viewportWidth/2, viewportHeight/2), with the y-axis pointing up

@@ -31,7 +31,7 @@
 -keep class com.badlogic.gdx.controllers.android.AndroidControllers
 
 -keepclassmembers class com.badlogic.gdx.backends.android.AndroidInput* {
-   <init>(com.badlogic.gdx.Application, android.content.Context, java.lang.Object, com.badlogic.gdx.backends.android.AndroidApplicationConfiguration);
+   <init>(ru.obvilion.box.constructors.Application, android.content.Context, java.lang.Object, com.badlogic.gdx.backends.android.AndroidApplicationConfiguration);
 }
 
 -keepclassmembers class com.badlogic.gdx.physics.box2d.World {

@@ -16,6 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
+import ru.obvilion.box.Box;
 import org.robovm.apple.audiotoolbox.AudioServices;
 import org.robovm.apple.coregraphics.CGPoint;
 import org.robovm.apple.coregraphics.CGRect;
@@ -27,8 +28,7 @@ import org.robovm.rt.bro.NativeObject;
 import org.robovm.rt.bro.annotation.MachineSizedUInt;
 import org.robovm.rt.bro.annotation.Pointer;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.backends.iosrobovm.custom.UIAcceleration;
 import com.badlogic.gdx.backends.iosrobovm.custom.UIAccelerometer;
 import com.badlogic.gdx.backends.iosrobovm.custom.UIAccelerometerDelegate;
@@ -380,7 +380,7 @@ public class DefaultIOSInput implements IOSInput {
 		public void deleteBackward () {
 			inputProcessor.keyTyped((char)8);
 			super.deleteBackward();
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 		}
 	}
 
@@ -393,7 +393,7 @@ public class DefaultIOSInput implements IOSInput {
 			}
 
 			if (string.isEmpty()) {
-				if (range.getLength() > 0) Gdx.graphics.requestRendering();
+				if (range.getLength() > 0) Box.graphics.requestRendering();
 				return false;
 			}
 
@@ -403,7 +403,7 @@ public class DefaultIOSInput implements IOSInput {
 			for (int i = 0; i < chars.length; i++) {
 				inputProcessor.keyTyped(chars[i]);
 			}
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 
 			return true;
 		}
@@ -412,7 +412,7 @@ public class DefaultIOSInput implements IOSInput {
 		public boolean shouldEndEditing (UITextField textField) {
 			// Text field needs to have at least one symbol - so we can use backspace
 			textField.setText("x");
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 
 			return true;
 		}
@@ -422,7 +422,7 @@ public class DefaultIOSInput implements IOSInput {
 			if (keyboardCloseOnReturn) setOnscreenKeyboardVisible(false);
 			inputProcessor.keyDown(Keys.ENTER);
 			inputProcessor.keyTyped((char)13);
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 			return false;
 		}
 	};
@@ -623,7 +623,7 @@ public class DefaultIOSInput implements IOSInput {
 	@Override
 	public void onTouch (long touches) {
 		toTouchEvents(touches);
-		Gdx.graphics.requestRendering();
+		Box.graphics.requestRendering();
 	}
 
 	@Override
@@ -669,7 +669,7 @@ public class DefaultIOSInput implements IOSInput {
 		for (int i = 0; i < touchDown.length; i++) {
 			sb.append(i + ":" + touchDown[i] + " ");
 		}
-		Gdx.app.error("IOSInput", "Pointer ID lookup failed: " + ptr + ", " + sb.toString());
+		Box.app.error("IOSInput", "Pointer ID lookup failed: " + ptr + ", " + sb.toString());
 		return POINTER_NOT_FOUND;
 	}
 

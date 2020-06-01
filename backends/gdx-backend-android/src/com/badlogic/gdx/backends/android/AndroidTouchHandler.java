@@ -19,8 +19,8 @@ package com.badlogic.gdx.backends.android;
 import android.content.Context;
 import android.view.MotionEvent;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Buttons;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input.Buttons;
 import com.badlogic.gdx.backends.android.DefaultAndroidInput.TouchEvent;
 
 /** Multitouch handler for devices running Android >= 2.0. If device is capable of (fake) multitouch this will report additional
@@ -115,7 +115,7 @@ public class AndroidTouchHandler {
 				break;
 			}
 		}
-		Gdx.app.getGraphics().requestRendering();
+		Box.app.getGraphics().requestRendering();
 	}
 
 	private void logAction (int action, int pointer) {
@@ -136,7 +136,7 @@ public class AndroidTouchHandler {
 			actionStr = "MOVE";
 		else
 			actionStr = "UNKNOWN (" + action + ")";
-		Gdx.app.log("AndroidMultiTouchHandler", "action " + actionStr + ", Android pointer id: " + pointer);
+		Box.app.log("AndroidMultiTouchHandler", "action " + actionStr + ", Android pointer id: " + pointer);
 	}
 
 	private int toGdxButton (int button) {

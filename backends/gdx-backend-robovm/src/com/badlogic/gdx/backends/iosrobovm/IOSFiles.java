@@ -18,7 +18,7 @@ package com.badlogic.gdx.backends.iosrobovm;
 
 import org.robovm.apple.foundation.NSBundle;
 
-import com.badlogic.gdx.Files;
+import ru.obvilion.box.constructors.Files;
 import com.badlogic.gdx.files.FileHandle;
 
 public class IOSFiles implements Files {

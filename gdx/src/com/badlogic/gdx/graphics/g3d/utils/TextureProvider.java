@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.utils;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g3d.Model;
@@ -49,7 +49,7 @@ public interface TextureProvider {
 
 		@Override
 		public Texture load (String fileName) {
-			Texture result = new Texture(Gdx.files.internal(fileName), useMipMaps);
+			Texture result = new Texture(Box.files.internal(fileName), useMipMaps);
 			result.setFilter(minFilter, magFilter);
 			result.setWrap(uWrap, vWrap);
 			return result;

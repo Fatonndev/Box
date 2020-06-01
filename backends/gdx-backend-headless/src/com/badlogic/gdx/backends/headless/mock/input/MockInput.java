@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.backends.headless.mock.input;
 
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputAdapter;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputAdapter;
+import ru.obvilion.box.InputProcessor;
 
 /** The headless backend does its best to mock elements. This is intended to make code-sharing between
  * server and client as simple as possible.

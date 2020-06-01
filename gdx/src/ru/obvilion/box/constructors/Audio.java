@@ -14,8 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box.constructors;
 
+import ru.obvilion.box.ApplicationListener;
 import com.badlogic.gdx.audio.AudioDevice;
 import com.badlogic.gdx.audio.AudioRecorder;
 import com.badlogic.gdx.audio.Music;

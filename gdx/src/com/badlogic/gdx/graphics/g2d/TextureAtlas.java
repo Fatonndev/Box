@@ -18,8 +18,8 @@ package com.badlogic.gdx.graphics.g2d;
 
 import static com.badlogic.gdx.graphics.Texture.TextureWrap.*;
 
-import com.badlogic.gdx.Files.FileType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture;
@@ -32,15 +32,12 @@ import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.ObjectSet;
-import com.badlogic.gdx.utils.Sort;
 import com.badlogic.gdx.utils.StreamUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Set;
 
 /** Loads images from texture atlases created by TexturePacker.<br>
  * <br>
@@ -217,7 +214,7 @@ public class TextureAtlas implements Disposable {
 	/** Loads the specified pack file using {@link FileType#Internal}, using the parent directory of the pack file to find the page
 	 * images. */
 	public TextureAtlas (String internalPackFile) {
-		this(Gdx.files.internal(internalPackFile));
+		this(Box.files.internal(internalPackFile));
 	}
 
 	/** Loads the specified pack file, using the parent directory of the pack file to find the page images. */

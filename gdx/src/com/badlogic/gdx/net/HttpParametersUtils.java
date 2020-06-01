@@ -21,8 +21,7 @@ import java.net.URLEncoder;
 import java.util.Map;
 import java.util.Set;
 
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Net.HttpRequest;
+import ru.obvilion.box.constructors.Net.HttpRequest;
 
 /** Provides utility methods to work with the {@link HttpRequest} content and parameters. */
 public class HttpParametersUtils {

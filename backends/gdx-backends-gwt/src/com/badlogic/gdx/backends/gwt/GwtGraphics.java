@@ -16,10 +16,9 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.backends.gwt.GwtGraphics.OrientationLockType;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.Cursor.SystemCursor;
 import com.badlogic.gdx.graphics.GL20;
@@ -102,8 +101,8 @@ public class GwtGraphics implements Graphics {
 	@Override
 	public void setGL20 (GL20 gl20) {
 		this.gl = gl20;
-		Gdx.gl = gl20;
-		Gdx.gl20 = gl20;
+		Box.gl = gl20;
+		Box.gl20 = gl20;
 	}
 
 	@Override
@@ -523,12 +522,12 @@ public class GwtGraphics implements Graphics {
 
 	@Override
 	public void setCursor (Cursor cursor) {
-		((GwtApplication)Gdx.app).graphics.canvas.getStyle().setProperty("cursor", ((GwtCursor)cursor).cssCursorProperty);
+		((GwtApplication) Box.app).graphics.canvas.getStyle().setProperty("cursor", ((GwtCursor)cursor).cssCursorProperty);
 	}
 
 	@Override
 	public void setSystemCursor (SystemCursor systemCursor) {
-		((GwtApplication)Gdx.app).graphics.canvas.getStyle().setProperty("cursor", GwtCursor.getNameForSystemCursor(systemCursor));
+		((GwtApplication) Box.app).graphics.canvas.getStyle().setProperty("cursor", GwtCursor.getNameForSystemCursor(systemCursor));
 	}
 
 	static class GwtMonitor extends Monitor {

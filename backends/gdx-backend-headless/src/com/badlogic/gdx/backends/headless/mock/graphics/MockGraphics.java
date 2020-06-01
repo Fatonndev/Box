@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.backends.headless.mock.graphics;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GL30;

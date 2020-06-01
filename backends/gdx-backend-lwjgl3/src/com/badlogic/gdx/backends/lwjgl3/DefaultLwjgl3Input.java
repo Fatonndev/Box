@@ -24,10 +24,9 @@ import org.lwjgl.glfw.GLFWMouseButtonCallback;
 import org.lwjgl.glfw.GLFWScrollCallback;
 
 import com.badlogic.gdx.graphics.glutils.HdpiMode;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputEventQueue;
-import com.badlogic.gdx.InputProcessor;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputEventQueue;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.utils.TimeUtils;
 
 public class DefaultLwjgl3Input implements Lwjgl3Input {

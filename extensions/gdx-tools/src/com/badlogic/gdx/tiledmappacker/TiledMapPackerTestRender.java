@@ -18,9 +18,9 @@ package com.badlogic.gdx.tiledmappacker;
 
 import java.io.File;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Keys;
+import ru.obvilion.box.ApplicationAdapter;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input.Keys;
 import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.files.FileHandle;
@@ -74,21 +74,21 @@ public class TiledMapPackerTestRender extends ApplicationAdapter {
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(0, 0, 0, 1f);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		Box.gl.glClearColor(0, 0, 0, 1f);
+		Box.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		viewport.apply();
 		mapRenderer.setView(cam);
 		mapRenderer.render();
 
-		if (Gdx.input.isKeyPressed(Keys.ESCAPE)) {
+		if (Box.input.isKeyPressed(Keys.ESCAPE)) {
 			if (DELETE_DELETEME_FOLDER_ON_EXIT) {
-				FileHandle deleteMeHandle = Gdx.files.local(MAP_PATH);
+				FileHandle deleteMeHandle = Box.files.local(MAP_PATH);
 				deleteMeHandle.deleteDirectory();
 			}
 
 			dispose();
-			Gdx.app.exit();
+			Box.app.exit();
 		}
 	}
 

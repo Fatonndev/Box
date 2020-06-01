@@ -30,9 +30,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import com.badlogic.gdx.*;
 import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
 import com.badlogic.gdx.utils.*;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.*;
 
 /** An implementation of the {@link Application} interface for Android. Create an {@link Activity} that derives from this class. In
  * the {@link Activity#onCreate(Bundle)} method call the {@link #initialize(ApplicationListener)} method specifying the
@@ -148,12 +149,12 @@ public class AndroidApplication extends Activity implements AndroidApplicationBa
 			}
 		});
 
-		Gdx.app = this;
-		Gdx.input = this.getInput();
-		Gdx.audio = this.getAudio();
-		Gdx.files = this.getFiles();
-		Gdx.graphics = this.getGraphics();
-		Gdx.net = this.getNet();
+		Box.app = this;
+		Box.input = this.getInput();
+		Box.audio = this.getAudio();
+		Box.files = this.getFiles();
+		Box.graphics = this.getGraphics();
+		Box.net = this.getNet();
 
 		if (!isForView) {
 			try {
@@ -256,12 +257,12 @@ public class AndroidApplication extends Activity implements AndroidApplicationBa
 
 	@Override
 	protected void onResume () {
-		Gdx.app = this;
-		Gdx.input = this.getInput();
-		Gdx.audio = this.getAudio();
-		Gdx.files = this.getFiles();
-		Gdx.graphics = this.getGraphics();
-		Gdx.net = this.getNet();
+		Box.app = this;
+		Box.input = this.getInput();
+		Box.audio = this.getAudio();
+		Box.files = this.getFiles();
+		Box.graphics = this.getGraphics();
+		Box.net = this.getNet();
 
 		input.onResume();
 
@@ -352,7 +353,7 @@ public class AndroidApplication extends Activity implements AndroidApplicationBa
 	public void postRunnable (Runnable runnable) {
 		synchronized (runnables) {
 			runnables.add(runnable);
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 		}
 	}
 

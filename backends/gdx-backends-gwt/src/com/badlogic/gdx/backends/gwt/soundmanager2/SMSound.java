@@ -16,10 +16,6 @@
 
 package com.badlogic.gdx.backends.gwt.soundmanager2;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.audio.Music.OnCompletionListener;
-import com.badlogic.gdx.backends.gwt.GwtMusic;
-import com.badlogic.gdx.backends.gwt.soundmanager2.SoundManager.SoundManagerCallback;
 import com.google.gwt.core.client.JavaScriptObject;
 
 public class SMSound {

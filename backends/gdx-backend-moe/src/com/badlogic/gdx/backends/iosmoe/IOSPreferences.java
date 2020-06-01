@@ -16,9 +16,8 @@
 
 package com.badlogic.gdx.backends.iosmoe;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Preferences;
-import apple.NSObject;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.Preferences;
 import apple.foundation.NSMutableDictionary;
 import apple.foundation.NSNumber;
 import apple.foundation.NSString;
@@ -189,7 +188,7 @@ public class IOSPreferences implements Preferences {
 			@Override
 			public void run() {
 				if (!nsDictionary.writeToFileAtomically(file.getAbsolutePath(), false)) {
-					Gdx.app.debug("IOSPreferences", "Failed to write NSDictionary to file " + file);
+					Box.app.debug("IOSPreferences", "Failed to write NSDictionary to file " + file);
 				}
 			}
 		});

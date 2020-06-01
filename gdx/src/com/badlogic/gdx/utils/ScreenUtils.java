@@ -18,7 +18,7 @@ package com.badlogic.gdx.utils;
 
 import java.nio.ByteBuffer;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Blending;
@@ -38,8 +38,8 @@ public final class ScreenUtils {
 	 * accessed via {@link TextureRegion#getTexture}. The texture is not managed and has to be reloaded manually on a context loss.
 	 * The returned TextureRegion is flipped along the Y axis by default. */
 	public static TextureRegion getFrameBufferTexture () {
-		final int w = Gdx.graphics.getBackBufferWidth();
-		final int h = Gdx.graphics.getBackBufferHeight();
+		final int w = Box.graphics.getBackBufferWidth();
+		final int h = Box.graphics.getBackBufferHeight();
 		return getFrameBufferTexture(0, 0, w, h);
 	}
 
@@ -70,11 +70,11 @@ public final class ScreenUtils {
 	}
 
 	public static Pixmap getFrameBufferPixmap (int x, int y, int w, int h) {
-		Gdx.gl.glPixelStorei(GL20.GL_PACK_ALIGNMENT, 1);
+		Box.gl.glPixelStorei(GL20.GL_PACK_ALIGNMENT, 1);
 
 		final Pixmap pixmap = new Pixmap(w, h, Format.RGBA8888);
 		ByteBuffer pixels = pixmap.getPixels();
-		Gdx.gl.glReadPixels(x, y, w, h, GL20.GL_RGBA, GL20.GL_UNSIGNED_BYTE, pixels);
+		Box.gl.glReadPixels(x, y, w, h, GL20.GL_RGBA, GL20.GL_UNSIGNED_BYTE, pixels);
 
 		return pixmap;
 	}
@@ -86,8 +86,8 @@ public final class ScreenUtils {
 	 * 
 	 * @param flipY whether to flip pixels along Y axis */
 	public static byte[] getFrameBufferPixels (boolean flipY) {
-		final int w = Gdx.graphics.getBackBufferWidth();
-		final int h = Gdx.graphics.getBackBufferHeight();
+		final int w = Box.graphics.getBackBufferWidth();
+		final int h = Box.graphics.getBackBufferHeight();
 		return getFrameBufferPixels(0, 0, w, h, flipY);
 	}
 
@@ -100,9 +100,9 @@ public final class ScreenUtils {
 	 * 
 	 * @param flipY whether to flip pixels along Y axis */
 	public static byte[] getFrameBufferPixels (int x, int y, int w, int h, boolean flipY) {
-		Gdx.gl.glPixelStorei(GL20.GL_PACK_ALIGNMENT, 1);
+		Box.gl.glPixelStorei(GL20.GL_PACK_ALIGNMENT, 1);
 		final ByteBuffer pixels = BufferUtils.newByteBuffer(w * h * 4);
-		Gdx.gl.glReadPixels(x, y, w, h, GL20.GL_RGBA, GL20.GL_UNSIGNED_BYTE, pixels);
+		Box.gl.glReadPixels(x, y, w, h, GL20.GL_RGBA, GL20.GL_UNSIGNED_BYTE, pixels);
 		final int numBytes = w * h * 4;
 		byte[] lines = new byte[numBytes];
 		if (flipY) {

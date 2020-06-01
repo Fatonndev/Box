@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.physics.bullet;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -65,7 +65,7 @@ public class DebugDrawer extends btIDebugDraw implements Disposable {
 
 	@Override
 	public void reportErrorWarning (String warningString) {
-		Gdx.app.error("Bullet", warningString);
+		Box.app.error("Bullet", warningString);
 	}
 
 	@Override

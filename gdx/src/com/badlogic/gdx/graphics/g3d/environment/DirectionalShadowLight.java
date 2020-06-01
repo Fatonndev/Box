@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.environment;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -81,15 +81,15 @@ public class DirectionalShadowLight extends DirectionalLight implements ShadowMa
 		final int w = fbo.getWidth();
 		final int h = fbo.getHeight();
 		fbo.begin();
-		Gdx.gl.glViewport(0, 0, w, h);
-		Gdx.gl.glClearColor(1, 1, 1, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
-		Gdx.gl.glEnable(GL20.GL_SCISSOR_TEST);
-		Gdx.gl.glScissor(1, 1, w - 2, h - 2);
+		Box.gl.glViewport(0, 0, w, h);
+		Box.gl.glClearColor(1, 1, 1, 1);
+		Box.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
+		Box.gl.glEnable(GL20.GL_SCISSOR_TEST);
+		Box.gl.glScissor(1, 1, w - 2, h - 2);
 	}
 
 	public void end () {
-		Gdx.gl.glDisable(GL20.GL_SCISSOR_TEST);
+		Box.gl.glDisable(GL20.GL_SCISSOR_TEST);
 		fbo.end();
 	}
 

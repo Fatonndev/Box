@@ -16,9 +16,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import androidx.fragment.app.Fragment;
-import com.badlogic.gdx.*;
 import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
 import com.badlogic.gdx.utils.*;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.*;
 
 /** Implementation of the {@link AndroidApplicationBase} that is based on the {@link Fragment} class. This class is similar in use
  * to the {@link AndroidApplication} class, which is based on an {@link Activity}.
@@ -162,12 +163,12 @@ public class AndroidFragmentApplication extends Fragment implements AndroidAppli
 			}
 		});
 
-		Gdx.app = this;
-		Gdx.input = this.getInput();
-		Gdx.audio = this.getAudio();
-		Gdx.files = this.getFiles();
-		Gdx.graphics = this.getGraphics();
-		Gdx.net = this.getNet();
+		Box.app = this;
+		Box.input = this.getInput();
+		Box.audio = this.getAudio();
+		Box.files = this.getFiles();
+		Box.graphics = this.getGraphics();
+		Box.net = this.getNet();
 		createWakeLock(config.useWakelock);
 		useImmersiveMode(config.useImmersiveMode);
 		if (config.useImmersiveMode && getVersion() >= Build.VERSION_CODES.KITKAT) {
@@ -212,12 +213,12 @@ public class AndroidFragmentApplication extends Fragment implements AndroidAppli
 
 	@Override
 	public void onResume () {
-		Gdx.app = this;
-		Gdx.input = this.getInput();
-		Gdx.audio = this.getAudio();
-		Gdx.files = this.getFiles();
-		Gdx.graphics = this.getGraphics();
-		Gdx.net = this.getNet();
+		Box.app = this;
+		Box.input = this.getInput();
+		Box.audio = this.getAudio();
+		Box.files = this.getFiles();
+		Box.graphics = this.getGraphics();
+		Box.net = this.getNet();
 
 		input.onResume();
 
@@ -296,7 +297,7 @@ public class AndroidFragmentApplication extends Fragment implements AndroidAppli
 	public void postRunnable (Runnable runnable) {
 		synchronized (runnables) {
 			runnables.add(runnable);
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 		}
 	}
 

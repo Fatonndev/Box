@@ -31,7 +31,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
 import com.badlogic.gdx.utils.Array;
@@ -148,7 +148,7 @@ class EffectPanel extends JPanel {
 		ParticleEffect effect = new ParticleEffect();
 		try {
 			File effectFile = new File(dir, file);
-			effect.loadEmitters(Gdx.files.absolute(effectFile.getAbsolutePath()));
+			effect.loadEmitters(Box.files.absolute(effectFile.getAbsolutePath()));
 			if (mergeIntoCurrent){
 				for (ParticleEmitter emitter : effect.getEmitters()){
 					addEmitter(emitter.getName(), false, emitter);

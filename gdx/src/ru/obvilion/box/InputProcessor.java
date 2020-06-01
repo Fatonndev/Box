@@ -14,9 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
 
-import com.badlogic.gdx.Input.Buttons;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Input.Buttons;
 
 /** An InputProcessor is used to receive input events from the keyboard and the touch screen (mouse on the desktop). For this it
  * has to be registered with the {@link Input#setInputProcessor(InputProcessor)} method. It will be called each frame before the

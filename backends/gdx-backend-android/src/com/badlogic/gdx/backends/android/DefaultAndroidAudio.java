@@ -25,8 +25,8 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Build;
 
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files.FileType;
+import ru.obvilion.box.constructors.Audio;
+import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.audio.AudioDevice;
 import com.badlogic.gdx.audio.AudioRecorder;
 import com.badlogic.gdx.audio.Music;

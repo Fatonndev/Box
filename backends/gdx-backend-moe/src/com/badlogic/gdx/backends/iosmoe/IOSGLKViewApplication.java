@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosmoe;
 
-import com.badlogic.gdx.ApplicationListener;
+import ru.obvilion.box.ApplicationListener;
 
 import apple.coregraphics.struct.CGRect;
 import apple.uikit.UIApplication;

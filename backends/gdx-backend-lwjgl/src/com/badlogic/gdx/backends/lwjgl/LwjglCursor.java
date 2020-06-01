@@ -4,9 +4,9 @@ package com.badlogic.gdx.backends.lwjgl;
 import java.nio.ByteOrder;
 import java.nio.IntBuffer;
 
+import ru.obvilion.box.Box;
 import org.lwjgl.LWJGLException;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.utils.GdxRuntimeException;
@@ -16,7 +16,7 @@ public class LwjglCursor implements Cursor {
 	org.lwjgl.input.Cursor lwjglCursor = null;
 
 	public LwjglCursor (Pixmap pixmap, int xHotspot, int yHotspot) {
-		if (((LwjglGraphics)Gdx.graphics).canvas != null && SharedLibraryLoader.isMac) {
+		if (((LwjglGraphics) Box.graphics).canvas != null && SharedLibraryLoader.isMac) {
 			return;
 		}
 		try {

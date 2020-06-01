@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.decals;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Mesh;
 import com.badlogic.gdx.graphics.VertexAttribute;
@@ -89,7 +89,7 @@ public class DecalBatch implements Disposable {
 		vertices = new float[size * Decal.SIZE];
 
 		Mesh.VertexDataType vertexDataType = Mesh.VertexDataType.VertexArray;
-		if(Gdx.gl30 != null) {
+		if(Box.gl30 != null) {
 			vertexDataType = Mesh.VertexDataType.VertexBufferObjectWithVAO;
 		}
 		mesh = new Mesh(vertexDataType, false, size * 4, size * 6, new VertexAttribute(

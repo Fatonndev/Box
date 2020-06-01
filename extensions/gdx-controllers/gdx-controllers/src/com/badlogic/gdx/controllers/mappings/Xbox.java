@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.controllers.mappings;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.utils.SharedLibraryLoader;
 
@@ -63,7 +63,7 @@ public class Xbox {
 
 	static {
 		if (SharedLibraryLoader.isWindows) {
-			if(Gdx.graphics.getType() == Graphics.GraphicsType.LWJGL3) {
+			if(Box.graphics.getType() == Graphics.GraphicsType.LWJGL3) {
 				A = 0;
 				B = 1;
 				X = 2;

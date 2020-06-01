@@ -24,8 +24,8 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Environment;
 
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Files;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
@@ -130,10 +130,10 @@ public class AndroidFiles implements Files {
 	public boolean setAPKExpansion(int mainVersion, int patchVersion) {
 		try {
 			Context context;
-			if (Gdx.app instanceof Activity) {
-				context = ((Activity) Gdx.app).getBaseContext();
-			} else if (Gdx.app instanceof Fragment) {
-				context = ((Fragment) Gdx.app).getActivity().getBaseContext();
+			if (Box.app instanceof Activity) {
+				context = ((Activity) Box.app).getBaseContext();
+			} else if (Box.app instanceof Fragment) {
+				context = ((Fragment) Box.app).getActivity().getBaseContext();
 			} else {
 				throw new GdxRuntimeException("APK expansion not supported for application type");
 			}

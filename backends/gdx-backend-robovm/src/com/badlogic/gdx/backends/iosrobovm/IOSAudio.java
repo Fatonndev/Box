@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
-import com.badlogic.gdx.Audio;
+import ru.obvilion.box.constructors.Audio;
 
 public interface IOSAudio extends Audio {
 }

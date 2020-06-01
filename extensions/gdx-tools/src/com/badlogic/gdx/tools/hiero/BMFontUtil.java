@@ -29,17 +29,16 @@ import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import ru.obvilion.box.Box;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
 import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
@@ -114,7 +113,7 @@ public class BMFontUtil {
 		else {
 			Kerning kerning = new Kerning();
 			try {
-				kerning.load(Gdx.files.internal(ttfFileRef).read(), font.getSize());
+				kerning.load(Box.files.internal(ttfFileRef).read(), font.getSize());
 			} catch (IOException ex) {
 				System.out.println("Unable to read kerning information from font: " + ttfFileRef);
 				ex.printStackTrace();

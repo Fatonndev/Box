@@ -1,8 +1,8 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.Value.Fixed;
 import com.badlogic.gdx.utils.Align;
@@ -996,8 +996,8 @@ public class Cell<T extends Actor> implements Poolable {
 	/** Returns the defaults to use for all cells. This can be used to avoid needing to set the same defaults for every table (eg,
 	 * for spacing). */
 	static public Cell defaults () {
-		if (files == null || files != Gdx.files) {
-			files = Gdx.files;
+		if (files == null || files != Box.files) {
+			files = Box.files;
 			defaults = new Cell();
 			defaults.minWidth = Value.minWidth;
 			defaults.minHeight = Value.minHeight;

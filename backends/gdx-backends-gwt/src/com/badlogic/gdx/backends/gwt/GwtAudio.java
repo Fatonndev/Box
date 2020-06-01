@@ -1,6 +1,6 @@
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.Audio;
+import ru.obvilion.box.constructors.Audio;
 
 public interface GwtAudio extends Audio {
 }

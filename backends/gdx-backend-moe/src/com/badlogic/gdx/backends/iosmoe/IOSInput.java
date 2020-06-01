@@ -18,11 +18,11 @@ package com.badlogic.gdx.backends.iosmoe;
 
 import apple.uikit.*;
 import apple.uikit.enums.*;
+import ru.obvilion.box.Box;
 import org.moe.natj.general.ann.NInt;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
@@ -332,7 +332,7 @@ public class IOSInput implements Input {
 			}
 
 			if (string.isEmpty()) {
-				if (range.length() > 0) Gdx.graphics.requestRendering();
+				if (range.length() > 0) Box.graphics.requestRendering();
 				return false;
 			}
 
@@ -342,7 +342,7 @@ public class IOSInput implements Input {
 			for (int i = 0; i < chars.length; i++) {
 				app.input.inputProcessor.keyTyped(chars[i]);
 			}
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 
 			return true;
 		}
@@ -351,7 +351,7 @@ public class IOSInput implements Input {
 		public boolean textFieldShouldEndEditing (UITextField textField) {
 			// Text field needs to have at least one symbol - so we can use backspace
 			textField.setText("x");
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 
 			return true;
 		}
@@ -361,7 +361,7 @@ public class IOSInput implements Input {
 			if (keyboardCloseOnReturn) setOnscreenKeyboardVisible(false);
 			app.input.inputProcessor.keyDown(Keys.ENTER);
 			app.input.inputProcessor.keyTyped((char)13);
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 			return false;
 		}
 	};
@@ -549,7 +549,7 @@ public class IOSInput implements Input {
 
 	protected void onTouch (NSSet<? extends UITouch> touches) {
 		toTouchEvents(touches);
-		Gdx.graphics.requestRendering();
+		Box.graphics.requestRendering();
 	}
 
 	void processEvents () {

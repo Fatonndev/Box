@@ -14,18 +14,13 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
 
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GL30;
+import ru.obvilion.box.constructors.*;
 
-/** Environment class holding references to the {@link Application}, {@link Graphics}, {@link Audio}, {@link Files} and
- * {@link Input} instances. The references are held in public static fields which allows static access to all sub systems. Do not
- * use Graphics in a thread that is not the rendering thread.
- * <p>
- * This is normally a design faux pas but in this case is better than the alternatives.
- * @author mzechner */
-public class Gdx {
+public class Box {
 	public static Application app;
 	public static Graphics graphics;
 	public static Audio audio;

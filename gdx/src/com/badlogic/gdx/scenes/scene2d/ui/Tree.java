@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.constructors.Application.ApplicationType;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Rectangle;
@@ -349,10 +349,10 @@ public class Tree<N extends Node, V> extends WidgetGroup {
 	protected Drawable getExpandIcon (N node, float iconX) {
 		boolean over = false;
 		if (node == overNode //
-			&& Gdx.app.getType() == ApplicationType.Desktop //
+			&& Box.app.getType() == ApplicationType.Desktop //
 			&& (!selection.getMultiple() || (!UIUtils.ctrl() && !UIUtils.shift())) //
 		) {
-			float mouseX = screenToLocalCoordinates(tmp.set(Gdx.input.getX(), 0)).x;
+			float mouseX = screenToLocalCoordinates(tmp.set(Box.input.getX(), 0)).x;
 			if (mouseX >= 0 && mouseX < iconX) over = true;
 		}
 		if (over) {

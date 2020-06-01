@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.Input.Keys;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Input.Keys;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -118,7 +118,7 @@ public class TextField extends Widget implements Disableable {
 				return;
 			}
 			cursorOn = !cursorOn;
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 		}
 	};
 
@@ -135,7 +135,7 @@ public class TextField extends Widget implements Disableable {
 
 	public TextField (@Null String text, TextFieldStyle style) {
 		setStyle(style);
-		clipboard = Gdx.app.getClipboard();
+		clipboard = Box.app.getClipboard();
 		initialize();
 		setText(text);
 		setSize(getPrefWidth(), getPrefHeight());
@@ -524,7 +524,7 @@ public class TextField extends Widget implements Disableable {
 				textField = current.findNextTextField(stage.getActors(), null, bestCoords, currentCoords, up);
 			}
 			if (textField == null) {
-				Gdx.input.setOnscreenKeyboardVisible(false);
+				Box.input.setOnscreenKeyboardVisible(false);
 				break;
 			}
 			if (stage.setKeyboardFocus(textField)) {
@@ -824,7 +824,7 @@ public class TextField extends Widget implements Disableable {
 	 * @author mzechner */
 	static public class DefaultOnscreenKeyboard implements OnscreenKeyboard {
 		public void show (boolean visible) {
-			Gdx.input.setOnscreenKeyboardVisible(visible);
+			Box.input.setOnscreenKeyboardVisible(visible);
 		}
 	}
 
@@ -1035,7 +1035,7 @@ public class TextField extends Widget implements Disableable {
 
 			if (!hasKeyboardFocus()) return false;
 
-			if (UIUtils.isMac && Gdx.input.isKeyPressed(Keys.SYM)) return true;
+			if (UIUtils.isMac && Box.input.isKeyPressed(Keys.SYM)) return true;
 
 			if (checkFocusTraversal(character))
 				next(UIUtils.shift());

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm.objectal;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.audio.AudioDevice;
 import com.badlogic.gdx.audio.AudioRecorder;
 import com.badlogic.gdx.audio.Music;
@@ -37,7 +37,7 @@ public class OALIOSAudio implements IOSAudio {
 			audio.setAllowIpod(config.allowIpod);
 			audio.setHonorSilentSwitch(!config.overrideRingerSwitch);
 		} else
-			Gdx.app.error("IOSAudio", "No OALSimpleAudio instance available, audio will not be availabe");
+			Box.app.error("IOSAudio", "No OALSimpleAudio instance available, audio will not be availabe");
 	}
 
 	@Override

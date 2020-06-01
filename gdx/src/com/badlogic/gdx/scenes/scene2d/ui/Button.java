@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -261,7 +261,7 @@ public class Button extends Table implements Disableable {
 
 		Stage stage = getStage();
 		if (stage != null && stage.getActionsRequestRendering() && isPressed != clickListener.isPressed())
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 	}
 
 	public float getPrefWidth () {

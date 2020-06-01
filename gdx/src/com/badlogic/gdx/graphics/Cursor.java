@@ -1,7 +1,7 @@
 
 package com.badlogic.gdx.graphics;
 
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.utils.Disposable;
 
 /** <p>

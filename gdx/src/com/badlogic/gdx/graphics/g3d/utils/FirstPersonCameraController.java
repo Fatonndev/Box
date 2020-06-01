@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.graphics.g3d.utils;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Keys;
-import com.badlogic.gdx.InputAdapter;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input.Keys;
+import ru.obvilion.box.InputAdapter;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.IntIntMap;
@@ -68,8 +68,8 @@ public class FirstPersonCameraController extends InputAdapter {
 
 	@Override
 	public boolean touchDragged (int screenX, int screenY, int pointer) {
-		float deltaX = -Gdx.input.getDeltaX() * degreesPerPixel;
-		float deltaY = -Gdx.input.getDeltaY() * degreesPerPixel;
+		float deltaX = -Box.input.getDeltaX() * degreesPerPixel;
+		float deltaY = -Box.input.getDeltaY() * degreesPerPixel;
 		camera.direction.rotate(camera.up, deltaX);
 		tmp.set(camera.direction).crs(camera.up).nor();
 		camera.direction.rotate(tmp, deltaY);
@@ -78,7 +78,7 @@ public class FirstPersonCameraController extends InputAdapter {
 	}
 
 	public void update () {
-		update(Gdx.graphics.getDeltaTime());
+		update(Box.graphics.getDeltaTime());
 	}
 
 	public void update (float deltaTime) {

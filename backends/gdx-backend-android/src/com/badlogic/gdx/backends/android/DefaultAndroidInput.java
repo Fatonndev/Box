@@ -37,11 +37,11 @@ import android.view.View.OnGenericMotionListener;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics.DisplayMode;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Graphics.DisplayMode;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.utils.IntSet;
 import com.badlogic.gdx.utils.Pool;
 
@@ -231,7 +231,7 @@ public class DefaultAndroidInput implements AndroidInput {
 				alert.setView(input);
 				alert.setPositiveButton(context.getString(android.R.string.ok), new DialogInterface.OnClickListener() {
 					public void onClick (DialogInterface dialog, int whichButton) {
-						Gdx.app.postRunnable(new Runnable() {
+						Box.app.postRunnable(new Runnable() {
 							@Override
 							public void run () {
 								listener.input(input.getText().toString());
@@ -241,7 +241,7 @@ public class DefaultAndroidInput implements AndroidInput {
 				});
 				alert.setNegativeButton(context.getString(android.R.string.cancel), new DialogInterface.OnClickListener() {
 					public void onClick (DialogInterface dialog, int whichButton) {
-						Gdx.app.postRunnable(new Runnable() {
+						Box.app.postRunnable(new Runnable() {
 							@Override
 							public void run () {
 								listener.canceled();
@@ -252,7 +252,7 @@ public class DefaultAndroidInput implements AndroidInput {
 				alert.setOnCancelListener(new OnCancelListener() {
 					@Override
 					public void onCancel (DialogInterface arg0) {
-						Gdx.app.postRunnable(new Runnable() {
+						Box.app.postRunnable(new Runnable() {
 							@Override
 							public void run () {
 								listener.canceled();
@@ -808,7 +808,7 @@ public class DefaultAndroidInput implements AndroidInput {
 			}
 		} else
 			compassAvailable = false;
-		Gdx.app.log("AndroidInput", "sensor listener setup");
+		Box.app.log("AndroidInput", "sensor listener setup");
 	}
 
 	void unregisterSensorListeners () {
@@ -831,7 +831,7 @@ public class DefaultAndroidInput implements AndroidInput {
 			}
 			manager = null;
 		}
-		Gdx.app.log("AndroidInput", "sensor listener tear down");
+		Box.app.log("AndroidInput", "sensor listener tear down");
 	}
 
 	@Override
@@ -899,7 +899,7 @@ public class DefaultAndroidInput implements AndroidInput {
 		for (int i = 0; i < len; i++) {
 			sb.append(i + ":" + realId[i] + " ");
 		}
-		Gdx.app.log("AndroidInput", "Pointer ID lookup failed: " + pointerId + ", " + sb.toString());
+		Box.app.log("AndroidInput", "Pointer ID lookup failed: " + pointerId + ", " + sb.toString());
 		return -1;
 	}
 

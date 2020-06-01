@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.decals;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.utils.Array;
@@ -80,10 +80,10 @@ public class SimpleOrthoGroupStrategy implements GroupStrategy {
 	public void beforeGroup (int group, Array<Decal> contents) {
 		if (group == GROUP_BLEND) {
 			Sort.instance().sort(contents, comparator);
-			Gdx.gl.glEnable(GL20.GL_BLEND);
+			Box.gl.glEnable(GL20.GL_BLEND);
 			// no need for writing into the z buffer if transparent decals are the last thing to be rendered
 			// and they are rendered back to front
-			Gdx.gl.glDepthMask(false);
+			Box.gl.glDepthMask(false);
 		} else {
 			// FIXME sort by material
 		}
@@ -92,19 +92,19 @@ public class SimpleOrthoGroupStrategy implements GroupStrategy {
 	@Override
 	public void afterGroup (int group) {
 		if (group == GROUP_BLEND) {
-			Gdx.gl.glDepthMask(true);
-			Gdx.gl.glDisable(GL20.GL_BLEND);
+			Box.gl.glDepthMask(true);
+			Box.gl.glDisable(GL20.GL_BLEND);
 		}
 	}
 
 	@Override
 	public void beforeGroups () {
-		Gdx.gl.glEnable(GL20.GL_TEXTURE_2D);
+		Box.gl.glEnable(GL20.GL_TEXTURE_2D);
 	}
 
 	@Override
 	public void afterGroups () {
-		Gdx.gl.glDisable(GL20.GL_TEXTURE_2D);
+		Box.gl.glDisable(GL20.GL_TEXTURE_2D);
 	}
 
 	class Comparator implements java.util.Comparator<Decal> {

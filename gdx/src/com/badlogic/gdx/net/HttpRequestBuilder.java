@@ -19,7 +19,7 @@ package com.badlogic.gdx.net;
 import java.io.InputStream;
 import java.util.Map;
 
-import com.badlogic.gdx.Net.HttpRequest;
+import ru.obvilion.box.constructors.Net.HttpRequest;
 import com.badlogic.gdx.utils.Base64Coder;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.Pools;

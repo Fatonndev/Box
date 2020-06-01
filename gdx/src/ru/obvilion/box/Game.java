@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
 
 /** <p>
  * An {@link ApplicationListener} that delegates to a {@link Screen}. This allows an application to easily have multiple screens.
@@ -43,7 +43,7 @@ public abstract class Game implements ApplicationListener {
 
 	@Override
 	public void render () {
-		if (screen != null) screen.render(Gdx.graphics.getDeltaTime());
+		if (screen != null) screen.render(Box.graphics.getDeltaTime());
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public abstract class Game implements ApplicationListener {
 		this.screen = screen;
 		if (this.screen != null) {
 			this.screen.show();
-			this.screen.resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+			this.screen.resize(Box.graphics.getWidth(), Box.graphics.getHeight());
 		}
 	}
 

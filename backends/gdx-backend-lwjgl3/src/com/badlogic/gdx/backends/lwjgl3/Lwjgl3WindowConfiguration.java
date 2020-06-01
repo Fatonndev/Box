@@ -18,9 +18,9 @@ package com.badlogic.gdx.backends.lwjgl3;
 
 import java.util.Arrays;
 
-import com.badlogic.gdx.Files.FileType;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Graphics.DisplayMode;
+import ru.obvilion.box.constructors.Files.FileType;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Graphics.DisplayMode;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Graphics.Lwjgl3DisplayMode;
 import com.badlogic.gdx.graphics.Color;
 

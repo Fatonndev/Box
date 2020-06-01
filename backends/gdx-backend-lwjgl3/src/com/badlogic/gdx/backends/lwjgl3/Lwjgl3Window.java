@@ -18,6 +18,7 @@ package com.badlogic.gdx.backends.lwjgl3;
 
 import java.nio.IntBuffer;
 
+import ru.obvilion.box.Box;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWDropCallback;
@@ -28,10 +29,9 @@ import org.lwjgl.glfw.GLFWWindowIconifyCallback;
 import org.lwjgl.glfw.GLFWWindowMaximizeCallback;
 import org.lwjgl.glfw.GLFWWindowRefreshCallback;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Files;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.ApplicationListener;
+import ru.obvilion.box.constructors.Files;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
@@ -196,7 +196,7 @@ public class Lwjgl3Window implements Disposable {
 	
 	/**
 	 * Post a {@link Runnable} to this window's event queue. Use this
-	 * if you access statics like {@link Gdx#graphics} in your runnable
+	 * if you access statics like {@link Box#graphics} in your runnable
 	 * instead of {@link Application#postRunnable(Runnable)}.
 	 */
 	public void postRunnable(Runnable runnable) {
@@ -294,7 +294,7 @@ public class Lwjgl3Window implements Disposable {
 
 		Pixmap[] pixmaps = new Pixmap[imagePaths.length];
 		for (int i = 0; i < imagePaths.length; i++) {
-			pixmaps[i] = new Pixmap(Gdx.files.getFileHandle(imagePaths[i], imageFileType));
+			pixmaps[i] = new Pixmap(Box.files.getFileHandle(imagePaths[i], imageFileType));
 		}
 
 		setIcon(windowHandle, pixmaps);
@@ -437,11 +437,11 @@ public class Lwjgl3Window implements Disposable {
 	}
 
 	void makeCurrent() {
-		Gdx.graphics = graphics;
-		Gdx.gl30 = graphics.getGL30();
-		Gdx.gl20 = Gdx.gl30 != null ? Gdx.gl30 : graphics.getGL20();
-		Gdx.gl = Gdx.gl30 != null ? Gdx.gl30 : Gdx.gl20;
-		Gdx.input = input;
+		Box.graphics = graphics;
+		Box.gl30 = graphics.getGL30();
+		Box.gl20 = Box.gl30 != null ? Box.gl30 : graphics.getGL20();
+		Box.gl = Box.gl30 != null ? Box.gl30 : Box.gl20;
+		Box.input = input;
 
 		GLFW.glfwMakeContextCurrent(windowHandle);
 	}

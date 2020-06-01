@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.graphics.g3d.particles.batches;
 
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application.ApplicationType;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Mesh;
@@ -59,9 +59,9 @@ public class PointSpriteParticleBatch extends BufferedParticleBatch<PointSpriteC
 		CPU_SIZE_AND_ROTATION_OFFSET = (short)(CPU_ATTRIBUTES.findByUsage(sizeAndRotationUsage).offset / 4);
 
 	private static void enablePointSprites () {
-		Gdx.gl.glEnable(GL20.GL_VERTEX_PROGRAM_POINT_SIZE);
-		if (Gdx.app.getType() == ApplicationType.Desktop) {
-			Gdx.gl.glEnable(0x8861); // GL_POINT_OES
+		Box.gl.glEnable(GL20.GL_VERTEX_PROGRAM_POINT_SIZE);
+		if (Box.app.getType() == ApplicationType.Desktop) {
+			Box.gl.glEnable(0x8861); // GL_POINT_OES
 		}
 		pointSpritesEnabled = true;
 	}

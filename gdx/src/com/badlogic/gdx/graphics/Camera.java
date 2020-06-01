@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.graphics;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Frustum;
 import com.badlogic.gdx.math.Matrix4;
@@ -194,7 +194,7 @@ public abstract class Camera {
 	public Vector3 unproject (Vector3 screenCoords, float viewportX, float viewportY, float viewportWidth, float viewportHeight) {
 		float x = screenCoords.x, y = screenCoords.y;
 		x = x - viewportX;
-		y = Gdx.graphics.getHeight() - y;
+		y = Box.graphics.getHeight() - y;
 		y = y - viewportY;
 		screenCoords.x = (2 * x) / viewportWidth - 1;
 		screenCoords.y = (2 * y) / viewportHeight - 1;
@@ -211,7 +211,7 @@ public abstract class Camera {
 	 * @param screenCoords the point in screen coordinates
 	 * @return the mutated and unprojected screenCoords {@link Vector3} */
 	public Vector3 unproject (Vector3 screenCoords) {
-		unproject(screenCoords, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		unproject(screenCoords, 0, 0, Box.graphics.getWidth(), Box.graphics.getHeight());
 		return screenCoords;
 	}
 
@@ -221,7 +221,7 @@ public abstract class Camera {
 	 * useable in conjunction with {@link Batch} and similar classes.
 	 * @return the mutated and projected worldCoords {@link Vector3} */
 	public Vector3 project (Vector3 worldCoords) {
-		project(worldCoords, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		project(worldCoords, 0, 0, Box.graphics.getWidth(), Box.graphics.getHeight());
 		return worldCoords;
 	}
 
@@ -265,6 +265,6 @@ public abstract class Camera {
 	 * pointing to the right. The returned instance is not a new instance but an internal member only accessible via this function.
 	 * @return the picking Ray. */
 	public Ray getPickRay (float screenX, float screenY) {
-		return getPickRay(screenX, screenY, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		return getPickRay(screenX, screenY, 0, 0, Box.graphics.getWidth(), Box.graphics.getHeight());
 	}
 }

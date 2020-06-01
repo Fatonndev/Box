@@ -16,17 +16,13 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.ApplicationLogger;
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.LifecycleListener;
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Audio;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader.PreloaderCallback;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader.PreloaderState;
@@ -192,7 +188,7 @@ public abstract class GwtApplication implements EntryPoint, Application {
 	}
 
 	void setupLoop () {
-		Gdx.app = this;
+		Box.app = this;
 		// setup modules
 		try {
 			graphics = new GwtGraphics(root, config);
@@ -203,20 +199,20 @@ public abstract class GwtApplication implements EntryPoint, Application {
 		}
 		lastWidth = graphics.getWidth();
 		lastHeight = graphics.getHeight();
-		Gdx.graphics = graphics;
-		Gdx.gl20 = graphics.getGL20();
-		Gdx.gl = Gdx.gl20;
+		Box.graphics = graphics;
+		Box.gl20 = graphics.getGL20();
+		Box.gl = Box.gl20;
 		if(config.disableAudio) {
 			audio = null;
 		} else {
 			audio = createAudio();
 		}
-		Gdx.audio = audio;
-		Gdx.files = new GwtFiles(preloader);
+		Box.audio = audio;
+		Box.files = new GwtFiles(preloader);
 		this.input = createInput(graphics.canvas, this.config);
-		Gdx.input = this.input;
+		Box.input = this.input;
 		this.net = new GwtNet(config);
-		Gdx.net = this.net;
+		Box.net = this.net;
 		this.clipboard = new GwtClipboard();
 		updateLogLabelSize();
 
@@ -246,10 +242,10 @@ public abstract class GwtApplication implements EntryPoint, Application {
 
 	void mainLoop() {
 		graphics.update();
-		if (Gdx.graphics.getWidth() != lastWidth || Gdx.graphics.getHeight() != lastHeight) {
+		if (Box.graphics.getWidth() != lastWidth || Box.graphics.getHeight() != lastHeight) {
 			lastWidth = graphics.getWidth();
 			lastHeight = graphics.getHeight();
-			Gdx.gl.glViewport(0, 0, lastWidth, lastHeight);
+			Box.gl.glViewport(0, 0, lastWidth, lastHeight);
 			GwtApplication.this.listener.resize(lastWidth, lastHeight);
 		}
 		runnablesHelper.addAll(runnables);
@@ -352,17 +348,17 @@ public abstract class GwtApplication implements EntryPoint, Application {
 
 	@Override
 	public Input getInput () {
-		return Gdx.input;
+		return Box.input;
 	}
 
 	@Override
 	public Files getFiles () {
-		return Gdx.files;
+		return Box.files;
 	}
 	
 	@Override
 	public Net getNet() {
-		return Gdx.net;
+		return Box.net;
 	}
 
 	private void updateLogLabelSize () {

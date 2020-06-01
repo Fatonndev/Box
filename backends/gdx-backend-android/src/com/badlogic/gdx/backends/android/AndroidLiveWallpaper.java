@@ -24,9 +24,10 @@ import android.os.Looper;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import com.badlogic.gdx.*;
 import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
 import com.badlogic.gdx.utils.*;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.*;
 
 /** An implementation of the {@link Application} interface to be used with an AndroidLiveWallpaperService. Not directly
  * constructable, instead the {@link AndroidLiveWallpaperService} will create this class internally.
@@ -82,12 +83,12 @@ public class AndroidLiveWallpaper implements AndroidApplicationBase {
 		// Unlike activity, fragment and daydream applications there's no need for a specialized audio listener.
 		// See description in onPause method.
 
-		Gdx.app = this;
-		Gdx.input = input;
-		Gdx.audio = audio;
-		Gdx.files = files;
-		Gdx.graphics = graphics;
-		Gdx.net = net;
+		Box.app = this;
+		Box.input = input;
+		Box.audio = audio;
+		Box.files = files;
+		Box.graphics = graphics;
+		Box.net = net;
 	}
 
 	public void onPause () {
@@ -122,12 +123,12 @@ public class AndroidLiveWallpaper implements AndroidApplicationBase {
 	}
 
 	public void onResume () {
-		Gdx.app = this;
-		Gdx.input = input;
-		Gdx.audio = audio;
-		Gdx.files = files;
-		Gdx.graphics = graphics;
-		Gdx.net = net;
+		Box.app = this;
+		Box.input = input;
+		Box.audio = audio;
+		Box.files = files;
+		Box.graphics = graphics;
+		Box.net = net;
 
 		input.onResume();
 

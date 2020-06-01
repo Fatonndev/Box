@@ -7,8 +7,8 @@ import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.util.zip.GZIPOutputStream;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.ApplicationAdapter;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.backends.headless.HeadlessApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglNativesLoader;
 import com.badlogic.gdx.files.FileHandle;
@@ -339,10 +339,10 @@ public class KTXProcessor {
 				out.close();
 				System.out.println("Finished");
 			} catch (Exception e) {
-				Gdx.app.error("KTXProcessor", "Error writing to file: " + output.getName(), e);
+				Box.app.error("KTXProcessor", "Error writing to file: " + output.getName(), e);
 			}
 
-			Gdx.app.exit();
+			Box.app.exit();
 		}
 	}
 

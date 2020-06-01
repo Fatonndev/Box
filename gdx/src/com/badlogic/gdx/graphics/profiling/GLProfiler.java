@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.profiling;
 
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.math.FloatCounter;
 
@@ -37,7 +37,7 @@ public class GLProfiler {
 	private boolean enabled = false;
 
 	/**
-	 * Create a new instance of GLProfiler to monitor a {@link com.badlogic.gdx.Graphics} instance's gl calls
+	 * Create a new instance of GLProfiler to monitor a {@link Graphics} instance's gl calls
 	 * @param graphics instance to monitor with this instance, With Lwjgl 2.x you can pass in Gdx.graphics, with Lwjgl3 use
 	 * Lwjgl3Window.getGraphics()
 	 */

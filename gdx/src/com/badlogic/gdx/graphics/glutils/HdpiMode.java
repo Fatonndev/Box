@@ -1,6 +1,6 @@
 package com.badlogic.gdx.graphics.glutils;
 
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.graphics.GL20;
 
 public enum HdpiMode {

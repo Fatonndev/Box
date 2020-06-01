@@ -22,12 +22,10 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.Input.TextInputListener;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntSet;
 
 /** <p>
  * An {@link Input} implementation that receives touch, key, accelerometer and compass events from a remote Android device. Just
@@ -300,28 +298,28 @@ public class RemoteInput implements Runnable, Input {
 						break;
 					case RemoteSender.TOUCH_DOWN:
 						touchEvent = new TouchEvent();
-						touchEvent.x = (int)((in.readInt() / remoteWidth) * Gdx.graphics.getWidth());
-						touchEvent.y = (int)((in.readInt() / remoteHeight) * Gdx.graphics.getHeight());
+						touchEvent.x = (int)((in.readInt() / remoteWidth) * Box.graphics.getWidth());
+						touchEvent.y = (int)((in.readInt() / remoteHeight) * Box.graphics.getHeight());
 						touchEvent.pointer = in.readInt();
 						touchEvent.type = TouchEvent.TOUCH_DOWN;
 						break;
 					case RemoteSender.TOUCH_UP:
 						touchEvent = new TouchEvent();
-						touchEvent.x = (int)((in.readInt() / remoteWidth) * Gdx.graphics.getWidth());
-						touchEvent.y = (int)((in.readInt() / remoteHeight) * Gdx.graphics.getHeight());
+						touchEvent.x = (int)((in.readInt() / remoteWidth) * Box.graphics.getWidth());
+						touchEvent.y = (int)((in.readInt() / remoteHeight) * Box.graphics.getHeight());
 						touchEvent.pointer = in.readInt();
 						touchEvent.type = TouchEvent.TOUCH_UP;
 						break;
 					case RemoteSender.TOUCH_DRAGGED:
 						touchEvent = new TouchEvent();
-						touchEvent.x = (int)((in.readInt() / remoteWidth) * Gdx.graphics.getWidth());
-						touchEvent.y = (int)((in.readInt() / remoteHeight) * Gdx.graphics.getHeight());
+						touchEvent.x = (int)((in.readInt() / remoteWidth) * Box.graphics.getWidth());
+						touchEvent.y = (int)((in.readInt() / remoteHeight) * Box.graphics.getHeight());
 						touchEvent.pointer = in.readInt();
 						touchEvent.type = TouchEvent.TOUCH_DRAGGED;
 						break;
 					}
 
-					Gdx.app.postRunnable(new EventTrigger(touchEvent, keyEvent));
+					Box.app.postRunnable(new EventTrigger(touchEvent, keyEvent));
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -450,7 +448,7 @@ public class RemoteInput implements Runnable, Input {
 
 	@Override
 	public void getTextInput (TextInputListener listener, String title, String text, String hint) {
-		Gdx.app.getInput().getTextInput(listener, title, text, hint);
+		Box.app.getInput().getTextInput(listener, title, text, hint);
 	}
 
 	@Override

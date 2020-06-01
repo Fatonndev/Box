@@ -22,9 +22,9 @@ import java.nio.IntBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Application.ApplicationType;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.GLTexture;
@@ -110,14 +110,14 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 	protected abstract void attachFrameBufferColorTexture (T texture);
 
 	protected void build () {
-		GL20 gl = Gdx.gl20;
+		GL20 gl = Box.gl20;
 
 		checkValidBuilder();
 
 		// iOS uses a different framebuffer handle! (not necessarily 0)
 		if (!defaultFramebufferHandleInitialized) {
 			defaultFramebufferHandleInitialized = true;
-			if (Gdx.app.getType() == ApplicationType.iOS) {
+			if (Box.app.getType() == ApplicationType.iOS) {
 				IntBuffer intbuf = ByteBuffer.allocateDirect(16 * Integer.SIZE / 8).order(ByteOrder.nativeOrder()).asIntBuffer();
 				gl.glGetIntegerv(GL20.GL_FRAMEBUFFER_BINDING, intbuf);
 				defaultFramebufferHandle = intbuf.get(0);
@@ -181,7 +181,7 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 				buffer.put(GL30.GL_COLOR_ATTACHMENT0 + i);
 			}
 			buffer.position(0);
-			Gdx.gl30.glDrawBuffers(colorTextureCounter, buffer);
+			Box.gl30.glDrawBuffers(colorTextureCounter, buffer);
 		} else {
 			attachFrameBufferColorTexture(textureAttachments.first());
 		}
@@ -207,8 +207,8 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 		int result = gl.glCheckFramebufferStatus(GL20.GL_FRAMEBUFFER);
 
 		if (result == GL20.GL_FRAMEBUFFER_UNSUPPORTED && bufferBuilder.hasDepthRenderBuffer && bufferBuilder.hasStencilRenderBuffer
-			&& (Gdx.graphics.supportsExtension("GL_OES_packed_depth_stencil")
-				|| Gdx.graphics.supportsExtension("GL_EXT_packed_depth_stencil"))) {
+			&& (Box.graphics.supportsExtension("GL_OES_packed_depth_stencil")
+				|| Box.graphics.supportsExtension("GL_EXT_packed_depth_stencil"))) {
 			if (bufferBuilder.hasDepthRenderBuffer) {
 				gl.glDeleteRenderbuffer(depthbufferHandle);
 				depthbufferHandle = 0;
@@ -262,11 +262,11 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 			throw new IllegalStateException("Frame buffer couldn't be constructed: unknown error " + result);
 		}
 
-		addManagedFrameBuffer(Gdx.app, this);
+		addManagedFrameBuffer(Box.app, this);
 	}
 
 	private void checkValidBuilder () {
-		boolean runningGL30 = Gdx.graphics.isGL30Available();
+		boolean runningGL30 = Box.graphics.isGL30Available();
 
 		if (!runningGL30) {
 			if (bufferBuilder.hasPackedStencilDepthRenderBuffer) {
@@ -279,7 +279,7 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 				if (spec.isDepth) throw new GdxRuntimeException("Depth texture FrameBuffer Attachment not available on GLES 2.0");
 				if (spec.isStencil) throw new GdxRuntimeException("Stencil texture FrameBuffer Attachment not available on GLES 2.0");
 				if (spec.isFloat) {
-					if (!Gdx.graphics.supportsExtension("OES_texture_float")) {
+					if (!Box.graphics.supportsExtension("OES_texture_float")) {
 						throw new GdxRuntimeException("Float texture FrameBuffer Attachment not available on GLES 2.0");
 					}
 				}
@@ -290,7 +290,7 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 	/** Releases all resources associated with the FrameBuffer. */
 	@Override
 	public void dispose () {
-		GL20 gl = Gdx.gl20;
+		GL20 gl = Box.gl20;
 
 		for (T texture : textureAttachments) {
 			disposeColorTexture(texture);
@@ -305,17 +305,17 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 
 		gl.glDeleteFramebuffer(framebufferHandle);
 
-		if (buffers.get(Gdx.app) != null) buffers.get(Gdx.app).removeValue(this, true);
+		if (buffers.get(Box.app) != null) buffers.get(Box.app).removeValue(this, true);
 	}
 
 	/** Makes the frame buffer current so everything gets drawn to it. */
 	public void bind () {
-		Gdx.gl20.glBindFramebuffer(GL20.GL_FRAMEBUFFER, framebufferHandle);
+		Box.gl20.glBindFramebuffer(GL20.GL_FRAMEBUFFER, framebufferHandle);
 	}
 
 	/** Unbinds the framebuffer, all drawing will be performed to the normal framebuffer from here on. */
 	public static void unbind () {
-		Gdx.gl20.glBindFramebuffer(GL20.GL_FRAMEBUFFER, defaultFramebufferHandle);
+		Box.gl20.glBindFramebuffer(GL20.GL_FRAMEBUFFER, defaultFramebufferHandle);
 	}
 
 	/** Binds the frame buffer and sets the viewport accordingly, so everything gets drawn to it. */
@@ -326,12 +326,12 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 
 	/** Sets viewport to the dimensions of framebuffer. Called by {@link #begin()}. */
 	protected void setFrameBufferViewport () {
-		Gdx.gl20.glViewport(0, 0, bufferBuilder.width, bufferBuilder.height);
+		Box.gl20.glViewport(0, 0, bufferBuilder.width, bufferBuilder.height);
 	}
 
 	/** Unbinds the framebuffer, all drawing will be performed to the normal framebuffer from here on. */
 	public void end () {
-		end(0, 0, Gdx.graphics.getBackBufferWidth(), Gdx.graphics.getBackBufferHeight());
+		end(0, 0, Box.graphics.getBackBufferWidth(), Box.graphics.getBackBufferHeight());
 	}
 
 	/** Unbinds the framebuffer and sets viewport sizes, all drawing will be performed to the normal framebuffer from here on.
@@ -342,7 +342,7 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 	 * @param height the height of the viewport in pixels */
 	public void end (int x, int y, int width, int height) {
 		unbind();
-		Gdx.gl20.glViewport(x, y, width, height);
+		Box.gl20.glViewport(x, y, width, height);
 	}
 
 	/** @return The OpenGL handle of the framebuffer (see {@link GL20#glGenFramebuffer()}) */
@@ -387,7 +387,7 @@ public abstract class GLFrameBuffer<T extends GLTexture> implements Disposable {
 	/** Invalidates all frame buffers. This can be used when the OpenGL context is lost to rebuild all managed frame buffers. This
 	 * assumes that the texture attached to this buffer has already been rebuild! Use with care. */
 	public static void invalidateAllFrameBuffers (Application app) {
-		if (Gdx.gl20 == null) return;
+		if (Box.gl20 == null) return;
 
 		Array<GLFrameBuffer> bufferArray = buffers.get(app);
 		if (bufferArray == null) return;

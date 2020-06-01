@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
 
 /** <p>
  * Represents one of many application screens, such as a main menu, a settings menu, the game screen and so on.

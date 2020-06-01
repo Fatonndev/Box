@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.controllers.gwt;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.ControllerManager;
@@ -117,7 +117,7 @@ public class GwtControllers implements ControllerManager, GamepadSupportListener
 					eventPool.freeAll(eventQueue);
 					eventQueue.clear();
 				}
-				Gdx.app.postRunnable(this);
+				Box.app.postRunnable(this);
 			}
 		}.run();
 	}

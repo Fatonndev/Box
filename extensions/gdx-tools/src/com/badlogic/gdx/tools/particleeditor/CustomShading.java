@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.tools.particleeditor;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -50,16 +50,16 @@ public class CustomShading {
 		for (int i = 0; i < extraTextures.size; i++) {
 			extraTextures.get(i).bind(i + 1);
 		}
-		Gdx.gl.glActiveTexture(GL20.GL_TEXTURE0);
+		Box.gl.glActiveTexture(GL20.GL_TEXTURE0);
 	}
 
 	public void end (SpriteBatch spriteBatch) {
 		spriteBatch.setShader(null);
 		for (int i = 0; i < extraTextures.size; i++) {
-			Gdx.gl.glActiveTexture(GL20.GL_TEXTURE1 + i);
-			Gdx.gl.glBindTexture(extraTextures.get(i).glTarget, 0);
+			Box.gl.glActiveTexture(GL20.GL_TEXTURE1 + i);
+			Box.gl.glBindTexture(extraTextures.get(i).glTarget, 0);
 		}
-		Gdx.gl.glActiveTexture(GL20.GL_TEXTURE0);
+		Box.gl.glActiveTexture(GL20.GL_TEXTURE0);
 	}
 
 	public void setVertexShaderFile (String absolutePath) {
@@ -67,7 +67,7 @@ public class CustomShading {
 			lastVertexShaderFile = null;
 			vertexShaderCode = defaultVertexShaderCode;
 		} else {
-			lastVertexShaderFile = Gdx.files.absolute(absolutePath);
+			lastVertexShaderFile = Box.files.absolute(absolutePath);
 			vertexShaderCode = lastVertexShaderFile.readString();
 		}
 		updateShader();
@@ -78,7 +78,7 @@ public class CustomShading {
 			lastFragmentShaderFile = null;
 			fragmentShaderCode = defaultFragmentShaderCode;
 		} else {
-			lastFragmentShaderFile = Gdx.files.absolute(absolutePath);
+			lastFragmentShaderFile = Box.files.absolute(absolutePath);
 			fragmentShaderCode = lastFragmentShaderFile.readString();
 		}
 		updateShader();
@@ -117,7 +117,7 @@ public class CustomShading {
 
 	public void addTexture (String absolutePath) {
 		extraTexturePaths.add(absolutePath);
-		extraTextures.add(new Texture(Gdx.files.absolute(absolutePath)));
+		extraTextures.add(new Texture(Box.files.absolute(absolutePath)));
 		updateSamplers();
 	}
 
@@ -136,7 +136,7 @@ public class CustomShading {
 	public void reloadTexture (int index) {
 		Texture previousTexture = extraTextures.get(index);
 		String path = extraTexturePaths.get(index);
-		Texture texture = new Texture(Gdx.files.absolute(path));
+		Texture texture = new Texture(Box.files.absolute(path));
 		previousTexture.dispose();
 		extraTextures.set(index, texture);
 	}

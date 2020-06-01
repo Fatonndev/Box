@@ -1,6 +1,6 @@
 package com.badlogic.gdx.backends.android;
 
-import com.badlogic.gdx.Audio;
+import ru.obvilion.box.constructors.Audio;
 import com.badlogic.gdx.utils.Disposable;
 
 public interface AndroidAudio extends Audio, Disposable {

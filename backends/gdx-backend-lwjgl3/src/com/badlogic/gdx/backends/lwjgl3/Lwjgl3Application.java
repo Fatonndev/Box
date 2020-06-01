@@ -20,7 +20,6 @@ import java.io.File;
 import java.io.PrintStream;
 import java.nio.IntBuffer;
 
-import com.badlogic.gdx.ApplicationLogger;
 import com.badlogic.gdx.backends.lwjgl3.audio.Lwjgl3Audio;
 import com.badlogic.gdx.backends.lwjgl3.audio.OpenALLwjgl3Audio;
 import com.badlogic.gdx.graphics.glutils.GLVersion;
@@ -28,7 +27,6 @@ import com.badlogic.gdx.graphics.glutils.GLVersion;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
-import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.AMDDebugOutput;
 import org.lwjgl.opengl.ARBDebugOutput;
 import org.lwjgl.opengl.GL;
@@ -39,16 +37,13 @@ import org.lwjgl.opengl.GLUtil;
 import org.lwjgl.opengl.KHRDebug;
 import org.lwjgl.system.Callback;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.LifecycleListener;
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Audio;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.lwjgl3.audio.mock.MockAudio;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Clipboard;
@@ -92,7 +87,7 @@ public class Lwjgl3Application implements Lwjgl3ApplicationBase {
 		setApplicationLogger(new Lwjgl3ApplicationLogger());
 		if (config.title == null) config.title = listener.getClass().getSimpleName();
 		this.config = config = Lwjgl3ApplicationConfiguration.copy(config);
-		Gdx.app = this;
+		Box.app = this;
 		if (!config.disableAudio) {
 			try {
 				this.audio = createAudio(config);
@@ -103,9 +98,9 @@ public class Lwjgl3Application implements Lwjgl3ApplicationBase {
 		} else {
 			this.audio = new MockAudio();
 		}
-		Gdx.audio = audio;
-		this.files = Gdx.files = new Lwjgl3Files();
-		this.net = Gdx.net = new Lwjgl3Net(config);
+		Box.audio = audio;
+		this.files = Box.files = new Lwjgl3Files();
+		this.net = Box.net = new Lwjgl3Net(config);
 		this.clipboard = new Lwjgl3Clipboard();
 
 		Lwjgl3Window window = createWindow(config, listener, 0);

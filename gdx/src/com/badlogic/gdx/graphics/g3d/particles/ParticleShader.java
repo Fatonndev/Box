@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.graphics.g3d.particles;
 
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application.ApplicationType;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g3d.Attribute;
@@ -88,7 +88,7 @@ public class ParticleShader extends BaseShader {
 
 	public static String getDefaultVertexShader () {
 		if (defaultVertexShader == null)
-			defaultVertexShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl").readString();
+			defaultVertexShader = Box.files.classpath("com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl").readString();
 		return defaultVertexShader;
 	}
 
@@ -96,7 +96,7 @@ public class ParticleShader extends BaseShader {
 
 	public static String getDefaultFragmentShader () {
 		if (defaultFragmentShader == null)
-			defaultFragmentShader = Gdx.files.classpath("com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl")
+			defaultFragmentShader = Box.files.classpath("com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl")
 				.readString();
 		return defaultFragmentShader;
 	}
@@ -168,7 +168,7 @@ public class ParticleShader extends BaseShader {
 
 			@Override
 			public void set (BaseShader shader, int inputID, Renderable renderable, Attributes combinedAttributes) {
-				shader.set(inputID, (float)Gdx.graphics.getWidth());
+				shader.set(inputID, (float) Box.graphics.getWidth());
 			}
 		};
 		public final static Setter worldViewTrans = new Setter() {
@@ -246,7 +246,7 @@ public class ParticleShader extends BaseShader {
 
 	public static String createPrefix (final Renderable renderable, final Config config) {
 		String prefix = "";
-		if (Gdx.app.getType() == ApplicationType.Desktop)
+		if (Box.app.getType() == ApplicationType.Desktop)
 			prefix += "#version 120\n";
 		else
 			prefix += "#version 100\n";

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.physics.bullet;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.utils.Disposable;
 
 public class BulletBase implements Disposable {
@@ -99,7 +99,7 @@ public class BulletBase implements Disposable {
 	@Override
 	public void dispose () {
 		if (refCount > 0 && Bullet.useRefCounting && Bullet.enableLogging)
-			Gdx.app.error("Bullet", "Disposing "+toString()+" while it still has "+refCount+" references.");
+			Box.app.error("Bullet", "Disposing "+toString()+" while it still has "+refCount+" references.");
 		disposed = true;
 		delete();
 	}
@@ -117,23 +117,23 @@ public class BulletBase implements Disposable {
 	protected void destroy() {
 		try {
 			if (destroyed && Bullet.enableLogging)
-				Gdx.app.error("Bullet", "Already destroyed "+toString());
+				Box.app.error("Bullet", "Already destroyed "+toString());
 			destroyed = true;
 			
 			if (swigCMemOwn && !disposed) {
 				if (Bullet.enableLogging)
-					Gdx.app.error("Bullet", "Disposing "+toString()+" due to garbage collection.");
+					Box.app.error("Bullet", "Disposing "+toString()+" due to garbage collection.");
 				dispose();
 			}
 		} catch(Throwable e) {
-			Gdx.app.error("Bullet", "Exception while destroying "+toString(), e);
+			Box.app.error("Bullet", "Exception while destroying "+toString(), e);
 		}
 	}
 	
 	@Override
 	protected void finalize() throws Throwable {
 		if (!destroyed && Bullet.enableLogging)
-			Gdx.app.error("Bullet", "The "+className+" class does not override the finalize method.");
+			Box.app.error("Bullet", "The "+className+" class does not override the finalize method.");
 		super.finalize();
 	}
 }

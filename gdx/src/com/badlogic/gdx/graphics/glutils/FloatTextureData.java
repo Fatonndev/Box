@@ -18,9 +18,8 @@ package com.badlogic.gdx.graphics.glutils;
 
 import java.nio.FloatBuffer;
 
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application.ApplicationType;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -68,7 +67,7 @@ public class FloatTextureData implements TextureData {
 		if (isPrepared) throw new GdxRuntimeException("Already prepared");
 		if (!isGpuOnly) {
 			int amountOfFloats = 4;
-			if (Gdx.graphics.getGLVersion().getType().equals(GLVersion.Type.OpenGL)) {
+			if (Box.graphics.getGLVersion().getType().equals(GLVersion.Type.OpenGL)) {
 				if (internalFormat == GL30.GL_RGBA16F || internalFormat ==  GL30.GL_RGBA32F) amountOfFloats = 4;
 				if (internalFormat == GL30.GL_RGB16F || internalFormat ==  GL30.GL_RGB32F) amountOfFloats = 3;
 				if (internalFormat == GL30.GL_RG16F || internalFormat ==  GL30.GL_RG32F) amountOfFloats = 2;
@@ -81,24 +80,24 @@ public class FloatTextureData implements TextureData {
 
 	@Override
 	public void consumeCustomData (int target) {
-		if (Gdx.app.getType() == ApplicationType.Android || Gdx.app.getType() == ApplicationType.iOS
-			|| Gdx.app.getType() == ApplicationType.WebGL) {
+		if (Box.app.getType() == ApplicationType.Android || Box.app.getType() == ApplicationType.iOS
+			|| Box.app.getType() == ApplicationType.WebGL) {
 
-			if (!Gdx.graphics.supportsExtension("OES_texture_float"))
+			if (!Box.graphics.supportsExtension("OES_texture_float"))
 				throw new GdxRuntimeException("Extension OES_texture_float not supported!");
 
 			// GLES and WebGL defines texture format by 3rd and 8th argument,
 			// so to get a float texture one needs to supply GL_RGBA and GL_FLOAT there.
-			Gdx.gl.glTexImage2D(target, 0, GL20.GL_RGBA, width, height, 0, GL20.GL_RGBA, GL20.GL_FLOAT, buffer);
+			Box.gl.glTexImage2D(target, 0, GL20.GL_RGBA, width, height, 0, GL20.GL_RGBA, GL20.GL_FLOAT, buffer);
 
 		} else {
-			if (!Gdx.graphics.isGL30Available()) {
-				if (!Gdx.graphics.supportsExtension("GL_ARB_texture_float"))
+			if (!Box.graphics.isGL30Available()) {
+				if (!Box.graphics.supportsExtension("GL_ARB_texture_float"))
 					throw new GdxRuntimeException("Extension GL_ARB_texture_float not supported!");
 			}
 			// in desktop OpenGL the texture format is defined only by the third argument,
 			// hence we need to use GL_RGBA32F there (this constant is unavailable in GLES/WebGL)
-			Gdx.gl.glTexImage2D(target, 0, internalFormat, width, height, 0, format, GL20.GL_FLOAT, buffer);
+			Box.gl.glTexImage2D(target, 0, internalFormat, width, height, 0, format, GL20.GL_FLOAT, buffer);
 		}
 	}
 

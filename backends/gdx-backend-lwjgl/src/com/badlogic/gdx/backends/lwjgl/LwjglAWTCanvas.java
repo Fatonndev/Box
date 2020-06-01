@@ -32,22 +32,18 @@ import java.util.Map;
 
 import javax.swing.SwingUtilities;
 
-import com.badlogic.gdx.ApplicationLogger;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.AWTGLCanvas;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.PixelFormat;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.LifecycleListener;
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Audio;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.lwjgl.audio.OpenALLwjglAudio;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Clipboard;
@@ -165,9 +161,9 @@ public class LwjglAWTCanvas implements Application {
 			}
 		};
 
-		if (!LwjglApplicationConfiguration.disableAudio && Gdx.audio == null) audio = new OpenALLwjglAudio();
-		if (Gdx.files == null) files = new LwjglFiles();
-		if (Gdx.net == null) net = new LwjglNet(config);
+		if (!LwjglApplicationConfiguration.disableAudio && Box.audio == null) audio = new OpenALLwjglAudio();
+		if (Box.files == null) files = new LwjglFiles();
+		if (Box.net == null) net = new LwjglNet(config);
 		input = new LwjglAWTInput(this);
 		setGlobals();
 	}
@@ -189,7 +185,7 @@ public class LwjglAWTCanvas implements Application {
 
 	@Override
 	public Audio getAudio () {
-		return Gdx.audio;
+		return Box.audio;
 	}
 
 	@Override
@@ -223,12 +219,12 @@ public class LwjglAWTCanvas implements Application {
 	}
 
 	void setGlobals () {
-		Gdx.app = this;
-		if (audio != null) Gdx.audio = audio;
-		if (files != null) Gdx.files = files;
-		if (net != null) Gdx.net = net;
-		Gdx.graphics = graphics;
-		Gdx.input = input;
+		Box.app = this;
+		if (audio != null) Box.audio = audio;
+		if (files != null) Box.files = files;
+		if (net != null) Box.net = net;
+		Box.graphics = graphics;
+		Box.input = input;
 	}
 
 	void create () {
@@ -258,7 +254,7 @@ public class LwjglAWTCanvas implements Application {
 		if (lastWidth != width || lastHeight != height) {
 			lastWidth = width;
 			lastHeight = height;
-			Gdx.gl.glViewport(0, 0, lastWidth, lastHeight);
+			Box.gl.glViewport(0, 0, lastWidth, lastHeight);
 			resize(width, height);
 			listener.resize(width, height);
 			shouldRender = true;
@@ -344,18 +340,18 @@ public class LwjglAWTCanvas implements Application {
 		listener.pause();
 		listener.dispose();
 
-		Gdx.app = null;
+		Box.app = null;
 
-		Gdx.graphics = null;
+		Box.graphics = null;
 
 		if (audio != null) {
 			audio.dispose();
-			Gdx.audio = null;
+			Box.audio = null;
 		}
 
-		if (files != null) Gdx.files = null;
+		if (files != null) Box.files = null;
 
-		if (net != null) Gdx.net = null;
+		if (net != null) Box.net = null;
 
 		instanceCount--;
 

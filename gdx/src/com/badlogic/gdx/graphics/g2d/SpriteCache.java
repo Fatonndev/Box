@@ -21,8 +21,8 @@ import static com.badlogic.gdx.graphics.g2d.Sprite.VERTEX_SIZE;
 
 import java.nio.FloatBuffer;
 
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.ApplicationListener;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Mesh;
@@ -36,7 +36,6 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.NumberUtils;
 
 /** Draws 2D images, optimized for geometry that does not change. Sprites and/or textures are cached and given an ID, which can
  * later be used for drawing. The size, color, and texture region for each cached image cannot be modified. This information is
@@ -135,7 +134,7 @@ public class SpriteCache implements Disposable {
 			mesh.setIndices(indices);
 		}
 
-		projectionMatrix.setToOrtho2D(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		projectionMatrix.setToOrtho2D(0, 0, Box.graphics.getWidth(), Box.graphics.getHeight());
 	}
 
 	/** Sets the color used to tint images when they are added to the SpriteCache. Default is {@link Color#WHITE}. */
@@ -852,7 +851,7 @@ public class SpriteCache implements Disposable {
 		renderCalls = 0;
 		combinedMatrix.set(projectionMatrix).mul(transformMatrix);
 
-		Gdx.gl20.glDepthMask(false);
+		Box.gl20.glDepthMask(false);
 
 		if (customShader != null) {
 			customShader.bind();
@@ -875,7 +874,7 @@ public class SpriteCache implements Disposable {
 		if (!drawing) throw new IllegalStateException("begin must be called before end.");
 		drawing = false;
 
-		GL20 gl = Gdx.gl20;
+		GL20 gl = Box.gl20;
 		gl.glDepthMask(true);
 		if (customShader != null)
 			mesh.unbind(customShader);

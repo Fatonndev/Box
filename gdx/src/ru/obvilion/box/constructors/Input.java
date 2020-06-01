@@ -14,8 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box.constructors;
 
+import ru.obvilion.box.ApplicationListener;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.utils.ObjectIntMap;
 
 /** <p>

@@ -23,8 +23,8 @@ import android.view.View;
 import android.view.View.OnGenericMotionListener;
 import android.view.View.OnKeyListener;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.LifecycleListener;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.LifecycleListener;
 import com.badlogic.gdx.backends.android.AndroidInput;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
@@ -48,19 +48,19 @@ public class AndroidControllers implements LifecycleListener, ControllerManager,
 	};
 	
 	public AndroidControllers() {
-		Gdx.app.addLifecycleListener(this);
+		Box.app.addLifecycleListener(this);
 		gatherControllers(false);
 		setupEventQueue();
-		((AndroidInput)Gdx.input).addKeyListener(this);
-		((AndroidInput)Gdx.input).addGenericMotionListener(this);
+		((AndroidInput) Box.input).addKeyListener(this);
+		((AndroidInput) Box.input).addGenericMotionListener(this);
 		
 		// use InputManager on Android +4.1 to receive (dis-)connect events
-		if(Gdx.app.getVersion() >= 16) {
+		if(Box.app.getVersion() >= 16) {
 			try {
 				String className = "com.badlogic.gdx.controllers.android.ControllerLifeCycleListener";
 				Class.forName(className).getConstructor(AndroidControllers.class).newInstance(this);
 			} catch(Exception e) {
-				Gdx.app.log(TAG, "Couldn't register controller life-cycle listener");
+				Box.app.log(TAG, "Couldn't register controller life-cycle listener");
 			}
 		}
 	}
@@ -129,7 +129,7 @@ public class AndroidControllers implements LifecycleListener, ControllerManager,
 					eventPool.freeAll(eventQueue);
 					eventQueue.clear();
 				}
-				Gdx.app.postRunnable(this);
+				Box.app.postRunnable(this);
 			}
 		}.run();
 	}
@@ -245,7 +245,7 @@ public class AndroidControllers implements LifecycleListener, ControllerManager,
 				}
 				eventQueue.add(event);
 			}
-			if (keyCode == KeyEvent.KEYCODE_BACK && !Gdx.input.isCatchBackKey()) {
+			if (keyCode == KeyEvent.KEYCODE_BACK && !Box.input.isCatchBackKey()) {
 				return false;
 			}
 			return true;
@@ -291,11 +291,11 @@ public class AndroidControllers implements LifecycleListener, ControllerManager,
 			} else {
 				controllers.add(controller);
 			}
-			Gdx.app.log(TAG, "added controller '" + name + "'");
+			Box.app.log(TAG, "added controller '" + name + "'");
 		} catch (RuntimeException e) {
 			// this exception is sometimes thrown by getDevice().
 			// we can't use this device anyway, so ignore it and move on
-			Gdx.app.error(TAG, "Could not get information about " + deviceId +
+			Box.app.error(TAG, "Could not get information about " + deviceId +
 							", ignoring the device.", e);
 		}
 	}
@@ -309,7 +309,7 @@ public class AndroidControllers implements LifecycleListener, ControllerManager,
 				event.controller = controller;
 				eventQueue.add(event);
 			}
-			Gdx.app.log(TAG, "removed controller '" + controller.getName() + "'");
+			Box.app.log(TAG, "removed controller '" + controller.getName() + "'");
 		}
 	}
 	
@@ -340,13 +340,13 @@ public class AndroidControllers implements LifecycleListener, ControllerManager,
 
 	@Override
 	public void pause () {
-		Gdx.app.log(TAG, "controllers paused");
+		Box.app.log(TAG, "controllers paused");
 	}
 
 	@Override
 	public void resume () {
 		gatherControllers(true);
-		Gdx.app.log(TAG, "controllers resumed");		
+		Box.app.log(TAG, "controllers resumed");
 	}
 
 	@Override

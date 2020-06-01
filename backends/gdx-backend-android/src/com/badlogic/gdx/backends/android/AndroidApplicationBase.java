@@ -23,11 +23,8 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.LifecycleListener;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.LifecycleListener;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.SnapshotArray;
 

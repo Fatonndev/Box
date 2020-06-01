@@ -19,8 +19,8 @@ package com.badlogic.gdx.graphics;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.AssetLoaderParameters.LoadedCallback;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.AssetLoader;
@@ -107,7 +107,7 @@ public class Texture extends GLTexture {
 	TextureData data;
 
 	public Texture (String internalPath) {
-		this(Gdx.files.internal(internalPath));
+		this(Box.files.internal(internalPath));
 	}
 
 	public Texture (FileHandle file) {
@@ -139,13 +139,13 @@ public class Texture extends GLTexture {
 	}
 
 	public Texture (TextureData data) {
-		this(GL20.GL_TEXTURE_2D, Gdx.gl.glGenTexture(), data);
+		this(GL20.GL_TEXTURE_2D, Box.gl.glGenTexture(), data);
 	}
 
 	protected Texture (int glTarget, int glHandle, TextureData data) {
 		super(glTarget, glHandle);
 		load(data);
-		if (data.isManaged()) addManagedTexture(Gdx.app, this);
+		if (data.isManaged()) addManagedTexture(Box.app, this);
 	}
 
 	public void load (TextureData data) {
@@ -161,7 +161,7 @@ public class Texture extends GLTexture {
 		unsafeSetFilter(minFilter, magFilter, true);
 		unsafeSetWrap(uWrap, vWrap, true);
 		unsafeSetAnisotropicFilter(anisotropicFilterLevel, true);
-		Gdx.gl.glBindTexture(glTarget, 0);
+		Box.gl.glBindTexture(glTarget, 0);
 	}
 
 	/** Used internally to reload after context loss. Creates a new GL handle then calls {@link #load(TextureData)}. Use this only
@@ -169,7 +169,7 @@ public class Texture extends GLTexture {
 	@Override
 	protected void reload () {
 		if (!isManaged()) throw new GdxRuntimeException("Tried to reload unmanaged Texture");
-		glHandle = Gdx.gl.glGenTexture();
+		glHandle = Box.gl.glGenTexture();
 		load(data);
 	}
 
@@ -183,7 +183,7 @@ public class Texture extends GLTexture {
 		if (data.isManaged()) throw new GdxRuntimeException("can't draw to a managed texture");
 
 		bind();
-		Gdx.gl.glTexSubImage2D(glTarget, 0, x, y, pixmap.getWidth(), pixmap.getHeight(), pixmap.getGLFormat(), pixmap.getGLType(),
+		Box.gl.glTexSubImage2D(glTarget, 0, x, y, pixmap.getWidth(), pixmap.getHeight(), pixmap.getGLFormat(), pixmap.getGLType(),
 			pixmap.getPixels());
 	}
 
@@ -219,7 +219,7 @@ public class Texture extends GLTexture {
 		// removal from the asset manager.
 		if (glHandle == 0) return;
 		delete();
-		if (data.isManaged()) if (managedTextures.get(Gdx.app) != null) managedTextures.get(Gdx.app).removeValue(this, true);
+		if (data.isManaged()) if (managedTextures.get(Box.app) != null) managedTextures.get(Box.app).removeValue(this, true);
 	}
 
 	public String toString () {
@@ -290,7 +290,7 @@ public class Texture extends GLTexture {
 
 					// unload the texture, create a new gl handle then reload it.
 					assetManager.unload(fileName);
-					texture.glHandle = Gdx.gl.glGenTexture();
+					texture.glHandle = Box.gl.glGenTexture();
 					assetManager.load(fileName, Texture.class, params);
 				}
 			}
@@ -320,6 +320,6 @@ public class Texture extends GLTexture {
 
 	/** @return the number of managed textures currently loaded */
 	public static int getNumManagedTextures () {
-		return managedTextures.get(Gdx.app).size;
+		return managedTextures.get(Box.app).size;
 	}
 }

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.glutils;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Format;
@@ -66,7 +66,7 @@ public class FileTextureData implements TextureData {
 	}
 
 	private Pixmap ensurePot (Pixmap pixmap) {
-		if (Gdx.gl20 == null && copyToPOT) {
+		if (Box.gl20 == null && copyToPOT) {
 			int pixmapWidth = pixmap.getWidth();
 			int pixmapHeight = pixmap.getHeight();
 			int potWidth = MathUtils.nextPowerOfTwo(pixmapWidth);

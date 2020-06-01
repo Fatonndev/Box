@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
+import ru.obvilion.box.Box;
 import org.robovm.apple.foundation.NSObject;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.backends.iosrobovm.objectal.AVAudioPlayerDelegateAdapter;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALAudioTrack;
@@ -35,7 +35,7 @@ public class IOSMusic implements Music {
 			public void didFinishPlaying (NSObject player, boolean success) {
 				final OnCompletionListener listener = onCompletionListener;
 				if (listener != null) {
-					Gdx.app.postRunnable(new Runnable() {
+					Box.app.postRunnable(new Runnable() {
 						@Override
 						public void run () {
 							listener.onCompletion(IOSMusic.this);

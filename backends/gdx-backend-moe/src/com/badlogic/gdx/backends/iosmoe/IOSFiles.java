@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosmoe;
 
-import com.badlogic.gdx.Files;
+import ru.obvilion.box.constructors.Files;
 import com.badlogic.gdx.files.FileHandle;
 import apple.foundation.NSBundle;
 

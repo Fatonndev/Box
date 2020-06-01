@@ -16,9 +16,8 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.backends.gwt.widgets.TextInputDialogBox;
 import com.badlogic.gdx.backends.gwt.widgets.TextInputDialogBox.TextInputDialogListener;
 import com.badlogic.gdx.utils.IntMap;
@@ -581,7 +580,7 @@ public class DefaultGwtInput implements GwtInput {
 			if (!e.getEventTarget().equals(canvas) || pressedButtons.contains(getButton(e.getButton()))) {
 				float mouseX = getRelativeX(e, canvas);
 				float mouseY = getRelativeY(e, canvas);
-				if (mouseX < 0 || mouseX > Gdx.graphics.getWidth() || mouseY < 0 || mouseY > Gdx.graphics.getHeight()) {
+				if (mouseX < 0 || mouseX > Box.graphics.getWidth() || mouseY < 0 || mouseY > Box.graphics.getHeight()) {
 					hasFocus = false;
 				}
 				return;

@@ -1,7 +1,7 @@
 /**
  * Platform independent wrappers for file handles and file streaming.
  * 
- * Use {@link com.badlogic.gdx.Gdx#files} to get a reference to the {@link com.badlogic.gdx.Files} implementation
+ * Use {@link ru.obvilion.box.Box#files} to get a reference to the {@link ru.obvilion.box.constructors.Files} implementation
  * to create and look up files.
  *  
  */

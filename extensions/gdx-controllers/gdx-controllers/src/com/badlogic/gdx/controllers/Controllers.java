@@ -16,11 +16,11 @@
 
 package com.badlogic.gdx.controllers;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics.GraphicsType;
-import com.badlogic.gdx.LifecycleListener;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Application.ApplicationType;
+import ru.obvilion.box.constructors.Graphics.GraphicsType;
+import ru.obvilion.box.LifecycleListener;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.ObjectMap;
@@ -77,14 +77,14 @@ public class Controllers {
 	}
 
 	static private ControllerManager getManager () {
-		return managers.get(Gdx.app);
+		return managers.get(Box.app);
 	}
 
 	static private void initialize () {
-		if (managers.containsKey(Gdx.app)) return;
+		if (managers.containsKey(Box.app)) return;
 
 		String className = null;
-		ApplicationType type = Gdx.app.getType();
+		ApplicationType type = Box.app.getType();
 		ControllerManager manager = null;
 
 		if (preferredManager != null) {
@@ -92,7 +92,7 @@ public class Controllers {
 		} else if (type == ApplicationType.Android) {
 			className = "com.badlogic.gdx.controllers.android.AndroidControllers";
 		} else if (type == ApplicationType.Desktop) {
-			if(Gdx.graphics.getType() == GraphicsType.LWJGL3) {
+			if(Box.graphics.getType() == GraphicsType.LWJGL3) {
 				className = "com.badlogic.gdx.controllers.lwjgl3.Lwjgl3ControllerManager";
 			} else {
 				className = "com.badlogic.gdx.controllers.desktop.DesktopControllerManager";
@@ -100,7 +100,7 @@ public class Controllers {
 		} else if (type == ApplicationType.WebGL) {
 			className = "com.badlogic.gdx.controllers.gwt.GwtControllers";
 		} else {
-			Gdx.app.log(TAG, "No controller manager is available for: " + Gdx.app.getType());
+			Box.app.log(TAG, "No controller manager is available for: " + Box.app.getType());
 			manager = new ControllerManagerStub();
 		}
 
@@ -113,9 +113,9 @@ public class Controllers {
 			}
 		}
 
-		managers.put(Gdx.app, manager);
-		final Application app = Gdx.app;
-		Gdx.app.addLifecycleListener(new LifecycleListener() {
+		managers.put(Box.app, manager);
+		final Application app = Box.app;
+		Box.app.addLifecycleListener(new LifecycleListener() {
 			@Override
 			public void resume () {
 			}
@@ -127,10 +127,10 @@ public class Controllers {
 			@Override
 			public void dispose () {
 				managers.remove(app);
-				Gdx.app.log(TAG, "removed manager for application, " + managers.size + " managers active");
+				Box.app.log(TAG, "removed manager for application, " + managers.size + " managers active");
 
 			}
 		});
-		Gdx.app.log(TAG, "added manager for application, " + managers.size + " managers active");
+		Box.app.log(TAG, "added manager for application, " + managers.size + " managers active");
 	}
 }

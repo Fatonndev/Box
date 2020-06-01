@@ -20,10 +20,9 @@ import android.content.Context;
 import android.hardware.input.InputManager;
 import android.hardware.input.InputManager.InputDeviceListener;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.LifecycleListener;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.LifecycleListener;
 import com.badlogic.gdx.backends.android.AndroidApplication;
-import com.badlogic.gdx.backends.android.AndroidInput;
 
 /**
  * Used on +4.1 to get events on device connects/disconnects.
@@ -37,33 +36,33 @@ public class ControllerLifeCycleListener implements LifecycleListener, InputDevi
 	
 	public ControllerLifeCycleListener(AndroidControllers controllers) {
 		this.controllers = controllers;
-		this.inputManager = (InputManager)((Context)Gdx.app).getSystemService(Context.INPUT_SERVICE);
-		Gdx.app.addLifecycleListener(this);
-		inputManager.registerInputDeviceListener(this, ((AndroidApplication)Gdx.app).handler);
+		this.inputManager = (InputManager)((Context) Box.app).getSystemService(Context.INPUT_SERVICE);
+		Box.app.addLifecycleListener(this);
+		inputManager.registerInputDeviceListener(this, ((AndroidApplication) Box.app).handler);
 	}
 
 	@Override
 	public void resume () {
-		inputManager.registerInputDeviceListener(this, ((AndroidApplication)Gdx.app).handler);
-		Gdx.app.log(TAG, "controller life cycle listener resumed");
+		inputManager.registerInputDeviceListener(this, ((AndroidApplication) Box.app).handler);
+		Box.app.log(TAG, "controller life cycle listener resumed");
 	}
 	
 	@Override
 	public void pause () {
 		inputManager.unregisterInputDeviceListener(this);
-		Gdx.app.log(TAG, "controller life cycle listener paused");
+		Box.app.log(TAG, "controller life cycle listener paused");
 	}
 	
 	@Override
 	public void onInputDeviceAdded (int deviceId) {
 		controllers.addController(deviceId, true);
-		Gdx.app.log(TAG, "device " + deviceId + " added");
+		Box.app.log(TAG, "device " + deviceId + " added");
 	}
 
 	@Override
 	public void onInputDeviceRemoved (int deviceId) {
 		controllers.removeController(deviceId);
-		Gdx.app.log(TAG, "device " + deviceId + " removed");
+		Box.app.log(TAG, "device " + deviceId + " removed");
 	}
 	
 	@Override

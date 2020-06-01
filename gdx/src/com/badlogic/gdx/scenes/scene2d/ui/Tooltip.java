@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -116,7 +116,7 @@ public class Tooltip<T extends Actor> extends InputListener {
 
 	public void enter (InputEvent event, float x, float y, int pointer, @Null Actor fromActor) {
 		if (pointer != -1) return;
-		if (Gdx.input.isTouched()) return;
+		if (Box.input.isTouched()) return;
 		Actor actor = event.getListenerActor();
 		if (fromActor != null && fromActor.isDescendantOf(actor)) return;
 		setContainerPosition(actor, x, y);

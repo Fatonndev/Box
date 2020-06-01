@@ -18,7 +18,6 @@ package com.badlogic.gdx.tools.hiero;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -26,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect;
@@ -56,7 +55,7 @@ public class HieroSettings {
 	/** @param hieroFileRef The file system or classpath location of the Hiero settings file. */
 	public HieroSettings (String hieroFileRef) {
 		try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(Gdx.files.absolute(hieroFileRef).read(), "UTF-8"));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(Box.files.absolute(hieroFileRef).read(), "UTF-8"));
 			while (true) {
 				String line = reader.readLine();
 				if (line == null) break;

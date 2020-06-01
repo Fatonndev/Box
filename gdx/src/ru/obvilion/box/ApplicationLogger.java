@@ -14,7 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
+
+import ru.obvilion.box.constructors.Application;
 
 /**
  * The ApplicationLogger provides an interface for a LibGDX Application to log messages and exceptions.

@@ -22,10 +22,9 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.WindowManager;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.ApplicationListener;
 import com.badlogic.gdx.utils.GdxNativesLoader;
 
 /** An implementation of the {@link Application} interface dedicated for android live wallpapers.
@@ -289,8 +288,8 @@ public abstract class AndroidLiveWallpaperService extends WallpaperService {
 
 			notifyPreviewState();
 			notifyOffsetsChanged();
-			if (!Gdx.graphics.isContinuousRendering()) {
-				Gdx.graphics.requestRendering();
+			if (!Box.graphics.isContinuousRendering()) {
+				Box.graphics.requestRendering();
 			}
 		}
 
@@ -403,8 +402,8 @@ public abstract class AndroidLiveWallpaperService extends WallpaperService {
 
 				notifyPreviewState();
 				notifyOffsetsChanged();
-				if (!Gdx.graphics.isContinuousRendering()) {
-					Gdx.graphics.requestRendering();
+				if (!Box.graphics.isContinuousRendering()) {
+					Box.graphics.requestRendering();
 				}
 			}
 		}
@@ -550,8 +549,8 @@ public abstract class AndroidLiveWallpaperService extends WallpaperService {
 
 			// can fail if linkedApp == null, so we repeat it in Engine.onResume
 			notifyOffsetsChanged();
-			if (!Gdx.graphics.isContinuousRendering()) {
-				Gdx.graphics.requestRendering();
+			if (!Box.graphics.isContinuousRendering()) {
+				Box.graphics.requestRendering();
 			}
 
 			super.onOffsetsChanged(xOffset, yOffset, xOffsetStep, yOffsetStep, xPixelOffset, yPixelOffset);

@@ -73,7 +73,6 @@ import javax.swing.JTextPane;
 import javax.swing.JWindow;
 import javax.swing.KeyStroke;
 import javax.swing.ScrollPaneConstants;
-import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
@@ -84,10 +83,10 @@ import javax.swing.event.DocumentListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+import ru.obvilion.box.Box;
 import org.lwjgl.opengl.GL11;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.ApplicationAdapter;
 import com.badlogic.gdx.backends.lwjgl.LwjglCanvas;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -1419,8 +1418,8 @@ public class Hiero extends JFrame {
 		}
 
 		public void render () {
-			int viewWidth = Gdx.graphics.getWidth();
-			int viewHeight = Gdx.graphics.getHeight();
+			int viewWidth = Box.graphics.getWidth();
+			int viewHeight = Box.graphics.getHeight();
 
 			if (sampleTextRadio.isSelected()) {
 				GL11.glClearColor(renderingBackgroundColor.r, renderingBackgroundColor.g, renderingBackgroundColor.b,

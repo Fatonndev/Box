@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.decals;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 /** Material used by the {@link Decal} class */
@@ -30,7 +30,7 @@ public class DecalMaterial {
 	public void set () {
 		textureRegion.getTexture().bind(0);
 		if (!isOpaque()) {
-			Gdx.gl.glBlendFunc(srcBlendFactor, dstBlendFactor);
+			Box.gl.glBlendFunc(srcBlendFactor, dstBlendFactor);
 		}
 	}
 

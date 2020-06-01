@@ -1,6 +1,6 @@
 package %PACKAGE%.client;
 
-import com.badlogic.gdx.ApplicationListener;
+import ru.obvilion.box.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
 import %PACKAGE%.%MAIN_CLASS%;

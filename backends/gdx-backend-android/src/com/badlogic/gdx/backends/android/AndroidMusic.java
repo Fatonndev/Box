@@ -20,7 +20,7 @@ import java.io.IOException;
 
 import android.media.MediaPlayer;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.audio.Music;
 
 public class AndroidMusic implements Music, MediaPlayer.OnCompletionListener {
@@ -44,7 +44,7 @@ public class AndroidMusic implements Music, MediaPlayer.OnCompletionListener {
 		try {
 			player.release();
 		} catch (Throwable t) {
-			Gdx.app.log("AndroidMusic", "error while disposing AndroidMusic instance, non-fatal");
+			Box.app.log("AndroidMusic", "error while disposing AndroidMusic instance, non-fatal");
 		} finally {
 			player = null;
 			onCompletionListener = null;
@@ -192,7 +192,7 @@ public class AndroidMusic implements Music, MediaPlayer.OnCompletionListener {
 	@Override
 	public void onCompletion (MediaPlayer mp) {
 		if (onCompletionListener != null) {
-			Gdx.app.postRunnable(new Runnable() {
+			Box.app.postRunnable(new Runnable() {
 				@Override
 				public void run () {
 					onCompletionListener.onCompletion(AndroidMusic.this);

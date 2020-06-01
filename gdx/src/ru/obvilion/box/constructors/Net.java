@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box.constructors;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -22,7 +22,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.badlogic.gdx.Application.ApplicationType;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application.ApplicationType;
 import com.badlogic.gdx.net.HttpRequestHeader;
 import com.badlogic.gdx.net.HttpResponseHeader;
 import com.badlogic.gdx.net.HttpStatus;
@@ -208,7 +209,7 @@ public interface Net {
 		 * @param followRedirects whether to follow redirects.
 		 * @exception IllegalArgumentException if redirection is disabled on the GWT backend. */
 		public void setFollowRedirects (boolean followRedirects) throws IllegalArgumentException {
-			if (followRedirects || Gdx.app.getType() != ApplicationType.WebGL) {
+			if (followRedirects || Box.app.getType() != ApplicationType.WebGL) {
 				this.followRedirects = followRedirects;
 			} else {
 				throw new IllegalArgumentException("Following redirects can't be disabled using the GWT/WebGL backend!");

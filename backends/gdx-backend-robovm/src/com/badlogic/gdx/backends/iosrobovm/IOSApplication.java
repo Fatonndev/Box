@@ -18,7 +18,6 @@ package com.badlogic.gdx.backends.iosrobovm;
 
 import java.io.File;
 
-import com.badlogic.gdx.ApplicationLogger;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALIOSAudio;
 import org.robovm.apple.coregraphics.CGRect;
 import org.robovm.apple.foundation.NSMutableDictionary;
@@ -37,17 +36,13 @@ import org.robovm.apple.uikit.UIViewController;
 import org.robovm.apple.uikit.UIWindow;
 import org.robovm.rt.bro.Bro;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.ApplicationLogger;
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.LifecycleListener;
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Audio;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALAudioSession;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALSimpleAudio;
 import com.badlogic.gdx.utils.Array;
@@ -117,20 +112,20 @@ public class IOSApplication implements Application {
 
 	final boolean didFinishLaunching (UIApplication uiApp, UIApplicationLaunchOptions options) {
 		setApplicationLogger(new IOSApplicationLogger());
-		Gdx.app = this;
+		Box.app = this;
 		this.uiApp = uiApp;
 
 		// enable or disable screen dimming
 		UIApplication.getSharedApplication().setIdleTimerDisabled(config.preventScreenDimming);
 
-		Gdx.app.debug("IOSApplication", "iOS version: " + UIDevice.getCurrentDevice().getSystemVersion());
+		Box.app.debug("IOSApplication", "iOS version: " + UIDevice.getCurrentDevice().getSystemVersion());
 		// fix the scale factor if we have a retina device (NOTE: iOS screen sizes are in "points" not pixels by default!)
 
-		Gdx.app.debug("IOSApplication", "Running in " + (Bro.IS_64BIT ? "64-bit" : "32-bit") + " mode");
+		Box.app.debug("IOSApplication", "Running in " + (Bro.IS_64BIT ? "64-bit" : "32-bit") + " mode");
 
 		float scale = (float) UIScreen.getMainScreen().getNativeScale();
 		if (scale >= 2.0f) {
-			Gdx.app.debug("IOSApplication", "scale: " + scale);
+			Box.app.debug("IOSApplication", "scale: " + scale);
 			if (UIDevice.getCurrentDevice().getUserInterfaceIdiom() == UIUserInterfaceIdiom.Pad) {
 				// it's an iPad!
 				displayScaleFactor = config.displayScaleLargeScreenIfRetina * scale;
@@ -152,24 +147,24 @@ public class IOSApplication implements Application {
 		// setup libgdx
 		this.input = createInput();
 		this.graphics = createGraphics(scale);
-		Gdx.gl = Gdx.gl20 = graphics.gl20;
-		Gdx.gl30 = graphics.gl30;
+		Box.gl = Box.gl20 = graphics.gl20;
+		Box.gl30 = graphics.gl30;
 		this.files = new IOSFiles();
 		this.audio = createAudio(config);
 		this.net = new IOSNet(this, config);
 
-		Gdx.files = this.files;
-		Gdx.graphics = this.graphics;
-		Gdx.audio = this.audio;
-		Gdx.input = this.input;
-		Gdx.net = this.net;
+		Box.files = this.files;
+		Box.graphics = this.graphics;
+		Box.audio = this.audio;
+		Box.input = this.input;
+		Box.net = this.net;
 
 		this.input.setupPeripherals();
 
 		this.uiWindow = new UIWindow(UIScreen.getMainScreen().getBounds());
 		this.uiWindow.setRootViewController(this.graphics.viewController);
 		this.uiWindow.makeKeyAndVisible();
-		Gdx.app.debug("IOSApplication", "created");
+		Box.app.debug("IOSApplication", "created");
 		return true;
 	}
 
@@ -253,7 +248,7 @@ public class IOSApplication implements Application {
 	}
 
 	final void didBecomeActive (UIApplication uiApp) {
-		Gdx.app.debug("IOSApplication", "resumed");
+		Box.app.debug("IOSApplication", "resumed");
 		// workaround for ObjectAL crash problem
 		// see: https://groups.google.com/forum/?fromgroups=#!topic/objectal-for-iphone/ubRWltp_i1Q
 		OALAudioSession audioSession = OALAudioSession.sharedInstance();
@@ -280,14 +275,14 @@ public class IOSApplication implements Application {
 	}
 
 	final void willResignActive (UIApplication uiApp) {
-		Gdx.app.debug("IOSApplication", "paused");
+		Box.app.debug("IOSApplication", "paused");
 		graphics.makeCurrent();
 		graphics.pause();
-		Gdx.gl.glFinish();
+		Box.gl.glFinish();
 	}
 
 	final void willTerminate (UIApplication uiApp) {
-		Gdx.app.debug("IOSApplication", "disposed");
+		Box.app.debug("IOSApplication", "disposed");
 		graphics.makeCurrent();
 		Array<LifecycleListener> listeners = lifecycleListeners;
 		synchronized (listeners) {
@@ -296,7 +291,7 @@ public class IOSApplication implements Application {
 			}
 		}
 		listener.dispose();
-		Gdx.gl.glFinish();
+		Box.gl.glFinish();
 	}
 
 	@Override
@@ -420,7 +415,7 @@ public class IOSApplication implements Application {
 	public void postRunnable (Runnable runnable) {
 		synchronized (runnables) {
 			runnables.add(runnable);
-			Gdx.graphics.requestRendering();
+			Box.graphics.requestRendering();
 		}
 	}
 

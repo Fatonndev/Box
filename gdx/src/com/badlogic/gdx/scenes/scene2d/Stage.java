@@ -16,12 +16,13 @@
 
 package com.badlogic.gdx.scenes.scene2d;
 
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputAdapter;
-import com.badlogic.gdx.InputMultiplexer;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.InputProcessor;
+import ru.obvilion.box.constructors.Application.ApplicationType;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.InputAdapter;
+import ru.obvilion.box.InputMultiplexer;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -54,7 +55,7 @@ import com.badlogic.gdx.utils.viewport.Viewport;
  * stage coordinates and screen coordinates.
  * <p>
  * A stage must receive input events so it can distribute them to actors. This is typically done by passing the stage to
- * {@link Input#setInputProcessor(com.badlogic.gdx.InputProcessor) Gdx.input.setInputProcessor}. An {@link InputMultiplexer} may
+ * {@link Input#setInputProcessor(InputProcessor) Gdx.input.setInputProcessor}. An {@link InputMultiplexer} may
  * be used to handle input events before or after the stage does. If an actor handles an event by returning true from the input
  * method, then the stage's input method will also return true, causing subsequent InputProcessors to not receive the event.
  * <p>
@@ -90,7 +91,7 @@ public class Stage extends InputAdapter implements Disposable {
 	/** Creates a stage with a {@link ScalingViewport} set to {@link Scaling#stretch}. The stage will use its own {@link Batch}
 	 * which will be disposed when the stage is disposed. */
 	public Stage () {
-		this(new ScalingViewport(Scaling.stretch, Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), new OrthographicCamera()),
+		this(new ScalingViewport(Scaling.stretch, Box.graphics.getWidth(), Box.graphics.getHeight(), new OrthographicCamera()),
 			new SpriteBatch());
 		ownsBatch = true;
 	}
@@ -114,7 +115,7 @@ public class Stage extends InputAdapter implements Disposable {
 		root = new Group();
 		root.setStage(this);
 
-		viewport.update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
+		viewport.update(Box.graphics.getWidth(), Box.graphics.getHeight(), true);
 	}
 
 	public void draw () {
@@ -139,7 +140,7 @@ public class Stage extends InputAdapter implements Disposable {
 		}
 
 		if (debugUnderMouse || debugParentUnderMouse || debugTableUnderMouse != Debug.none) {
-			screenToStageCoordinates(tempCoords.set(Gdx.input.getX(), Gdx.input.getY()));
+			screenToStageCoordinates(tempCoords.set(Box.input.getX(), Box.input.getY()));
 			Actor actor = hit(tempCoords.x, tempCoords.y, true);
 			if (actor == null) return;
 
@@ -163,12 +164,12 @@ public class Stage extends InputAdapter implements Disposable {
 			if (debugAll) root.debugAll();
 		}
 
-		Gdx.gl.glEnable(GL20.GL_BLEND);
+		Box.gl.glEnable(GL20.GL_BLEND);
 		debugShapes.setProjectionMatrix(viewport.getCamera().combined);
 		debugShapes.begin();
 		root.drawDebug(debugShapes);
 		debugShapes.end();
-		Gdx.gl.glDisable(GL20.GL_BLEND);
+		Box.gl.glDisable(GL20.GL_BLEND);
 	}
 
 	/** Disables debug on all actors recursively except the specified actor and any children. */
@@ -184,7 +185,7 @@ public class Stage extends InputAdapter implements Disposable {
 
 	/** Calls {@link #act(float)} with {@link Graphics#getDeltaTime()}, limited to a minimum of 30fps. */
 	public void act () {
-		act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
+		act(Math.min(Box.graphics.getDeltaTime(), 1 / 30f));
 	}
 
 	/** Calls the {@link Actor#act(float)} method on each actor in the stage. Typically called each frame. This method also fires
@@ -216,7 +217,7 @@ public class Stage extends InputAdapter implements Disposable {
 			pointerOverActors[pointer] = fireEnterAndExit(overLast, pointerScreenX[pointer], pointerScreenY[pointer], pointer);
 		}
 		// Update over actor for the mouse on the desktop.
-		ApplicationType type = Gdx.app.getType();
+		ApplicationType type = Box.app.getType();
 		if (type == ApplicationType.Desktop || type == ApplicationType.Applet || type == ApplicationType.WebGL)
 			mouseOverActor = fireEnterAndExit(mouseOverActor, mouseScreenX, mouseScreenY, -1);
 
@@ -740,7 +741,7 @@ public class Stage extends InputAdapter implements Disposable {
 	 * @param stageCoords Input stage coordinates and output for resulting screen coordinates. */
 	public Vector2 stageToScreenCoordinates (Vector2 stageCoords) {
 		viewport.project(stageCoords);
-		stageCoords.y = Gdx.graphics.getHeight() - stageCoords.y;
+		stageCoords.y = Box.graphics.getHeight() - stageCoords.y;
 		return stageCoords;
 	}
 
@@ -849,7 +850,7 @@ public class Stage extends InputAdapter implements Disposable {
 		int x1 = x0 + viewport.getScreenWidth();
 		int y0 = viewport.getScreenY();
 		int y1 = y0 + viewport.getScreenHeight();
-		screenY = Gdx.graphics.getHeight() - 1 - screenY;
+		screenY = Box.graphics.getHeight() - 1 - screenY;
 		return screenX >= x0 && screenX < x1 && screenY >= y0 && screenY < y1;
 	}
 

@@ -16,12 +16,11 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Keys;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input.Keys;
 import com.badlogic.gdx.graphics.g2d.NinePatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Interpolation;
-import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
@@ -143,7 +142,7 @@ public class Slider extends ProgressBar {
 		}
 
 		float oldValue = value;
-		if (!Gdx.input.isKeyPressed(Keys.SHIFT_LEFT) && !Gdx.input.isKeyPressed(Keys.SHIFT_RIGHT)) value = snap(value);
+		if (!Box.input.isKeyPressed(Keys.SHIFT_LEFT) && !Box.input.isKeyPressed(Keys.SHIFT_RIGHT)) value = snap(value);
 		boolean valueSet = setValue(value);
 		if (value == oldValue) position = oldPosition;
 		return valueSet;

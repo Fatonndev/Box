@@ -20,7 +20,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.FileHandleResolver;
 import com.badlogic.gdx.assets.loaders.ModelLoader;
@@ -102,7 +102,7 @@ public class ObjLoader extends ModelLoader<ObjLoader.ObjLoaderParameters> {
 
 	protected ModelData loadModelData (FileHandle file, boolean flipV) {
 		if (logWarning)
-			Gdx.app.error("ObjLoader", "Wavefront (OBJ) is not fully supported, consult the documentation for more information");
+			Box.app.error("ObjLoader", "Wavefront (OBJ) is not fully supported, consult the documentation for more information");
 		String line;
 		String[] tokens;
 		char firstChar;

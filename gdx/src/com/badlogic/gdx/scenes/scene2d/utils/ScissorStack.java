@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.HdpiUtils;
@@ -48,7 +48,7 @@ public class ScissorStack {
 
 		if (scissors.size == 0) {
 			if (scissor.width < 1 || scissor.height < 1) return false;
-			Gdx.gl.glEnable(GL20.GL_SCISSOR_TEST);
+			Box.gl.glEnable(GL20.GL_SCISSOR_TEST);
 		} else {
 			// merge scissors
 			Rectangle parent = scissors.get(scissors.size - 1);
@@ -77,7 +77,7 @@ public class ScissorStack {
 	public static Rectangle popScissors () {
 		Rectangle old = scissors.pop();
 		if (scissors.size == 0)
-			Gdx.gl.glDisable(GL20.GL_SCISSOR_TEST);
+			Box.gl.glDisable(GL20.GL_SCISSOR_TEST);
 		else {
 			Rectangle scissor = scissors.peek();
 			HdpiUtils.glScissor((int)scissor.x, (int)scissor.y, (int)scissor.width, (int)scissor.height);
@@ -111,7 +111,7 @@ public class ScissorStack {
 	 * @see #calculateScissors(Camera, float, float, float, float, Matrix4, Rectangle, Rectangle) */
 	public static void calculateScissors (Camera camera, Matrix4 batchTransform,
 		Rectangle area, Rectangle scissor) {
-		calculateScissors(camera, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), batchTransform, area, scissor);
+		calculateScissors(camera, 0, 0, Box.graphics.getWidth(), Box.graphics.getHeight(), batchTransform, area, scissor);
 	}
 
 	/** Calculates a scissor rectangle in OpenGL ES window coordinates from a {@link Camera}, a transformation {@link Matrix4} and
@@ -141,7 +141,7 @@ public class ScissorStack {
 	/** @return the current viewport in OpenGL ES window coordinates based on the currently applied scissor */
 	public static Rectangle getViewport () {
 		if (scissors.size == 0) {
-			viewport.set(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+			viewport.set(0, 0, Box.graphics.getWidth(), Box.graphics.getHeight());
 			return viewport;
 		} else {
 			Rectangle scissor = scissors.peek();

@@ -19,8 +19,8 @@ package com.badlogic.gdx.scenes.scene2d.ui;
 import static com.badlogic.gdx.math.Interpolation.*;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
@@ -149,8 +149,8 @@ public class TooltipManager {
 	}
 
 	static public TooltipManager getInstance () {
-		if (files == null || files != Gdx.files) {
-			files = Gdx.files;
+		if (files == null || files != Box.files) {
+			files = Box.files;
 			instance = new TooltipManager();
 		}
 		return instance;

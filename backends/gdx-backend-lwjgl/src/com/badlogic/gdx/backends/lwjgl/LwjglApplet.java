@@ -20,7 +20,7 @@ import java.applet.Applet;
 import java.awt.BorderLayout;
 import java.awt.Canvas;
 
-import com.badlogic.gdx.ApplicationListener;
+import ru.obvilion.box.ApplicationListener;
 
 /** An OpenGL surface in an applet.
  * @author Nathan Sweet */

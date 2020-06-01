@@ -29,7 +29,7 @@ import java.nio.ByteOrder;
 
 import org.lwjgl.BufferUtils;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.StreamUtils;
 import com.jcraft.jogg.Packet;
@@ -313,7 +313,7 @@ public class OggInputStream extends InputStream {
 
 					if (result == -1) { // missing or corrupt data at this page position
 						// throw new GdxRuntimeException("Corrupt or missing data in bitstream.");
-						Gdx.app.log("gdx-audio", "Error reading OGG: Corrupt or missing data in bitstream.");
+						Box.app.log("gdx-audio", "Error reading OGG: Corrupt or missing data in bitstream.");
 					} else {
 						streamState.pagein(page); // can safely ignore errors at
 						// this point

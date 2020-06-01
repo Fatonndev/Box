@@ -18,7 +18,7 @@ package com.badlogic.gdx.assets;
 
 import java.util.Stack;
 
-import com.badlogic.gdx.Application;
+import ru.obvilion.box.constructors.Application;
 import com.badlogic.gdx.assets.loaders.AssetLoader;
 import com.badlogic.gdx.assets.loaders.BitmapFontLoader;
 import com.badlogic.gdx.assets.loaders.CubemapLoader;

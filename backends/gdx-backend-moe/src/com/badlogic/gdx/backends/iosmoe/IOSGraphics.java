@@ -16,15 +16,15 @@
 
 package com.badlogic.gdx.backends.iosmoe;
 
+import ru.obvilion.box.Box;
 import org.moe.natj.general.NatJ;
 import org.moe.natj.general.Pointer;
 import org.moe.natj.general.ann.ByValue;
 import org.moe.natj.objc.ann.Selector;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.LifecycleListener;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.LifecycleListener;
 import com.badlogic.gdx.backends.iosmoe.custom.HWMachine;
 import com.badlogic.gdx.backends.iosrobovm.IOSGLES20;
 import com.badlogic.gdx.backends.iosrobovm.IOSGLES30;
@@ -118,7 +118,7 @@ public class IOSGraphics extends NSObject implements Graphics, GLKViewDelegate, 
 			if (context != null)
 				gl20 = gl30 = new IOSGLES30();
 			else
-				Gdx.app.log("IOGraphics", "OpenGL ES 3.0 not supported, falling back on 2.0");
+				Box.app.log("IOGraphics", "OpenGL ES 3.0 not supported, falling back on 2.0");
 		}
 		if (context == null) {
 			context = EAGLContext.alloc().initWithAPI(EAGLRenderingAPI.GLES2);
@@ -292,8 +292,8 @@ public class IOSGraphics extends NSObject implements Graphics, GLKViewDelegate, 
 	public void setGL20 (GL20 gl20) {
 		this.gl20 = gl20;
 		if (gl30 == null) {
-			Gdx.gl = gl20;
-			Gdx.gl20 = gl20;
+			Box.gl = gl20;
+			Box.gl20 = gl20;
 		}
 	}
 
@@ -313,9 +313,9 @@ public class IOSGraphics extends NSObject implements Graphics, GLKViewDelegate, 
 		if (gl30 != null) {
 			this.gl20 = gl30;
 
-			Gdx.gl = gl20;
-			Gdx.gl20 = gl20;
-			Gdx.gl30 = gl30;
+			Box.gl = gl20;
+			Box.gl20 = gl20;
+			Box.gl30 = gl30;
 		}
 	}
 
@@ -475,7 +475,7 @@ public class IOSGraphics extends NSObject implements Graphics, GLKViewDelegate, 
 
 	@Override
 	public boolean supportsExtension (String extension) {
-		if (extensions == null) extensions = Gdx.gl.glGetString(GL20.GL_EXTENSIONS);
+		if (extensions == null) extensions = Box.gl.glGetString(GL20.GL_EXTENSIONS);
 		return extensions.contains(extension);
 	}
 

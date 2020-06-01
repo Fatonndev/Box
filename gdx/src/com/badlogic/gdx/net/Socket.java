@@ -19,8 +19,8 @@ package com.badlogic.gdx.net;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Net.Protocol;
+import ru.obvilion.box.constructors.Net;
+import ru.obvilion.box.constructors.Net.Protocol;
 import com.badlogic.gdx.utils.Disposable;
 
 /** A client socket that talks to a server socket via some {@link Protocol}. See

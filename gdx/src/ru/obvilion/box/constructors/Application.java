@@ -14,9 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box.constructors;
 
 import com.badlogic.gdx.utils.Clipboard;
+import ru.obvilion.box.*;
 
 /** <p>
  * An <code>Application</code> is the main entry point of your project. It sets up a window and rendering surface and manages the
@@ -178,7 +179,7 @@ public interface Application {
 
 	/** Posts a {@link Runnable} on the main loop thread.
 	 * 
-	 * In a multi-window application, the {@linkplain Gdx#graphics} and {@linkplain Gdx#input} values may be
+	 * In a multi-window application, the {@linkplain Box#graphics} and {@linkplain Box#input} values may be
 	 * unpredictable at the time the Runnable is executed. If graphics or input are needed, they can be copied
 	 * to a variable to be used in the Runnable. For example:
 	 * <p><code>

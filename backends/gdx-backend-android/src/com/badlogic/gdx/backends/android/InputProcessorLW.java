@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.android;
 
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.InputProcessor;
 
 public interface InputProcessorLW extends InputProcessor {
 

@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.gwt;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.Preferences;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.ObjectMap;
 

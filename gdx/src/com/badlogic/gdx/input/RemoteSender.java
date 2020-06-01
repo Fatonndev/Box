@@ -19,9 +19,9 @@ package com.badlogic.gdx.input;
 import java.io.DataOutputStream;
 import java.net.Socket;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Peripheral;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input.Peripheral;
+import ru.obvilion.box.InputProcessor;
 
 /** Sends all inputs from touch, key, accelerometer and compass to a {@link RemoteInput} at the given ip/port. Instantiate this and
  * call sendUpdate() periodically.
@@ -50,11 +50,11 @@ public class RemoteSender implements InputProcessor {
 			socket.setTcpNoDelay(true);
 			socket.setSoTimeout(3000);
 			out = new DataOutputStream(socket.getOutputStream());
-			out.writeBoolean(Gdx.input.isPeripheralAvailable(Peripheral.MultitouchScreen));
+			out.writeBoolean(Box.input.isPeripheralAvailable(Peripheral.MultitouchScreen));
 			connected = true;
-			Gdx.input.setInputProcessor(this);
+			Box.input.setInputProcessor(this);
 		} catch (Exception e) {
-			Gdx.app.log("RemoteSender", "couldn't connect to " + ip + ":" + port);
+			Box.app.log("RemoteSender", "couldn't connect to " + ip + ":" + port);
 		}
 	}
 
@@ -64,20 +64,20 @@ public class RemoteSender implements InputProcessor {
 		}
 		try {
 			out.writeInt(ACCEL);
-			out.writeFloat(Gdx.input.getAccelerometerX());
-			out.writeFloat(Gdx.input.getAccelerometerY());
-			out.writeFloat(Gdx.input.getAccelerometerZ());
+			out.writeFloat(Box.input.getAccelerometerX());
+			out.writeFloat(Box.input.getAccelerometerY());
+			out.writeFloat(Box.input.getAccelerometerZ());
 			out.writeInt(COMPASS);
-			out.writeFloat(Gdx.input.getAzimuth());
-			out.writeFloat(Gdx.input.getPitch());
-			out.writeFloat(Gdx.input.getRoll());
+			out.writeFloat(Box.input.getAzimuth());
+			out.writeFloat(Box.input.getPitch());
+			out.writeFloat(Box.input.getRoll());
 			out.writeInt(SIZE);
-			out.writeFloat(Gdx.graphics.getWidth());
-			out.writeFloat(Gdx.graphics.getHeight());
+			out.writeFloat(Box.graphics.getWidth());
+			out.writeFloat(Box.graphics.getHeight());
 			out.writeInt(GYRO);
-			out.writeFloat(Gdx.input.getGyroscopeX());
-			out.writeFloat(Gdx.input.getGyroscopeY());
-			out.writeFloat(Gdx.input.getGyroscopeZ());
+			out.writeFloat(Box.input.getGyroscopeX());
+			out.writeFloat(Box.input.getGyroscopeY());
+			out.writeFloat(Box.input.getGyroscopeZ());
 		} catch (Throwable t) {
 			out = null;
 			connected = false;

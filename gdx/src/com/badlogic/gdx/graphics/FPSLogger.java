@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.utils.TimeUtils;
 
 /** A simple helper class to log the frames per seconds achieved. Just invoke the {@link #log()} method in your rendering method.
@@ -33,7 +33,7 @@ public class FPSLogger {
 	/** Logs the current frames per second to the console. */
 	public void log () {
 		if (TimeUtils.nanoTime() - startTime > 1000000000) /* 1,000,000,000ns == one second */{
-			Gdx.app.log("FPSLogger", "fps: " + Gdx.graphics.getFramesPerSecond());
+			Box.app.log("FPSLogger", "fps: " + Box.graphics.getFramesPerSecond());
 			startTime = TimeUtils.nanoTime();
 		}
 	}

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosmoe;
 
-import com.badlogic.gdx.Net;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.net.NetJavaImpl;
 import com.badlogic.gdx.net.NetJavaServerSocketImpl;
 import com.badlogic.gdx.net.NetJavaSocketImpl;

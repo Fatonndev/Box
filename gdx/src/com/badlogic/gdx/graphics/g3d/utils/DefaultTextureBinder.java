@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.g3d.utils;
 
 import java.nio.IntBuffer;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GLTexture;
 import com.badlogic.gdx.utils.BufferUtils;
@@ -72,7 +72,7 @@ public final class DefaultTextureBinder implements TextureBinder {
 
 	private static int getMaxTextureUnits () {
 		IntBuffer buffer = BufferUtils.newIntBuffer(16);
-		Gdx.gl.glGetIntegerv(GL20.GL_MAX_TEXTURE_IMAGE_UNITS, buffer);
+		Box.gl.glGetIntegerv(GL20.GL_MAX_TEXTURE_IMAGE_UNITS, buffer);
 		return buffer.get(0);
 	}
 
@@ -91,7 +91,7 @@ public final class DefaultTextureBinder implements TextureBinder {
 		 * Gdx.gl.glActiveTexture(GL20.GL_TEXTURE0 + offset + i); Gdx.gl.glBindTexture(GL20.GL_TEXTURE_2D, 0); textures[i] = null; }
 		 * }
 		 */
-		Gdx.gl.glActiveTexture(GL20.GL_TEXTURE0);
+		Box.gl.glActiveTexture(GL20.GL_TEXTURE0);
 	}
 
 	@Override
@@ -128,7 +128,7 @@ public final class DefaultTextureBinder implements TextureBinder {
 			if (rebind)
 				texture.bind(result);
 			else
-				Gdx.gl.glActiveTexture(GL20.GL_TEXTURE0 + result);
+				Box.gl.glActiveTexture(GL20.GL_TEXTURE0 + result);
 		} else
 			bindCount++;
 		texture.unsafeSetWrap(textureDesc.uWrap, textureDesc.vWrap);

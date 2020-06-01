@@ -17,7 +17,7 @@
 package com.badlogic.gdx.tools.particleeditor;
 
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.files.FileHandle;
 
 import javax.imageio.ImageIO;
@@ -65,7 +65,7 @@ class PreviewImagePanel extends EditorPanel {
 				lastDir = dir;
 
 				try {
-					final FileHandle absolute = Gdx.files.absolute(dir + file);
+					final FileHandle absolute = Box.files.absolute(dir + file);
 					final BufferedImage read = ImageIO.read(absolute.read());
 					final Image scaledInstance = read.getScaledInstance(100, -1, Image.SCALE_SMOOTH);
 					final ImageIcon image = new ImageIcon(scaledInstance);

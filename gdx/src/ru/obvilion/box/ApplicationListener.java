@@ -14,7 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
+
+import ru.obvilion.box.constructors.Application;
 
 /** <p>
  * An <code>ApplicationListener</code> is called when the {@link Application} is created, resumed, rendering, paused or destroyed.

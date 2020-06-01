@@ -19,8 +19,8 @@ package com.badlogic.gdx.graphics;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
 import com.badlogic.gdx.assets.AssetLoaderParameters.LoadedCallback;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.AssetLoader;
@@ -154,7 +154,7 @@ public class Cubemap extends GLTexture {
 		unsafeSetWrap(uWrap, vWrap, true);
 		unsafeSetAnisotropicFilter(anisotropicFilterLevel, true);
 		data.consumeCubemapData();
-		Gdx.gl.glBindTexture(glTarget, 0);
+		Box.gl.glBindTexture(glTarget, 0);
 	}
 
 	public CubemapData getCubemapData () {
@@ -169,7 +169,7 @@ public class Cubemap extends GLTexture {
 	@Override
 	protected void reload () {
 		if (!isManaged()) throw new GdxRuntimeException("Tried to reload an unmanaged Cubemap");
-		glHandle = Gdx.gl.glGenTexture();
+		glHandle = Box.gl.glGenTexture();
 		load(data);
 	}
 
@@ -197,7 +197,7 @@ public class Cubemap extends GLTexture {
 		// removal from the asset manager.
 		if (glHandle == 0) return;
 		delete();
-		if (data.isManaged()) if (managedCubemaps.get(Gdx.app) != null) managedCubemaps.get(Gdx.app).removeValue(this, true);
+		if (data.isManaged()) if (managedCubemaps.get(Box.app) != null) managedCubemaps.get(Box.app).removeValue(this, true);
 	}
 
 	private static void addManagedCubemap (Application app, Cubemap cubemap) {
@@ -262,7 +262,7 @@ public class Cubemap extends GLTexture {
 
 					// unload the c, create a new gl handle then reload it.
 					assetManager.unload(fileName);
-					cubemap.glHandle = Gdx.gl.glGenTexture();
+					cubemap.glHandle = Box.gl.glGenTexture();
 					assetManager.load(fileName, Cubemap.class, params);
 				}
 			}
@@ -292,7 +292,7 @@ public class Cubemap extends GLTexture {
 
 	/** @return the number of managed cubemaps currently loaded */
 	public static int getNumManagedCubemaps () {
-		return managedCubemaps.get(Gdx.app).size;
+		return managedCubemaps.get(Box.app).size;
 	}
 
 }

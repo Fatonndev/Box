@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
@@ -381,7 +381,7 @@ public class TextArea extends TextField {
 			boolean result = super.keyDown(event, keycode);
 			if (hasKeyboardFocus()) {
 				boolean repeat = false;
-				boolean shift = Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT) || Gdx.input.isKeyPressed(Input.Keys.SHIFT_RIGHT);
+				boolean shift = Box.input.isKeyPressed(Input.Keys.SHIFT_LEFT) || Box.input.isKeyPressed(Input.Keys.SHIFT_RIGHT);
 				if (keycode == Input.Keys.DOWN) {
 					if (shift) {
 						if (!hasSelection) {

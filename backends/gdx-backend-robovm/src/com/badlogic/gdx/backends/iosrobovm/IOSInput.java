@@ -1,6 +1,6 @@
 package com.badlogic.gdx.backends.iosrobovm;
 
-import com.badlogic.gdx.Input;
+import ru.obvilion.box.constructors.Input;
 
 public interface IOSInput extends Input {
 

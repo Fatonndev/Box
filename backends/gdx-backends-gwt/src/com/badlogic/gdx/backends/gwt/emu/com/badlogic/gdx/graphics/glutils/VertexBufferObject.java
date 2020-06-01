@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.glutils;
 
 import java.nio.FloatBuffer;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.VertexAttribute;
 import com.badlogic.gdx.graphics.VertexAttributes;
@@ -77,7 +77,7 @@ public class VertexBufferObject implements VertexData {
 
 		buffer = BufferUtils.newFloatBuffer(this.attributes.vertexSize / 4 * numVertices);
 		buffer.flip();
-		bufferHandle = Gdx.gl20.glGenBuffer();
+		bufferHandle = Box.gl20.glGenBuffer();
 		usage = isStatic ? GL20.GL_STATIC_DRAW : GL20.GL_DYNAMIC_DRAW;
 	}
 
@@ -104,7 +104,7 @@ public class VertexBufferObject implements VertexData {
 
 	private void bufferChanged() {
 		if (isBound) {
-			Gdx.gl20.glBufferData(GL20.GL_ARRAY_BUFFER, buffer.limit(), buffer, usage);
+			Box.gl20.glBufferData(GL20.GL_ARRAY_BUFFER, buffer.limit(), buffer, usage);
 			isDirty = false;
 		}
 	}
@@ -141,7 +141,7 @@ public class VertexBufferObject implements VertexData {
 	
 	@Override
 	public void bind (ShaderProgram shader, int[] locations) {
-		final GL20 gl = Gdx.gl20;
+		final GL20 gl = Box.gl20;
 
 		gl.glBindBuffer(GL20.GL_ARRAY_BUFFER, bufferHandle);
 		if (isDirty) {
@@ -194,7 +194,7 @@ public class VertexBufferObject implements VertexData {
 	
 	@Override
 	public void unbind (final ShaderProgram shader, final int[] locations) {
-		final GL20 gl = Gdx.gl20;
+		final GL20 gl = Box.gl20;
 		final int numAttributes = attributes.size();
 		if (locations == null) {
 			for (int i = 0; i < numAttributes; i++) {
@@ -213,14 +213,14 @@ public class VertexBufferObject implements VertexData {
 
 	/** Invalidates the VertexBufferObject so a new OpenGL buffer handle is created. Use this in case of a context loss. */
 	public void invalidate () {
-		bufferHandle = Gdx.gl20.glGenBuffer();
+		bufferHandle = Box.gl20.glGenBuffer();
 		isDirty = true;
 	}
 
 	/** Disposes of all resources this VertexBufferObject uses. */
 	@Override
 	public void dispose () {
-		GL20 gl = Gdx.gl20;
+		GL20 gl = Box.gl20;
 		gl.glBindBuffer(GL20.GL_ARRAY_BUFFER, 0);
 		gl.glDeleteBuffer(bufferHandle);
 		bufferHandle = 0;		

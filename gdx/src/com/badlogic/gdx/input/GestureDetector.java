@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.input;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputAdapter;
-import com.badlogic.gdx.InputProcessor;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.InputAdapter;
+import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.badlogic.gdx.utils.Timer;
@@ -107,9 +107,9 @@ public class GestureDetector extends InputAdapter {
 
 		if (pointer == 0) {
 			pointer1.set(x, y);
-			gestureStartTime = Gdx.input.getCurrentEventTime();
+			gestureStartTime = Box.input.getCurrentEventTime();
 			tracker.start(x, y, gestureStartTime);
-			if (Gdx.input.isTouched(1)) {
+			if (Box.input.isTouched(1)) {
 				// Start pinch.
 				inTapRectangle = false;
 				pinching = true;
@@ -161,7 +161,7 @@ public class GestureDetector extends InputAdapter {
 		}
 
 		// update tracker
-		tracker.update(x, y, Gdx.input.getCurrentEventTime());
+		tracker.update(x, y, Box.input.getCurrentEventTime());
 
 		// check if we are still tapping.
 		if (inTapRectangle && !isWithinTapRectangle(x, y, tapRectangleCenterX, tapRectangleCenterY)) {
@@ -217,10 +217,10 @@ public class GestureDetector extends InputAdapter {
 			// we are in pan mode again, reset velocity tracker
 			if (pointer == 0) {
 				// first pointer has lifted off, set up panning to use the second pointer...
-				tracker.start(pointer2.x, pointer2.y, Gdx.input.getCurrentEventTime());
+				tracker.start(pointer2.x, pointer2.y, Box.input.getCurrentEventTime());
 			} else {
 				// second pointer has lifted off, set up panning to use the first pointer...
-				tracker.start(pointer1.x, pointer1.y, Gdx.input.getCurrentEventTime());
+				tracker.start(pointer1.x, pointer1.y, Box.input.getCurrentEventTime());
 			}
 			return false;
 		}
@@ -231,7 +231,7 @@ public class GestureDetector extends InputAdapter {
 
 		// handle fling
 		gestureStartTime = 0;
-		long time = Gdx.input.getCurrentEventTime();
+		long time = Box.input.getCurrentEventTime();
 		if (time - tracker.lastTime < maxFlingDelay) {
 			tracker.update(x, y, time);
 			handled = listener.fling(tracker.getVelocityX(), tracker.getVelocityY(), button) || handled;

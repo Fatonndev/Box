@@ -17,7 +17,7 @@
 
 package com.badlogic.gdx.backends.lwjgl3;
 
-import com.badlogic.gdx.ApplicationListener;
+import ru.obvilion.box.ApplicationListener;
 
 /**
  * Receives notifications of various window events, such as iconification,

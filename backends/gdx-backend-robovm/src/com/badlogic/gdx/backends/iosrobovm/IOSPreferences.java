@@ -27,8 +27,8 @@ import org.robovm.apple.foundation.NSNumber;
 import org.robovm.apple.foundation.NSObject;
 import org.robovm.apple.foundation.NSString;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.Preferences;
 
 public class IOSPreferences implements Preferences {
 	NSMutableDictionary<NSString, NSObject> nsDictionary;
@@ -187,7 +187,7 @@ public class IOSPreferences implements Preferences {
 	public void flush () {
 		NSAutoreleasePool pool = new NSAutoreleasePool();
 		if (!nsDictionary.write(file, false)) {
-			Gdx.app.debug("IOSPreferences", "Failed to write NSDictionary to file " + file);
+			Box.app.debug("IOSPreferences", "Failed to write NSDictionary to file " + file);
 		}
 		pool.close();
 	}

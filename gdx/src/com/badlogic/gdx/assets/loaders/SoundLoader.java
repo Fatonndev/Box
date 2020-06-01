@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.assets.loaders;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
@@ -45,7 +45,7 @@ public class SoundLoader extends AsynchronousAssetLoader<Sound, SoundLoader.Soun
 	
 	@Override
 	public void loadAsync (AssetManager manager, String fileName, FileHandle file, SoundParameter parameter) {
-		sound = Gdx.audio.newSound(file);
+		sound = Box.audio.newSound(file);
 	}
 
 	@Override

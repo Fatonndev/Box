@@ -16,6 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.utils.ObjectMap;
 
 import org.robovm.apple.glkit.GLKViewDrawableColorFormat;
@@ -97,7 +98,7 @@ public class IOSApplicationConfiguration {
 	public boolean keyboardCloseOnReturn = true;
 
 	/** Experimental, whether to enable OpenGL ES 3 if supported. If not supported it will fall-back to OpenGL ES 2.0.
-	 *  When GL ES 3 is enabled, {@link com.badlogic.gdx.Gdx#gl30} can be used to access it's functionality.
+	 *  When GL ES 3 is enabled, {@link Box#gl30} can be used to access it's functionality.
 	 * @deprecated this option is currently experimental and not yet fully supported, expect issues. */
 	@Deprecated public boolean useGL30 = false;
 

@@ -16,17 +16,13 @@
 
 package com.badlogic.gdx.backends.headless;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.ApplicationLogger;
-import com.badlogic.gdx.Audio;
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.LifecycleListener;
-import com.badlogic.gdx.Net;
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.*;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Audio;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.constructors.Graphics;
+import ru.obvilion.box.constructors.Input;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.headless.mock.audio.MockAudio;
 import com.badlogic.gdx.backends.headless.mock.graphics.MockGraphics;
 import com.badlogic.gdx.backends.headless.mock.input.MockInput;
@@ -76,12 +72,12 @@ public class HeadlessApplication implements Application {
 
 		this.preferencesdir = config.preferencesDirectory;
 
-		Gdx.app = this;
-		Gdx.files = files;
-		Gdx.net = net;
-		Gdx.audio = audio;
-		Gdx.graphics = graphics;
-		Gdx.input = input;
+		Box.app = this;
+		Box.files = files;
+		Box.net = net;
+		Box.audio = audio;
+		Box.graphics = graphics;
+		Box.input = input;
 		
 		renderInterval = config.renderInterval > 0 ? (long)(config.renderInterval * 1000000000f) : (config.renderInterval < 0 ? -1 : 0);
 		

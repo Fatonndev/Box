@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
-import com.badlogic.gdx.ApplicationLogger;
+import ru.obvilion.box.ApplicationLogger;
 import org.robovm.apple.foundation.Foundation;
 import org.robovm.apple.foundation.NSString;
 

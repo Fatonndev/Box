@@ -16,13 +16,13 @@
 
 package com.badlogic.gdx.assets.loaders.resolvers;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.loaders.FileHandleResolver;
 import com.badlogic.gdx.files.FileHandle;
 
 public class InternalFileHandleResolver implements FileHandleResolver {
 	@Override
 	public FileHandle resolve (String fileName) {
-		return Gdx.files.internal(fileName);
+		return Box.files.internal(fileName);
 	}
 }

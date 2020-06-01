@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.particles;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.g3d.particles.ParallelArray.FloatChannel;
 import com.badlogic.gdx.graphics.g3d.particles.emitters.Emitter;
@@ -220,7 +220,7 @@ public class ParticleController implements Json.Serializable, ResourceData.Confi
 
 	/** Updates the particles data */
 	public void update () {
-		update(Gdx.graphics.getDeltaTime());
+		update(Box.graphics.getDeltaTime());
 	}
 
 	/** Updates the particles data */

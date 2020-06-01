@@ -16,10 +16,9 @@
 
 package com.badlogic.gdx.graphics.g3d.utils;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Keys;
-import com.badlogic.gdx.InputAdapter;
-import com.badlogic.gdx.Input.Buttons;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Input.Keys;
+import ru.obvilion.box.constructors.Input.Buttons;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.MathUtils;
@@ -109,7 +108,7 @@ public class CameraInputController extends GestureDetector {
 			float newZoom = distance - initialDistance;
 			float amount = newZoom - previousZoom;
 			previousZoom = newZoom;
-			float w = Gdx.graphics.getWidth(), h = Gdx.graphics.getHeight();
+			float w = Box.graphics.getWidth(), h = Box.graphics.getHeight();
 			return controller.pinchZoom(amount / ((w > h) ? h : w));
 		}
 
@@ -134,7 +133,7 @@ public class CameraInputController extends GestureDetector {
 
 	public void update () {
 		if (rotateRightPressed || rotateLeftPressed || forwardPressed || backwardPressed) {
-			final float delta = Gdx.graphics.getDeltaTime();
+			final float delta = Box.graphics.getDeltaTime();
 			if (rotateRightPressed) camera.rotate(camera.up, -delta * rotateAngle);
 			if (rotateLeftPressed) camera.rotate(camera.up, delta * rotateAngle);
 			if (forwardPressed) {
@@ -195,8 +194,8 @@ public class CameraInputController extends GestureDetector {
 	public boolean touchDragged (int screenX, int screenY, int pointer) {
 		boolean result = super.touchDragged(screenX, screenY, pointer);
 		if (result || this.button < 0) return result;
-		final float deltaX = (screenX - startX) / Gdx.graphics.getWidth();
-		final float deltaY = (startY - screenY) / Gdx.graphics.getHeight();
+		final float deltaX = (screenX - startX) / Box.graphics.getWidth();
+		final float deltaY = (startY - screenY) / Box.graphics.getHeight();
 		startX = screenX;
 		startY = screenY;
 		return process(deltaX, deltaY, button);

@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.g3d.decals;
 
 import java.util.Comparator;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
@@ -129,7 +129,7 @@ public class CameraGroupStrategy implements GroupStrategy, Disposable {
 	@Override
 	public void beforeGroup (int group, Array<Decal> contents) {
 		if (group == GROUP_BLEND) {
-			Gdx.gl.glEnable(GL20.GL_BLEND);
+			Box.gl.glEnable(GL20.GL_BLEND);
 			contents.sort(cameraSorter);
 		} else {
 			for (int i = 0, n = contents.size; i < n; i++) {
@@ -158,13 +158,13 @@ public class CameraGroupStrategy implements GroupStrategy, Disposable {
 	@Override
 	public void afterGroup (int group) {
 		if (group == GROUP_BLEND) {
-			Gdx.gl.glDisable(GL20.GL_BLEND);
+			Box.gl.glDisable(GL20.GL_BLEND);
 		}
 	}
 
 	@Override
 	public void beforeGroups () {
-		Gdx.gl.glEnable(GL20.GL_DEPTH_TEST);
+		Box.gl.glEnable(GL20.GL_DEPTH_TEST);
 		shader.bind();
 		shader.setUniformMatrix("u_projectionViewMatrix", camera.combined);
 		shader.setUniformi("u_texture", 0);
@@ -172,7 +172,7 @@ public class CameraGroupStrategy implements GroupStrategy, Disposable {
 
 	@Override
 	public void afterGroups () {
-		Gdx.gl.glDisable(GL20.GL_DEPTH_TEST);
+		Box.gl.glDisable(GL20.GL_DEPTH_TEST);
 	}
 
 	private void createDefaultShader () {

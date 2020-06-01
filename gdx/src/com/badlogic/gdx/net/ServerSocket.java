@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.net;
 
-import com.badlogic.gdx.Net.Protocol;
+import ru.obvilion.box.constructors.Net.Protocol;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

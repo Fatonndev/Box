@@ -14,32 +14,43 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
 
-/** Convenience implementation of {@link ApplicationListener}. Derive from this and only override what you need.
+/** An adapter class for {@link InputProcessor}. You can derive from this and only override what you are interested in.
+ * 
  * @author mzechner */
-public abstract class ApplicationAdapter implements ApplicationListener {
-	@Override
-	public void create () {
+public class InputAdapter implements InputProcessor {
+	public boolean keyDown (int keycode) {
+		return false;
+	}
+
+	public boolean keyUp (int keycode) {
+		return false;
+	}
+
+	public boolean keyTyped (char character) {
+		return false;
+	}
+
+	public boolean touchDown (int screenX, int screenY, int pointer, int button) {
+		return false;
+	}
+
+	public boolean touchUp (int screenX, int screenY, int pointer, int button) {
+		return false;
+	}
+
+	public boolean touchDragged (int screenX, int screenY, int pointer) {
+		return false;
 	}
 
 	@Override
-	public void resize (int width, int height) {
+	public boolean mouseMoved (int screenX, int screenY) {
+		return false;
 	}
 
 	@Override
-	public void render () {
-	}
-
-	@Override
-	public void pause () {
-	}
-
-	@Override
-	public void resume () {
-	}
-
-	@Override
-	public void dispose () {
+	public boolean scrolled (int amount) {
+		return false;
 	}
 }

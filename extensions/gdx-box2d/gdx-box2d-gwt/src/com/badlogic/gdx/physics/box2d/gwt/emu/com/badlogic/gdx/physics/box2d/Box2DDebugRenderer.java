@@ -17,9 +17,7 @@
 package com.badlogic.gdx.physics.box2d;
 
 import java.util.Iterator;
-import java.util.List;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;

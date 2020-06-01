@@ -38,9 +38,9 @@ import java.nio.ByteOrder;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileChannel.MapMode;
 
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Files.FileType;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.constructors.Files.FileType;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.StreamUtils;
 
@@ -129,7 +129,7 @@ public class FileHandle {
 	/** Returns a java.io.File that represents this file handle. Note the returned file will only be usable for
 	 * {@link FileType#Absolute} and {@link FileType#External} file handles. */
 	public File file () {
-		if (type == FileType.External) return new File(Gdx.files.getExternalStoragePath(), file.getPath());
+		if (type == FileType.External) return new File(Box.files.getExternalStoragePath(), file.getPath());
 		return file;
 	}
 

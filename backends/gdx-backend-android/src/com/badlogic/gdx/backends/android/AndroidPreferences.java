@@ -22,7 +22,7 @@ import java.util.Map.Entry;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-import com.badlogic.gdx.Preferences;
+import ru.obvilion.box.Preferences;
 
 public class AndroidPreferences implements Preferences {
 	SharedPreferences sharedPrefs;

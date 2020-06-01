@@ -20,7 +20,8 @@ import java.awt.Canvas;
 import java.awt.Toolkit;
 import java.nio.ByteBuffer;
 
-import com.badlogic.gdx.Application;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
 import com.badlogic.gdx.graphics.glutils.GLVersion;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Mouse;
@@ -29,9 +30,7 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.PixelFormat;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.graphics.Cursor;
+import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.graphics.Cursor.SystemCursor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GL30;
@@ -140,8 +139,8 @@ public class LwjglGraphics implements Graphics {
 	public void setGL20 (GL20 gl20) {
 		this.gl20 = gl20;
 		if (gl30 == null) {
-			Gdx.gl = gl20;
-			Gdx.gl20 = gl20;
+			Box.gl = gl20;
+			Box.gl20 = gl20;
 		}
 	}
 
@@ -161,9 +160,9 @@ public class LwjglGraphics implements Graphics {
 		if (gl30 != null) {
 			this.gl20 = gl30;
 
-			Gdx.gl = gl20;
-			Gdx.gl20 = gl20;
-			Gdx.gl30 = gl30;
+			Box.gl = gl20;
+			Box.gl20 = gl20;
+			Box.gl30 = gl30;
 		}
 	}
 
@@ -225,7 +224,7 @@ public class LwjglGraphics implements Graphics {
 			if (config.iconPaths.size > 0) {
 				ByteBuffer[] icons = new ByteBuffer[config.iconPaths.size];
 				for (int i = 0, n = config.iconPaths.size; i < n; i++) {
-					Pixmap pixmap = new Pixmap(Gdx.files.getFileHandle(config.iconPaths.get(i), config.iconFileTypes.get(i)));
+					Pixmap pixmap = new Pixmap(Box.files.getFileHandle(config.iconPaths.get(i), config.iconFileTypes.get(i)));
 					if (pixmap.getFormat() != Format.RGBA8888) {
 						Pixmap rgba = new Pixmap(pixmap.getWidth(), pixmap.getHeight(), Format.RGBA8888);
 						rgba.setBlending(Blending.None);
@@ -384,9 +383,9 @@ public class LwjglGraphics implements Graphics {
 				+ GL11.glGetString(GL11.GL_VERSION) + ", FBO extension: false\n" + glVersion.getDebugVersionString());
 		}
 
-		Gdx.gl = gl20;
-		Gdx.gl20 = gl20;
-		Gdx.gl30 = gl30;
+		Box.gl = gl20;
+		Box.gl20 = gl20;
+		Box.gl30 = gl30;
 	}
 
 	@Override
@@ -477,7 +476,7 @@ public class LwjglGraphics implements Graphics {
 			float scaleFactor = Display.getPixelScaleFactor();
 			config.width = (int)(mode.getWidth() * scaleFactor);
 			config.height = (int)(mode.getHeight() * scaleFactor);
-			if (Gdx.gl != null) Gdx.gl.glViewport(0, 0, config.width, config.height);
+			if (Box.gl != null) Box.gl.glViewport(0, 0, config.width, config.height);
 			resize = true;
 			return true;
 		} catch (LWJGLException e) {
@@ -542,7 +541,7 @@ public class LwjglGraphics implements Graphics {
 			float scaleFactor = Display.getPixelScaleFactor();
 			config.width = (int)(targetDisplayMode.getWidth() * scaleFactor);
 			config.height = (int)(targetDisplayMode.getHeight() * scaleFactor);
-			if (Gdx.gl != null) Gdx.gl.glViewport(0, 0, config.width, config.height);
+			if (Box.gl != null) Box.gl.glViewport(0, 0, config.width, config.height);
 			resize = true;
 			return true;
 		} catch (LWJGLException e) {

@@ -26,7 +26,7 @@ import java.io.OutputStream;
 import java.io.Reader;
 import java.io.Writer;
 
-import com.badlogic.gdx.Files.FileType;
+import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class FileHandle {

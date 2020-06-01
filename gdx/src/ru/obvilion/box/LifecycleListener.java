@@ -14,7 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx;
+package ru.obvilion.box;
+
+import ru.obvilion.box.constructors.Application;
 
 /** A LifecycleListener can be added to an {@link Application} via {@link Application#addLifecycleListener(LifecycleListener)}. It
  * will receive notification of pause, resume and dispose events. This is mainly meant to be used by extensions that need to

@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.utils;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
 
 /** Simple logger that uses the {@link Application} logging facilities to output messages. The log level set with
  * {@link Application#setLogLevel(int)} overrides the log level set here.
@@ -42,27 +42,27 @@ public class Logger {
 	}
 
 	public void debug (String message) {
-		if (level >= DEBUG) Gdx.app.debug(tag, message);
+		if (level >= DEBUG) Box.app.debug(tag, message);
 	}
 
 	public void debug (String message, Exception exception) {
-		if (level >= DEBUG) Gdx.app.debug(tag, message, exception);
+		if (level >= DEBUG) Box.app.debug(tag, message, exception);
 	}
 
 	public void info (String message) {
-		if (level >= INFO) Gdx.app.log(tag, message);
+		if (level >= INFO) Box.app.log(tag, message);
 	}
 
 	public void info (String message, Exception exception) {
-		if (level >= INFO) Gdx.app.log(tag, message, exception);
+		if (level >= INFO) Box.app.log(tag, message, exception);
 	}
 
 	public void error (String message) {
-		if (level >= ERROR) Gdx.app.error(tag, message);
+		if (level >= ERROR) Box.app.error(tag, message);
 	}
 
 	public void error (String message, Throwable exception) {
-		if (level >= ERROR) Gdx.app.error(tag, message, exception);
+		if (level >= ERROR) Box.app.error(tag, message, exception);
 	}
 
 	/** Sets the log level. {@link #NONE} will mute all log output. {@link #ERROR} will only let error messages through.

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -368,7 +368,7 @@ public class ScrollPane extends WidgetGroup {
 
 		if (animating) {
 			Stage stage = getStage();
-			if (stage != null && stage.getActionsRequestRendering()) Gdx.graphics.requestRendering();
+			if (stage != null && stage.getActionsRequestRendering()) Box.graphics.requestRendering();
 		}
 	}
 

@@ -1,8 +1,8 @@
 package com.badlogic.gdx.controllers.lwjgl3;
 
+import ru.obvilion.box.Box;
 import org.lwjgl.glfw.GLFW;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.ControllerManager;
@@ -15,11 +15,11 @@ public class Lwjgl3ControllerManager implements ControllerManager {
 	final Array<ControllerListener> listeners = new Array<ControllerListener>();
 	
 	public Lwjgl3ControllerManager() {
-		Gdx.app.postRunnable(new Runnable() {
+		Box.app.postRunnable(new Runnable() {
 			@Override
 			public void run () {
 				pollState();
-				Gdx.app.postRunnable(this);
+				Box.app.postRunnable(this);
 			}
 		});
 	}

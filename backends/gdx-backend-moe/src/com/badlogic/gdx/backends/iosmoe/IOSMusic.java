@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosmoe;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALAudioTrack;
 import apple.avfoundation.AVAudioPlayer;
@@ -35,7 +35,7 @@ public class IOSMusic implements Music {
 			public void audioPlayerDidFinishPlayingSuccessfully (AVAudioPlayer player, boolean flag) {
 				final OnCompletionListener listener = onCompletionListener;
 				if (onCompletionListener != null) {
-					Gdx.app.postRunnable(new Runnable() {
+					Box.app.postRunnable(new Runnable() {
 						@Override
 						public void run () {
 							listener.onCompletion(IOSMusic.this);

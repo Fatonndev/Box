@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.iosmoe;
 
 import android.util.Log;
-import com.badlogic.gdx.ApplicationLogger;
+import ru.obvilion.box.ApplicationLogger;
 
 /**
  * Default implementation of {@link ApplicationLogger} for ios-moe

@@ -14,7 +14,7 @@
 
 package com.badlogic.gdx.backends.android;
 
-import com.badlogic.gdx.ApplicationListener;
+import ru.obvilion.box.ApplicationListener;
 
 /** Implement this listener in your libGDX application additionally to {@link ApplicationListener} if you want receive live
  * wallpaper specific events, ex: MyApplication implements ApplicationListener, AndroidWallpaperListener. The callbacks

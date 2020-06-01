@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.utils;
 
-import com.badlogic.gdx.Gdx;
+import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.GL20;
 
 /** Manages OpenGL state and tries to reduce state changes. Uses a {@link TextureBinder} to reduce texture binds as well. Call
@@ -41,28 +41,28 @@ public class RenderContext {
 
 	/** Sets up the render context, must be matched with a call to {@link #end()}. */
 	public void begin () {
-		Gdx.gl.glDisable(GL20.GL_DEPTH_TEST);
+		Box.gl.glDisable(GL20.GL_DEPTH_TEST);
 		depthFunc = 0;
-		Gdx.gl.glDepthMask(true);
+		Box.gl.glDepthMask(true);
 		depthMask = true;
-		Gdx.gl.glDisable(GL20.GL_BLEND);
+		Box.gl.glDisable(GL20.GL_BLEND);
 		blending = false;
-		Gdx.gl.glDisable(GL20.GL_CULL_FACE);
+		Box.gl.glDisable(GL20.GL_CULL_FACE);
 		cullFace = blendSFactor = blendDFactor = 0;
 		textureBinder.begin();
 	}
 
 	/** Resets all changed OpenGL states to their defaults. */
 	public void end () {
-		if (depthFunc != 0) Gdx.gl.glDisable(GL20.GL_DEPTH_TEST);
-		if (!depthMask) Gdx.gl.glDepthMask(true);
-		if (blending) Gdx.gl.glDisable(GL20.GL_BLEND);
-		if (cullFace > 0) Gdx.gl.glDisable(GL20.GL_CULL_FACE);
+		if (depthFunc != 0) Box.gl.glDisable(GL20.GL_DEPTH_TEST);
+		if (!depthMask) Box.gl.glDepthMask(true);
+		if (blending) Box.gl.glDisable(GL20.GL_BLEND);
+		if (cullFace > 0) Box.gl.glDisable(GL20.GL_CULL_FACE);
 		textureBinder.end();
 	}
 
 	public void setDepthMask (final boolean depthMask) {
-		if (this.depthMask != depthMask) Gdx.gl.glDepthMask(this.depthMask = depthMask);
+		if (this.depthMask != depthMask) Box.gl.glDepthMask(this.depthMask = depthMask);
 	}
 
 	public void setDepthTest (final int depthFunction) {
@@ -75,15 +75,15 @@ public class RenderContext {
 		if (depthFunc != depthFunction) {
 			depthFunc = depthFunction;
 			if (enabled) {
-				Gdx.gl.glEnable(GL20.GL_DEPTH_TEST);
-				Gdx.gl.glDepthFunc(depthFunction);
+				Box.gl.glEnable(GL20.GL_DEPTH_TEST);
+				Box.gl.glDepthFunc(depthFunction);
 			} else
-				Gdx.gl.glDisable(GL20.GL_DEPTH_TEST);
+				Box.gl.glDisable(GL20.GL_DEPTH_TEST);
 		}
 		if (enabled) {
-			if (!wasEnabled || depthFunc != depthFunction) Gdx.gl.glDepthFunc(depthFunc = depthFunction);
+			if (!wasEnabled || depthFunc != depthFunction) Box.gl.glDepthFunc(depthFunc = depthFunction);
 			if (!wasEnabled || this.depthRangeNear != depthRangeNear || this.depthRangeFar != depthRangeFar)
-				Gdx.gl.glDepthRangef(this.depthRangeNear = depthRangeNear, this.depthRangeFar = depthRangeFar);
+				Box.gl.glDepthRangef(this.depthRangeNear = depthRangeNear, this.depthRangeFar = depthRangeFar);
 		}
 	}
 
@@ -91,12 +91,12 @@ public class RenderContext {
 		if (enabled != blending) {
 			blending = enabled;
 			if (enabled)
-				Gdx.gl.glEnable(GL20.GL_BLEND);
+				Box.gl.glEnable(GL20.GL_BLEND);
 			else
-				Gdx.gl.glDisable(GL20.GL_BLEND);
+				Box.gl.glDisable(GL20.GL_BLEND);
 		}
 		if (enabled && (blendSFactor != sFactor || blendDFactor != dFactor)) {
-			Gdx.gl.glBlendFunc(sFactor, dFactor);
+			Box.gl.glBlendFunc(sFactor, dFactor);
 			blendSFactor = sFactor;
 			blendDFactor = dFactor;
 		}
@@ -106,10 +106,10 @@ public class RenderContext {
 		if (face != cullFace) {
 			cullFace = face;
 			if ((face == GL20.GL_FRONT) || (face == GL20.GL_BACK) || (face == GL20.GL_FRONT_AND_BACK)) {
-				Gdx.gl.glEnable(GL20.GL_CULL_FACE);
-				Gdx.gl.glCullFace(face);
+				Box.gl.glEnable(GL20.GL_CULL_FACE);
+				Box.gl.glCullFace(face);
 			} else
-				Gdx.gl.glDisable(GL20.GL_CULL_FACE);
+				Box.gl.glDisable(GL20.GL_CULL_FACE);
 		}
 	}
 }

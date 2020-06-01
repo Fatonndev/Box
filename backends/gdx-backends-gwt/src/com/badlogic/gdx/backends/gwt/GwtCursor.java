@@ -16,11 +16,9 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.google.gwt.dom.client.CanvasElement;
 
 public class GwtCursor implements Cursor {
 	String cssCursorProperty;

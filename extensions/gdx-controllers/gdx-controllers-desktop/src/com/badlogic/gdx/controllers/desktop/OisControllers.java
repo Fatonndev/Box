@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.controllers.desktop;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics.GraphicsType;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Graphics.GraphicsType;
 import com.badlogic.gdx.controllers.ControlType;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
@@ -98,7 +98,7 @@ public class OisControllers {
 					}
 				}
 				ois.update();
-				Gdx.app.postRunnable(this);
+				Box.app.postRunnable(this);
 			}
 		}.run();
 	}
@@ -249,13 +249,13 @@ public class OisControllers {
 		}
 
 		try {
-			if (Gdx.graphics.getType() == GraphicsType.JGLFW)
-				return (Long)Gdx.graphics.getClass().getDeclaredMethod("getWindow").invoke(null);
+			if (Box.graphics.getType() == GraphicsType.JGLFW)
+				return (Long) Box.graphics.getClass().getDeclaredMethod("getWindow").invoke(null);
 
-			if (Gdx.graphics.getType() == GraphicsType.LWJGL) {
-				if (Gdx.app.getClass().getName().equals("com.badlogic.gdx.backends.lwjgl.LwjglCanvas")) {
+			if (Box.graphics.getType() == GraphicsType.LWJGL) {
+				if (Box.app.getClass().getName().equals("com.badlogic.gdx.backends.lwjgl.LwjglCanvas")) {
 					Class canvasClass = Class.forName("com.badlogic.gdx.backends.lwjgl.LwjglCanvas");
-					Object canvas = canvasClass.getDeclaredMethod("getCanvas").invoke(Gdx.app);
+					Object canvas = canvasClass.getDeclaredMethod("getCanvas").invoke(Box.app);
 					return (Long)invokeMethod(invokeMethod(SwingUtilities.windowForComponent((Component)canvas), "getPeer"), "getHWnd");
 				}
 

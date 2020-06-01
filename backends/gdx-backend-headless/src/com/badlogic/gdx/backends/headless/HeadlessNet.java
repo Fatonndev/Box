@@ -20,8 +20,8 @@ import java.awt.Desktop;
 import java.awt.Desktop.Action;
 import java.awt.GraphicsEnvironment;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Net;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.net.NetJavaImpl;
 import com.badlogic.gdx.net.NetJavaServerSocketImpl;
 import com.badlogic.gdx.net.NetJavaSocketImpl;
@@ -30,7 +30,7 @@ import com.badlogic.gdx.net.ServerSocketHints;
 import com.badlogic.gdx.net.Socket;
 import com.badlogic.gdx.net.SocketHints;
 
-/** Headless implementation of the {@link com.badlogic.gdx.Net} API, based on LWJGL implementation
+/** Headless implementation of the {@link Net} API, based on LWJGL implementation
  * @author acoppes
  * @author Jon Renner */
 public class HeadlessNet implements Net {
@@ -76,10 +76,10 @@ public class HeadlessNet implements Net {
 					result = true;
 				}
 			} else {
-				Gdx.app.error("HeadlessNet", "Opening URIs on this environment is not supported. Ignoring.");		
+				Box.app.error("HeadlessNet", "Opening URIs on this environment is not supported. Ignoring.");
 			}
 		} catch (Throwable t) {
-			Gdx.app.error("HeadlessNet", "Failed to open URI. ", t);
+			Box.app.error("HeadlessNet", "Failed to open URI. ", t);
 		}
 		return result;
 	}

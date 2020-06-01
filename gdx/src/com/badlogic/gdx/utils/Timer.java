@@ -16,10 +16,10 @@
 
 package com.badlogic.gdx.utils;
 
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.LifecycleListener;
+import ru.obvilion.box.Box;
+import ru.obvilion.box.constructors.Application;
+import ru.obvilion.box.constructors.Files;
+import ru.obvilion.box.LifecycleListener;
 
 /** Executes tasks in the future on the main loop thread.
  * @author Nathan Sweet */
@@ -43,7 +43,7 @@ public class Timer {
 
 	static private TimerThread thread () {
 		synchronized (threadLock) {
-			if (thread == null || thread.files != Gdx.files) {
+			if (thread == null || thread.files != Box.files) {
 				if (thread != null) thread.dispose();
 				thread = new TimerThread();
 			}
@@ -197,7 +197,7 @@ public class Timer {
 		volatile Timer timer;
 
 		public Task () {
-			app = Gdx.app; // Store which app to postRunnable (eg for multiple LwjglAWTCanvas).
+			app = Box.app; // Store which app to postRunnable (eg for multiple LwjglAWTCanvas).
 			if (app == null) throw new IllegalStateException("Gdx.app not available.");
 		}
 
@@ -254,8 +254,8 @@ public class Timer {
 		long pauseTimeMillis;
 
 		public TimerThread () {
-			files = Gdx.files;
-			app = Gdx.app;
+			files = Box.files;
+			app = Box.app;
 			app.addLifecycleListener(this);
 			resume();
 
@@ -267,7 +267,7 @@ public class Timer {
 		public void run () {
 			while (true) {
 				synchronized (threadLock) {
-					if (thread != this || files != Gdx.files) break;
+					if (thread != this || files != Box.files) break;
 
 					long waitMillis = 5000;
 					if (pauseTimeMillis == 0) {
@@ -281,7 +281,7 @@ public class Timer {
 						}
 					}
 
-					if (thread != this || files != Gdx.files) break;
+					if (thread != this || files != Box.files) break;
 
 					try {
 						if (waitMillis > 0) threadLock.wait(waitMillis);
