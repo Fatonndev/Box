@@ -75,7 +75,7 @@
 	/** Temporary JTYPE instance, used by native methods that return a JTYPE instance */
 	public final static JTYPE static##JTYPE = new JTYPE();
 	/** Pool of JTYPE, used by native (callback) method for the arguments */
-	public final static com.badlogic.gdx.utils.Pool<JTYPE> pool##JTYPE = new com.badlogic.gdx.utils.Pool<JTYPE>() {
+	public final static Pool<JTYPE> pool##JTYPE = new Pool<JTYPE>() {
 		@Override
 		protected JTYPE newObject() {
 			return new JTYPE();

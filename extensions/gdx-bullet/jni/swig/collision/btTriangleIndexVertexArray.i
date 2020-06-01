@@ -29,12 +29,12 @@
 %typemap(javaimports) btIndexedMesh %{
 import com.badlogic.gdx.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.graphics.Mesh;
-import com.badlogic.gdx.graphics.VertexAttribute;
-import com.badlogic.gdx.graphics.VertexAttributes.Usage;
+import Mesh;
+import VertexAttribute;
+import VertexAttributes.Usage;
 import com.badlogic.gdx.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import Array;
+import GdxRuntimeException;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 %}
@@ -139,8 +139,8 @@ import java.nio.ShortBuffer;
 	 * The specified mesh must be indexed and triangulated and must outlive this btIndexedMesh.
 	 * The buffers for the vertices and indices are shared amonst both. */
 	public void set(final MeshPart meshPart) {
-		if (meshPart.primitiveType != com.badlogic.gdx.graphics.GL20.GL_TRIANGLES)
-			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
+		if (meshPart.primitiveType != GL20.GL_TRIANGLES)
+			throw new GdxRuntimeException("Mesh must be indexed and triangulated");
 		set(meshPart, meshPart.mesh, meshPart.offset, meshPart.size);
 	}
 	
@@ -156,12 +156,12 @@ import java.nio.ShortBuffer;
 	 * The buffers for the vertices and indices are shared amonst both. */
 	public void set(final Object tag, final Mesh mesh, int offset, int count) {
 		if ((count <= 0) || ((count % 3) != 0))
-			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
+			throw new GdxRuntimeException("Mesh must be indexed and triangulated");
 
 		VertexAttribute posAttr = mesh.getVertexAttribute(Usage.Position);
 		
 		if (posAttr == null)
-			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh doesn't have a position attribute");
+			throw new GdxRuntimeException("Mesh doesn't have a position attribute");
 		
 		set(tag, mesh.getVerticesBuffer(), mesh.getVertexSize(), mesh.getNumVertices(), posAttr.offset, mesh.getIndicesBuffer(), offset, count);
 	}
@@ -192,16 +192,16 @@ import java.nio.ShortBuffer;
 %typemap(javaimports) btTriangleIndexVertexArray %{
 import com.badlogic.gdx.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Matrix3;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.graphics.Mesh;
-import com.badlogic.gdx.graphics.g3d.Model;
+import Vector3;
+import Quaternion;
+import Matrix3;
+import Matrix4;
+import Mesh;
+import Model;
 import com.badlogic.gdx.graphics.g3d.model.MeshPart;
 import com.badlogic.gdx.graphics.g3d.model.NodePart;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import Array;
+import GdxRuntimeException;
 %}
 
 %typemap(javacode) btTriangleIndexVertexArray %{

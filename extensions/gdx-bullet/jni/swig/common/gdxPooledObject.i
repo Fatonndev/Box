@@ -12,7 +12,7 @@
 		return temp;
 	}
 	/** Pool of JTYPE instances, used by director interface to provide the arguments. */
-	protected static final com.badlogic.gdx.utils.Pool<JTYPE> pool = new com.badlogic.gdx.utils.Pool<JTYPE>() {
+	protected static final Pool<JTYPE> pool = new Pool<JTYPE>() {
 		@Override
 		protected JTYPE newObject() {
 			return new JTYPE(0, false);

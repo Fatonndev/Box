@@ -1,4 +1,4 @@
-#include <com.badlogic.gdx.graphics.glutils.ETC1.h>
+#include <ru.obvilion.box.graphics.glutils.ETC1.h>
 
 //@line:196
 

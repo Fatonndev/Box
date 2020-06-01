@@ -1,4 +1,4 @@
-#include <com.badlogic.gdx.utils.BufferUtils.h>
+#include <ru.obvilion.box.utils.BufferUtils.h>
 
 //@line:549
  

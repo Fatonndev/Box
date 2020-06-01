@@ -1,4 +1,4 @@
-#include <com.badlogic.gdx.backends.iosrobovm.IOSGLES10.h>
+#include <ru.obvilion.box.backends.iosrobovm.IOSGLES10.h>
 
 //@line:12
 

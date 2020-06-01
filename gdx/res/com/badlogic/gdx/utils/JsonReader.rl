@@ -16,15 +16,15 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils;
+package ru.obvilion.box.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.utils.JsonValue.ValueType;
+import ru.obvilion.box.files.FileHandle;
+import ru.obvilion.box.utils.JsonValue.ValueType;
 
 /** Lightweight JSON parser.<br>
  * <br>

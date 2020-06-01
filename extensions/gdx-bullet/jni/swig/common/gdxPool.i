@@ -1,4 +1,4 @@
-/* Provides com.badlogic.gdx.utils.Pool, to use:"
+/* Provides Pool, to use:"
  * 1. Create a Pool, ie:
  * %pragma(java) jniclasscode=%{
  *	public static final Pool<SomeJavaClass> SomeJavaClassPool = new Pool<SomeJavaClass>() {

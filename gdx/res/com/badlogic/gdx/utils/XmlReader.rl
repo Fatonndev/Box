@@ -16,15 +16,15 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils;
+package ru.obvilion.box.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.utils.ObjectMap.Entry;
+import ru.obvilion.box.files.FileHandle;
+import ru.obvilion.box.utils.ObjectMap.Entry;
 
 /** Lightweight XML parser. Supports a subset of XML features: elements, attributes, text, predefined entities, CDATA, mixed
  * content. Namespaces are parsed as part of the element or attribute name. Prologs and doctypes are ignored. Only 8-bit character
