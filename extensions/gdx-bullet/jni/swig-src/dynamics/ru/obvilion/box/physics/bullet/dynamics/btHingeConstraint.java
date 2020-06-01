@@ -8,9 +8,9 @@
 
 package ru.obvilion.box.physics.bullet.dynamics;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.physics.bullet.collision.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.collision.*;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Matrix4;

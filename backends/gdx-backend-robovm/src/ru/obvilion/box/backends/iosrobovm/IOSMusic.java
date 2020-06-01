@@ -20,8 +20,8 @@ import org.robovm.apple.foundation.NSObject;
 
 import ru.obvilion.box.Gdx;
 import ru.obvilion.box.audio.Music;
-import com.badlogic.gdx.backends.iosrobovm.objectal.AVAudioPlayerDelegateAdapter;
-import com.badlogic.gdx.backends.iosrobovm.objectal.OALAudioTrack;
+import ru.obvilion.box.backends.iosrobovm.objectal.AVAudioPlayerDelegateAdapter;
+import ru.obvilion.box.backends.iosrobovm.objectal.OALAudioTrack;
 
 /** @author Niklas Therning */
 public class IOSMusic implements Music {

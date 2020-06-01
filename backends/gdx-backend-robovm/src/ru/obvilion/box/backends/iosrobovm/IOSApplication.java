@@ -19,7 +19,7 @@ package ru.obvilion.box.backends.iosrobovm;
 import java.io.File;
 
 import ru.obvilion.box.ApplicationLogger;
-import com.badlogic.gdx.backends.iosrobovm.objectal.OALIOSAudio;
+import ru.obvilion.box.backends.iosrobovm.objectal.OALIOSAudio;
 import org.robovm.apple.coregraphics.CGRect;
 import org.robovm.apple.foundation.NSMutableDictionary;
 import org.robovm.apple.foundation.NSObject;
@@ -47,8 +47,8 @@ import ru.obvilion.box.Input;
 import ru.obvilion.box.LifecycleListener;
 import ru.obvilion.box.Net;
 import ru.obvilion.box.Preferences;
-import com.badlogic.gdx.backends.iosrobovm.objectal.OALAudioSession;
-import com.badlogic.gdx.backends.iosrobovm.objectal.OALSimpleAudio;
+import ru.obvilion.box.backends.iosrobovm.objectal.OALAudioSession;
+import ru.obvilion.box.backends.iosrobovm.objectal.OALSimpleAudio;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.Clipboard;
 

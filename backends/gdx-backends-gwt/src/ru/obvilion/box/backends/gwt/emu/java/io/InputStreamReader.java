@@ -10,7 +10,7 @@
 
 package ru.obvilion.box.backends.gwt.emu.java.io;
 
-import com.badlogic.gdx.utils.Utf8Decoder;
+import ru.obvilion.box.utils.Utf8Decoder;
 
 public class InputStreamReader extends Reader {
 	private final InputStream in;

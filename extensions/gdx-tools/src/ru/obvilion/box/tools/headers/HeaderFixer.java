@@ -22,7 +22,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.tools.FileProcessor;
+import ru.obvilion.box.tools.FileProcessor;
 
 public class HeaderFixer {
 	static int filesScanned;

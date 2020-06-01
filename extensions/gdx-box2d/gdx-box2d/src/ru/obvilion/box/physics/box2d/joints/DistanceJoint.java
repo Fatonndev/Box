@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** A distance joint constrains two points on two bodies to remain at a fixed distance from each other. You can view this as a
  * massless, rigid rod. */

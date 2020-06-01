@@ -17,7 +17,7 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.JointDef;
+import ru.obvilion.box.physics.box2d.JointDef;
 
 /** Mouse joint definition. This requires a world target point, tuning parameters, and the time step. */
 public class MouseJointDef extends JointDef {

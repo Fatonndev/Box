@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Body;
-import com.badlogic.gdx.physics.box2d.JointDef;
+import ru.obvilion.box.physics.box2d.Body;
+import ru.obvilion.box.physics.box2d.JointDef;
 
 public class MotorJointDef extends JointDef {
 

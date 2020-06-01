@@ -26,9 +26,9 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Page;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Rect;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Settings;
 import ru.obvilion.box.utils.Array;
 
 /** @author Nathan Sweet */

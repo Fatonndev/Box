@@ -1,6 +1,6 @@
 package ru.obvilion.box.tools.flame;
 
-import com.badlogic.gdx.graphics.g3d.particles.values.ParticleValue;
+import ru.obvilion.box.graphics.g3d.particles.values.ParticleValue;
 
 /** @author Inferno */
 public class ParticleValuePanel<T extends ParticleValue> extends EditorPanel<T> {

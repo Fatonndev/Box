@@ -17,7 +17,7 @@
 package ru.obvilion.box.physics.box2d;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.JointDef.JointType;
+import ru.obvilion.box.physics.box2d.JointDef.JointType;
 
 public abstract class Joint {
 	// @off

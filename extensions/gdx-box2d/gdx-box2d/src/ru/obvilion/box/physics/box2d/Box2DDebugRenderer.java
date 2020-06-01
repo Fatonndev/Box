@@ -23,10 +23,10 @@ import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
-import com.badlogic.gdx.physics.box2d.JointDef.JointType;
-import com.badlogic.gdx.physics.box2d.Shape.Type;
-import com.badlogic.gdx.physics.box2d.joints.PulleyJoint;
+import ru.obvilion.box.physics.box2d.BodyDef.BodyType;
+import ru.obvilion.box.physics.box2d.JointDef.JointType;
+import ru.obvilion.box.physics.box2d.Shape.Type;
+import ru.obvilion.box.physics.box2d.joints.PulleyJoint;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.Disposable;
 

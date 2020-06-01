@@ -18,8 +18,8 @@ package ru.obvilion.box.jnigen;
 
 import java.util.ArrayList;
 
-import com.badlogic.gdx.jnigen.BuildTarget.TargetOs;
-import com.badlogic.gdx.jnigen.FileDescriptor.FileType;
+import ru.obvilion.box.jnigen.BuildTarget.TargetOs;
+import ru.obvilion.box.jnigen.FileDescriptor.FileType;
 
 public class AndroidNdkScriptGenerator {
 	public void generate (BuildConfig config, BuildTarget target) {

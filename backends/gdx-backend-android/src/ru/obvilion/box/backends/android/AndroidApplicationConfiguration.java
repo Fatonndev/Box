@@ -22,8 +22,8 @@ import android.media.SoundPool;
 import ru.obvilion.box.Gdx;
 import ru.obvilion.box.Input;
 import ru.obvilion.box.audio.Sound;
-import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
-import com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
+import ru.obvilion.box.backends.android.surfaceview.FillResolutionStrategy;
+import ru.obvilion.box.backends.android.surfaceview.ResolutionStrategy;
 
 /** Class defining the configuration of an {@link AndroidApplication}. Allows you to disable the use of the accelerometer to save
  * battery among other things.

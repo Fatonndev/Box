@@ -23,9 +23,9 @@ import ru.obvilion.box.graphics.g2d.ParticleEmitter;
 import ru.obvilion.box.graphics.g2d.Sprite;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Fixture;
-import com.badlogic.gdx.physics.box2d.RayCastCallback;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Fixture;
+import ru.obvilion.box.physics.box2d.RayCastCallback;
+import ru.obvilion.box.physics.box2d.World;
 
 /** @author kalle_h
  * 

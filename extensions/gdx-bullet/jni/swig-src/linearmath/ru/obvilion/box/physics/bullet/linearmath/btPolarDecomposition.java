@@ -8,7 +8,7 @@
 
 package ru.obvilion.box.physics.bullet.linearmath;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import ru.obvilion.box.math.Matrix3;
 
 public class btPolarDecomposition extends BulletBase {

@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
+import ru.obvilion.box.tools.hiero.unicodefont.Glyph;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont;
 
 /** Makes glyphs a solid color.
  * @author Nathan Sweet */

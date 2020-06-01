@@ -42,10 +42,10 @@ import ru.obvilion.box.graphics.g2d.BitmapFontCache;
 import ru.obvilion.box.graphics.g2d.GlyphLayout;
 import ru.obvilion.box.graphics.g2d.GlyphLayout.GlyphRun;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
-import com.badlogic.gdx.tools.hiero.HieroSettings;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.Effect;
+import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator;
+import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
+import ru.obvilion.box.tools.hiero.HieroSettings;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.Effect;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.GdxRuntimeException;
 

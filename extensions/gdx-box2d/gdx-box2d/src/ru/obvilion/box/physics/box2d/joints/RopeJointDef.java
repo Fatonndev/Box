@@ -17,7 +17,7 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.JointDef;
+import ru.obvilion.box.physics.box2d.JointDef;
 
 /** Rope joint definition. This requires two body anchor points and a maximum lengths. Note: by default the connected objects will
  * not collide. see collideConnected in b2JointDef.

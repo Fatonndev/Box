@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Body;
-import com.badlogic.gdx.physics.box2d.JointDef;
+import ru.obvilion.box.physics.box2d.Body;
+import ru.obvilion.box.physics.box2d.JointDef;
 
 /** Prismatic joint definition. This requires defining a line of motion using an axis and an anchor point. The definition uses
  * local anchor points and a local axis so that the initial configuration can violate the constraint slightly. The joint

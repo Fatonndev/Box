@@ -8,10 +8,10 @@
 
 package ru.obvilion.box.physics.bullet.collision;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.graphics.g3d.model.NodePart;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.NodePart;
 import ru.obvilion.box.utils.Array;
 
 public class btTriangleIndexVertexArray extends btStridingMeshInterface {

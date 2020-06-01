@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.controllers.android;
 
-import com.badlogic.gdx.controllers.PovDirection;
+import ru.obvilion.box.controllers.PovDirection;
 
 class AndroidControllerEvent {
 	public static final int BUTTON_DOWN = 0;

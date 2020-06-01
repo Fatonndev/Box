@@ -19,8 +19,8 @@ package ru.obvilion.box.tools.hiero.unicodefont.effects;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
-import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
+import ru.obvilion.box.tools.hiero.unicodefont.Glyph;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont;
 
 /** A graphical effect that is applied to glyphs in a {@link UnicodeFont}.
  * @author Nathan Sweet */

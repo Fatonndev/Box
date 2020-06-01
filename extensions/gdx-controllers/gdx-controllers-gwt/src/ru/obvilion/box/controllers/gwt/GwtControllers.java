@@ -17,13 +17,13 @@
 package ru.obvilion.box.controllers.gwt;
 
 import ru.obvilion.box.Gdx;
-import com.badlogic.gdx.controllers.Controller;
-import com.badlogic.gdx.controllers.ControllerListener;
-import com.badlogic.gdx.controllers.ControllerManager;
-import com.badlogic.gdx.controllers.gwt.support.Gamepad;
-import com.badlogic.gdx.controllers.gwt.support.GamepadButton;
-import com.badlogic.gdx.controllers.gwt.support.GamepadSupport;
-import com.badlogic.gdx.controllers.gwt.support.GamepadSupportListener;
+import ru.obvilion.box.controllers.Controller;
+import ru.obvilion.box.controllers.ControllerListener;
+import ru.obvilion.box.controllers.ControllerManager;
+import ru.obvilion.box.controllers.gwt.support.Gamepad;
+import ru.obvilion.box.controllers.gwt.support.GamepadButton;
+import ru.obvilion.box.controllers.gwt.support.GamepadSupport;
+import ru.obvilion.box.controllers.gwt.support.GamepadSupportListener;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.IntMap;
 import ru.obvilion.box.utils.Pool;

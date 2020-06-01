@@ -25,7 +25,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.badlogic.gdx.graphics.g3d.particles.values.NumericValue;
+import ru.obvilion.box.graphics.g3d.particles.values.NumericValue;
 
 
 /** @author Inferno */

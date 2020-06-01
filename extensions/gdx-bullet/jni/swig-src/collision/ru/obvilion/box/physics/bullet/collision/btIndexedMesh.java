@@ -8,13 +8,13 @@
 
 package ru.obvilion.box.physics.bullet.collision;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
 import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.VertexAttributes.Usage;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.GdxRuntimeException;
 import java.nio.FloatBuffer;

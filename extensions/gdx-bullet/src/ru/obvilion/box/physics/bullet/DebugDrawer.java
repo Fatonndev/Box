@@ -23,7 +23,7 @@ import ru.obvilion.box.graphics.g2d.SpriteBatch;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.physics.bullet.linearmath.btIDebugDraw;
+import ru.obvilion.box.physics.bullet.linearmath.btIDebugDraw;
 import ru.obvilion.box.utils.Align;
 import ru.obvilion.box.utils.Disposable;
 import ru.obvilion.box.utils.viewport.Viewport;

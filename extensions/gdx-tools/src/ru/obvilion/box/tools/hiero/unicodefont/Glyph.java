@@ -24,7 +24,7 @@ import java.awt.font.GlyphVector;
 
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont.RenderType;
 
 /** Represents the glyph in a font for a unicode codepoint.
  * @author Nathan Sweet */

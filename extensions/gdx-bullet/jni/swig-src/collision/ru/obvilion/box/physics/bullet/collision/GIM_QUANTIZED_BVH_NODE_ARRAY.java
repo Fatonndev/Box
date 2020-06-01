@@ -8,8 +8,8 @@
 
 package ru.obvilion.box.physics.bullet.collision;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
 
 public class GIM_QUANTIZED_BVH_NODE_ARRAY extends btGimQuantizedBvhNodeArray {
 	private long swigCPtr;

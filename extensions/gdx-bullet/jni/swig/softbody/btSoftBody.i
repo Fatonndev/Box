@@ -4,16 +4,16 @@
 %template(btSparseSdf3) btSparseSdf<3>;
 
 %typemap(javaimports) btSoftBody %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.physics.bullet.collision.*;
-import com.badlogic.gdx.physics.bullet.dynamics.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.collision.*;
+import ru.obvilion.box.physics.bullet.dynamics.*;
 import Vector3;
 import Quaternion;
 import Matrix3;
 import Matrix4;
 import Mesh;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
 %}
 
 %{

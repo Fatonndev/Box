@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.controllers.desktop.ois;
 
-import com.badlogic.gdx.controllers.desktop.ois.OisJoystick.OisPov;
+import ru.obvilion.box.controllers.desktop.ois.OisJoystick.OisPov;
 
 /** @author mzechner
  * @author Nathan Sweet */

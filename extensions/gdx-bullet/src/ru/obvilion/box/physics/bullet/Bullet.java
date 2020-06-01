@@ -18,14 +18,14 @@ package ru.obvilion.box.physics.bullet;
 
 import java.util.Arrays;
 
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.graphics.g3d.model.Node;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.Node;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.physics.bullet.collision.btBvhTriangleMeshShape;
-import com.badlogic.gdx.physics.bullet.collision.btCollisionShape;
-import com.badlogic.gdx.physics.bullet.collision.btCompoundShape;
-import com.badlogic.gdx.physics.bullet.linearmath.LinearMath;
-import com.badlogic.gdx.physics.bullet.linearmath.LinearMathConstants;
+import ru.obvilion.box.physics.bullet.collision.btBvhTriangleMeshShape;
+import ru.obvilion.box.physics.bullet.collision.btCollisionShape;
+import ru.obvilion.box.physics.bullet.collision.btCompoundShape;
+import ru.obvilion.box.physics.bullet.linearmath.LinearMath;
+import ru.obvilion.box.physics.bullet.linearmath.LinearMathConstants;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.GdxRuntimeException;
 import ru.obvilion.box.utils.Pool;

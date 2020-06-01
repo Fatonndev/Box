@@ -11,7 +11,7 @@ import javax.swing.JScrollPane;
 
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.g3d.particles.influencers.RegionInfluencer;
+import ru.obvilion.box.graphics.g3d.particles.influencers.RegionInfluencer;
 import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */

@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** A wheel joint. This joint provides two degrees of freedom: translation along an axis fixed in body1 and rotation in the plane.
  * You can use a joint limit to restrict the range of motion and a joint motor to drive the rotation or to model rotational

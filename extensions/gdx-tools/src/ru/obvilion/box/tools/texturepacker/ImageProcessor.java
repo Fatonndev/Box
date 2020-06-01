@@ -33,10 +33,10 @@ import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Alias;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Resampling;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Alias;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Resampling;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Rect;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Settings;
 import ru.obvilion.box.utils.Array;
 
 public class ImageProcessor {

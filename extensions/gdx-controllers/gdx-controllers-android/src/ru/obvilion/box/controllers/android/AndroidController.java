@@ -20,9 +20,9 @@ import android.view.InputDevice;
 import android.view.InputDevice.MotionRange;
 import android.view.MotionEvent;
 
-import com.badlogic.gdx.controllers.Controller;
-import com.badlogic.gdx.controllers.ControllerListener;
-import com.badlogic.gdx.controllers.PovDirection;
+import ru.obvilion.box.controllers.Controller;
+import ru.obvilion.box.controllers.ControllerListener;
+import ru.obvilion.box.controllers.PovDirection;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.IntIntMap;

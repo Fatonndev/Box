@@ -7,8 +7,8 @@ import ru.obvilion.box.assets.loaders.AsynchronousAssetLoader;
 import ru.obvilion.box.assets.loaders.FileHandleResolver;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeBitmapFontData;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
+import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeBitmapFontData;
+import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import ru.obvilion.box.utils.Array;
 
 /**

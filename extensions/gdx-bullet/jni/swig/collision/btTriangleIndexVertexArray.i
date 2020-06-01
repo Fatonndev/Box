@@ -27,12 +27,12 @@
 };
 
 %typemap(javaimports) btIndexedMesh %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
 import Mesh;
 import VertexAttribute;
 import VertexAttributes.Usage;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import Array;
 import GdxRuntimeException;
 import java.nio.FloatBuffer;
@@ -190,16 +190,16 @@ import java.nio.ShortBuffer;
 %ignore btTriangleIndexVertexArray::getIndexedMeshArray();
 
 %typemap(javaimports) btTriangleIndexVertexArray %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
 import Vector3;
 import Quaternion;
 import Matrix3;
 import Matrix4;
 import Mesh;
 import Model;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.graphics.g3d.model.NodePart;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.NodePart;
 import Array;
 import GdxRuntimeException;
 %}

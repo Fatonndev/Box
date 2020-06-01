@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 import ru.obvilion.box.assets.loaders.ModelLoader;
 import ru.obvilion.box.assets.loaders.resolvers.AbsoluteFileHandleResolver;
 import ru.obvilion.box.graphics.g3d.Model;
-import com.badlogic.gdx.graphics.g3d.loader.G3dModelLoader;
-import com.badlogic.gdx.graphics.g3d.loader.ObjLoader;
-import com.badlogic.gdx.graphics.g3d.particles.ParticleEffect;
+import ru.obvilion.box.graphics.g3d.loader.G3dModelLoader;
+import ru.obvilion.box.graphics.g3d.loader.ObjLoader;
+import ru.obvilion.box.graphics.g3d.particles.ParticleEffect;
 import ru.obvilion.box.utils.JsonReader;
 import ru.obvilion.box.utils.UBJsonReader;
 

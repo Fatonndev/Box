@@ -17,9 +17,9 @@
 package ru.obvilion.box.controllers.desktop.ois;
 
 import ru.obvilion.box.ApplicationAdapter;
-import com.badlogic.gdx.controllers.desktop.DesktopControllersBuild;
-import com.badlogic.gdx.controllers.desktop.OisControllers;
-import com.badlogic.gdx.controllers.desktop.ois.OisJoystick.OisPov;
+import ru.obvilion.box.controllers.desktop.DesktopControllersBuild;
+import ru.obvilion.box.controllers.desktop.OisControllers;
+import ru.obvilion.box.controllers.desktop.ois.OisJoystick.OisPov;
 import ru.obvilion.box.utils.SharedLibraryLoader;
 
 public class OisTest {

@@ -41,9 +41,9 @@ import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.ColorEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.Effect;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont.RenderType;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.ColorEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.Effect;
 import ru.obvilion.box.utils.Array;
 
 /** Stores a number of glyphs on a single texture.

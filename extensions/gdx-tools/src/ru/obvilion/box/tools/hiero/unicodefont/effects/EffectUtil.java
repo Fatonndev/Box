@@ -42,8 +42,8 @@ import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.SpinnerNumberModel;
 
-import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
+import ru.obvilion.box.tools.hiero.unicodefont.GlyphPage;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
 
 /** Provides utility methods for effects.
  * @author Nathan Sweet */

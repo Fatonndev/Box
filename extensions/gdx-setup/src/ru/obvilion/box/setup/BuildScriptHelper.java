@@ -17,7 +17,7 @@
 package ru.obvilion.box.setup;
 
 
-import com.badlogic.gdx.setup.DependencyBank.ProjectType;
+import ru.obvilion.box.setup.DependencyBank.ProjectType;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

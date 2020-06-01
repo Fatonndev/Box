@@ -8,9 +8,9 @@
 
 package ru.obvilion.box.physics.bullet.dynamics;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.physics.bullet.collision.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.collision.*;
 
 public class btTypedConstraint extends btTypedObject {
 	private long swigCPtr;

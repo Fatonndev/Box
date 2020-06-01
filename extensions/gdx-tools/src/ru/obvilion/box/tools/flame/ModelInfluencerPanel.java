@@ -4,7 +4,7 @@ import java.awt.GridBagConstraints;
 import java.awt.Insets;
 
 import ru.obvilion.box.graphics.g3d.Model;
-import com.badlogic.gdx.graphics.g3d.particles.influencers.ModelInfluencer;
+import ru.obvilion.box.graphics.g3d.particles.influencers.ModelInfluencer;
 
 /** @author Inferno */
 public class ModelInfluencerPanel extends InfluencerPanel<ModelInfluencer> implements TemplatePickerPanel.Listener<Model>, EventManager.Listener {

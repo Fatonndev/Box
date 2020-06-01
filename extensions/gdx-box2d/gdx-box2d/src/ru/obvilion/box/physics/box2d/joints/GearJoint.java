@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.physics.box2d.joints;
 
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** A gear joint is used to connect two joints together. Either joint can be a revolute or prismatic joint. You specify a gear
  * ratio to bind the motions together: coordinate1 + ratio * coordinate2 = constant The ratio can be negative or positive. If one

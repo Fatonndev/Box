@@ -17,7 +17,7 @@
 package ru.obvilion.box.physics.box2d;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
+import ru.obvilion.box.physics.box2d.BodyDef.BodyType;
 import ru.obvilion.box.utils.Array;
 
 /** A rigid body. These are created via World.CreateBody.

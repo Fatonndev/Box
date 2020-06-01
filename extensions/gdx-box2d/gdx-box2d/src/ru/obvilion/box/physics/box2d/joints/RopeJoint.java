@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** A rope joint enforces a maximum distance between two points on two bodies. It has no other effect. Warning: if you attempt to
  * change the maximum length during the simulation you will get some non-physical behavior. A model that would allow you to

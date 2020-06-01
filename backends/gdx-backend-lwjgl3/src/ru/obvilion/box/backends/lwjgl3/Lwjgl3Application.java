@@ -48,7 +48,7 @@ import ru.obvilion.box.Input;
 import ru.obvilion.box.LifecycleListener;
 import ru.obvilion.box.Net;
 import ru.obvilion.box.Preferences;
-import com.badlogic.gdx.backends.lwjgl3.audio.mock.MockAudio;
+import ru.obvilion.box.backends.lwjgl3.audio.mock.MockAudio;
 import ru.obvilion.box.utils.Array;
 import ru.obvilion.box.utils.Clipboard;
 import ru.obvilion.box.utils.GdxRuntimeException;

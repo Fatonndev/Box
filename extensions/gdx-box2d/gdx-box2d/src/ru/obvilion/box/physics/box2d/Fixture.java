@@ -17,7 +17,7 @@
 package ru.obvilion.box.physics.box2d;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Shape.Type;
+import ru.obvilion.box.physics.box2d.Shape.Type;
 import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class Fixture {

@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.mappings;
 
-import com.badlogic.gdx.controllers.Controller;
+import ru.obvilion.box.controllers.Controller;
 
 /** Mappings for the Xbox series of controllers. Based on "standard" controller mapping.
  * 

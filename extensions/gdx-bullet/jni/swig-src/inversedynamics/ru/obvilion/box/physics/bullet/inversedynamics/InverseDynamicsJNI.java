@@ -8,10 +8,10 @@
 
 package ru.obvilion.box.physics.bullet.inversedynamics;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.physics.bullet.collision.*;
-import com.badlogic.gdx.physics.bullet.dynamics.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.collision.*;
+import ru.obvilion.box.physics.bullet.dynamics.*;
 
 public class InverseDynamicsJNI {
   public final static native void setZero__SWIG_0(long jarg1);

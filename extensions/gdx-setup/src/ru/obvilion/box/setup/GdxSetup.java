@@ -25,9 +25,9 @@ import java.util.Properties;
 
 import javax.swing.JOptionPane;
 
-import com.badlogic.gdx.setup.DependencyBank.ProjectDependency;
-import com.badlogic.gdx.setup.DependencyBank.ProjectType;
-import com.badlogic.gdx.setup.Executor.CharCallback;
+import ru.obvilion.box.setup.DependencyBank.ProjectDependency;
+import ru.obvilion.box.setup.DependencyBank.ProjectType;
+import ru.obvilion.box.setup.Executor.CharCallback;
 
 /** Command line tool to generate libgdx projects
  * @author badlogic

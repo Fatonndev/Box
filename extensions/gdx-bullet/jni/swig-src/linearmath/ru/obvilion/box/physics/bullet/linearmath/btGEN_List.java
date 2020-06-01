@@ -8,7 +8,7 @@
 
 package ru.obvilion.box.physics.bullet.linearmath;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 
 public class btGEN_List extends BulletBase {
 	private long swigCPtr;

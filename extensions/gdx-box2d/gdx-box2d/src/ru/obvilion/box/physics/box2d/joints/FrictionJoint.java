@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** Friction joint. This is used for top-down friction. It provides 2D translational friction and angular friction. */
 public class FrictionJoint extends Joint {

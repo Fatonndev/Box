@@ -16,11 +16,11 @@
 
 package ru.obvilion.box.tools.texturepacker;
 
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Packer;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Packer;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Page;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.ProgressListener;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Rect;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Settings;
 import ru.obvilion.box.utils.Array;
 
 /** @author Nathan Sweet */

@@ -25,9 +25,9 @@ import java.util.Comparator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.badlogic.gdx.tools.FileProcessor;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
+import ru.obvilion.box.tools.FileProcessor;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.ProgressListener;
+import ru.obvilion.box.tools.texturepacker.TexturePacker.Settings;
 import ru.obvilion.box.utils.GdxRuntimeException;
 import ru.obvilion.box.utils.Json;
 import ru.obvilion.box.utils.JsonReader;

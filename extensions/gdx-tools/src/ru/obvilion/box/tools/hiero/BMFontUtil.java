@@ -39,9 +39,9 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
 import ru.obvilion.box.Gdx;
-import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
-import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
+import ru.obvilion.box.tools.hiero.unicodefont.Glyph;
+import ru.obvilion.box.tools.hiero.unicodefont.GlyphPage;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont;
 import ru.obvilion.box.utils.IntIntMap;
 
 /** @author Nathan Sweet */

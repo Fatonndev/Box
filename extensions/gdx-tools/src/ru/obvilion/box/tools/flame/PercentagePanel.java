@@ -26,8 +26,8 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import com.badlogic.gdx.graphics.g3d.particles.values.ScaledNumericValue;
-import com.badlogic.gdx.tools.particleeditor.Chart;
+import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
+import ru.obvilion.box.tools.particleeditor.Chart;
 
 /** @author Inferno */
 class PercentagePanel extends ParticleValuePanel<ScaledNumericValue> {

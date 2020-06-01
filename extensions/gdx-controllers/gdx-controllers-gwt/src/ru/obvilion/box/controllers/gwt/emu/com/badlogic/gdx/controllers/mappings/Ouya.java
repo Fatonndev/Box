@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.mappings;
 
-import com.badlogic.gdx.controllers.Controller;
+import ru.obvilion.box.controllers.Controller;
 
 /** Button and axis indices for the OUYA {@link Controller}.
  * @author mzechner */

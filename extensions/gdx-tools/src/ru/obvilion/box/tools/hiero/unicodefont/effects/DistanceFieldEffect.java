@@ -24,9 +24,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.badlogic.gdx.tools.distancefield.DistanceFieldGenerator;
-import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
+import ru.obvilion.box.tools.distancefield.DistanceFieldGenerator;
+import ru.obvilion.box.tools.hiero.unicodefont.Glyph;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont;
 
 /**
  * A filter to create a distance field. The resulting font can be rendered

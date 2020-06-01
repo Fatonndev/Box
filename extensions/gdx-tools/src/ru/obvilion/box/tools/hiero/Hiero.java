@@ -92,20 +92,20 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.ColorEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
+import ru.obvilion.box.tools.hiero.unicodefont.GlyphPage;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont.RenderType;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.ColorEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.ConfigurableEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
 import ru.obvilion.box.utils.StringBuilder;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.DistanceFieldEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.EffectUtil;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.GradientEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.OutlineEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.OutlineWobbleEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.OutlineZigzagEffect;
-import com.badlogic.gdx.tools.hiero.unicodefont.effects.ShadowEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.DistanceFieldEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.EffectUtil;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.GradientEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.OutlineEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.OutlineWobbleEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.OutlineZigzagEffect;
+import ru.obvilion.box.tools.hiero.unicodefont.effects.ShadowEffect;
 
 /** A tool to visualize settings for {@link UnicodeFont} and to export BMFont files for use with {@link BitmapFont}.
  * <p>

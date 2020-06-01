@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** A mouse joint is used to make a point on a body track a specified world point. This a soft constraint with a maximum force.
  * This allows the constraint to stretch and without applying huge forces. NOTE: this joint is not documented in the manual

@@ -8,8 +8,8 @@
 
 package ru.obvilion.box.physics.bullet.collision;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
 
 public class btActivatingCollisionAlgorithm extends btCollisionAlgorithm {
 	private long swigCPtr;

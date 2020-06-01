@@ -52,8 +52,8 @@ import javax.swing.border.Border;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 
-import com.badlogic.gdx.setup.GdxSetupUI.SetupButton;
-import com.badlogic.gdx.setup.GdxSetupUI.SetupCheckBox;
+import ru.obvilion.box.setup.GdxSetupUI.SetupButton;
+import ru.obvilion.box.setup.GdxSetupUI.SetupCheckBox;
 
 public class SettingsDialog extends JDialog {
 

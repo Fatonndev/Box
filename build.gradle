@@ -2,7 +2,7 @@ apply from: "gradle/dependencies.gradle"
 
 
 allprojects {
-    group = 'com.badlogicgames.gdx'
+    group = 'ru.obvilion.box'
     version = '1.9.10-SNAPSHOT'
 
     buildscript {
@@ -10,7 +10,9 @@ allprojects {
             google()
             jcenter()
             mavenCentral()
-            maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+            maven {
+                url "https://oss.sonatype.org/content/repositories/snapshots/"
+            }
         }
     }
 
@@ -18,7 +20,9 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
     }
 }
 

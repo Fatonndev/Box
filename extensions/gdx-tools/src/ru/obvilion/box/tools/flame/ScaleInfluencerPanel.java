@@ -1,6 +1,6 @@
 package ru.obvilion.box.tools.flame;
 
-import com.badlogic.gdx.graphics.g3d.particles.influencers.ScaleInfluencer;
+import ru.obvilion.box.graphics.g3d.particles.influencers.ScaleInfluencer;
 
 
 /** @author Inferno */

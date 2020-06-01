@@ -8,14 +8,14 @@
 
 package ru.obvilion.box.physics.bullet.extras;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.physics.bullet.collision.*;
-import com.badlogic.gdx.physics.bullet.dynamics.*;
-import com.badlogic.gdx.physics.bullet.inversedynamics.MultiBodyTree;
-import com.badlogic.gdx.physics.bullet.dynamics.btDynamicsWorld;
-import com.badlogic.gdx.physics.bullet.dynamics.btContactSolverInfo;
-import com.badlogic.gdx.physics.bullet.collision.btCollisionShape;
+import ru.obvilion.box.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.linearmath.*;
+import ru.obvilion.box.physics.bullet.collision.*;
+import ru.obvilion.box.physics.bullet.dynamics.*;
+import ru.obvilion.box.physics.bullet.inversedynamics.MultiBodyTree;
+import ru.obvilion.box.physics.bullet.dynamics.btDynamicsWorld;
+import ru.obvilion.box.physics.bullet.dynamics.btContactSolverInfo;
+import ru.obvilion.box.physics.bullet.collision.btCollisionShape;
 
 public class btMultiBodyTreeCreator extends MultiBodyTreeCreator {
 	private long swigCPtr;

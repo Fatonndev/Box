@@ -17,8 +17,8 @@
 package ru.obvilion.box.physics.box2d.joints;
 
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.World;
+import ru.obvilion.box.physics.box2d.Joint;
+import ru.obvilion.box.physics.box2d.World;
 
 /** A revolute joint constrains two bodies to share a common point while they are free to rotate about the point. The relative
  * rotation about the shared point is the joint angle. You can limit the relative rotation with a joint limit that specifies a

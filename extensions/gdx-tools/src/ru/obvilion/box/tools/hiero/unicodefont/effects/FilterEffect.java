@@ -20,8 +20,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferedImageOp;
 
-import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
-import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
+import ru.obvilion.box.tools.hiero.unicodefont.Glyph;
+import ru.obvilion.box.tools.hiero.unicodefont.UnicodeFont;
 
 /** Applys a {@link BufferedImageOp} filter to glyphs. Many filters can be fond here: http://www.jhlabs.com/ip/filters/index.html
  * @author Nathan Sweet */

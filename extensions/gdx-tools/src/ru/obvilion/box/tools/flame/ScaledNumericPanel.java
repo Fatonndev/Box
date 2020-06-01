@@ -30,8 +30,8 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.badlogic.gdx.graphics.g3d.particles.values.ScaledNumericValue;
-import com.badlogic.gdx.tools.particleeditor.Chart;
+import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
+import ru.obvilion.box.tools.particleeditor.Chart;
 
 /** @author Inferno */
 class ScaledNumericPanel extends ParticleValuePanel<ScaledNumericValue> {
