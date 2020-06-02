@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.headless;
 import java.io.File;
 
 import ru.obvilion.box.constructors.Files;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 
 /** @author mzechner
  * @author Nathan Sweet */

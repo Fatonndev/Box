@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.assets.loaders.resolvers;
+package com.badlogic.gdx.assets.loaders.resolvers;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.assets.loaders.FileHandleResolver;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.assets.loaders.FileHandleResolver;
+import com.badlogic.gdx.files.FileHandle;
 
 public class ClasspathFileHandleResolver implements FileHandleResolver {
 	@Override

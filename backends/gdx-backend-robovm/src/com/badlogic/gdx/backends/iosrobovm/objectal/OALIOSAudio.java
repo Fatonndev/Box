@@ -25,7 +25,7 @@ import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
 import com.badlogic.gdx.backends.iosrobovm.IOSAudio;
 import com.badlogic.gdx.backends.iosrobovm.IOSMusic;
 import com.badlogic.gdx.backends.iosrobovm.IOSSound;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class OALIOSAudio implements IOSAudio {

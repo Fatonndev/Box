@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.particles.influencers;
 
-import ru.obvilion.box.assets.AssetManager;
+import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.g3d.particles.ParallelArray.FloatChannel;
 import com.badlogic.gdx.graphics.g3d.particles.ParticleChannels;
 import com.badlogic.gdx.graphics.g3d.particles.ResourceData;

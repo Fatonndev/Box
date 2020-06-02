@@ -28,7 +28,7 @@ import java.util.Properties;
 
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.Preferences;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.StreamUtils;
 

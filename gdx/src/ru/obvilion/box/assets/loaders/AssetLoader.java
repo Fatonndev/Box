@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.assets.loaders;
+package com.badlogic.gdx.assets.loaders;
 
-import ru.obvilion.box.assets.AssetDescriptor;
-import ru.obvilion.box.assets.AssetLoaderParameters;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.assets.AssetDescriptor;
+import com.badlogic.gdx.assets.AssetLoaderParameters;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Array;
 
 /** Abstract base class for asset loaders.

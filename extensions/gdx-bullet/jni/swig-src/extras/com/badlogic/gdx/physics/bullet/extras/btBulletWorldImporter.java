@@ -9,7 +9,7 @@
 package com.badlogic.gdx.physics.bullet.extras;
 
 import com.badlogic.gdx.physics.bullet.dynamics.btDynamicsWorld;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 
 public class btBulletWorldImporter extends btWorldImporter {
 	private long swigCPtr;

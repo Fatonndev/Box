@@ -18,7 +18,7 @@ package com.badlogic.gdx.backends.lwjgl3.audio;
 
 import java.io.ByteArrayOutputStream;
 
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.StreamUtils;
 
 /** @author Nathan Sweet */

@@ -27,7 +27,7 @@ import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.backends.gwt.GwtFileHandle;
 import com.badlogic.gdx.backends.gwt.preloader.AssetDownloader.AssetLoaderListener;
 import com.badlogic.gdx.backends.gwt.preloader.AssetFilter.AssetType;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.ObjectMap;

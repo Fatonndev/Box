@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.assets;
+package com.badlogic.gdx.assets;
 
 public interface AssetErrorListener {
 	public void error (AssetDescriptor asset, Throwable throwable);

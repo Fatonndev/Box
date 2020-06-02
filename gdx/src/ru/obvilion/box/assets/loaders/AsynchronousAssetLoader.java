@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.assets.loaders;
+package com.badlogic.gdx.assets.loaders;
 
-import ru.obvilion.box.assets.AssetLoaderParameters;
-import ru.obvilion.box.assets.AssetManager;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.assets.AssetLoaderParameters;
+import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.files.FileHandle;
 
 /** Base class for asynchronous {@link AssetLoader} instances. Such loaders try to load parts of an OpenGL resource, like the
  * Pixmap, on a separate thread to then load the actual resource on the thread the OpenGL context is active on.

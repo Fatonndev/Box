@@ -21,11 +21,11 @@ import java.util.Map;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Application;
-import ru.obvilion.box.assets.AssetLoaderParameters.LoadedCallback;
-import ru.obvilion.box.assets.AssetManager;
-import ru.obvilion.box.assets.loaders.AssetLoader;
-import ru.obvilion.box.assets.loaders.CubemapLoader.CubemapParameter;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.assets.AssetLoaderParameters.LoadedCallback;
+import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.assets.loaders.AssetLoader;
+import com.badlogic.gdx.assets.loaders.CubemapLoader.CubemapParameter;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.Texture.TextureWrap;

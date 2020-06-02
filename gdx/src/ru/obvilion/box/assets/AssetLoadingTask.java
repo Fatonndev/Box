@@ -14,12 +14,12 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.assets;
+package com.badlogic.gdx.assets;
 
-import ru.obvilion.box.assets.loaders.AssetLoader;
-import ru.obvilion.box.assets.loaders.AsynchronousAssetLoader;
-import ru.obvilion.box.assets.loaders.SynchronousAssetLoader;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.assets.loaders.AssetLoader;
+import com.badlogic.gdx.assets.loaders.AsynchronousAssetLoader;
+import com.badlogic.gdx.assets.loaders.SynchronousAssetLoader;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.Logger;
