@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.iosmoe;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.audio.Music;
+import ru.obvilion.box.audio.Music;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALAudioTrack;
 import apple.avfoundation.AVAudioPlayer;
 import apple.avfoundation.protocol.AVAudioPlayerDelegate;

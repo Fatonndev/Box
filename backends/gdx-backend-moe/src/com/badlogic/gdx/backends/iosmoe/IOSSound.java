@@ -15,7 +15,7 @@
  ******************************************************************************/
 package com.badlogic.gdx.backends.iosmoe;
 
-import com.badlogic.gdx.audio.Sound;
+import ru.obvilion.box.audio.Sound;
 import com.badlogic.gdx.backends.iosmoe.objectal.ALBuffer;
 import com.badlogic.gdx.backends.iosmoe.objectal.ALChannelSource;
 import com.badlogic.gdx.backends.iosmoe.objectal.ALSource;

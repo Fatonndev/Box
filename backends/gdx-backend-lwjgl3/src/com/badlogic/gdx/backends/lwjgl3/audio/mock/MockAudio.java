@@ -18,8 +18,8 @@ package com.badlogic.gdx.backends.lwjgl3.audio.mock;
 
 import ru.obvilion.box.audio.AudioDevice;
 import ru.obvilion.box.audio.AudioRecorder;
-import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
+import ru.obvilion.box.audio.Music;
+import ru.obvilion.box.audio.Sound;
 import com.badlogic.gdx.backends.lwjgl3.audio.Lwjgl3Audio;
 import com.badlogic.gdx.files.FileHandle;
 
