@@ -18,12 +18,12 @@ package com.badlogic.gdx.backends.headless.mock.graphics;
 
 import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.constructors.Graphics;
-import com.badlogic.gdx.graphics.Cursor;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.GL30;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Cursor.SystemCursor;
-import com.badlogic.gdx.graphics.glutils.GLVersion;
+import ru.obvilion.box.graphics.Cursor;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.GL30;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Cursor.SystemCursor;
+import ru.obvilion.box.graphics.glutils.GLVersion;
 
 /** The headless backend does its best to mock elements. This is intended to make code-sharing between
  * server and client as simple as possible.

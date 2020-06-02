@@ -27,7 +27,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.ScaledNumericValue;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.ScaledNumericValue;
 
 class PercentagePanel extends EditorPanel {
 	final ScaledNumericValue value;

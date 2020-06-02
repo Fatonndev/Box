@@ -16,11 +16,9 @@
 
 package com.badlogic.gdx.tools.particleeditor;
 
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

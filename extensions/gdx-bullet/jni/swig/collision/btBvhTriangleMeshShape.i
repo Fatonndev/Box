@@ -27,10 +27,10 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Matrix3;
 import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.graphics.Mesh;
-import com.badlogic.gdx.graphics.g3d.Model;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.graphics.g3d.model.NodePart;
+import ru.obvilion.box.graphics.Mesh;
+import ru.obvilion.box.graphics.g3d.Model;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.NodePart;
 import com.badlogic.gdx.utils.Array;
 %}
 

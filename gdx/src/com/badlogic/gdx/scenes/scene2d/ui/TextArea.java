@@ -18,9 +18,9 @@ package com.badlogic.gdx.scenes.scene2d.ui;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import ru.obvilion.box.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.g2d.BitmapFont;
+import ru.obvilion.box.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;

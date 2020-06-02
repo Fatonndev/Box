@@ -29,10 +29,10 @@
 %typemap(javaimports) btIndexedMesh %{
 import com.badlogic.gdx.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.graphics.Mesh;
-import com.badlogic.gdx.graphics.VertexAttribute;
-import com.badlogic.gdx.graphics.VertexAttributes.Usage;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.Mesh;
+import ru.obvilion.box.graphics.VertexAttribute;
+import ru.obvilion.box.graphics.VertexAttributes.Usage;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import java.nio.FloatBuffer;
@@ -139,7 +139,7 @@ import java.nio.ShortBuffer;
 	 * The specified mesh must be indexed and triangulated and must outlive this btIndexedMesh.
 	 * The buffers for the vertices and indices are shared amonst both. */
 	public void set(final MeshPart meshPart) {
-		if (meshPart.primitiveType != com.badlogic.gdx.graphics.GL20.GL_TRIANGLES)
+		if (meshPart.primitiveType != ru.obvilion.box.graphics.GL20.GL_TRIANGLES)
 			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
 		set(meshPart, meshPart.mesh, meshPart.offset, meshPart.size);
 	}
@@ -196,10 +196,10 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Matrix3;
 import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.graphics.Mesh;
-import com.badlogic.gdx.graphics.g3d.Model;
-import com.badlogic.gdx.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.graphics.g3d.model.NodePart;
+import ru.obvilion.box.graphics.Mesh;
+import ru.obvilion.box.graphics.g3d.Model;
+import ru.obvilion.box.graphics.g3d.model.MeshPart;
+import ru.obvilion.box.graphics.g3d.model.NodePart;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 %}

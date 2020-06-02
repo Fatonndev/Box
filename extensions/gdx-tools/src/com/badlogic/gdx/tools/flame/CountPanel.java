@@ -22,7 +22,7 @@ import javax.swing.JLabel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.badlogic.gdx.graphics.g3d.particles.ParticleController;
+import ru.obvilion.box.graphics.g3d.particles.ParticleController;
 
 /** @author Inferno */
 class CountPanel extends EditorPanel {

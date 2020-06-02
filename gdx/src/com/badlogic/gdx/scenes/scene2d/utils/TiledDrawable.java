@@ -16,10 +16,10 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.Color;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 
 /** Draws a {@link TextureRegion} repeatedly to fill the area, instead of stretching it.
  * @author Nathan Sweet */

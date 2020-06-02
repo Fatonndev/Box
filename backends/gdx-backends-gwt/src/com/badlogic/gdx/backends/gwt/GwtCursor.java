@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.graphics.Cursor;
-import com.badlogic.gdx.graphics.Pixmap;
+import ru.obvilion.box.graphics.Cursor;
+import ru.obvilion.box.graphics.Pixmap;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class GwtCursor implements Cursor {

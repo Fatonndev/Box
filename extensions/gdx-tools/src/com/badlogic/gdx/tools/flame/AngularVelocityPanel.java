@@ -10,7 +10,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier;
+import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier;
 
 /** @author Inferno */
 public class AngularVelocityPanel extends EditorPanel<DynamicsModifier.Angular> {

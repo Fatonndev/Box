@@ -27,7 +27,7 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.badlogic.gdx.graphics.g3d.particles.values.RangedNumericValue;
+import ru.obvilion.box.graphics.g3d.particles.values.RangedNumericValue;
 
 /** @author Inferno */
 class RangedNumericPanel extends ParticleValuePanel<RangedNumericValue> {

@@ -16,11 +16,11 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.BitmapFontCache;
-import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import ru.obvilion.box.graphics.Color;
+import ru.obvilion.box.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.g2d.BitmapFont;
+import ru.obvilion.box.graphics.g2d.BitmapFontCache;
+import ru.obvilion.box.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.utils.Align;

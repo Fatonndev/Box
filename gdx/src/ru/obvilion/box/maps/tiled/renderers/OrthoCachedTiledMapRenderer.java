@@ -16,15 +16,15 @@
 
 package ru.obvilion.box.maps.tiled.renderers;
 
-import static com.badlogic.gdx.graphics.g2d.Batch.*;
+import static ru.obvilion.box.graphics.g2d.Batch.*;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteCache;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.Color;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.OrthographicCamera;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.SpriteCache;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.MapLayer;
 import ru.obvilion.box.maps.MapLayers;
 import ru.obvilion.box.maps.MapObject;

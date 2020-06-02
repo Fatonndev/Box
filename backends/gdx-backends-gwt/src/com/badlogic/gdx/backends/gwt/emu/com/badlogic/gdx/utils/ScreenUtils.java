@@ -20,11 +20,11 @@ import java.nio.ByteBuffer;
 import java.nio.HasArrayBufferView;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap.Format;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 import com.google.gwt.canvas.dom.client.Context2d;
 import com.google.gwt.typedarrays.shared.ArrayBufferView;

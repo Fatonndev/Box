@@ -32,7 +32,7 @@ import org.lwjgl.glfw.GLFWWindowRefreshCallback;
 import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.ApplicationListener;
 import ru.obvilion.box.constructors.Files;
-import com.badlogic.gdx.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.SharedLibraryLoader;
@@ -280,7 +280,7 @@ public class Lwjgl3Window implements Disposable {
 	/**
 	 * Sets the icon that will be used in the window's title bar. Has no effect in macOS, which doesn't use window icons.
 	 * @param image One or more images. The one closest to the system's desired size will be scaled. Good sizes include
-	 * 16x16, 32x32 and 48x48. Pixmap format {@link com.badlogic.gdx.graphics.Pixmap.Format#RGBA8888 RGBA8888} is preferred
+	 * 16x16, 32x32 and 48x48. Pixmap format {@link ru.obvilion.box.graphics.Pixmap.Format#RGBA8888 RGBA8888} is preferred
 	 * so the images will not have to be copied and converted. The chosen image is copied, and the provided Pixmaps are not
 	 * disposed.
 	 */

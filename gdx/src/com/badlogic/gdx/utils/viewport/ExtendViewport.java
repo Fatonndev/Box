@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.utils.viewport;
 
-import com.badlogic.gdx.graphics.Camera;
-import com.badlogic.gdx.graphics.OrthographicCamera;
+import ru.obvilion.box.graphics.Camera;
+import ru.obvilion.box.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Scaling;
 

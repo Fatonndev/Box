@@ -32,8 +32,8 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.graphics.g2d.ParticleEffect;
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
+import ru.obvilion.box.graphics.g2d.ParticleEffect;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.StreamUtils;
 

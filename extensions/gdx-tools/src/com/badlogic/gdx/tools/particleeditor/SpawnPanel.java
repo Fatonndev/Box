@@ -28,9 +28,9 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.SpawnEllipseSide;
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.SpawnShape;
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.SpawnShapeValue;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.SpawnEllipseSide;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.SpawnShape;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.SpawnShapeValue;
 
 class SpawnPanel extends EditorPanel {
 	JComboBox shapeCombo;

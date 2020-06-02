@@ -17,9 +17,9 @@
 package com.badlogic.gdx.tools.texturepacker;
 
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Page;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
+import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData;
+import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Page;
+import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

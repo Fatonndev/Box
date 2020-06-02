@@ -12,9 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.badlogic.gdx.graphics.g3d.particles.ParticleShader.AlignMode;
-import com.badlogic.gdx.graphics.g3d.particles.ParticleSorter;
-import com.badlogic.gdx.graphics.g3d.particles.batches.BillboardParticleBatch;
+import ru.obvilion.box.graphics.g3d.particles.ParticleShader.AlignMode;
+import ru.obvilion.box.graphics.g3d.particles.ParticleSorter;
+import ru.obvilion.box.graphics.g3d.particles.batches.BillboardParticleBatch;
 
 /** @author Inferno */
 public class BillboardBatchPanel extends EditorPanel<BillboardParticleBatch> {

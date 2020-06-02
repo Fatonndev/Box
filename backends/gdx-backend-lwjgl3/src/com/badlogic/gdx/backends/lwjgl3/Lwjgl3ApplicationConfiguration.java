@@ -33,9 +33,9 @@ import ru.obvilion.box.constructors.Graphics.Monitor;
 import ru.obvilion.box.Preferences;
 import ru.obvilion.box.audio.Music;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Graphics.Lwjgl3Monitor;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.glutils.HdpiMode;
-import com.badlogic.gdx.graphics.glutils.HdpiUtils;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.glutils.HdpiMode;
+import ru.obvilion.box.graphics.glutils.HdpiUtils;
 
 public class Lwjgl3ApplicationConfiguration extends Lwjgl3WindowConfiguration {
 	boolean disableAudio = false;

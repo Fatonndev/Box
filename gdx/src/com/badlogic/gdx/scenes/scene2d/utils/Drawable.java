@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import com.badlogic.gdx.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.g2d.Batch;
 
 /** A drawable knows how to draw itself at a given rectangular size. It provides padding sizes and a minimum size so that other
  * code can determine how to size and position content.

@@ -36,17 +36,17 @@ import ru.obvilion.box.InputMultiplexer;
 import ru.obvilion.box.InputProcessor;
 import com.badlogic.gdx.backends.lwjgl.LwjglCanvas;
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.ParticleEffect;
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.GradientColorValue;
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.NumericValue;
-import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.OrthographicCamera;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.BitmapFont;
+import ru.obvilion.box.graphics.g2d.ParticleEffect;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.GradientColorValue;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.NumericValue;
+import ru.obvilion.box.graphics.g2d.Sprite;
+import ru.obvilion.box.graphics.g2d.SpriteBatch;
+import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
@@ -292,7 +292,7 @@ public class ParticleEditor extends JFrame {
 		private SpriteBatch spriteBatch;
 
 		private ShapeRenderer shapeRenderer;
-		private com.badlogic.gdx.graphics.Color lineColor;
+		private ru.obvilion.box.graphics.Color lineColor;
 
 		public Sprite bgImage; // BOZO - Add setting background image to UI.
 
@@ -304,7 +304,7 @@ public class ParticleEditor extends JFrame {
 			customShading = new CustomShading();
 			spriteBatch = new SpriteBatch();
 			shapeRenderer = new ShapeRenderer();
-			lineColor = com.badlogic.gdx.graphics.Color.valueOf("636363");
+			lineColor = ru.obvilion.box.graphics.Color.valueOf("636363");
 
 			worldCamera = new OrthographicCamera();
 			textCamera = new OrthographicCamera();
@@ -446,8 +446,8 @@ public class ParticleEditor extends JFrame {
 			}
 
 			shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
-			shapeRenderer.line(-1000, 0, 1000, 0, com.badlogic.gdx.graphics.Color.GREEN, com.badlogic.gdx.graphics.Color.GREEN);
-			shapeRenderer.line(0, -1000, 0, 1000, com.badlogic.gdx.graphics.Color.RED, com.badlogic.gdx.graphics.Color.RED);
+			shapeRenderer.line(-1000, 0, 1000, 0, ru.obvilion.box.graphics.Color.GREEN, ru.obvilion.box.graphics.Color.GREEN);
+			shapeRenderer.line(0, -1000, 0, 1000, ru.obvilion.box.graphics.Color.RED, ru.obvilion.box.graphics.Color.RED);
 			shapeRenderer.end();
 
 			spriteBatch.begin();

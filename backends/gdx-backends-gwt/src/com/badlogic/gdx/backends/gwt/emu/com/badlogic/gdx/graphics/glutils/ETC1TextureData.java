@@ -14,12 +14,12 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.graphics.glutils;
+package ru.obvilion.box.graphics.glutils;
 
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.TextureData;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap.Format;
+import ru.obvilion.box.graphics.TextureData;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class ETC1TextureData implements TextureData {
