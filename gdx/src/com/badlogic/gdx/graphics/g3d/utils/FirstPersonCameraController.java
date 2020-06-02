@@ -20,7 +20,7 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input.Keys;
 import ru.obvilion.box.InputAdapter;
 import com.badlogic.gdx.graphics.Camera;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.IntIntMap;
 
 /** Takes a {@link Camera} instance and controls it via w,a,s,d and mouse panning.

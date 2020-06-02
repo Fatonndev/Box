@@ -25,7 +25,7 @@ import com.badlogic.gdx.graphics.Pixmap.Blending;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 
 /** Class with static helper methods that provide access to the default OpenGL FrameBuffer. These methods can be used to get the
  * entire screen content or a portion thereof.

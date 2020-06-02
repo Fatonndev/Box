@@ -20,7 +20,7 @@ import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input.Keys;
-import com.badlogic.gdx.math.Interpolation;
+import ru.obvilion.box.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;

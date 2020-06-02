@@ -16,12 +16,12 @@
 
 package com.badlogic.gdx.scenes.scene2d.ui;
 
-import static com.badlogic.gdx.math.Interpolation.*;
+import static ru.obvilion.box.math.Interpolation.*;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 
 import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.math.Interpolation;
+import ru.obvilion.box.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Timer;

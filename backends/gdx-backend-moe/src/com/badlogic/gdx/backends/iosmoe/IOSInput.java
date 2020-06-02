@@ -23,7 +23,7 @@ import org.moe.natj.general.ann.NInt;
 
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.Pool;

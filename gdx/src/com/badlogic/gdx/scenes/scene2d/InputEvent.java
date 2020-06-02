@@ -17,7 +17,7 @@
 package com.badlogic.gdx.scenes.scene2d;
 
 import ru.obvilion.box.constructors.Input.Buttons;
-import com.badlogic.gdx.math.Vector2;
+import ru.obvilion.box.math.Vector2;
 import com.badlogic.gdx.utils.Null;
 
 /** Event for actor input: touch, mouse, keyboard, and scroll.

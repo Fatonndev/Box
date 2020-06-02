@@ -20,9 +20,9 @@ import ru.obvilion.box.Box;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.HdpiUtils;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Rectangle;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Null;
 

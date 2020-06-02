@@ -17,9 +17,9 @@
 package com.badlogic.gdx.graphics;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Vector2;
+import ru.obvilion.box.math.Vector3;
 
 /** A camera with orthographic projection.
  * 

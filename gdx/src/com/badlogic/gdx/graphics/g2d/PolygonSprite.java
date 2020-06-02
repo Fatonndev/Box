@@ -17,9 +17,8 @@
 package com.badlogic.gdx.graphics.g2d;
 
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Rectangle;
 
 /** @author Stefan Bachmann
  * @author Nathan Sweet */

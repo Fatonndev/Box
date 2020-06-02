@@ -5,7 +5,7 @@
 package com.badlogic.gdx.maps.objects;
 
 import com.badlogic.gdx.maps.MapObject;
-import com.badlogic.gdx.math.Polygon;
+import ru.obvilion.box.math.Polygon;
 
 /** @brief Represents {@link Polygon} map objects */
 public class PolygonMapObject extends MapObject {

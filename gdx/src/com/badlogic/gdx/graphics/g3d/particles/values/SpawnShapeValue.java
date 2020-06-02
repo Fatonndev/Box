@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.g3d.particles.values;
 
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.g3d.particles.ResourceData;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
 

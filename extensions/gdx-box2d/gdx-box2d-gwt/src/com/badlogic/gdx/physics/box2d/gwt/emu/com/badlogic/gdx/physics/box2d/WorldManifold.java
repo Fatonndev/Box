@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.physics.box2d;
 
-import com.badlogic.gdx.math.Vector2;
+import ru.obvilion.box.math.Vector2;
 
 /** This is used to compute the current state of a contact manifold. */
 public class WorldManifold {

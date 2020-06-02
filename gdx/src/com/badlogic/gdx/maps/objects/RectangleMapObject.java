@@ -17,7 +17,7 @@
 package com.badlogic.gdx.maps.objects;
 
 import com.badlogic.gdx.maps.MapObject;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.Rectangle;
 
 /** @brief Represents a rectangle shaped map object */
 public class RectangleMapObject extends MapObject {

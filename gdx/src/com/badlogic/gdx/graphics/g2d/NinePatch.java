@@ -19,7 +19,7 @@ package com.badlogic.gdx.graphics.g2d;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** A 3x3 grid of texture regions. Any of the regions may be omitted. Padding may be set as a hint on how to inset content on top
