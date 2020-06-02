@@ -17,7 +17,7 @@
 package com.badlogic.gdx.scenes.scene2d.ui;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;

@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.badlogic.gdx.backends.gwt.GwtFileHandle;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.BufferUtils;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;

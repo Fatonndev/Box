@@ -21,7 +21,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import ru.obvilion.box.constructors.Files.FileType;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 
 /** A FileHandle intended to be subclassed for the purpose of implementing {@link #read()} and/or {@link #write(boolean)}. Methods
  * that would manipulate the file instead throw UnsupportedOperationException.
