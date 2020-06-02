@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.setup;
+package ru.obvilion.box.setup;
 
 import static java.awt.GridBagConstraints.BOTH;
 import static java.awt.GridBagConstraints.CENTER;
@@ -61,7 +61,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.badlogic.gdx.setup.GdxSetupUI.SetupButton;
+import ru.obvilion.box.setup.GdxSetupUI.SetupButton;
 
 public class ExternalExtensionsDialog extends JDialog implements TableModelListener {
 

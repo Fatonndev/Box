@@ -14,17 +14,23 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.setup;
+package ru.obvilion.box.setup;
 
-/** @author Kotcrab */
-public class ExternalExtensionDependency {
-	public final String text;
-	/** Indicates that this dependency is not internal part of extension. If set to true this dependency text must not
-	 * be modified to append extension version. See {@link ExternalExtension#getPlatformDependencies(String)}*/
-	public final boolean external;
+import java.io.File;
 
-	public ExternalExtensionDependency (String text, boolean external) {
-		this.text = text;
-		this.external = external;
+/**
+ * A temporary file that wraps {@link ProjectFile} for use in a {@link Project}
+ * @author Tomski
+ *
+ */
+public class TemporaryProjectFile extends ProjectFile {
+
+	/** The temporary file **/
+	public File file;
+
+	public TemporaryProjectFile(File file, String outputString, boolean isTemplate) {
+		super(outputString, isTemplate);
+		this.file = file;
 	}
+
 }

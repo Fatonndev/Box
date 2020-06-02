@@ -5,7 +5,7 @@
 	<!-- ****************************************************************** -->
 
 	<property name="name" value="gdx-setup" />
-	<property name="mainClass" value="com.badlogic.gdx.setup.GdxSetup" />
+	<property name="mainClass" value="ru.obvilion.box.setup.GdxSetup" />
 
 	<!-- ****************************************************************** -->
 	<!-- Build tasks -->

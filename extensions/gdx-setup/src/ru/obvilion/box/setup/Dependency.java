@@ -14,9 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.setup;
+package ru.obvilion.box.setup;
 
-import com.badlogic.gdx.setup.DependencyBank.ProjectType;
+import ru.obvilion.box.setup.DependencyBank.ProjectType;
 
 import java.util.ArrayList;
 import java.util.HashMap;
