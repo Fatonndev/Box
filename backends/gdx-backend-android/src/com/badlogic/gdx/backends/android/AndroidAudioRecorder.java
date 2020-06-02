@@ -20,7 +20,7 @@ import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
 
-import com.badlogic.gdx.audio.AudioRecorder;
+import ru.obvilion.box.audio.AudioRecorder;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** {@link AudioRecorder} implementation for the android system based on AudioRecord

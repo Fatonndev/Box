@@ -18,7 +18,7 @@ package ru.obvilion.box.constructors;
 
 import ru.obvilion.box.ApplicationListener;
 import ru.obvilion.box.audio.AudioDevice;
-import com.badlogic.gdx.audio.AudioRecorder;
+import ru.obvilion.box.audio.AudioRecorder;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;

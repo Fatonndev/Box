@@ -45,7 +45,7 @@ import org.lwjgl.openal.AL;
 import org.lwjgl.openal.AL10;
 
 import ru.obvilion.box.audio.AudioDevice;
-import com.badlogic.gdx.audio.AudioRecorder;
+import ru.obvilion.box.audio.AudioRecorder;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.Array;
