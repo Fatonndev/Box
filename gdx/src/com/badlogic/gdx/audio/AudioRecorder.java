@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.audio;
+package com.badlogic.gdx.audio;
 
 import com.badlogic.gdx.utils.Disposable;
 

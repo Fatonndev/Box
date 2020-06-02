@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.gwt;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.audio.Music;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.backends.gwt.soundmanager2.SMSound;
 import com.badlogic.gdx.backends.gwt.soundmanager2.SMSound.SMSoundCallback;
 import com.badlogic.gdx.backends.gwt.soundmanager2.SMSoundOptions;
