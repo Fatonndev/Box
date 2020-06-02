@@ -23,7 +23,7 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input.Keys;
 import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import ru.obvilion.box.maps.tiled.AtlasTmxMapLoader;

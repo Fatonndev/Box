@@ -18,7 +18,7 @@ package com.badlogic.gdx.utils;
 
 import java.io.InputStream;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 public interface BaseJsonReader {
 	JsonValue parse (InputStream input);

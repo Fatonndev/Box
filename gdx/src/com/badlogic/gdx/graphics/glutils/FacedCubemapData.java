@@ -2,7 +2,7 @@
 package com.badlogic.gdx.graphics.glutils;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.Cubemap;
 import com.badlogic.gdx.graphics.Cubemap.CubemapSide;
 import com.badlogic.gdx.graphics.CubemapData;

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.utils;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.IntSet.IntSetIterator;
 import com.badlogic.gdx.utils.JsonValue.PrettyPrintSettings;
 import com.badlogic.gdx.utils.JsonWriter.OutputType;

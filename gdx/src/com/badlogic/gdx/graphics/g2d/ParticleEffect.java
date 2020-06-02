@@ -23,7 +23,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Writer;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.collision.BoundingBox;
 import com.badlogic.gdx.utils.Array;

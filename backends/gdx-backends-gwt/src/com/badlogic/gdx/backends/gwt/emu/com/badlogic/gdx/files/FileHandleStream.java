@@ -23,6 +23,7 @@ import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.Box;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtFileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 /** A FileHandle intended to be subclassed for the purpose of implementing {@link #read()} and/or {@link #write(boolean)}. Methods
  * that would manipulate the file instead throw UnsupportedOperationException.
@@ -48,7 +49,7 @@ public abstract class FileHandleStream extends GwtFileHandle {
 		throw new UnsupportedOperationException();
 	}
 
-	public FileHandle parent () {
+	public ru.obvilion.box.files.FileHandle parent () {
 		throw new UnsupportedOperationException();
 	}
 
@@ -60,7 +61,7 @@ public abstract class FileHandleStream extends GwtFileHandle {
 		throw new UnsupportedOperationException();
 	}
 
-	public FileHandle[] list () {
+	public ru.obvilion.box.files.FileHandle[] list () {
 		throw new UnsupportedOperationException();
 	}
 
@@ -76,11 +77,11 @@ public abstract class FileHandleStream extends GwtFileHandle {
 		throw new UnsupportedOperationException();
 	}
 
-	public void copyTo (FileHandle dest) {
+	public void copyTo (ru.obvilion.box.files.FileHandle dest) {
 		throw new UnsupportedOperationException();
 	}
 
-	public void moveTo (FileHandle dest) {
+	public void moveTo (ru.obvilion.box.files.FileHandle dest) {
 		throw new UnsupportedOperationException();
 	}
 }

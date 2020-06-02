@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.constructors;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** Provides standard access to the filesystem, classpath, Android SD card, and Android assets directory.

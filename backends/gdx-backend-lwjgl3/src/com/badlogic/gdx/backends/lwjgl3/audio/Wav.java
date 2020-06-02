@@ -20,7 +20,7 @@ import java.io.EOFException;
 import java.io.FilterInputStream;
 import java.io.IOException;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.StreamUtils;
 

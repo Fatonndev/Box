@@ -216,7 +216,7 @@ public class FileHandle {
 	 * handle represents a file and not a directory. On the desktop, an {@link FileType#Internal} handle to a directory on the
 	 * classpath will return a zero length array.
 	 * @throw GdxRuntimeException if this file is an {@link FileType#Classpath} file. */
-	public FileHandle[] list (FileFilter filter) {
+	public ru.obvilion.box.files.FileHandle[] list (FileFilter filter) {
 		throw new GdxRuntimeException("Stub");
 	}
 
@@ -224,7 +224,7 @@ public class FileHandle {
 	 * handle represents a file and not a directory. On the desktop, an {@link FileType#Internal} handle to a directory on the
 	 * classpath will return a zero length array.
 	 * @throw GdxRuntimeException if this file is an {@link FileType#Classpath} file. */
-	public FileHandle[] list (FilenameFilter filter) {
+	public ru.obvilion.box.files.FileHandle[] list (FilenameFilter filter) {
 		throw new GdxRuntimeException("Stub");
 	}
 
@@ -232,7 +232,7 @@ public class FileHandle {
 	 * directory. On the desktop, an {@link FileType#Internal} handle to a directory on the classpath will return a zero length
 	 * array.
 	 * @throw GdxRuntimeException if this file is an {@link FileType#Classpath} file. */
-	public FileHandle[] list () {
+	public ru.obvilion.box.files.FileHandle[] list () {
 		throw new GdxRuntimeException("Stub");
 	}
 
@@ -240,7 +240,7 @@ public class FileHandle {
 	 * represents a file and not a directory. On the desktop, an {@link FileType#Internal} handle to a directory on the classpath
 	 * will return a zero length array.
 	 * @throw GdxRuntimeException if this file is an {@link FileType#Classpath} file. */
-	public FileHandle[] list (String suffix) {
+	public ru.obvilion.box.files.FileHandle[] list (String suffix) {
 		throw new GdxRuntimeException("Stub");
 	}
 
@@ -254,18 +254,18 @@ public class FileHandle {
 	/** Returns a handle to the child with the specified name.
 	 * @throw GdxRuntimeException if this file handle is a {@link FileType#Classpath} or {@link FileType#Internal} and the child
 	 *        doesn't exist. */
-	public FileHandle child (String name) {
+	public ru.obvilion.box.files.FileHandle child (String name) {
 		throw new GdxRuntimeException("Stub");
 	}
 
-	public FileHandle parent () {
+	public ru.obvilion.box.files.FileHandle parent () {
 		throw new GdxRuntimeException("Stub");
 	}
 
 	/** Returns a handle to the sibling with the specified name.
 	 * @throw GdxRuntimeException if this file handle is a {@link FileType#Classpath} or {@link FileType#Internal} and the sibling
 	 *        doesn't exist, or this file is the root. */
-	public FileHandle sibling (String name) {
+	public ru.obvilion.box.files.FileHandle sibling (String name) {
 		throw new GdxRuntimeException("Stub");
 	}
 
@@ -312,14 +312,14 @@ public class FileHandle {
 	 * exist, {@link #mkdirs()} is called on the destination and this directory is copied into it recursively.
 	 * @throw GdxRuntimeException if the destination file handle is a {@link FileType#Classpath} or {@link FileType#Internal} file,
 	 *        or copying failed. */
-	public void copyTo (FileHandle dest) {
+	public void copyTo (ru.obvilion.box.files.FileHandle dest) {
 		throw new GdxRuntimeException("Stub");
 	}
 
 	/** Moves this file to the specified file, overwriting the file if it already exists.
 	 * @throw GdxRuntimeException if the source or destination file handle is a {@link FileType#Classpath} or
 	 *        {@link FileType#Internal} file. */
-	public void moveTo (FileHandle dest) {
+	public void moveTo (ru.obvilion.box.files.FileHandle dest) {
 		throw new GdxRuntimeException("Stub");
 	}
 

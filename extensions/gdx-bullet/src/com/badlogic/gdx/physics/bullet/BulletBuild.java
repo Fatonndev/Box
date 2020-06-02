@@ -18,7 +18,7 @@ package com.badlogic.gdx.physics.bullet;
 
 import java.io.File;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.jnigen.AntScriptGenerator;
 import com.badlogic.gdx.jnigen.BuildConfig;
 import com.badlogic.gdx.jnigen.BuildTarget;

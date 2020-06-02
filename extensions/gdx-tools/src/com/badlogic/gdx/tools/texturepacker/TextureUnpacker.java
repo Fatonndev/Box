@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.tools.texturepacker;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Page;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Region;

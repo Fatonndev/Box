@@ -21,7 +21,7 @@ import java.io.File;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.tools.FileProcessor;
 
 public class HeaderFixer {

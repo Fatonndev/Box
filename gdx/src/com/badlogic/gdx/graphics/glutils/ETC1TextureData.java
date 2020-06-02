@@ -17,7 +17,7 @@
 package com.badlogic.gdx.graphics.glutils;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Format;

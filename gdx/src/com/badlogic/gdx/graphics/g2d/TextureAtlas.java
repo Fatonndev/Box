@@ -20,7 +20,7 @@ import static com.badlogic.gdx.graphics.Texture.TextureWrap.*;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Files.FileType;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
