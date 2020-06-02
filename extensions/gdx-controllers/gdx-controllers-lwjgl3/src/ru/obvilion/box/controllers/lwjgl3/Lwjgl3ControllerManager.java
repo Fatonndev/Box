@@ -1,4 +1,4 @@
-package com.badlogic.gdx.controllers.lwjgl3;
+package ru.obvilion.box.controllers.lwjgl3;
 
 import ru.obvilion.box.Box;
 import org.lwjgl.glfw.GLFW;

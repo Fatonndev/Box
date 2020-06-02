@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.controllers.gwt;
+package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers;
 
 import com.badlogic.gdx.controllers.PovDirection;
 

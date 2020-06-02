@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.controllers.gwt.support;
+package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support;
 
 public interface GamepadSupportListener {
 

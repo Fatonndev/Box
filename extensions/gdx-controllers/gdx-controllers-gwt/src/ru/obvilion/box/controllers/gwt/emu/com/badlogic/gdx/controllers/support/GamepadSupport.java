@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.controllers.gwt.support;
+package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support;
 
 import ru.obvilion.box.utils.IntMap;
 import com.google.gwt.animation.client.AnimationScheduler;
@@ -119,10 +119,10 @@ public class GamepadSupport {
 	private static native void nativeInit() /*-{
         var gamepadSupportAvailable = !! navigator.getGamepads;
         if (gamepadSupportAvailable) {
-            $wnd.addEventListener('gamepadconnected', @com.badlogic.gdx.controllers.gwt.support.GamepadSupport::handleGamepadConnect(Lcom/badlogic/gdx/controllers/gwt/support/GamepadSupport$GamepadEvent;), false);
-            $wnd.addEventListener('gamepaddisconnected', @com.badlogic.gdx.controllers.gwt.support.GamepadSupport::handleGamepadDisconnect(Lcom/badlogic/gdx/controllers/gwt/support/GamepadSupport$GamepadEvent;), false);
+            $wnd.addEventListener('gamepadconnected', @ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support.GamepadSupport::handleGamepadConnect(Lcom/badlogic/gdx/controllers/gwt/support/GamepadSupport$GamepadEvent;), false);
+            $wnd.addEventListener('gamepaddisconnected', @ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support.GamepadSupport::handleGamepadDisconnect(Lcom/badlogic/gdx/controllers/gwt/support/GamepadSupport$GamepadEvent;), false);
             if ( !! navigator.getGamepads) {
-                @com.badlogic.gdx.controllers.gwt.support.GamepadSupport::startPolling()();
+                @ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support.GamepadSupport::startPolling()();
             }
         }
 	}-*/;

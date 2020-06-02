@@ -1,4 +1,4 @@
-package com.badlogic.gdx.controllers.lwjgl3;
+package ru.obvilion.box.controllers.lwjgl3;
 
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
