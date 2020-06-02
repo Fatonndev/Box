@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g3d.model;
 
 import ru.obvilion.box.graphics.g3d.Model;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 
 /** A NodeAnimation defines keyframes for a {@link Node} in a {@link Model}. The keyframes are given as a translation vector, a

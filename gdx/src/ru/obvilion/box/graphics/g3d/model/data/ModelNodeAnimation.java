@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.graphics.g3d.model.data;
 
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 
 public class ModelNodeAnimation {

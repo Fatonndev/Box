@@ -21,7 +21,7 @@ import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class FileTextureData implements TextureData {

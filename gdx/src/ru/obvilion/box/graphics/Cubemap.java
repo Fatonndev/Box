@@ -31,7 +31,7 @@ import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.glutils.FacedCubemapData;
 import ru.obvilion.box.graphics.glutils.PixmapTextureData;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

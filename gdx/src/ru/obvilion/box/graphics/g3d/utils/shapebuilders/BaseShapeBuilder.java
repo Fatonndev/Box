@@ -18,8 +18,8 @@ package ru.obvilion.box.graphics.g3d.utils.shapebuilders;
 
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.FlushablePool;
 
 /** This class allows to reduce the static allocation needed for shape builders. It contains all the objects used internally by

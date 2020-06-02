@@ -25,9 +25,9 @@ import ru.obvilion.box.maps.tiled.TiledMap;
 import ru.obvilion.box.maps.tiled.TiledMapTile;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer.Cell;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Vector2;
+import ru.obvilion.box.math.Vector3;
 
 public class IsometricTiledMapRenderer extends BatchTiledMapRenderer {
 

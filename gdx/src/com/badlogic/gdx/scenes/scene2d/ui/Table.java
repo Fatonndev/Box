@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g2d.Batch;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;

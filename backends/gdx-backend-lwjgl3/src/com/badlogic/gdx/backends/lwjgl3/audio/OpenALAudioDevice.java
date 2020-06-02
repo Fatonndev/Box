@@ -23,7 +23,7 @@ import org.lwjgl.BufferUtils;
 import org.lwjgl.openal.AL11;
 
 import ru.obvilion.box.audio.AudioDevice;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 import static org.lwjgl.openal.AL10.*;

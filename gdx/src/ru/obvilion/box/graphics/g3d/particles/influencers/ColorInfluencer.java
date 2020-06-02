@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.g3d.particles.ParallelArray.FloatChannel;
 import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.values.GradientColorValue;
 import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
 

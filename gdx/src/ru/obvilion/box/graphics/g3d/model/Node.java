@@ -18,10 +18,10 @@ package ru.obvilion.box.graphics.g3d.model;
 
 import ru.obvilion.box.graphics.g3d.Material;
 import ru.obvilion.box.graphics.g3d.Model;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.math.collision.BoundingBox;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector3;
+import ru.obvilion.box.math.collision.BoundingBox;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

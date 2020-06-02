@@ -42,9 +42,9 @@ import ru.obvilion.box.graphics.g3d.environment.PointLight;
 import ru.obvilion.box.graphics.g3d.environment.SpotLight;
 import ru.obvilion.box.graphics.g3d.utils.RenderContext;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.Matrix3;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

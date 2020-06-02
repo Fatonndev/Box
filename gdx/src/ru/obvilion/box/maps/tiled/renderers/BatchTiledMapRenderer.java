@@ -51,8 +51,8 @@ import ru.obvilion.box.maps.tiled.TiledMapImageLayer;
 import ru.obvilion.box.maps.tiled.TiledMapRenderer;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer;
 import ru.obvilion.box.maps.tiled.tiles.AnimatedTiledMapTile;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Rectangle;
 import com.badlogic.gdx.utils.Disposable;
 
 public abstract class BatchTiledMapRenderer implements TiledMapRenderer, Disposable {

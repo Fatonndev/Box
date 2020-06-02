@@ -17,7 +17,7 @@
 package ru.obvilion.box.maps.objects;
 
 import ru.obvilion.box.maps.MapObject;
-import com.badlogic.gdx.math.Ellipse;
+import ru.obvilion.box.math.Ellipse;
 
 /** @brief Represents {@link Ellipse} map objects. */
 public class EllipseMapObject extends MapObject {

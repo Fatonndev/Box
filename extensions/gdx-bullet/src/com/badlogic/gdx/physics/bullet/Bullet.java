@@ -20,7 +20,7 @@ import java.util.Arrays;
 
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.graphics.g3d.model.Node;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.physics.bullet.collision.btBvhTriangleMeshShape;
 import com.badlogic.gdx.physics.bullet.collision.btCollisionShape;
 import com.badlogic.gdx.physics.bullet.collision.btCompoundShape;

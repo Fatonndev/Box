@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.utils.shapebuilders;
 
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder;
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 
 /** Helper class with static methods to build cylinders shapes using {@link MeshPartBuilder}.
  * @author xoppa */

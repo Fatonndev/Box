@@ -19,8 +19,8 @@ package ru.obvilion.box.graphics.g2d;
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.Affine2;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Affine2;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.utils.Disposable;
 
 /** A Batch is used to draw 2D rectangles that reference a texture (region). The class will batch the drawing commands and optimize

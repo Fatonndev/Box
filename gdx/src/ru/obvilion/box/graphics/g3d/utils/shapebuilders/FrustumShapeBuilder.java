@@ -19,8 +19,8 @@ package ru.obvilion.box.graphics.g3d.utils.shapebuilders;
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder;
-import com.badlogic.gdx.math.Frustum;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Frustum;
+import ru.obvilion.box.math.Vector3;
 
 /** FrustumShapeBuilder builds camera or frustum.
  * 

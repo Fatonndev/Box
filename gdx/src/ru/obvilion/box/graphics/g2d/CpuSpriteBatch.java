@@ -18,9 +18,9 @@ package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.Affine2;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Affine2;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** CpuSpriteBatch behaves like SpriteBatch, except it doesn't flush automatically whenever the transformation matrix changes.

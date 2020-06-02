@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.graphics.g3d.Attribute;
 import ru.obvilion.box.graphics.g3d.utils.TextureDescriptor;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.NumberUtils;
 

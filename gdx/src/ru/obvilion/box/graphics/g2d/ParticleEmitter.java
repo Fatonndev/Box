@@ -18,9 +18,9 @@ package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.graphics.GL20;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.collision.BoundingBox;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Rectangle;
+import ru.obvilion.box.math.collision.BoundingBox;
 import com.badlogic.gdx.utils.Array;
 
 import java.io.BufferedReader;

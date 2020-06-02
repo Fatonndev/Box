@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes.Usage;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.utils.Array;
 
 /** Immediate mode rendering class for GLES 2.0. The renderer will allow you to specify vertices on the fly and provides a default

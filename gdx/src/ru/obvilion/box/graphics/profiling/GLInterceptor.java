@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.profiling;
 
 import ru.obvilion.box.graphics.GL20;
-import com.badlogic.gdx.math.FloatCounter;
+import ru.obvilion.box.math.FloatCounter;
 
 public abstract class GLInterceptor implements GL20 {
 

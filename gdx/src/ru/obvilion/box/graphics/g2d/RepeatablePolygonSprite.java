@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.math.*;
+import ru.obvilion.box.math.*;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ShortArray;
 

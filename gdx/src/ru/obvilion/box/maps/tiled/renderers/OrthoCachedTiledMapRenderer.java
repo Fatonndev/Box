@@ -34,8 +34,8 @@ import ru.obvilion.box.maps.tiled.TiledMapRenderer;
 import ru.obvilion.box.maps.tiled.TiledMapTile;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer.Cell;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Rectangle;
 import com.badlogic.gdx.utils.Disposable;
 
 /** Renders ortho tiles by caching geometry on the GPU. How much is cached is controlled by {@link #setOverCache(float)}. When the

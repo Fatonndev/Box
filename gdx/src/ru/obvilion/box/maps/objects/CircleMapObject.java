@@ -17,7 +17,7 @@
 package ru.obvilion.box.maps.objects;
 
 import ru.obvilion.box.maps.MapObject;
-import com.badlogic.gdx.math.Circle;
+import ru.obvilion.box.math.Circle;
 
 /** @brief Represents {@link Circle} shaped map objects */
 public class CircleMapObject extends MapObject {

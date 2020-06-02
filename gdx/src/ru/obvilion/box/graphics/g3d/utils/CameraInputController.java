@@ -21,9 +21,9 @@ import ru.obvilion.box.constructors.Input.Keys;
 import ru.obvilion.box.constructors.Input.Buttons;
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.input.GestureDetector;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Vector2;
+import ru.obvilion.box.math.Vector3;
 
 public class CameraInputController extends GestureDetector {
 	/** The button for rotating the camera. */

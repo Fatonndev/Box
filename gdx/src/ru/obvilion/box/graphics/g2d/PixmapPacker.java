@@ -30,7 +30,7 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.g2d.PixmapPacker.SkylineStrategy.SkylinePage.Row;
 import ru.obvilion.box.graphics.glutils.PixmapTextureData;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.Rectangle;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;

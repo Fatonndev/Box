@@ -20,10 +20,10 @@ import ru.obvilion.box.graphics.g3d.particles.ParallelArray.FloatChannel;
 import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.ParticleControllerComponent;
 import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
 

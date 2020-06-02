@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.utils.shapebuilders;
 
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder;
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** Helper class with static methods to build patch shapes using {@link MeshPartBuilder}.

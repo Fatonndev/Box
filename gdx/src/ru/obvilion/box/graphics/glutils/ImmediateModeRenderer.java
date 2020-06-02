@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.glutils;
 
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Matrix4;
 
 public interface ImmediateModeRenderer {
 	public void begin (Matrix4 projModelView, int primitiveType);

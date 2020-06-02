@@ -35,7 +35,7 @@ import ru.obvilion.box.graphics.Cursor.SystemCursor;
 import ru.obvilion.box.graphics.glutils.FrameBuffer;
 import ru.obvilion.box.graphics.glutils.GLVersion;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.WindowedMean;
+import ru.obvilion.box.math.WindowedMean;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.SnapshotArray;
 

@@ -21,11 +21,11 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.Screen;
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.glutils.HdpiUtils;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.math.collision.Ray;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Rectangle;
+import ru.obvilion.box.math.Vector2;
+import ru.obvilion.box.math.Vector3;
+import ru.obvilion.box.math.collision.Ray;
 import com.badlogic.gdx.scenes.scene2d.utils.ScissorStack;
 
 /** Manages a {@link Camera} and determines how world coordinates are mapped to and from the screen.

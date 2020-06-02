@@ -19,8 +19,8 @@ import ru.obvilion.box.maps.tiled.TiledMapTileLayer.Cell;
 import ru.obvilion.box.maps.tiled.objects.TiledMapTileMapObject;
 import ru.obvilion.box.maps.tiled.tiles.AnimatedTiledMapTile;
 import ru.obvilion.box.maps.tiled.tiles.StaticTiledMapTile;
-import com.badlogic.gdx.math.Polygon;
-import com.badlogic.gdx.math.Polyline;
+import ru.obvilion.box.math.Polygon;
+import ru.obvilion.box.math.Polyline;
 import com.badlogic.gdx.utils.*;
 import com.badlogic.gdx.utils.XmlReader.Element;
 

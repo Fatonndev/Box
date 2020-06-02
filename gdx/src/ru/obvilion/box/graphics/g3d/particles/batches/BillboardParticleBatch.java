@@ -38,9 +38,9 @@ import ru.obvilion.box.graphics.g3d.particles.ResourceData.SaveData;
 import ru.obvilion.box.graphics.g3d.particles.renderers.BillboardControllerRenderData;
 import ru.obvilion.box.graphics.g3d.shaders.DefaultShader;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Matrix3;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Matrix3;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
 

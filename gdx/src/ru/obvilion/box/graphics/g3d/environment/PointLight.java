@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.g3d.environment;
 
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 
 public class PointLight extends BaseLight<PointLight> {
 	public final Vector3 position = new Vector3();

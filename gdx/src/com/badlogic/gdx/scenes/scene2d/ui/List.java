@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g2d.Batch;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.graphics.g2d.GlyphLayout;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;

@@ -8,12 +8,6 @@
 
 package com.badlogic.gdx.physics.bullet.linearmath;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
-import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Matrix3;
-import com.badlogic.gdx.math.Matrix4;
-
 public interface LinearMathConstants {
   public final static int BT_BULLET_VERSION = 287;
   public final static double BT_LARGE_FLOAT = 1e18;

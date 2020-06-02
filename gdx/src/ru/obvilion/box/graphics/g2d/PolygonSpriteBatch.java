@@ -27,9 +27,9 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes.Usage;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.Affine2;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Affine2;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Matrix4;
 
 /** A PolygonSpriteBatch is used to draw 2D polygons that reference a texture (region). The class will batch the drawing commands
  * and optimize them for processing by the GPU.

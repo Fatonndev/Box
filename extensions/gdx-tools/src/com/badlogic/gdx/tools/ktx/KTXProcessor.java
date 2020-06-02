@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.glutils.ETC1;
 import ru.obvilion.box.graphics.glutils.ETC1.ETC1Data;
 import ru.obvilion.box.graphics.glutils.KTXTextureData;
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

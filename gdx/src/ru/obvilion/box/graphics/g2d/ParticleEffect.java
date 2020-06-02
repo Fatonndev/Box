@@ -25,7 +25,7 @@ import java.io.Writer;
 
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Texture;
-import com.badlogic.gdx.math.collision.BoundingBox;
+import ru.obvilion.box.math.collision.BoundingBox;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;

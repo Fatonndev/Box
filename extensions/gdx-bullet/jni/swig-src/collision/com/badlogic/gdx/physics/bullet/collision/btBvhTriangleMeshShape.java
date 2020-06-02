@@ -9,7 +9,7 @@
 package com.badlogic.gdx.physics.bullet.collision;
 
 import com.badlogic.gdx.physics.bullet.linearmath.*;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import com.badlogic.gdx.utils.Array;
 

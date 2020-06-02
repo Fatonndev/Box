@@ -28,7 +28,7 @@ import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.PolygonRegionLoader.PolygonRegionParameters;
-import com.badlogic.gdx.math.EarClippingTriangulator;
+import ru.obvilion.box.math.EarClippingTriangulator;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.StreamUtils;

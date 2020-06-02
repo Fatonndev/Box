@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.g3d;
 import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.graphics.g3d.utils.ShaderProvider;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
 

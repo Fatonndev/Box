@@ -18,7 +18,7 @@ package com.badlogic.gdx.tools.texturepacker;
 
 import java.util.Comparator;
 
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Packer;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;

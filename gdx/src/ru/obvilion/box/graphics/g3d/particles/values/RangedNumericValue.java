@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.graphics.g3d.particles.values;
 
-import com.badlogic.gdx.math.MathUtils;
+import ru.obvilion.box.math.MathUtils;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
 

@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Rectangle;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Rectangle;
 
 /** @author Stefan Bachmann
  * @author Nathan Sweet */

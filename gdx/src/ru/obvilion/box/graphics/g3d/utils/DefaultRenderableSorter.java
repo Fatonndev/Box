@@ -21,8 +21,8 @@ import java.util.Comparator;
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.graphics.g3d.attributes.BlendingAttribute;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 
 public class DefaultRenderableSorter implements RenderableSorter, Comparator<Renderable> {

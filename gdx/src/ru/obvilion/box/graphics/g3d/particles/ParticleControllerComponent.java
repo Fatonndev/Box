@@ -17,10 +17,10 @@
 package ru.obvilion.box.graphics.g3d.particles;
 
 import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.math.Matrix3;
-import com.badlogic.gdx.math.Matrix4;
-import com.badlogic.gdx.math.Quaternion;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.Matrix3;
+import ru.obvilion.box.math.Matrix4;
+import ru.obvilion.box.math.Quaternion;
+import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;

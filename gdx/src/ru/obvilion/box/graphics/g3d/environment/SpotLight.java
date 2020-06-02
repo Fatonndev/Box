@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g3d.environment;
 
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.math.MathUtils;
-import com.badlogic.gdx.math.Vector3;
+import ru.obvilion.box.math.MathUtils;
+import ru.obvilion.box.math.Vector3;
 
 /** Note that the default shader doesn't support spot lights, you'll have to supply your own shader to use this class.
  * @author realitix */

@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.Batch;
 import ru.obvilion.box.graphics.g2d.NinePatch;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.Vector2;
+import ru.obvilion.box.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;

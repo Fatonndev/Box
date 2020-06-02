@@ -25,7 +25,7 @@ import ru.obvilion.box.graphics.g3d.Material;
 import ru.obvilion.box.graphics.g3d.ModelBatch;
 import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.graphics.g3d.RenderableProvider;
-import com.badlogic.gdx.math.Matrix4;
+import ru.obvilion.box.math.Matrix4;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;
