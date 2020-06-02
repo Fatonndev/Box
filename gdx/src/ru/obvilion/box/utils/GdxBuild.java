@@ -16,11 +16,11 @@
 
 package ru.obvilion.box.utils;
 
-import com.badlogic.gdx.jnigen.AntScriptGenerator;
-import com.badlogic.gdx.jnigen.BuildConfig;
-import com.badlogic.gdx.jnigen.BuildTarget;
-import com.badlogic.gdx.jnigen.BuildTarget.TargetOs;
-import com.badlogic.gdx.jnigen.NativeCodeGenerator;
+import ru.obvilion.box.jnigen.AntScriptGenerator;
+import ru.obvilion.box.jnigen.BuildConfig;
+import ru.obvilion.box.jnigen.BuildTarget;
+import ru.obvilion.box.jnigen.BuildTarget.TargetOs;
+import ru.obvilion.box.jnigen.NativeCodeGenerator;
 
 /** Builds the JNI wrappers via gdx-jnigen.
  * @author mzechner */

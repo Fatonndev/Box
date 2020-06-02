@@ -25,7 +25,7 @@
 -dontwarn com.badlogic.gdx.backends.android.AndroidFragmentApplication
 -dontwarn ru.obvilion.box.utils.GdxBuild
 -dontwarn com.badlogic.gdx.physics.box2d.utils.Box2DBuild
--dontwarn com.badlogic.gdx.jnigen.BuildTarget*
+-dontwarn ru.obvilion.box.jnigen.BuildTarget*
 -dontwarn ru.obvilion.box.graphics.g2d.freetype.FreetypeBuild
 
 -keep class com.badlogic.gdx.controllers.android.AndroidControllers

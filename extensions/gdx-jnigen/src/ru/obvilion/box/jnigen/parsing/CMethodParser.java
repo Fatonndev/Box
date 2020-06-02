@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen.parsing;
+package ru.obvilion.box.jnigen.parsing;
 
 import java.util.ArrayList;
 

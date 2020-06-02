@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen;
+package ru.obvilion.box.jnigen;
 
 /** Specifies the global properties of a native build.</p>
  * 

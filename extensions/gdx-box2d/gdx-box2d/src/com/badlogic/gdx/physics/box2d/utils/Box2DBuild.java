@@ -2,11 +2,11 @@ package com.badlogic.gdx.physics.box2d.utils;
 
 import java.io.File;
 
-import com.badlogic.gdx.jnigen.AntScriptGenerator;
-import com.badlogic.gdx.jnigen.BuildConfig;
-import com.badlogic.gdx.jnigen.BuildTarget;
-import com.badlogic.gdx.jnigen.NativeCodeGenerator;
-import com.badlogic.gdx.jnigen.BuildTarget.TargetOs;
+import ru.obvilion.box.jnigen.AntScriptGenerator;
+import ru.obvilion.box.jnigen.BuildConfig;
+import ru.obvilion.box.jnigen.BuildTarget;
+import ru.obvilion.box.jnigen.NativeCodeGenerator;
+import ru.obvilion.box.jnigen.BuildTarget.TargetOs;
 
 public class Box2DBuild {
 	public static void main(String[] args) throws Exception {

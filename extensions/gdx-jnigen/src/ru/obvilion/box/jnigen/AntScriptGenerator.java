@@ -14,12 +14,12 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen;
+package ru.obvilion.box.jnigen;
 
 import java.util.ArrayList;
 
-import com.badlogic.gdx.jnigen.BuildTarget.TargetOs;
-import com.badlogic.gdx.jnigen.FileDescriptor.FileType;
+import ru.obvilion.box.jnigen.BuildTarget.TargetOs;
+import ru.obvilion.box.jnigen.FileDescriptor.FileType;
 
 /** Generates Ant scripts for multiple native build targets based on the given {@link BuildConfig}.</p>
  * 

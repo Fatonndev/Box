@@ -14,22 +14,22 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen;
+package ru.obvilion.box.jnigen;
 
 import java.io.InputStream;
 import java.nio.Buffer;
 import java.util.ArrayList;
 
-import com.badlogic.gdx.jnigen.parsing.CMethodParser;
-import com.badlogic.gdx.jnigen.parsing.CMethodParser.CMethod;
-import com.badlogic.gdx.jnigen.parsing.CMethodParser.CMethodParserResult;
-import com.badlogic.gdx.jnigen.parsing.JavaMethodParser;
-import com.badlogic.gdx.jnigen.parsing.JavaMethodParser.Argument;
-import com.badlogic.gdx.jnigen.parsing.JavaMethodParser.JavaMethod;
-import com.badlogic.gdx.jnigen.parsing.JavaMethodParser.JavaSegment;
-import com.badlogic.gdx.jnigen.parsing.JavaMethodParser.JniSection;
-import com.badlogic.gdx.jnigen.parsing.JniHeaderCMethodParser;
-import com.badlogic.gdx.jnigen.parsing.RobustJavaMethodParser;
+import ru.obvilion.box.jnigen.parsing.CMethodParser;
+import ru.obvilion.box.jnigen.parsing.CMethodParser.CMethod;
+import ru.obvilion.box.jnigen.parsing.CMethodParser.CMethodParserResult;
+import ru.obvilion.box.jnigen.parsing.JavaMethodParser;
+import ru.obvilion.box.jnigen.parsing.JavaMethodParser.Argument;
+import ru.obvilion.box.jnigen.parsing.JavaMethodParser.JavaMethod;
+import ru.obvilion.box.jnigen.parsing.JavaMethodParser.JavaSegment;
+import ru.obvilion.box.jnigen.parsing.JavaMethodParser.JniSection;
+import ru.obvilion.box.jnigen.parsing.JniHeaderCMethodParser;
+import ru.obvilion.box.jnigen.parsing.RobustJavaMethodParser;
 
 /** Goes through a Java source directory, checks each .java file for native methods and emits C/C++ code accordingly, both .h and
  * .cpp files.

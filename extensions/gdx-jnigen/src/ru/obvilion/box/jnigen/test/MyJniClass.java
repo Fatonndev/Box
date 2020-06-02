@@ -14,18 +14,18 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen.test;
+package ru.obvilion.box.jnigen.test;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 
-import com.badlogic.gdx.jnigen.AntScriptGenerator;
-import com.badlogic.gdx.jnigen.BuildConfig;
-import com.badlogic.gdx.jnigen.BuildExecutor;
-import com.badlogic.gdx.jnigen.BuildTarget;
-import com.badlogic.gdx.jnigen.BuildTarget.TargetOs;
-import com.badlogic.gdx.jnigen.JniGenSharedLibraryLoader;
-import com.badlogic.gdx.jnigen.NativeCodeGenerator;
+import ru.obvilion.box.jnigen.AntScriptGenerator;
+import ru.obvilion.box.jnigen.BuildConfig;
+import ru.obvilion.box.jnigen.BuildExecutor;
+import ru.obvilion.box.jnigen.BuildTarget;
+import ru.obvilion.box.jnigen.BuildTarget.TargetOs;
+import ru.obvilion.box.jnigen.JniGenSharedLibraryLoader;
+import ru.obvilion.box.jnigen.NativeCodeGenerator;
 
 public class MyJniClass {
 	public static native void test (boolean boolArg, byte byteArg, char charArg, short shortArg, int intArg, long longArg,

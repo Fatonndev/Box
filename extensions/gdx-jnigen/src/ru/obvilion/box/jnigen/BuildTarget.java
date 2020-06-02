@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen;
+package ru.obvilion.box.jnigen;
 
 /** Defines the configuration for building a native shared library for a specific platform. Used with {@link AntScriptGenerator}
  * to create Ant build files that invoke the compiler toolchain to create the shared libraries. */

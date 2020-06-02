@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.jnigen;
+package ru.obvilion.box.jnigen;
 
 import java.io.File;
 import java.io.FileInputStream;
