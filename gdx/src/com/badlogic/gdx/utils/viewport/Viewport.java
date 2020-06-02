@@ -26,7 +26,7 @@ import ru.obvilion.box.math.Rectangle;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.Ray;
-import com.badlogic.gdx.scenes.scene2d.utils.ScissorStack;
+import ru.obvilion.box.scene2d.utils.ScissorStack;
 
 /** Manages a {@link Camera} and determines how world coordinates are mapped to and from the screen.
  * @author Daniel Holderbaum

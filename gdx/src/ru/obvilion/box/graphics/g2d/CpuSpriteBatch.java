@@ -28,7 +28,7 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
  * batches, for example when drawing Groups with transform enabled.
  *
  * @see SpriteBatch#renderCalls
- * @see com.badlogic.gdx.scenes.scene2d.Group#setTransform(boolean) Group.setTransform()
+ * @see ru.obvilion.box.scene2d.Group#setTransform(boolean) Group.setTransform()
  * @author Valentin Milea */
 public class CpuSpriteBatch extends SpriteBatch {
 

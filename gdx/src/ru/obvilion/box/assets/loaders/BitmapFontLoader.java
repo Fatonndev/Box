@@ -27,7 +27,7 @@ import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import ru.obvilion.box.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

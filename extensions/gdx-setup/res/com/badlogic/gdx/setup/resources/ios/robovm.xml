@@ -19,7 +19,7 @@
     </resource>
   </resources>
   <forceLinkClasses>
-    <pattern>com.badlogic.gdx.scenes.scene2d.ui.*</pattern>
+    <pattern>ru.obvilion.box.scene2d.ui.*</pattern>
     <pattern>ru.obvilion.box.graphics.g3d.particles.**</pattern>
     <pattern>com.android.okhttp.HttpHandler</pattern>
     <pattern>com.android.okhttp.HttpsHandler</pattern>

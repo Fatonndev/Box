@@ -47,7 +47,7 @@ import ru.obvilion.box.graphics.g3d.Model;
 import ru.obvilion.box.graphics.g3d.loader.G3dModelLoader;
 import ru.obvilion.box.graphics.g3d.loader.ObjLoader;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import ru.obvilion.box.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;
