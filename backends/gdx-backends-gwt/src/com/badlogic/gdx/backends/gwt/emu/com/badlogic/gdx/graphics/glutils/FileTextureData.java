@@ -14,13 +14,13 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.graphics.glutils;
+package com.badlogic.gdx.graphics.glutils;
 
 import ru.obvilion.box.Box;
 import com.badlogic.gdx.files.FileHandle;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.TextureData;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.TextureData;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

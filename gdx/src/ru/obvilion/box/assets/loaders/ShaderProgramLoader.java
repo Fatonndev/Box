@@ -20,7 +20,7 @@ import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.files.FileHandle;
-import ru.obvilion.box.graphics.glutils.ShaderProgram;
+import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.utils.Array;
 
 /** {@link AssetLoader} for {@link ShaderProgram} instances loaded from text files. If the file suffix is ".vert", it is assumed

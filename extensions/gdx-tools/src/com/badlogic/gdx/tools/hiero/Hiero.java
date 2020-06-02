@@ -88,10 +88,10 @@ import org.lwjgl.opengl.GL11;
 
 import ru.obvilion.box.ApplicationAdapter;
 import com.badlogic.gdx.backends.lwjgl.LwjglCanvas;
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.BitmapFont;
-import ru.obvilion.box.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;

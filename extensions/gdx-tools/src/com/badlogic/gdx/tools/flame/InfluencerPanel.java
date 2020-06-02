@@ -1,6 +1,6 @@
 package com.badlogic.gdx.tools.flame;
 
-import ru.obvilion.box.graphics.g3d.particles.influencers.Influencer;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.Influencer;
 
 
 /** @author Inferno */

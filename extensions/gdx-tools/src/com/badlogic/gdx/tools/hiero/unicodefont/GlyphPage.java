@@ -36,11 +36,11 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.BitmapFont;
-import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.BitmapFont.BitmapFontData;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ColorEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.Effect;

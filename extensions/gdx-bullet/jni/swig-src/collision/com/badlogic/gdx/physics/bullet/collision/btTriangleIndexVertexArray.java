@@ -8,9 +8,18 @@
 
 package com.badlogic.gdx.physics.bullet.collision;
 
-import ru.obvilion.box.graphics.g3d.model.MeshPart;
-import ru.obvilion.box.graphics.g3d.model.NodePart;
+import com.badlogic.gdx.physics.bullet.BulletBase;
+import com.badlogic.gdx.physics.bullet.linearmath.*;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.graphics.Mesh;
+import com.badlogic.gdx.graphics.g3d.Model;
+import com.badlogic.gdx.graphics.g3d.model.MeshPart;
+import com.badlogic.gdx.graphics.g3d.model.NodePart;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class btTriangleIndexVertexArray extends btStridingMeshInterface {
 	private long swigCPtr;

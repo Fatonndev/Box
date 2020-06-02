@@ -22,7 +22,7 @@ import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.constructors.Graphics;
 import ru.obvilion.box.constructors.Graphics.DisplayMode;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Graphics.Lwjgl3DisplayMode;
-import ru.obvilion.box.graphics.Color;
+import com.badlogic.gdx.graphics.Color;
 
 public class Lwjgl3WindowConfiguration {
 	int windowX = -1;

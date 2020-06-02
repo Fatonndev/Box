@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import ru.obvilion.box.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.utils.Null;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 

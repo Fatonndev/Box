@@ -17,9 +17,9 @@
 package com.badlogic.gdx.scenes.scene2d.utils;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.graphics.Camera;
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.glutils.HdpiUtils;
+import com.badlogic.gdx.graphics.Camera;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.glutils.HdpiUtils;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;

@@ -16,10 +16,10 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.g2d.Batch;
-import ru.obvilion.box.graphics.g2d.Sprite;
-import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasSprite;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasSprite;
 
 /** Drawable for a {@link Sprite}.
  * @author Nathan Sweet */

@@ -20,15 +20,15 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
-import ru.obvilion.box.graphics.g3d.particles.ParticleController;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsInfluencer;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.BrownianAcceleration;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.CentripetalAcceleration;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.FaceDirection;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.PolarAcceleration;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.Rotational3D;
-import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.TangentialAcceleration;
+import com.badlogic.gdx.graphics.g3d.particles.ParticleController;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsInfluencer;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier.BrownianAcceleration;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier.CentripetalAcceleration;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier.FaceDirection;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier.PolarAcceleration;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier.Rotational3D;
+import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier.TangentialAcceleration;
 import com.badlogic.gdx.tools.flame.FlameMain.ControllerType;
 import com.badlogic.gdx.utils.Array;
 

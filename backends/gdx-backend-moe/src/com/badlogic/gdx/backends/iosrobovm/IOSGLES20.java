@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
-import ru.obvilion.box.graphics.GL20;
+import com.badlogic.gdx.graphics.GL20;
 
 import java.nio.Buffer;
 import java.nio.FloatBuffer;

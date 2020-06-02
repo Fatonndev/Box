@@ -14,10 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.graphics.glutils;
+package com.badlogic.gdx.graphics.glutils;
 
-import ru.obvilion.box.graphics.VertexAttribute;
-import ru.obvilion.box.graphics.VertexAttributes;
+import com.badlogic.gdx.graphics.VertexAttribute;
+import com.badlogic.gdx.graphics.VertexAttributes;
 
 /** <p>
  * A {@link VertexData} implementation based on OpenGL vertex buffer objects.

@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.graphics.profiling;
+package com.badlogic.gdx.graphics.profiling;
 
 import ru.obvilion.box.Box;
 import com.badlogic.gdx.utils.GdxRuntimeException;
-import static ru.obvilion.box.graphics.profiling.GLInterceptor.resolveErrorNumber;
+import static com.badlogic.gdx.graphics.profiling.GLInterceptor.resolveErrorNumber;
 
 /** @see GLProfiler
  * @author Jan Polák */

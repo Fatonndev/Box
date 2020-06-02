@@ -20,10 +20,10 @@ import java.io.File;
 import java.util.ArrayList;
 
 import com.badlogic.gdx.files.FileHandle;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.Pixmap.Blending;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.glutils.ETC1;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Pixmap.Blending;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.glutils.ETC1;
 import com.badlogic.gdx.tools.FileProcessor;
 import com.badlogic.gdx.utils.GdxNativesLoader;
 

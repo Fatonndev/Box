@@ -16,8 +16,8 @@
 
 package ru.obvilion.box;
 
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.GL30;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.GL30;
 import ru.obvilion.box.constructors.*;
 
 public class Box {

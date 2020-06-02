@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.android;
 import android.annotation.TargetApi;
 import android.opengl.GLES30;
 
-import ru.obvilion.box.graphics.GL30;
+import com.badlogic.gdx.graphics.GL30;
 
 @TargetApi(18)
 public class AndroidGL30 extends AndroidGL20 implements GL30 {

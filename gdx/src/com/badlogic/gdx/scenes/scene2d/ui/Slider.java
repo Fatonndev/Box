@@ -18,8 +18,8 @@ package com.badlogic.gdx.scenes.scene2d.ui;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input.Keys;
-import ru.obvilion.box.graphics.g2d.NinePatch;
-import ru.obvilion.box.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.g2d.NinePatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;

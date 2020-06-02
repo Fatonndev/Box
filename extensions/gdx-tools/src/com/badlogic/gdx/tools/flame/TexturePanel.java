@@ -6,9 +6,9 @@ import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.TextureRegion;
-import ru.obvilion.box.graphics.glutils.FileTextureData;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.glutils.FileTextureData;
 import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */

@@ -1,7 +1,7 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import ru.obvilion.box.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.Batch;
 
 /** A drawable that supports scale and rotation. */
 public interface TransformDrawable extends Drawable {

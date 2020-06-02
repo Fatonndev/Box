@@ -51,6 +51,6 @@ LOCAL_SRC_FILES := freetype-2.9.1/src/pcf/pcf.c\
 	freetype-2.9.1/src/base/ftgasp.c\
 	freetype-2.9.1/src/base/ftsynth.c\
 	freetype-2.9.1/src/bzip2/ftbzip2.c\
-	ru.obvilion.box.graphics.g2d.freetype.FreeType.cpp
+	com.badlogic.gdx.graphics.g2d.freetype.FreeType.cpp
  
 include $(BUILD_SHARED_LIBRARY)

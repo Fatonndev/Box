@@ -16,11 +16,11 @@
 
 package ru.obvilion.box.maps.tiled.renderers;
 
-import static ru.obvilion.box.graphics.g2d.Batch.*;
+import static com.badlogic.gdx.graphics.g2d.Batch.*;
 
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.g2d.Batch;
-import ru.obvilion.box.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.tiled.TiledMap;
 import ru.obvilion.box.maps.tiled.TiledMapTile;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer;

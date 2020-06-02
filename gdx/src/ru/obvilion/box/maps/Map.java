@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps;
 
-import ru.obvilion.box.graphics.Texture;
+import com.badlogic.gdx.graphics.Texture;
 import ru.obvilion.box.maps.objects.CircleMapObject;
 import ru.obvilion.box.maps.objects.TextureMapObject;
 import ru.obvilion.box.maps.tiled.TiledMap;

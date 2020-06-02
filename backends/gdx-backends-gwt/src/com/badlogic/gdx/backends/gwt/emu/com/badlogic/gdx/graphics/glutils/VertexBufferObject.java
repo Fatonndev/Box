@@ -14,15 +14,15 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.graphics.glutils;
+package com.badlogic.gdx.graphics.glutils;
 
 import java.nio.FloatBuffer;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.VertexAttribute;
-import ru.obvilion.box.graphics.VertexAttributes;
-import ru.obvilion.box.graphics.VertexAttributes.Usage;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.VertexAttribute;
+import com.badlogic.gdx.graphics.VertexAttributes;
+import com.badlogic.gdx.graphics.VertexAttributes.Usage;
 import com.badlogic.gdx.utils.BufferUtils;
 
 /** <p>

@@ -13,9 +13,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSeparator;
 
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.TextureAtlas;
-import ru.obvilion.box.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */

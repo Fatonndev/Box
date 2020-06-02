@@ -20,7 +20,7 @@ import java.nio.Buffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 
-import ru.obvilion.box.graphics.GL20;
+import com.badlogic.gdx.graphics.GL20;
 
 import android.opengl.GLES20;
 

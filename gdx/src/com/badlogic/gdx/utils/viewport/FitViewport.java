@@ -1,8 +1,8 @@
 
 package com.badlogic.gdx.utils.viewport;
 
-import ru.obvilion.box.graphics.Camera;
-import ru.obvilion.box.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Camera;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.utils.Scaling;
 
 /** A ScalingViewport that uses {@link Scaling#fit} so it keeps the aspect ratio by scaling the world up to fit the screen, adding

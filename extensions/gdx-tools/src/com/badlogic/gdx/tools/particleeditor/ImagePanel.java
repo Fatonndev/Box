@@ -36,8 +36,8 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.ListSelectionModel;
 
-import ru.obvilion.box.graphics.g2d.ParticleEmitter;
-import ru.obvilion.box.graphics.g2d.ParticleEmitter.SpriteMode;
+import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
+import com.badlogic.gdx.graphics.g2d.ParticleEmitter.SpriteMode;
 import com.badlogic.gdx.utils.Array;
 
 class ImagePanel extends EditorPanel {

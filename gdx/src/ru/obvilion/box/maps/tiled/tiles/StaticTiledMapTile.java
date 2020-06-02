@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps.tiled.tiles;
 
-import ru.obvilion.box.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.MapObjects;
 import ru.obvilion.box.maps.MapProperties;
 import ru.obvilion.box.maps.tiled.TiledMapTile;

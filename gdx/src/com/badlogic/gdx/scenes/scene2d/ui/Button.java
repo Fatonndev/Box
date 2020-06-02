@@ -17,7 +17,7 @@
 package com.badlogic.gdx.scenes.scene2d.ui;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;

@@ -20,13 +20,13 @@ import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.files.FileHandle;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.Texture.TextureFilter;
-import ru.obvilion.box.graphics.Texture.TextureWrap;
-import ru.obvilion.box.graphics.TextureData;
-import ru.obvilion.box.graphics.glutils.FileTextureData;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.Texture.TextureFilter;
+import com.badlogic.gdx.graphics.Texture.TextureWrap;
+import com.badlogic.gdx.graphics.TextureData;
+import com.badlogic.gdx.graphics.glutils.FileTextureData;
 import com.badlogic.gdx.utils.Array;
 
 public class TextureLoader extends AsynchronousAssetLoader<Texture, TextureLoader.TextureParameter> {

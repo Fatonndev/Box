@@ -19,10 +19,10 @@ package com.badlogic.gdx.scenes.scene2d;
 import static com.badlogic.gdx.utils.Align.*;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.graphics.g2d.Batch;
-import ru.obvilion.box.graphics.glutils.ShapeRenderer;
-import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
@@ -74,7 +74,7 @@ public class Actor {
 	@Null private Object userObject;
 
 	/** Draws the actor. The batch is configured to draw in the parent's coordinate system.
-	 * {@link Batch#draw(ru.obvilion.box.graphics.g2d.TextureRegion, float, float, float, float, float, float, float, float, float)
+	 * {@link Batch#draw(com.badlogic.gdx.graphics.g2d.TextureRegion, float, float, float, float, float, float, float, float, float)
 	 * This draw method} is convenient to draw a rotated and scaled TextureRegion. {@link Batch#begin()} has already been called on
 	 * the batch. If {@link Batch#end()} is called to draw without the batch then {@link Batch#begin()} must be called before the
 	 * method returns.

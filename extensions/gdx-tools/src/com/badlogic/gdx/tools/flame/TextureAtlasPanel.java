@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import ru.obvilion.box.graphics.Texture;
-import ru.obvilion.box.graphics.g2d.TextureAtlas;
-import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
-import ru.obvilion.box.graphics.g2d.TextureRegion;
-import ru.obvilion.box.graphics.glutils.FileTextureData;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.glutils.FileTextureData;
 import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */

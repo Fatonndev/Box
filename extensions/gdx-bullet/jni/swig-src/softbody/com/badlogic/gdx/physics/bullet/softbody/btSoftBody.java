@@ -16,6 +16,8 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Matrix3;
 import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.graphics.Mesh;
+import com.badlogic.gdx.graphics.g3d.model.MeshPart;
 
 public class btSoftBody extends btCollisionObject {
 	private long swigCPtr;

@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.graphics.glutils;
+package com.badlogic.gdx.graphics.glutils;
 
 /** <p>
  * In IndexBufferObject wraps OpenGL's index buffer functionality to be used in conjunction with VBOs. This class can be

@@ -1,9 +1,9 @@
-package ru.obvilion.box.graphics;
+package com.badlogic.gdx.graphics;
 
 import com.badlogic.gdx.files.FileHandle;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.graphics.glutils.FileTextureData;
-import ru.obvilion.box.graphics.glutils.MipMapGenerator;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.glutils.FileTextureData;
+import com.badlogic.gdx.graphics.glutils.MipMapGenerator;
 
 /** Used by a {@link Texture} to load the pixel data. A TextureData can either return a {@link Pixmap} or upload the pixel data
  * itself. It signals it's type via {@link #getType()} to the Texture that's using it. The Texture will then either invoke
