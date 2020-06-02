@@ -22,13 +22,13 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 
 import ru.obvilion.box.constructors.Net;
-import com.badlogic.gdx.net.NetJavaImpl;
-import com.badlogic.gdx.net.NetJavaServerSocketImpl;
-import com.badlogic.gdx.net.NetJavaSocketImpl;
-import com.badlogic.gdx.net.ServerSocket;
-import com.badlogic.gdx.net.ServerSocketHints;
-import com.badlogic.gdx.net.Socket;
-import com.badlogic.gdx.net.SocketHints;
+import ru.obvilion.box.net.NetJavaImpl;
+import ru.obvilion.box.net.NetJavaServerSocketImpl;
+import ru.obvilion.box.net.NetJavaSocketImpl;
+import ru.obvilion.box.net.ServerSocket;
+import ru.obvilion.box.net.ServerSocketHints;
+import ru.obvilion.box.net.Socket;
+import ru.obvilion.box.net.SocketHints;
 
 /** Android implementation of the {@link Net} API.
  * @author acoppes */

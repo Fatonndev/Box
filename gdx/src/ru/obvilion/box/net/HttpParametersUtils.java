@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.net;
+package ru.obvilion.box.net;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
