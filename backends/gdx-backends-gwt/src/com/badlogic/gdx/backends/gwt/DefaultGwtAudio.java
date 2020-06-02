@@ -20,7 +20,7 @@ import ru.obvilion.box.audio.AudioDevice;
 import ru.obvilion.box.audio.AudioRecorder;
 import ru.obvilion.box.audio.Music;
 import ru.obvilion.box.audio.Sound;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class DefaultGwtAudio implements GwtAudio {

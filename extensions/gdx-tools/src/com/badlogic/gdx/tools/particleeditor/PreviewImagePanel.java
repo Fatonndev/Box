@@ -18,7 +18,7 @@ package com.badlogic.gdx.tools.particleeditor;
 
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

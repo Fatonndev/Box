@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.iosrobovm;
 import org.robovm.apple.foundation.NSBundle;
 
 import ru.obvilion.box.constructors.Files;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 public class IOSFiles implements Files {
 	// TODO: Use NSSearchPathForDirectoriesInDomains instead?

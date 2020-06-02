@@ -18,7 +18,7 @@ package com.badlogic.gdx.assets.loaders.resolvers;
 
 import ru.obvilion.box.Box;
 import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 public class InternalFileHandleResolver implements FileHandleResolver {
 	@Override
