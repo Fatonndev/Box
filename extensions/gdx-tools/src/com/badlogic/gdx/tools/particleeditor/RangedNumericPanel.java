@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.RangedNumericValue;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.RangedNumericValue;
 
 class RangedNumericPanel extends EditorPanel {
 	private final RangedNumericValue value;

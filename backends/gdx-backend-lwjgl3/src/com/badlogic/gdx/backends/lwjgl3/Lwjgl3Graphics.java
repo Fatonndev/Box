@@ -25,13 +25,13 @@ import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWFramebufferSizeCallback;
 
 import ru.obvilion.box.constructors.Graphics;
-import com.badlogic.gdx.graphics.Cursor;
-import com.badlogic.gdx.graphics.Cursor.SystemCursor;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.GL30;
-import com.badlogic.gdx.graphics.glutils.GLVersion;
-import com.badlogic.gdx.graphics.glutils.HdpiMode;
-import com.badlogic.gdx.graphics.Pixmap;
+import ru.obvilion.box.graphics.Cursor;
+import ru.obvilion.box.graphics.Cursor.SystemCursor;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.GL30;
+import ru.obvilion.box.graphics.glutils.GLVersion;
+import ru.obvilion.box.graphics.glutils.HdpiMode;
+import ru.obvilion.box.graphics.Pixmap;
 import com.badlogic.gdx.utils.Disposable;
 import org.lwjgl.opengl.GL11;
 

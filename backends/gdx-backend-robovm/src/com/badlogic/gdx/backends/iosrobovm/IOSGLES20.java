@@ -20,7 +20,7 @@ import java.nio.Buffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 
-import com.badlogic.gdx.graphics.GL20;
+import ru.obvilion.box.graphics.GL20;
 
 public class IOSGLES20 implements GL20
 {	

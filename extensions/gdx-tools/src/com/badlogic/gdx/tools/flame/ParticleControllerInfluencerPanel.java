@@ -3,9 +3,9 @@ package com.badlogic.gdx.tools.flame;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 
-import com.badlogic.gdx.graphics.g3d.particles.ParticleController;
-import com.badlogic.gdx.graphics.g3d.particles.ParticleEffect;
-import com.badlogic.gdx.graphics.g3d.particles.influencers.ParticleControllerInfluencer;
+import ru.obvilion.box.graphics.g3d.particles.ParticleController;
+import ru.obvilion.box.graphics.g3d.particles.ParticleEffect;
+import ru.obvilion.box.graphics.g3d.particles.influencers.ParticleControllerInfluencer;
 import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */

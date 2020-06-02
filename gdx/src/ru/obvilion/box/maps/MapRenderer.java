@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps;
 
-import com.badlogic.gdx.graphics.OrthographicCamera;
+import ru.obvilion.box.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Matrix4;
 
 /** Models a common way of rendering {@link Map} objects */

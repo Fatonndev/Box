@@ -16,14 +16,13 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasSprite;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.Color;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.g2d.Sprite;
+import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
+import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasSprite;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 
 /** Drawable for a {@link TextureRegion}.
  * @author Nathan Sweet */

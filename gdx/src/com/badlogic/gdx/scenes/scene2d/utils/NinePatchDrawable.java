@@ -16,10 +16,9 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.NinePatch;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.graphics.Color;
+import ru.obvilion.box.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.g2d.NinePatch;
 
 /** Drawable for a {@link NinePatch}.
  * <p>

@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.graphics;
+package ru.obvilion.box.graphics;
 
 import java.nio.Buffer;
 import java.nio.IntBuffer;

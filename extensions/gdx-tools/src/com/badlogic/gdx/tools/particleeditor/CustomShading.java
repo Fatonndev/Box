@@ -18,10 +18,10 @@ package com.badlogic.gdx.tools.particleeditor;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShaderProgram;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.SpriteBatch;
+import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.utils.Array;
 
 public class CustomShading {

@@ -23,7 +23,7 @@ import org.lwjgl.glfw.GLFWKeyCallback;
 import org.lwjgl.glfw.GLFWMouseButtonCallback;
 import org.lwjgl.glfw.GLFWScrollCallback;
 
-import com.badlogic.gdx.graphics.glutils.HdpiMode;
+import ru.obvilion.box.graphics.glutils.HdpiMode;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputEventQueue;
 import ru.obvilion.box.InputProcessor;

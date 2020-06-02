@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps.objects;
 
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.MapObject;
 
 /** @brief Represents a map object containing a texture (region) */

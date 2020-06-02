@@ -19,12 +19,12 @@ package com.badlogic.gdx.utils;
 import java.nio.ByteBuffer;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Pixmap.Blending;
-import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap.Blending;
+import ru.obvilion.box.graphics.Pixmap.Format;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 
 /** Class with static helper methods that provide access to the default OpenGL FrameBuffer. These methods can be used to get the

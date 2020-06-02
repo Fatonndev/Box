@@ -4,13 +4,13 @@ import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.graphics.Cubemap;
-import com.badlogic.gdx.graphics.CubemapData;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.Texture.TextureFilter;
-import com.badlogic.gdx.graphics.Texture.TextureWrap;
-import com.badlogic.gdx.graphics.TextureData;
+import ru.obvilion.box.graphics.Cubemap;
+import ru.obvilion.box.graphics.CubemapData;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap.Format;
+import ru.obvilion.box.graphics.Texture.TextureFilter;
+import ru.obvilion.box.graphics.Texture.TextureWrap;
+import ru.obvilion.box.graphics.TextureData;
 import com.badlogic.gdx.utils.Array;
 
 /** {@link AssetLoader} for {@link Cubemap} instances. The pixel data is loaded asynchronously. The texture is then created on the

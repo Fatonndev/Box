@@ -34,7 +34,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.ListSelectionModel;
 
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter;
 
 public class CustomShadingPanel extends EditorPanel {
 	JPanel imagesPanel;

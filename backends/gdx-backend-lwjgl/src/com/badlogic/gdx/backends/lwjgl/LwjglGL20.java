@@ -38,7 +38,7 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
  * compatible. Some glGetXXX methods are not implemented.
  * 
  * @author mzechner */
-class LwjglGL20 implements com.badlogic.gdx.graphics.GL20 {
+class LwjglGL20 implements ru.obvilion.box.graphics.GL20 {
 	private ByteBuffer buffer = null;
 	private FloatBuffer floatBuffer = null;
 	private IntBuffer intBuffer = null;
@@ -277,11 +277,11 @@ class LwjglGL20 implements com.badlogic.gdx.graphics.GL20 {
 	}
 
 	public void glDrawElements (int mode, int count, int type, Buffer indices) {
-		if (indices instanceof ShortBuffer && type == com.badlogic.gdx.graphics.GL20.GL_UNSIGNED_SHORT)
+		if (indices instanceof ShortBuffer && type == ru.obvilion.box.graphics.GL20.GL_UNSIGNED_SHORT)
 			GL11.glDrawElements(mode, (ShortBuffer)indices);
-		else if (indices instanceof ByteBuffer && type == com.badlogic.gdx.graphics.GL20.GL_UNSIGNED_SHORT)
+		else if (indices instanceof ByteBuffer && type == ru.obvilion.box.graphics.GL20.GL_UNSIGNED_SHORT)
 			GL11.glDrawElements(mode, ((ByteBuffer)indices).asShortBuffer()); // FIXME yay...
-		else if (indices instanceof ByteBuffer && type == com.badlogic.gdx.graphics.GL20.GL_UNSIGNED_BYTE)
+		else if (indices instanceof ByteBuffer && type == ru.obvilion.box.graphics.GL20.GL_UNSIGNED_BYTE)
 			GL11.glDrawElements(mode, (ByteBuffer)indices);
 		else
 			throw new GdxRuntimeException("Can't use " + indices.getClass().getName()

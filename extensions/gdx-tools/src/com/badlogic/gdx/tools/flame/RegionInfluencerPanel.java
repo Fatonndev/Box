@@ -9,9 +9,9 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.g3d.particles.influencers.RegionInfluencer;
+import ru.obvilion.box.graphics.g2d.TextureAtlas;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.g3d.particles.influencers.RegionInfluencer;
 import com.badlogic.gdx.utils.Array;
 
 /** @author Inferno */

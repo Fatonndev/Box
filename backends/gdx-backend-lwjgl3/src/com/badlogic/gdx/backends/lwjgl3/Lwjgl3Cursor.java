@@ -22,9 +22,9 @@ import java.util.Map;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWImage;
 
-import com.badlogic.gdx.graphics.Cursor;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Pixmap.Blending;
+import ru.obvilion.box.graphics.Cursor;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap.Blending;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

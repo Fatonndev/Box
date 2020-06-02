@@ -30,7 +30,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 
-import com.badlogic.gdx.graphics.g2d.ParticleEmitter.ParticleValue;
+import ru.obvilion.box.graphics.g2d.ParticleEmitter.ParticleValue;
 
 class EditorPanel extends JPanel {
 	private final String name;

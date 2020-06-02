@@ -16,9 +16,9 @@
 
 package com.badlogic.gdx.math;
 
-import com.badlogic.gdx.graphics.Camera;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.PerspectiveCamera;
+import ru.obvilion.box.graphics.Camera;
+import ru.obvilion.box.graphics.OrthographicCamera;
+import ru.obvilion.box.graphics.PerspectiveCamera;
 import com.badlogic.gdx.math.Plane.PlaneSide;
 import com.badlogic.gdx.math.collision.BoundingBox;
 

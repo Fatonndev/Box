@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps;
 
-import com.badlogic.gdx.graphics.Color;
+import ru.obvilion.box.graphics.Color;
 
 /** Generic Map entity with basic attributes like name, opacity, color */
 public class MapObject {

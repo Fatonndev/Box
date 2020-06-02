@@ -18,10 +18,10 @@ package com.badlogic.gdx.physics.box2d;
 
 import java.util.Iterator;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import ru.obvilion.box.graphics.Color;
+import ru.obvilion.box.graphics.g2d.SpriteBatch;
+import ru.obvilion.box.graphics.glutils.ShapeRenderer;
+import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;

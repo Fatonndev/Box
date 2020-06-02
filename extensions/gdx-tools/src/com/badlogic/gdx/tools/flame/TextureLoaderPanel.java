@@ -13,9 +13,9 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 
 import com.badlogic.gdx.assets.loaders.TextureLoader.TextureParameter;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.Texture.TextureFilter;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.Texture.TextureFilter;
+import ru.obvilion.box.graphics.g2d.TextureAtlas;
 
 /** @author Inferno */
 public class TextureLoaderPanel extends EditorPanel {

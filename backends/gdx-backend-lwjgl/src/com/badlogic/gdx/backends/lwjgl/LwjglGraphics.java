@@ -22,7 +22,7 @@ import java.nio.ByteBuffer;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Application;
-import com.badlogic.gdx.graphics.glutils.GLVersion;
+import ru.obvilion.box.graphics.glutils.GLVersion;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.ContextAttribs;
@@ -31,12 +31,12 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.PixelFormat;
 
 import ru.obvilion.box.constructors.Graphics;
-import com.badlogic.gdx.graphics.Cursor.SystemCursor;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.GL30;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.Pixmap.Blending;
-import com.badlogic.gdx.graphics.Pixmap.Format;
+import ru.obvilion.box.graphics.Cursor.SystemCursor;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.GL30;
+import ru.obvilion.box.graphics.Pixmap;
+import ru.obvilion.box.graphics.Pixmap.Blending;
+import ru.obvilion.box.graphics.Pixmap.Format;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.SharedLibraryLoader;
@@ -653,12 +653,12 @@ public class LwjglGraphics implements Graphics {
 	}
 
 	@Override
-	public com.badlogic.gdx.graphics.Cursor newCursor (Pixmap pixmap, int xHotspot, int yHotspot) {
+	public ru.obvilion.box.graphics.Cursor newCursor (Pixmap pixmap, int xHotspot, int yHotspot) {
 		return new LwjglCursor(pixmap, xHotspot, yHotspot);
 	}
 
 	@Override
-	public void setCursor (com.badlogic.gdx.graphics.Cursor cursor) {
+	public void setCursor (ru.obvilion.box.graphics.Cursor cursor) {
 		if (canvas != null && SharedLibraryLoader.isMac) {
 			return;
 		}

@@ -2,9 +2,9 @@ package %PACKAGE%;
 
 import ru.obvilion.box.ApplicationAdapter;
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import ru.obvilion.box.graphics.GL20;
+import ru.obvilion.box.graphics.Texture;
+import ru.obvilion.box.graphics.g2d.SpriteBatch;
 
 public class %MAIN_CLASS% extends ApplicationAdapter {
 	SpriteBatch batch;

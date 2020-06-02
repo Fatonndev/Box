@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps.tiled;
 
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.MapLayer;
 
 public class TiledMapImageLayer extends MapLayer {

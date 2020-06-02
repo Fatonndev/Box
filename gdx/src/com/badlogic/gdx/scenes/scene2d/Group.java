@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.scenes.scene2d;
 
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import ru.obvilion.box.graphics.g2d.Batch;
+import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Affine2;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Rectangle;
