@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.gwt;
 
-import com.badlogic.gdx.audio.Sound;
+import ru.obvilion.box.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
 
 public class GwtSound implements Sound {

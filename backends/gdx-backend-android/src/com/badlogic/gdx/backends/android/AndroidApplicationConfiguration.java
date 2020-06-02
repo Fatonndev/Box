@@ -21,7 +21,7 @@ import android.media.SoundPool;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input;
-import com.badlogic.gdx.audio.Sound;
+import ru.obvilion.box.audio.Sound;
 import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
 import com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
 

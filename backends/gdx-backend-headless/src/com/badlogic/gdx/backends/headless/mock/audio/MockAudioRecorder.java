@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.headless.mock.audio;
 
-import com.badlogic.gdx.audio.AudioRecorder;
+import ru.obvilion.box.audio.AudioRecorder;
 
 /** The headless backend does its best to mock elements. This is intended to make code-sharing between
  * server and client as simple as possible.
