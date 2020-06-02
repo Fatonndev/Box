@@ -26,11 +26,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 
-import ru.obvilion.box.constructors.Files.FileType;
-import ru.obvilion.box.Preferences;
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.utils.GdxRuntimeException;
-import ru.obvilion.box.utils.StreamUtils;
+import com.badlogic.gdx.Files.FileType;
+import com.badlogic.gdx.Preferences;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.StreamUtils;
 
 public class LwjglPreferences implements Preferences {
 	private final String name;

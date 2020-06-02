@@ -20,9 +20,8 @@ import java.awt.Canvas;
 import java.awt.Toolkit;
 import java.nio.ByteBuffer;
 
-import ru.obvilion.box.Box;
-import ru.obvilion.box.constructors.Application;
-import ru.obvilion.box.graphics.glutils.GLVersion;
+import com.badlogic.gdx.Application;
+import com.badlogic.gdx.graphics.glutils.GLVersion;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.ContextAttribs;
@@ -30,16 +29,18 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.PixelFormat;
 
-import ru.obvilion.box.constructors.Graphics;
-import ru.obvilion.box.graphics.Cursor.SystemCursor;
-import ru.obvilion.box.graphics.GL20;
-import ru.obvilion.box.graphics.GL30;
-import ru.obvilion.box.graphics.Pixmap;
-import ru.obvilion.box.graphics.Pixmap.Blending;
-import ru.obvilion.box.graphics.Pixmap.Format;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.GdxRuntimeException;
-import ru.obvilion.box.utils.SharedLibraryLoader;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.graphics.Cursor;
+import com.badlogic.gdx.graphics.Cursor.SystemCursor;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.GL30;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Pixmap.Blending;
+import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.SharedLibraryLoader;
 
 /** An implementation of the {@link Graphics} interface based on Lwjgl.
  * @author mzechner */
@@ -139,8 +140,8 @@ public class LwjglGraphics implements Graphics {
 	public void setGL20 (GL20 gl20) {
 		this.gl20 = gl20;
 		if (gl30 == null) {
-			Box.gl = gl20;
-			Box.gl20 = gl20;
+			Gdx.gl = gl20;
+			Gdx.gl20 = gl20;
 		}
 	}
 
@@ -160,9 +161,9 @@ public class LwjglGraphics implements Graphics {
 		if (gl30 != null) {
 			this.gl20 = gl30;
 
-			Box.gl = gl20;
-			Box.gl20 = gl20;
-			Box.gl30 = gl30;
+			Gdx.gl = gl20;
+			Gdx.gl20 = gl20;
+			Gdx.gl30 = gl30;
 		}
 	}
 
@@ -224,7 +225,7 @@ public class LwjglGraphics implements Graphics {
 			if (config.iconPaths.size > 0) {
 				ByteBuffer[] icons = new ByteBuffer[config.iconPaths.size];
 				for (int i = 0, n = config.iconPaths.size; i < n; i++) {
-					Pixmap pixmap = new Pixmap(Box.files.getFileHandle(config.iconPaths.get(i), config.iconFileTypes.get(i)));
+					Pixmap pixmap = new Pixmap(Gdx.files.getFileHandle(config.iconPaths.get(i), config.iconFileTypes.get(i)));
 					if (pixmap.getFormat() != Format.RGBA8888) {
 						Pixmap rgba = new Pixmap(pixmap.getWidth(), pixmap.getHeight(), Format.RGBA8888);
 						rgba.setBlending(Blending.None);
@@ -383,9 +384,9 @@ public class LwjglGraphics implements Graphics {
 				+ GL11.glGetString(GL11.GL_VERSION) + ", FBO extension: false\n" + glVersion.getDebugVersionString());
 		}
 
-		Box.gl = gl20;
-		Box.gl20 = gl20;
-		Box.gl30 = gl30;
+		Gdx.gl = gl20;
+		Gdx.gl20 = gl20;
+		Gdx.gl30 = gl30;
 	}
 
 	@Override
@@ -476,7 +477,7 @@ public class LwjglGraphics implements Graphics {
 			float scaleFactor = Display.getPixelScaleFactor();
 			config.width = (int)(mode.getWidth() * scaleFactor);
 			config.height = (int)(mode.getHeight() * scaleFactor);
-			if (Box.gl != null) Box.gl.glViewport(0, 0, config.width, config.height);
+			if (Gdx.gl != null) Gdx.gl.glViewport(0, 0, config.width, config.height);
 			resize = true;
 			return true;
 		} catch (LWJGLException e) {
@@ -541,7 +542,7 @@ public class LwjglGraphics implements Graphics {
 			float scaleFactor = Display.getPixelScaleFactor();
 			config.width = (int)(targetDisplayMode.getWidth() * scaleFactor);
 			config.height = (int)(targetDisplayMode.getHeight() * scaleFactor);
-			if (Box.gl != null) Box.gl.glViewport(0, 0, config.width, config.height);
+			if (Gdx.gl != null) Gdx.gl.glViewport(0, 0, config.width, config.height);
 			resize = true;
 			return true;
 		} catch (LWJGLException e) {
@@ -653,12 +654,12 @@ public class LwjglGraphics implements Graphics {
 	}
 
 	@Override
-	public ru.obvilion.box.graphics.Cursor newCursor (Pixmap pixmap, int xHotspot, int yHotspot) {
+	public com.badlogic.gdx.graphics.Cursor newCursor (Pixmap pixmap, int xHotspot, int yHotspot) {
 		return new LwjglCursor(pixmap, xHotspot, yHotspot);
 	}
 
 	@Override
-	public void setCursor (ru.obvilion.box.graphics.Cursor cursor) {
+	public void setCursor (com.badlogic.gdx.graphics.Cursor cursor) {
 		if (canvas != null && SharedLibraryLoader.isMac) {
 			return;
 		}

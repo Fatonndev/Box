@@ -22,17 +22,21 @@ import com.badlogic.gdx.backends.lwjgl.audio.LwjglAudio;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 
-import ru.obvilion.box.*;
-import ru.obvilion.box.constructors.Audio;
-import ru.obvilion.box.constructors.Files;
-import ru.obvilion.box.constructors.Input;
-import ru.obvilion.box.constructors.Net;
+import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.ApplicationLogger;
+import com.badlogic.gdx.Audio;
+import com.badlogic.gdx.Files;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
+import com.badlogic.gdx.LifecycleListener;
+import com.badlogic.gdx.Net;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.backends.lwjgl.audio.OpenALLwjglAudio;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.Clipboard;
-import ru.obvilion.box.utils.GdxRuntimeException;
-import ru.obvilion.box.utils.ObjectMap;
-import ru.obvilion.box.utils.SnapshotArray;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Clipboard;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.ObjectMap;
+import com.badlogic.gdx.utils.SnapshotArray;
 
 import java.awt.Canvas;
 
@@ -96,12 +100,12 @@ public class LwjglApplication implements LwjglApplicationBase {
 		this.preferencesdir = config.preferencesDirectory;
 		this.preferencesFileType = config.preferencesFileType;
 
-		Box.app = this;
-		Box.graphics = graphics;
-		Box.audio = audio;
-		Box.files = files;
-		Box.input = input;
-		Box.net = net;
+		Gdx.app = this;
+		Gdx.graphics = graphics;
+		Gdx.audio = audio;
+		Gdx.files = files;
+		Gdx.input = input;
+		Gdx.net = net;
 		initialize();
 	}
 
@@ -123,7 +127,7 @@ public class LwjglApplication implements LwjglApplicationBase {
 					LwjglApplication.this.mainLoop();
 				} catch (Throwable t) {
 					if (audio != null) audio.dispose();
-					Box.input.setCursorCatched(false);
+					Gdx.input.setCursorCatched(false);
 					if (t instanceof RuntimeException)
 						throw (RuntimeException)t;
 					else
@@ -187,7 +191,7 @@ public class LwjglApplication implements LwjglApplicationBase {
 				if (lastWidth != width || lastHeight != height) {
 					lastWidth = width;
 					lastHeight = height;
-					Box.gl.glViewport(0, 0, lastWidth, lastHeight);
+					Gdx.gl.glViewport(0, 0, lastWidth, lastHeight);
 					listener.resize(lastWidth, lastHeight);
 					shouldRender = true;
 				}
@@ -200,7 +204,7 @@ public class LwjglApplication implements LwjglApplicationBase {
 					graphics.resize = false;
 					graphics.config.width = (int)(Display.getWidth() * Display.getPixelScaleFactor());
 					graphics.config.height = (int)(Display.getHeight() * Display.getPixelScaleFactor());
-					Box.gl.glViewport(0, 0, graphics.config.width, graphics.config.height);
+					Gdx.gl.glViewport(0, 0, graphics.config.width, graphics.config.height);
 					if (listener != null) listener.resize(graphics.config.width, graphics.config.height);
 					shouldRender = true;
 				}
@@ -355,7 +359,7 @@ public class LwjglApplication implements LwjglApplicationBase {
 	public void postRunnable (Runnable runnable) {
 		synchronized (runnables) {
 			runnables.add(runnable);
-			Box.graphics.requestRendering();
+			Gdx.graphics.requestRendering();
 		}
 	}
 

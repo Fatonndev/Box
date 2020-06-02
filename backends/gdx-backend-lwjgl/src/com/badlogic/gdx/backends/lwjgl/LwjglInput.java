@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.lwjgl;
 
-import ru.obvilion.box.constructors.Input;
+import com.badlogic.gdx.Input;
 
 public interface LwjglInput extends Input {
 

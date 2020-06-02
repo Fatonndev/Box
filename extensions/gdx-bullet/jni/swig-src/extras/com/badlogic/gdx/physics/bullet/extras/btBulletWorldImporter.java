@@ -8,8 +8,18 @@
 
 package com.badlogic.gdx.physics.bullet.extras;
 
+import com.badlogic.gdx.physics.bullet.BulletBase;
+import com.badlogic.gdx.physics.bullet.linearmath.*;
+import com.badlogic.gdx.physics.bullet.collision.*;
+import com.badlogic.gdx.physics.bullet.dynamics.*;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.physics.bullet.inversedynamics.MultiBodyTree;
 import com.badlogic.gdx.physics.bullet.dynamics.btDynamicsWorld;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.physics.bullet.dynamics.btContactSolverInfo;
+import com.badlogic.gdx.physics.bullet.collision.btCollisionShape;
 
 public class btBulletWorldImporter extends btWorldImporter {
 	private long swigCPtr;
@@ -69,15 +79,15 @@ public class btBulletWorldImporter extends btWorldImporter {
     ExtrasJNI.btBulletWorldImporter_change_ownership(this, swigCPtr, true);
   }
 
-	public boolean loadFile(final FileHandle fileHandle) {
+	public boolean loadFile(final com.badlogic.gdx.files.FileHandle fileHandle) {
 		final int len = (int)fileHandle.length();
 		if (len <= 0)
-			throw new ru.obvilion.box.utils.GdxRuntimeException("Incorrect file specified");
-		java.nio.ByteBuffer buff = ru.obvilion.box.utils.BufferUtils.newUnsafeByteBuffer(len);
+			throw new com.badlogic.gdx.utils.GdxRuntimeException("Incorrect file specified");
+		java.nio.ByteBuffer buff = com.badlogic.gdx.utils.BufferUtils.newUnsafeByteBuffer(len);
 		buff.put(fileHandle.readBytes());
 		buff.position(0);
 		boolean result = loadFileFromMemory(buff, len);
-		ru.obvilion.box.utils.BufferUtils.disposeUnsafeByteBuffer(buff);
+		com.badlogic.gdx.utils.BufferUtils.disposeUnsafeByteBuffer(buff);
 		return result;
 	}
 

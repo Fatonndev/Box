@@ -27,7 +27,7 @@ import java.io.StringWriter;
 
 import javax.swing.JFrame;
 
-import ru.obvilion.box.ApplicationListener;
+import com.badlogic.gdx.ApplicationListener;
 
 /** Wraps an {@link LwjglCanvas} in a resizable {@link JFrame}. */
 public class LwjglFrame extends JFrame {

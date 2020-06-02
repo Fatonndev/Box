@@ -22,11 +22,11 @@ import java.nio.IntBuffer;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.openal.AL11;
 
-import ru.obvilion.box.audio.Music;
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.math.MathUtils;
-import ru.obvilion.box.utils.FloatArray;
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.utils.FloatArray;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
 import static org.lwjgl.openal.AL10.*;
 

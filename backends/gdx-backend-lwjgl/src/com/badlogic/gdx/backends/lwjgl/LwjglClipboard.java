@@ -24,7 +24,7 @@ import java.awt.datatransfer.Transferable;
 import java.io.File;
 import java.util.List;
 
-import ru.obvilion.box.utils.Clipboard;
+import com.badlogic.gdx.utils.Clipboard;
 
 /** Clipboard implementation for desktop that uses the system clipboard via the default AWT {@link Toolkit}.
  * @author mzechner */

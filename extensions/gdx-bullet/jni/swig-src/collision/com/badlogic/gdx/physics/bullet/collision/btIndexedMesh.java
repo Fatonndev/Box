@@ -8,13 +8,14 @@
 
 package com.badlogic.gdx.physics.bullet.collision;
 
-import ru.obvilion.box.physics.bullet.BulletBase;
-import ru.obvilion.box.graphics.Mesh;
-import ru.obvilion.box.graphics.VertexAttribute;
-import ru.obvilion.box.graphics.VertexAttributes.Usage;
-import ru.obvilion.box.graphics.g3d.model.MeshPart;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.physics.bullet.BulletBase;
+import com.badlogic.gdx.physics.bullet.linearmath.*;
+import com.badlogic.gdx.graphics.Mesh;
+import com.badlogic.gdx.graphics.VertexAttribute;
+import com.badlogic.gdx.graphics.VertexAttributes.Usage;
+import com.badlogic.gdx.graphics.g3d.model.MeshPart;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
@@ -160,8 +161,8 @@ public class btIndexedMesh extends BulletBase {
 	 * The specified mesh must be indexed and triangulated and must outlive this btIndexedMesh.
 	 * The buffers for the vertices and indices are shared amonst both. */
 	public void set(final MeshPart meshPart) {
-		if (meshPart.primitiveType != ru.obvilion.box.graphics.GL20.GL_TRIANGLES)
-			throw new ru.obvilion.box.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
+		if (meshPart.primitiveType != com.badlogic.gdx.graphics.GL20.GL_TRIANGLES)
+			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
 		set(meshPart, meshPart.mesh, meshPart.offset, meshPart.size);
 	}
 	
@@ -177,12 +178,12 @@ public class btIndexedMesh extends BulletBase {
 	 * The buffers for the vertices and indices are shared amonst both. */
 	public void set(final Object tag, final Mesh mesh, int offset, int count) {
 		if ((count <= 0) || ((count % 3) != 0))
-			throw new ru.obvilion.box.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
+			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh must be indexed and triangulated");
 
 		VertexAttribute posAttr = mesh.getVertexAttribute(Usage.Position);
 		
 		if (posAttr == null)
-			throw new ru.obvilion.box.utils.GdxRuntimeException("Mesh doesn't have a position attribute");
+			throw new com.badlogic.gdx.utils.GdxRuntimeException("Mesh doesn't have a position attribute");
 		
 		set(tag, mesh.getVerticesBuffer(), mesh.getVertexSize(), mesh.getNumVertices(), posAttr.offset, mesh.getIndicesBuffer(), offset, count);
 	}

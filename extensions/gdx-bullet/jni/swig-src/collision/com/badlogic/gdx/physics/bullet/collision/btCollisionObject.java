@@ -8,13 +8,15 @@
 
 package com.badlogic.gdx.physics.bullet.collision;
 
-import ru.obvilion.box.physics.bullet.BulletBase;
+import com.badlogic.gdx.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
-import ru.obvilion.box.math.Vector3;
-import ru.obvilion.box.math.Matrix4;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
 
 public class btCollisionObject extends BulletBase implements 
-	ru.obvilion.box.utils.Disposable
+	com.badlogic.gdx.utils.Disposable
  {
 	private long swigCPtr;
 	
@@ -59,7 +61,7 @@ public class btCollisionObject extends BulletBase implements
 	}
 
 	/** Provides direct access to the instances this wrapper managed. */
-	public final static ru.obvilion.box.utils.LongMap<btCollisionObject> instances = new ru.obvilion.box.utils.LongMap<btCollisionObject>();
+	public final static com.badlogic.gdx.utils.LongMap<btCollisionObject> instances = new com.badlogic.gdx.utils.LongMap<btCollisionObject>();
 	
 	/** @return The existing instance for the specified pointer, or null if the instance doesn't exist */
 	public static btCollisionObject getInstance(final long swigCPtr) {

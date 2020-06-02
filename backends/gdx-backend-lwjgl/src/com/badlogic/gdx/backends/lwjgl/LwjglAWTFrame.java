@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.lwjgl;
 
-import ru.obvilion.box.ApplicationListener;
+import com.badlogic.gdx.ApplicationListener;
 
 import java.awt.Dimension;
 

@@ -18,14 +18,17 @@ package com.badlogic.gdx.backends.lwjgl;
 
 import org.lwjgl.Sys;
 
-import ru.obvilion.box.constructors.Net;
-import ru.obvilion.box.net.NetJavaImpl;
-import ru.obvilion.box.net.ServerSocket;
-import ru.obvilion.box.net.ServerSocketHints;
-import ru.obvilion.box.net.Socket;
-import ru.obvilion.box.net.SocketHints;
-import ru.obvilion.box.net.NetJavaSocketImpl;
-import ru.obvilion.box.net.NetJavaServerSocketImpl;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Net;
+import com.badlogic.gdx.net.NetJavaImpl;
+import com.badlogic.gdx.net.ServerSocket;
+import com.badlogic.gdx.net.ServerSocketHints;
+import com.badlogic.gdx.net.Socket;
+import com.badlogic.gdx.net.SocketHints;
+import com.badlogic.gdx.net.NetJavaSocketImpl;
+import com.badlogic.gdx.net.NetJavaServerSocketImpl;
+import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.StreamUtils;
 
 /** LWJGL implementation of the {@link Net} API, it could be reused in other Desktop backends since it doesn't depend on LWJGL.
  * @author acoppes */

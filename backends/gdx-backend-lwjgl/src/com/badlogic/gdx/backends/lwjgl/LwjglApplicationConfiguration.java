@@ -18,14 +18,14 @@ package com.badlogic.gdx.backends.lwjgl;
 
 import java.util.ArrayList;
 
-import ru.obvilion.box.constructors.Application;
-import ru.obvilion.box.constructors.Files;
-import ru.obvilion.box.constructors.Files.FileType;
-import ru.obvilion.box.constructors.Graphics;
-import ru.obvilion.box.constructors.Graphics.DisplayMode;
-import ru.obvilion.box.LifecycleListener;
-import ru.obvilion.box.graphics.Color;
-import ru.obvilion.box.utils.Array;
+import com.badlogic.gdx.Application;
+import com.badlogic.gdx.Files;
+import com.badlogic.gdx.Files.FileType;
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.Graphics.DisplayMode;
+import com.badlogic.gdx.LifecycleListener;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.Array;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;

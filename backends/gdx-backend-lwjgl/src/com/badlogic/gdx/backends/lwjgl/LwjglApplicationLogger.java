@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.lwjgl;
 
-import ru.obvilion.box.ApplicationLogger;
+import com.badlogic.gdx.ApplicationLogger;
 
 /**
  * Default implementation of {@link ApplicationLogger} for Lwjgl

@@ -25,17 +25,21 @@ import com.badlogic.gdx.backends.lwjgl.audio.LwjglAudio;
 import org.lwjgl.opengl.AWTGLCanvas;
 import org.lwjgl.opengl.Display;
 
-import ru.obvilion.box.*;
-import ru.obvilion.box.constructors.Audio;
-import ru.obvilion.box.constructors.Files;
-import ru.obvilion.box.constructors.Graphics;
-import ru.obvilion.box.constructors.Input;
-import ru.obvilion.box.constructors.Net;
+import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.ApplicationLogger;
+import com.badlogic.gdx.Audio;
+import com.badlogic.gdx.Files;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.Input;
+import com.badlogic.gdx.LifecycleListener;
+import com.badlogic.gdx.Net;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.backends.lwjgl.audio.OpenALLwjglAudio;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.Clipboard;
-import ru.obvilion.box.utils.Null;
-import ru.obvilion.box.utils.SharedLibraryLoader;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Clipboard;
+import com.badlogic.gdx.utils.Null;
+import com.badlogic.gdx.utils.SharedLibraryLoader;
 
 import java.awt.Canvas;
 import java.awt.Cursor;
@@ -146,12 +150,12 @@ public class LwjglCanvas implements LwjglApplicationBase {
 		net = new LwjglNet(config);
 		this.listener = listener;
 
-		Box.app = this;
-		Box.graphics = graphics;
-		Box.audio = audio;
-		Box.files = files;
-		Box.input = input;
-		Box.net = net;
+		Gdx.app = this;
+		Gdx.graphics = graphics;
+		Gdx.audio = audio;
+		Gdx.files = files;
+		Gdx.input = input;
+		Gdx.net = net;
 	}
 
 	protected void setDisplayMode (int width, int height) {
@@ -245,7 +249,7 @@ public class LwjglCanvas implements LwjglApplicationBase {
 						lastWidth = width;
 						lastHeight = height;
 						Display.setLocation(0, 0);
-						Box.gl.glViewport(0, 0, width, height);
+						Gdx.gl.glViewport(0, 0, width, height);
 						resize(width, height);
 						listener.resize(width, height);
 						shouldRender = true;

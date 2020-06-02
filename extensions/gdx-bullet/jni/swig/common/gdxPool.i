@@ -1,4 +1,4 @@
-/* Provides ru.obvilion.box.utils.Pool, to use:"
+/* Provides com.badlogic.gdx.utils.Pool, to use:"
  * 1. Create a Pool, ie:
  * %pragma(java) jniclasscode=%{
  *	public static final Pool<SomeJavaClass> SomeJavaClassPool = new Pool<SomeJavaClass>() {

@@ -37,9 +37,9 @@ import org.lwjgl.opengl.GL40;
 import org.lwjgl.opengl.GL41;
 import org.lwjgl.opengl.GL43;
 
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
-class LwjglGL30 extends LwjglGL20 implements ru.obvilion.box.graphics.GL30 {
+class LwjglGL30 extends LwjglGL20 implements com.badlogic.gdx.graphics.GL30 {
 	@Override
 	public void glReadBuffer (int mode) {		
 		GL11.glReadBuffer(mode);

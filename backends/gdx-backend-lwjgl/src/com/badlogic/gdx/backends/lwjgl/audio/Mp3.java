@@ -24,8 +24,8 @@ import javazoom.jl.decoder.Header;
 import javazoom.jl.decoder.MP3Decoder;
 import javazoom.jl.decoder.OutputBuffer;
 
-import ru.obvilion.box.files.FileHandle;
-import ru.obvilion.box.utils.GdxRuntimeException;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** @author Nathan Sweet */
 public class Mp3 {

@@ -32,21 +32,25 @@ import java.util.Map;
 
 import javax.swing.SwingUtilities;
 
+import com.badlogic.gdx.ApplicationLogger;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.AWTGLCanvas;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.PixelFormat;
 
-import ru.obvilion.box.*;
-import ru.obvilion.box.constructors.Application;
-import ru.obvilion.box.constructors.Audio;
-import ru.obvilion.box.constructors.Files;
-import ru.obvilion.box.constructors.Graphics;
-import ru.obvilion.box.constructors.Input;
-import ru.obvilion.box.constructors.Net;
+import com.badlogic.gdx.Application;
+import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.Audio;
+import com.badlogic.gdx.Files;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.Input;
+import com.badlogic.gdx.LifecycleListener;
+import com.badlogic.gdx.Net;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.backends.lwjgl.audio.OpenALLwjglAudio;
-import ru.obvilion.box.utils.Array;
-import ru.obvilion.box.utils.Clipboard;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Clipboard;
 
 /** An OpenGL surface on an AWT Canvas, allowing OpenGL to be embedded in a Swing application. This uses {@link AWTGLCanvas},
  * which allows multiple LwjglAWTCanvas to be used in a single application. All OpenGL calls are done on the EDT. Note that you
@@ -161,9 +165,9 @@ public class LwjglAWTCanvas implements Application {
 			}
 		};
 
-		if (!LwjglApplicationConfiguration.disableAudio && Box.audio == null) audio = new OpenALLwjglAudio();
-		if (Box.files == null) files = new LwjglFiles();
-		if (Box.net == null) net = new LwjglNet(config);
+		if (!LwjglApplicationConfiguration.disableAudio && Gdx.audio == null) audio = new OpenALLwjglAudio();
+		if (Gdx.files == null) files = new LwjglFiles();
+		if (Gdx.net == null) net = new LwjglNet(config);
 		input = new LwjglAWTInput(this);
 		setGlobals();
 	}
@@ -185,7 +189,7 @@ public class LwjglAWTCanvas implements Application {
 
 	@Override
 	public Audio getAudio () {
-		return Box.audio;
+		return Gdx.audio;
 	}
 
 	@Override
@@ -219,12 +223,12 @@ public class LwjglAWTCanvas implements Application {
 	}
 
 	void setGlobals () {
-		Box.app = this;
-		if (audio != null) Box.audio = audio;
-		if (files != null) Box.files = files;
-		if (net != null) Box.net = net;
-		Box.graphics = graphics;
-		Box.input = input;
+		Gdx.app = this;
+		if (audio != null) Gdx.audio = audio;
+		if (files != null) Gdx.files = files;
+		if (net != null) Gdx.net = net;
+		Gdx.graphics = graphics;
+		Gdx.input = input;
 	}
 
 	void create () {
@@ -254,7 +258,7 @@ public class LwjglAWTCanvas implements Application {
 		if (lastWidth != width || lastHeight != height) {
 			lastWidth = width;
 			lastHeight = height;
-			Box.gl.glViewport(0, 0, lastWidth, lastHeight);
+			Gdx.gl.glViewport(0, 0, lastWidth, lastHeight);
 			resize(width, height);
 			listener.resize(width, height);
 			shouldRender = true;
@@ -340,18 +344,18 @@ public class LwjglAWTCanvas implements Application {
 		listener.pause();
 		listener.dispose();
 
-		Box.app = null;
+		Gdx.app = null;
 
-		Box.graphics = null;
+		Gdx.graphics = null;
 
 		if (audio != null) {
 			audio.dispose();
-			Box.audio = null;
+			Gdx.audio = null;
 		}
 
-		if (files != null) Box.files = null;
+		if (files != null) Gdx.files = null;
 
-		if (net != null) Box.net = null;
+		if (net != null) Gdx.net = null;
 
 		instanceCount--;
 

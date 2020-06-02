@@ -40,6 +40,6 @@
         <pattern>com.badlogic.gdx.physics.bullet.linearmath.btIDebugDraw</pattern>
         <pattern>com.badlogic.gdx.physics.bullet.linearmath.btMotionState</pattern>
 
-        <pattern>ru.obvilion.box.physics.bullet.DebugDrawer</pattern>
+        <pattern>com.badlogic.gdx.physics.bullet.DebugDrawer</pattern>
     </forceLinkClasses>
 </config>

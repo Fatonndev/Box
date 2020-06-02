@@ -8,7 +8,12 @@
 
 package com.badlogic.gdx.physics.bullet.collision;
 
-import ru.obvilion.box.physics.bullet.BulletBase;
+import com.badlogic.gdx.physics.bullet.BulletBase;
+import com.badlogic.gdx.physics.bullet.linearmath.*;
+import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
 
 public class btBroadphasePair extends BulletBase {
 	private long swigCPtr;
@@ -60,7 +65,7 @@ public class btBroadphasePair extends BulletBase {
 		return temp;
 	}
 	/** Pool of btBroadphasePair instances, used by director interface to provide the arguments. */
-	protected static final ru.obvilion.box.utils.Pool<btBroadphasePair> pool = new ru.obvilion.box.utils.Pool<btBroadphasePair>() {
+	protected static final com.badlogic.gdx.utils.Pool<btBroadphasePair> pool = new com.badlogic.gdx.utils.Pool<btBroadphasePair>() {
 		@Override
 		protected btBroadphasePair newObject() {
 			return new btBroadphasePair(0, false);
