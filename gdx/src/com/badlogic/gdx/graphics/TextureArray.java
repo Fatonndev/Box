@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Application;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

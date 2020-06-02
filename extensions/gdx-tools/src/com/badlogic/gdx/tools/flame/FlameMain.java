@@ -56,7 +56,7 @@ import com.badlogic.gdx.assets.loaders.AssetLoader;
 import com.badlogic.gdx.assets.loaders.resolvers.AbsoluteFileHandleResolver;
 import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.backends.lwjgl.LwjglCanvas;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.PerspectiveCamera;

@@ -25,7 +25,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.JsonValue.ValueType;
 
 /** Lightweight JSON parser.<br>

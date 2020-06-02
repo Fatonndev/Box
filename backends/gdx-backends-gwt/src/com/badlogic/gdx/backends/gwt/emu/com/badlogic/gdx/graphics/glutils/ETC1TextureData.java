@@ -16,9 +16,10 @@
 
 package com.badlogic.gdx.graphics.glutils;
 
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.glutils.ETC1.ETC1Data;
 import com.badlogic.gdx.graphics.TextureData;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

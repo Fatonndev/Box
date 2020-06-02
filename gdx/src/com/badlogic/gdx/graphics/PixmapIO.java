@@ -29,7 +29,7 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.utils.ByteArray;
 import com.badlogic.gdx.utils.Disposable;

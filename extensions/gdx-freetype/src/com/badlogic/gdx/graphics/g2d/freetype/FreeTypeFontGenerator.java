@@ -19,7 +19,7 @@ package com.badlogic.gdx.graphics.g2d.freetype;
 import java.nio.ByteBuffer;
 
 import ru.obvilion.box.Box;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Blending;

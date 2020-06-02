@@ -17,7 +17,7 @@
 package com.badlogic.gdx.assets.loaders.resolvers;
 
 import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 
 /** {@link FileHandleResolver} that adds a prefix to the filename before passing it to the base resolver. Can be used e.g. to use a
  * given subfolder from the base resolver. The prefix is added as is, you have to include any trailing '/' character if needed.

@@ -3,8 +3,9 @@ package com.badlogic.gdx.graphics.g2d;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.PixmapIO;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.PixmapPacker.Page;

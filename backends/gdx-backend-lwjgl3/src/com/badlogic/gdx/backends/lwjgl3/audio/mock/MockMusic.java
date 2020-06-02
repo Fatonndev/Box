@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.lwjgl3.audio.mock;
 
-import ru.obvilion.box.audio.Music;
+import com.badlogic.gdx.audio.Music;
 
 /** The headless backend does its best to mock elements. This is intended to make code-sharing between
  * server and client as simple as possible.

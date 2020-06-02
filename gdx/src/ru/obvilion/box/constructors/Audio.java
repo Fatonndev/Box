@@ -21,7 +21,7 @@ import com.badlogic.gdx.audio.AudioDevice;
 import com.badlogic.gdx.audio.AudioRecorder;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** This interface encapsulates the creation and management of audio resources. It allows you to get direct access to the audio

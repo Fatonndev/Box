@@ -21,15 +21,19 @@ import java.nio.IntBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtFileHandle;
-import ru.obvilion.box.files.FileHandle;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.Pixmap.Filter;
 import com.badlogic.gdx.utils.BufferUtils;
 import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.GdxRuntimeException;
+import com.google.gwt.aria.client.ImgRole;
 import com.google.gwt.canvas.client.Canvas;
 import com.google.gwt.canvas.dom.client.CanvasPixelArray;
 import com.google.gwt.canvas.dom.client.Context2d;
 import com.google.gwt.canvas.dom.client.Context2d.Composite;
+import com.google.gwt.canvas.dom.client.ImageData;
 import com.google.gwt.dom.client.CanvasElement;
 import com.google.gwt.dom.client.ImageElement;
 

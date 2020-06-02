@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.iosrobovm;
 import ru.obvilion.box.Box;
 import org.robovm.apple.foundation.NSObject;
 
-import ru.obvilion.box.audio.Music;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.backends.iosrobovm.objectal.AVAudioPlayerDelegateAdapter;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALAudioTrack;
 
