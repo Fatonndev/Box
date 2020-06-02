@@ -20,8 +20,8 @@ import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.graphics.g3d.utils.ShaderProvider;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 /** A Renderable contains all information about a single render instruction (typically a draw call).</p>
  * 

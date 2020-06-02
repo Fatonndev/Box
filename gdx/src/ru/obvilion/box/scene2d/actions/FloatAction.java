@@ -17,7 +17,7 @@
 package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.math.Interpolation;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** An action that has a float, whose value is transitioned over time.
  * @author Nathan Sweet */

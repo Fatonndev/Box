@@ -20,7 +20,7 @@ import ru.obvilion.box.ApplicationAdapter;
 import com.badlogic.gdx.controllers.desktop.DesktopControllersBuild;
 import com.badlogic.gdx.controllers.desktop.OisControllers;
 import com.badlogic.gdx.controllers.desktop.ois.OisJoystick.OisPov;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 public class OisTest {
 	public static void main (String[] args) throws Exception {

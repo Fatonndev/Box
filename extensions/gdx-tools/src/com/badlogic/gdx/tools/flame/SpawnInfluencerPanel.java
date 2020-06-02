@@ -40,7 +40,7 @@ import ru.obvilion.box.graphics.g3d.particles.values.RectangleSpawnShapeValue;
 import ru.obvilion.box.graphics.g3d.particles.values.SpawnShapeValue;
 import ru.obvilion.box.graphics.g3d.particles.values.UnweightedMeshSpawnShapeValue;
 import ru.obvilion.box.graphics.g3d.particles.values.WeightMeshSpawnShapeValue;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 class SpawnInfluencerPanel extends InfluencerPanel<SpawnInfluencer> implements TemplatePickerPanel.Listener<Model> {

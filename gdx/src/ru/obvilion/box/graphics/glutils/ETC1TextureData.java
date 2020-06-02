@@ -23,7 +23,7 @@ import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
 import ru.obvilion.box.graphics.glutils.ETC1.ETC1Data;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class ETC1TextureData implements TextureData {
 	FileHandle file;

@@ -18,8 +18,8 @@ package ru.obvilion.box.maps;
 
 import java.util.Iterator;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** @brief Collection of MapObject instances */
 public class MapObjects implements Iterable<MapObject> {

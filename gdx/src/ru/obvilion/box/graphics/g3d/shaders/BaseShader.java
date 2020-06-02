@@ -32,10 +32,10 @@ import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.IntIntMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.IntIntMap;
 
 /** @author Xoppa A BaseShader is a wrapper around a ShaderProgram that keeps track of the uniform and attribute locations. It does
  *         not manage the ShaderPogram, you are still responsible for disposing the ShaderProgram. */

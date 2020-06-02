@@ -18,7 +18,7 @@ package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.scene2d.Action;
 import ru.obvilion.box.scene2d.Actor;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Executes an action only after all other actions on the actor at the time this action's target was set have finished.
  * @author Nathan Sweet */

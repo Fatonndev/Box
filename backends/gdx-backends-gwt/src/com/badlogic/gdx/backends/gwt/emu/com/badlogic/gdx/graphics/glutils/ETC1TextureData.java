@@ -20,7 +20,7 @@ import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class ETC1TextureData implements TextureData {
 	public ETC1TextureData (FileHandle file) {

@@ -35,7 +35,7 @@ import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Pool;
 import com.badlogic.gdx.physics.bullet.inversedynamics.MultiBodyTree;
 import com.badlogic.gdx.physics.bullet.dynamics.btDynamicsWorld;
 import com.badlogic.gdx.physics.bullet.dynamics.btContactSolverInfo;

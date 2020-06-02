@@ -26,10 +26,10 @@ import com.badlogic.gdx.physics.bullet.collision.btCollisionShape;
 import com.badlogic.gdx.physics.bullet.collision.btCompoundShape;
 import com.badlogic.gdx.physics.bullet.linearmath.LinearMath;
 import com.badlogic.gdx.physics.bullet.linearmath.LinearMathConstants;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 public class Bullet {
 	/** The version of the Bullet library used by this wrapper. */

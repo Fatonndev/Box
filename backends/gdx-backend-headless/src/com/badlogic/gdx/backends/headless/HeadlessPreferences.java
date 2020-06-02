@@ -19,8 +19,8 @@ package com.badlogic.gdx.backends.headless;
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.Preferences;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

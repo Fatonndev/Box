@@ -25,7 +25,7 @@ import java.net.Socket;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** <p>
  * An {@link Input} implementation that receives touch, key, accelerometer and compass events from a remote Android device. Just

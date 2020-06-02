@@ -7,7 +7,7 @@ import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.ControllerManager;
 import com.badlogic.gdx.controllers.PovDirection;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class Lwjgl3ControllerManager implements ControllerManager {
 	final Array<Controller> controllers = new Array<Controller>();

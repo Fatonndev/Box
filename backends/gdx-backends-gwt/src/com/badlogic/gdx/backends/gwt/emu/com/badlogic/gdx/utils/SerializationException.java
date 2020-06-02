@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils;
+package ru.obvilion.box.utils;
 
 /** Indicates an error during serialization due to misconfiguration or during deserialization due to invalid input data.
  * @author Nathan Sweet */

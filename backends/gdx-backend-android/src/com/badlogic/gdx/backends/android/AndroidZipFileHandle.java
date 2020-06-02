@@ -24,7 +24,7 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.backends.android.ZipResourceFile.ZipEntryRO;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** @author sarkanyi */
 public class AndroidZipFileHandle extends AndroidFileHandle {

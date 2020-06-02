@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.scene2d;
 
-import static com.badlogic.gdx.utils.Align.*;
+import static ru.obvilion.box.utils.Align.*;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.graphics.Color;
@@ -30,12 +30,12 @@ import ru.obvilion.box.scene2d.InputEvent.Type;
 import ru.obvilion.box.scene2d.utils.ActorGestureListener;
 import ru.obvilion.box.scene2d.utils.ClickListener;
 import ru.obvilion.box.scene2d.utils.ScissorStack;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.DelayedRemovalArray;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pools;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.DelayedRemovalArray;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pools;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** 2D scene graph node. An actor has a position, rectangular size, origin, scale, rotation, Z index, and color. The position
  * corresponds to the unrotated, unscaled bottom left corner of the actor. The position is relative to the actor's parent. The

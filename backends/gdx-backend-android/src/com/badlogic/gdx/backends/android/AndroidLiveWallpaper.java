@@ -25,7 +25,7 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
-import com.badlogic.gdx.utils.*;
+import ru.obvilion.box.utils.*;
 import ru.obvilion.box.*;
 import ru.obvilion.box.constructors.*;
 

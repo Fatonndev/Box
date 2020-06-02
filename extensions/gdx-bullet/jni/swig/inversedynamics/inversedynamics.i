@@ -30,7 +30,7 @@ import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Pool;
 %}
 %pragma(java) moduleimports=%{
 import com.badlogic.gdx.physics.bullet.BulletBase;

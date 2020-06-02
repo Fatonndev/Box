@@ -28,9 +28,9 @@ import ru.obvilion.box.maps.ImageResolver;
 import ru.obvilion.box.maps.ImageResolver.AssetManagerImageResolver;
 import ru.obvilion.box.maps.ImageResolver.DirectImageResolver;
 import ru.obvilion.box.maps.MapProperties;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.XmlReader.Element;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.XmlReader.Element;
 
 /** @brief synchronous loader for TMX maps created with the Tiled tool */
 public class TmxMapLoader extends BaseTmxMapLoader<TmxMapLoader.Parameters> {

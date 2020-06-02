@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.Texture.TextureWrap;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** <p>
  * Encapsulates OpenGL ES 2.0 frame buffer objects. This is a simple helper class which should cover most FBO uses. It will
@@ -96,7 +96,7 @@ public class FrameBufferCubemap extends GLFrameBuffer<Cubemap> {
 	 * @param height the height of the cubemap in pixels
 	 * @param hasDepth whether to attach a depth buffer
 	 * @param hasStencil whether to attach a stencil buffer
-	 * @throws com.badlogic.gdx.utils.GdxRuntimeException in case the FrameBuffer could not be created */
+	 * @throws ru.obvilion.box.utils.GdxRuntimeException in case the FrameBuffer could not be created */
 	public FrameBufferCubemap (Pixmap.Format format, int width, int height, boolean hasDepth, boolean hasStencil) {
 		FrameBufferCubemapBuilder frameBufferBuilder = new FrameBufferCubemapBuilder(width, height);
 		frameBufferBuilder.addBasicColorTextureAttachment(format);

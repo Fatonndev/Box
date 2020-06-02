@@ -35,11 +35,11 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.g2d.GlyphLayout.GlyphRun;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Renders bitmap fonts. The font consists of 2 files: an image file or {@link TextureRegion} containing the glyphs and a file in
  * the AngleCode BMFont text format that describes where each glyph is on the image.

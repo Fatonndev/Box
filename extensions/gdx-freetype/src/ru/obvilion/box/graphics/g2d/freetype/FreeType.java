@@ -26,12 +26,12 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Blending;
 import ru.obvilion.box.graphics.Pixmap.Format;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.LongMap;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.LongMap;
+import ru.obvilion.box.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.StreamUtils;
 
 public class FreeType {
 	// @off

@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.scene2d.ui;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
 
 /** Manages a group of buttons to enforce a minimum and maximum number of checked buttons. This enables "radio button"
  * functionality and more. A button may only be in one group at a time.

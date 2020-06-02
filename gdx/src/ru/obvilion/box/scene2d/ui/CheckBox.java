@@ -20,9 +20,9 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g2d.Batch;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Scaling;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Scaling;
 
 /** A checkbox is a button that contains an image indicating the checked or unchecked state and a label.
  * @author Nathan Sweet */

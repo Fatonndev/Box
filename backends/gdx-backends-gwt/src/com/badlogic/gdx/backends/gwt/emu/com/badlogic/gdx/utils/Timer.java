@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils;
+package ru.obvilion.box.utils;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Application;

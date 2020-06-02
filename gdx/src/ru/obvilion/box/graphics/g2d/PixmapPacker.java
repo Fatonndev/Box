@@ -31,10 +31,10 @@ import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.g2d.PixmapPacker.SkylineStrategy.SkylinePage.Row;
 import ru.obvilion.box.graphics.glutils.PixmapTextureData;
 import ru.obvilion.box.math.Rectangle;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.OrderedMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.OrderedMap;
 
 /** Packs {@link Pixmap pixmaps} into one or more {@link Page pages} to generate an atlas of pixmap instances. Provides means to
  * directly convert the pixmap atlas to a {@link TextureAtlas}. The packer supports padding and border pixel duplication,

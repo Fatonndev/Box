@@ -16,10 +16,10 @@
 
 package ru.obvilion.box.math;
 
-import com.badlogic.gdx.utils.BooleanArray;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.ShortArray;
+import ru.obvilion.box.utils.BooleanArray;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.ShortArray;
 
 /** Delaunay triangulation. Adapted from Paul Bourke's triangulate: http://paulbourke.net/papers/triangulate/
  * @author Nathan Sweet */

@@ -19,7 +19,7 @@ package ru.obvilion.box.net;
 import java.net.InetSocketAddress;
 
 import ru.obvilion.box.constructors.Net.Protocol;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Server socket implementation using java.net.ServerSocket.
  * 

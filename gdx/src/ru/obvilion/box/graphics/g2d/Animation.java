@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.reflect.ArrayReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.reflect.ArrayReflection;
 
 /** <p>
  * An Animation stores a list of objects representing an animated sequence, e.g. for running or jumping. Each

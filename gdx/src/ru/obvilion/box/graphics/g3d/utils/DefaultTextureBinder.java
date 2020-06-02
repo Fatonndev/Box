@@ -21,8 +21,8 @@ import java.nio.IntBuffer;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.GLTexture;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Class that you assign a range of texture units and binds textures for you within that range. It does some basic usage tracking
  * to avoid unnecessary bind calls.

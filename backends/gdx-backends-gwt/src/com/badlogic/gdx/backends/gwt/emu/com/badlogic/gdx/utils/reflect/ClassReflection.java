@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils.reflect;
+package ru.obvilion.box.utils.reflect;
 
 import java.lang.annotation.Inherited;
 

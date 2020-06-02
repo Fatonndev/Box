@@ -24,9 +24,9 @@ import com.badlogic.gdx.controllers.gwt.support.Gamepad;
 import com.badlogic.gdx.controllers.gwt.support.GamepadButton;
 import com.badlogic.gdx.controllers.gwt.support.GamepadSupport;
 import com.badlogic.gdx.controllers.gwt.support.GamepadSupportListener;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.IntMap;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.IntMap;
+import ru.obvilion.box.utils.Pool;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.client.JsArrayNumber;
 

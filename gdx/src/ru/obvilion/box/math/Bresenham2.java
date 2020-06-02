@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.math;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 /** Returns a list of points at integer coordinates for a line on a 2D grid, using the Bresenham algorithm.
  * <p>

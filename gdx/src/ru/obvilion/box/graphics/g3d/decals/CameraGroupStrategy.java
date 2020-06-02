@@ -22,10 +22,10 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.Pool;
 
 /** <p>
  * Minimalistic grouping strategy that splits decals into opaque and transparent ones enabling and disabling blending as needed.

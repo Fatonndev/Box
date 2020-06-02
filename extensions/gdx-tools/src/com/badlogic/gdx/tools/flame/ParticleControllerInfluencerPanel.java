@@ -6,7 +6,7 @@ import java.awt.Insets;
 import ru.obvilion.box.graphics.g3d.particles.ParticleController;
 import ru.obvilion.box.graphics.g3d.particles.ParticleEffect;
 import ru.obvilion.box.graphics.g3d.particles.influencers.ParticleControllerInfluencer;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 public class ParticleControllerInfluencerPanel extends InfluencerPanel<ParticleControllerInfluencer> implements TemplatePickerPanel.Listener<ParticleController>, 

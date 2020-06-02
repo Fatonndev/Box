@@ -42,12 +42,12 @@ import com.badlogic.gdx.physics.box2d.joints.WeldJoint;
 import com.badlogic.gdx.physics.box2d.joints.WeldJointDef;
 import com.badlogic.gdx.physics.box2d.joints.WheelJoint;
 import com.badlogic.gdx.physics.box2d.joints.WheelJointDef;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.LongMap;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.LongMap;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 /** The world class manages all physics entities, dynamic simulation, and asynchronous queries. The world also contains efficient
  * memory management facilities.

@@ -34,7 +34,7 @@ import ru.obvilion.box.scene2d.utils.ActorGestureListener;
 import ru.obvilion.box.scene2d.utils.Cullable;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** A group that scrolls a child widget using scrollbars and/or mouse or touch dragging.
  * <p>

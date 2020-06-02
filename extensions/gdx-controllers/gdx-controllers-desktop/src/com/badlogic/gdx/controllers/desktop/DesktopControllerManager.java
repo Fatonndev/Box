@@ -19,8 +19,8 @@ package com.badlogic.gdx.controllers.desktop;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.ControllerManager;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 /** @author Nathan Sweet */
 public class DesktopControllerManager implements ControllerManager {

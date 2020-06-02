@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Rectangle;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.NumberUtils;
 
 /** Holds the geometry, color, and texture information for drawing 2D sprites using {@link Batch}. A Sprite has a position and a
  * size given as width and height. The position is relative to the origin of the coordinate system specified via

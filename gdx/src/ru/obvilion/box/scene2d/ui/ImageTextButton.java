@@ -22,9 +22,9 @@ import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.scene2d.ui.Label.LabelStyle;
 import ru.obvilion.box.scene2d.ui.TextButton.TextButtonStyle;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Scaling;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Scaling;
 
 /** A button with a child {@link Image} and {@link Label}.
  * @see ImageButton

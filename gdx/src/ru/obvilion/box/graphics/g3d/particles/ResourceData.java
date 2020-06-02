@@ -18,15 +18,15 @@ package ru.obvilion.box.graphics.g3d.particles;
 
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.ObjectMap.Entry;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
-import com.badlogic.gdx.utils.reflect.ReflectionException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap.Entry;
+import ru.obvilion.box.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.reflect.ReflectionException;
 
 /** This class handles the assets and configurations required by a given resource when de/serialized. It's handy when a given
  * object or one of its members requires some assets to be loaded to work properly after being deserialized. To save the assets,

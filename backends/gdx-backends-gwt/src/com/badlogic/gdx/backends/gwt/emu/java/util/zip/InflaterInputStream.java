@@ -20,8 +20,8 @@ package java.util.zip;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Dummy emulation. Throws a GdxRuntimeException on first read.
  * @author hneuer */

@@ -20,9 +20,9 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.InputAdapter;
 import ru.obvilion.box.InputProcessor;
 import ru.obvilion.box.math.Vector2;
-import com.badlogic.gdx.utils.TimeUtils;
-import com.badlogic.gdx.utils.Timer;
-import com.badlogic.gdx.utils.Timer.Task;
+import ru.obvilion.box.utils.TimeUtils;
+import ru.obvilion.box.utils.Timer;
+import ru.obvilion.box.utils.Timer.Task;
 
 /** {@link InputProcessor} implementation that detects gestures (tap, long press, fling, pan, zoom, pinch) and hands them to a
  * {@link GestureListener}.

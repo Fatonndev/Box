@@ -23,7 +23,7 @@ import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.graphics.g3d.attributes.BlendingAttribute;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class DefaultRenderableSorter implements RenderableSorter, Comparator<Renderable> {
 	private Camera camera;

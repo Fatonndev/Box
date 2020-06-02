@@ -23,9 +23,9 @@ import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.math.Interpolation;
 import ru.obvilion.box.scene2d.Stage;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Timer;
-import com.badlogic.gdx.utils.Timer.Task;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Timer;
+import ru.obvilion.box.utils.Timer.Task;
 
 /** Keeps track of an application's tooltips.
  * @author Nathan Sweet */

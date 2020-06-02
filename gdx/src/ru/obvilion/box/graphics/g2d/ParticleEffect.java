@@ -26,11 +26,11 @@ import java.io.Writer;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** See <a href="http://www.badlogicgames.com/wordpress/?p=1255">http://www.badlogicgames.com/wordpress/?p=1255</a>
  * @author mzechner */

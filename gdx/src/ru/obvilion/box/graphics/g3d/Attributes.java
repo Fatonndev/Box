@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.g3d;
 import java.util.Comparator;
 import java.util.Iterator;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class Attributes implements Iterable<Attribute>, Comparator<Attribute>, Comparable<Attributes> {
 	protected long mask;

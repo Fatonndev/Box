@@ -45,8 +45,8 @@ import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class DefaultShader extends BaseShader {
 	public static class Config {

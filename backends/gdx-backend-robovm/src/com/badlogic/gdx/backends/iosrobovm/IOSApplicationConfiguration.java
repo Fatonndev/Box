@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.iosrobovm;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 import org.robovm.apple.glkit.GLKViewDrawableColorFormat;
 import org.robovm.apple.glkit.GLKViewDrawableDepthFormat;

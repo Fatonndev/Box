@@ -24,9 +24,9 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.scene2d.ui.Skin;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.ObjectMap.Entry;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap.Entry;
 
 /** {@link AssetLoader} for {@link Skin} instances. All {@link Texture} and {@link BitmapFont} instances will be loaded as
  * dependencies. Passing a {@link SkinParameter} allows the exact name of the texture associated with the skin to be specified.

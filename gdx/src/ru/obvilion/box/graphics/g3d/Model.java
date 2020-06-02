@@ -48,12 +48,12 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ArrayMap;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.ArrayMap;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
 
 /** A model represents a 3D assets. It stores a hierarchy of nodes. A node has a transform and optionally a graphical part in form
  * of a {@link MeshPart} and {@link Material}. Mesh parts reference subsets of vertices in one of the meshes of the model.

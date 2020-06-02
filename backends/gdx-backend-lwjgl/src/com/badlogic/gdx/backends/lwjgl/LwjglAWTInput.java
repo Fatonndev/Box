@@ -56,8 +56,8 @@ import javax.swing.event.DocumentListener;
 
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.utils.IntSet;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.IntSet;
+import ru.obvilion.box.utils.Pool;
 
 public class LwjglAWTInput implements Input, MouseMotionListener, MouseListener, MouseWheelListener, KeyListener {
 	class KeyEvent {

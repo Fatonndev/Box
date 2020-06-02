@@ -25,7 +25,7 @@ import android.view.WindowManager;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.ApplicationListener;
-import com.badlogic.gdx.utils.GdxNativesLoader;
+import ru.obvilion.box.utils.GdxNativesLoader;
 
 /** An implementation of the {@link Application} interface dedicated for android live wallpapers.
  * 

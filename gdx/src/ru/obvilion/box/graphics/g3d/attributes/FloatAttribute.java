@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.attributes;
 
 import ru.obvilion.box.graphics.g3d.Attribute;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.NumberUtils;
 
 public class FloatAttribute extends Attribute {
 	public static final String ShininessAlias = "shininess";

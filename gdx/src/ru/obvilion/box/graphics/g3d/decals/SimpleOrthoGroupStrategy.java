@@ -19,8 +19,8 @@ package ru.obvilion.box.graphics.g3d.decals;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Sort;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Sort;
 
 /** <p>
  * Minimalistic grouping strategy useful for orthogonal scenes where the camera faces the negative z axis. Handles enabling and

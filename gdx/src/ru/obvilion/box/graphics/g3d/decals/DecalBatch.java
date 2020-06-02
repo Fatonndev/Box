@@ -22,10 +22,10 @@ import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.SortedIntList;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.SortedIntList;
 
 /** <p>
  * Renderer for {@link Decal} objects.

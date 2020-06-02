@@ -21,7 +21,7 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Nathan Sweet */
 public class GridPacker implements Packer {

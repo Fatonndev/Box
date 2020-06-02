@@ -30,7 +30,7 @@ import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Holds the settings needed to configure a UnicodeFont.
  * @author Nathan Sweet */

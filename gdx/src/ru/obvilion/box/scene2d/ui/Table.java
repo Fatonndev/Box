@@ -27,11 +27,11 @@ import ru.obvilion.box.scene2d.ui.Label.LabelStyle;
 import ru.obvilion.box.scene2d.ui.Value.Fixed;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pools;
 
 /** A group that sizes and positions children using table constraints. By default, {@link #getTouchable()} is
  * {@link Touchable#childrenOnly}.

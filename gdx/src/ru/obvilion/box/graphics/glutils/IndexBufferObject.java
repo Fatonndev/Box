@@ -21,8 +21,8 @@ import java.nio.ShortBuffer;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.graphics.GL20;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** <p>
  * In IndexBufferObject wraps OpenGL's index buffer functionality to be used in conjunction with VBOs. This class can be

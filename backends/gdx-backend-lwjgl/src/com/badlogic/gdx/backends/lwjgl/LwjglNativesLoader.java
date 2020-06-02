@@ -16,11 +16,11 @@
 
 package com.badlogic.gdx.backends.lwjgl;
 
-import static com.badlogic.gdx.utils.SharedLibraryLoader.*;
+import static ru.obvilion.box.utils.SharedLibraryLoader.*;
 
-import com.badlogic.gdx.utils.GdxNativesLoader;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.GdxNativesLoader;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 import java.io.File;
 import java.lang.reflect.Method;

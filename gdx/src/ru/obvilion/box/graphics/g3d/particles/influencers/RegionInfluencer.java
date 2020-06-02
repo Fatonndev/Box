@@ -24,9 +24,9 @@ import ru.obvilion.box.graphics.g3d.particles.ParallelArray.FloatChannel;
 import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData.SaveData;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 /** It's an {@link Influencer} which assigns a region of a {@link Texture} to the particles.
  * @author Inferno */
 public abstract class RegionInfluencer extends Influencer {

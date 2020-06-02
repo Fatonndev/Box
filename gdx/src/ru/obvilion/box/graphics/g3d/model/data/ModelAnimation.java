@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.graphics.g3d.model.data;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class ModelAnimation {
 	public String id;

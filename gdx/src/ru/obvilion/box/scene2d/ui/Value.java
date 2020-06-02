@@ -18,7 +18,7 @@ package ru.obvilion.box.scene2d.ui;
 
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** Value placeholder, allowing the value to be computed on request. Values are provided an actor for context which reduces the
  * number of value instances that need to be created and reduces verbosity in code that specifies values.

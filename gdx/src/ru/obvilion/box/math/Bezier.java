@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.math;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Implementation of the Bezier curve.
  * @author Xoppa */

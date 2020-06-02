@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.lwjgl3.audio;
 import java.io.ByteArrayOutputStream;
 
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** @author Nathan Sweet */
 public class Ogg {

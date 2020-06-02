@@ -26,7 +26,7 @@ import ru.obvilion.box.graphics.g3d.utils.TextureDescriptor;
 import ru.obvilion.box.graphics.glutils.FrameBuffer;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** @deprecated Experimental, likely to change, do not use!
  * @author Xoppa */

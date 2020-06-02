@@ -19,8 +19,8 @@ package ru.obvilion.box.graphics.g3d.attributes;
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.g3d.Attribute;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.NumberUtils;
 
 public class DepthTestAttribute extends Attribute {
 	public final static String Alias = "depthStencil";

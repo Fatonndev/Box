@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.g3d.environment;
 
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class SphericalHarmonics {
 	// <kalle_h> last term is no x*x * y*y but x*x - y*y

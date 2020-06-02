@@ -16,9 +16,7 @@
 
 package com.badlogic.gdx.controllers;
 
-import java.util.Collection;
-
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Nathan Sweet */
 public interface ControllerManager {

@@ -15,6 +15,6 @@ LOCAL_SRC_FILES := ru.obvilion.box.graphics.glutils.ETC1.cpp\
 	memcpy_wrap.c\
 	ru.obvilion.box.graphics.g2d.Gdx2DPixmap.cpp\
 	gdx2d/gdx2d.c\
-	com.badlogic.gdx.utils.BufferUtils.cpp
+	ru.obvilion.box.utils.BufferUtils.cpp
  
 include $(BUILD_SHARED_LIBRARY)

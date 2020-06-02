@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.utils;
 
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.g3d.Renderable;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Responsible for sorting {@link Renderable} lists by whatever criteria (material, distance to camera, etc.)
  * @author badlogic */

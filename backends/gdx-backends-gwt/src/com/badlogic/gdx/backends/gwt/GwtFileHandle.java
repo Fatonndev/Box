@@ -35,7 +35,7 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class GwtFileHandle extends FileHandle {
 	public final Preloader preloader;

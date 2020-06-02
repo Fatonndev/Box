@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.controllers.gwt.support;
 
-import com.badlogic.gdx.utils.IntMap;
+import ru.obvilion.box.utils.IntMap;
 import com.google.gwt.animation.client.AnimationScheduler;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;

@@ -24,12 +24,12 @@ import ru.obvilion.box.graphics.g3d.model.NodeKeyframe;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.ObjectMap.Entry;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pool.Poolable;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap.Entry;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pool.Poolable;
 
 /** Base class for applying one or more {@link Animation}s to a {@link ModelInstance}. This class only applies the actual
  * {@link Node} transformations, it does not manage animations or keep track of animation states. See {@link AnimationController}

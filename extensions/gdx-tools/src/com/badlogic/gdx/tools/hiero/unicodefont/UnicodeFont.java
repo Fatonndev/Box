@@ -46,8 +46,8 @@ import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator;
 import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.badlogic.gdx.tools.hiero.HieroSettings;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.Effect;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 // BOZO - Look at actual pixels to determine glyph size, current size sometimes selects blank pixels (eg Calibri, 45, 'o').
 

@@ -16,15 +16,11 @@
 
 package com.badlogic.gdx.backends.iosmoe.custom;
 
-import com.badlogic.gdx.utils.BufferUtils;
 import org.moe.natj.c.CRuntime;
-import org.moe.natj.c.StructObject;
 import org.moe.natj.c.ann.CFunction;
 import org.moe.natj.general.NatJ;
 import org.moe.natj.general.ann.Runtime;
-import org.moe.natj.general.ann.UncertainArgument;
 import org.moe.natj.general.ptr.BytePtr;
-import org.moe.natj.general.ptr.IntPtr;
 import org.moe.natj.general.ptr.NUIntPtr;
 import org.moe.natj.general.ptr.impl.PtrFactory;
 import org.moe.natj.general.ptr.VoidPtr;

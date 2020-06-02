@@ -18,7 +18,7 @@ package ru.obvilion.box.math;
 
 import java.io.Serializable;
 
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.NumberUtils;
 
 /** A simple quaternion class.
  * @see <a href="http://en.wikipedia.org/wiki/Quaternion">http://en.wikipedia.org/wiki/Quaternion</a>

@@ -25,7 +25,7 @@ import ru.obvilion.box.constructors.Graphics;
 import ru.obvilion.box.constructors.Graphics.DisplayMode;
 import ru.obvilion.box.LifecycleListener;
 import ru.obvilion.box.graphics.Color;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;

@@ -27,9 +27,9 @@ import ru.obvilion.box.graphics.g3d.model.Node;
 import ru.obvilion.box.graphics.g3d.model.NodePart;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Helper class to create {@link Model}s from code. To start building use the {@link #begin()} method, when finished building use
  * the {@link #end()} method. The end method returns the model just build. Building cannot be nested, only one model (per

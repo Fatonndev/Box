@@ -19,7 +19,7 @@ package ru.obvilion.box.scene2d.actions;
 import ru.obvilion.box.scene2d.Action;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Sets an actor's {@link Layout#setLayoutEnabled(boolean) layout} to enabled or disabled. The actor must implements
  * {@link Layout}.

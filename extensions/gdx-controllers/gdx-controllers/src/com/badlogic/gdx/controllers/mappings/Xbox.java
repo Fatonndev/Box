@@ -19,7 +19,7 @@ package com.badlogic.gdx.controllers.mappings;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.controllers.Controller;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 /** Mappings for the Xbox series of controllers.
  * 

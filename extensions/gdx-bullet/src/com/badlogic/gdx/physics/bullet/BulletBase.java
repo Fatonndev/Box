@@ -17,7 +17,7 @@
 package com.badlogic.gdx.physics.bullet;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 public class BulletBase implements Disposable {
 	private long cPointer;

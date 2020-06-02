@@ -17,7 +17,6 @@
 package com.badlogic.gdx.controllers.mappings;
 
 import com.badlogic.gdx.controllers.Controller;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
 
 /** Mappings for the Xbox series of controllers. Based on "standard" controller mapping.
  * 

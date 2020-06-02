@@ -26,7 +26,7 @@ import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Pool.Poolable;
+import ru.obvilion.box.utils.Pool.Poolable;
 
 public interface MeshPartBuilder {
 	/** @return The {@link MeshPart} currently building. */

@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.iosrobovm;
 
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 public class IOSDevice {
 

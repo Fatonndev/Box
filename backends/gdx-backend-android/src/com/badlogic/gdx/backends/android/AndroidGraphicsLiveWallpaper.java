@@ -23,7 +23,7 @@ import android.view.SurfaceHolder;
 import ru.obvilion.box.Box;
 import com.badlogic.gdx.backends.android.surfaceview.GLSurfaceView20;
 import com.badlogic.gdx.backends.android.surfaceview.ResolutionStrategy;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A subclass of {@link AndroidGraphics} specialized for live wallpaper applications.
  * 

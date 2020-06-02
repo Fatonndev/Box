@@ -17,7 +17,7 @@
 package ru.obvilion.box.scene2d.utils;
 
 import ru.obvilion.box.math.Rectangle;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** Allows a parent to set the area that is visible on a child actor to allow the child to cull when drawing itself. This must
  * only be used for actors that are not rotated or scaled.

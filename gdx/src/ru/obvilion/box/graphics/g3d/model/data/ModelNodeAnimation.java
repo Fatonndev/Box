@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.model.data;
 
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class ModelNodeAnimation {
 	/** the id of the node animated by this animation FIXME should be nodeId **/

@@ -41,7 +41,7 @@
 	
 %typemap(javacode) _TYPE %{
 	/** Provides direct access to the instances this wrapper managed. */
-	public final static com.badlogic.gdx.utils.LongMap<_TYPE> instances = new com.badlogic.gdx.utils.LongMap<_TYPE>();
+	public final static ru.obvilion.box.utils.LongMap<_TYPE> instances = new ru.obvilion.box.utils.LongMap<_TYPE>();
 	
 	/** @return The existing instance for the specified pointer, or null if the instance doesn't exist */
 	public static _TYPE getInstance(final long swigCPtr) {

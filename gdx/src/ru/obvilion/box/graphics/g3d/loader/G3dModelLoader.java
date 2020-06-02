@@ -36,11 +36,11 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ArrayMap;
-import com.badlogic.gdx.utils.BaseJsonReader;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.ArrayMap;
+import ru.obvilion.box.utils.BaseJsonReader;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.JsonValue;
 
 public class G3dModelLoader extends ModelLoader<ModelLoader.ModelParameters> {
 	public static final short VERSION_HI = 0;

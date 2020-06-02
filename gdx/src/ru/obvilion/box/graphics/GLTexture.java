@@ -23,8 +23,8 @@ import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.TextureData.TextureDataType;
 import ru.obvilion.box.graphics.glutils.MipMapGenerator;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.Disposable;
 
 import java.nio.FloatBuffer;
 

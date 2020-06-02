@@ -22,8 +22,8 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A node is part of a hierarchy of Nodes in a {@link Model}. A Node encodes a transform relative to its parents. A Node can have
  * child nodes. Optionally a node can specify a {@link MeshPart} and a {@link Material} to be applied to the mesh part.

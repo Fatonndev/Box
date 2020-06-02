@@ -98,7 +98,7 @@ import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont.RenderType;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ColorEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.ConfigurableEffect.Value;
-import com.badlogic.gdx.utils.StringBuilder;
+import ru.obvilion.box.utils.StringBuilder;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.DistanceFieldEffect;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.EffectUtil;
 import com.badlogic.gdx.tools.hiero.unicodefont.effects.GradientEffect;

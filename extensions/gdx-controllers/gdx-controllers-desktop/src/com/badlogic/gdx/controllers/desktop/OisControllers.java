@@ -27,8 +27,8 @@ import com.badlogic.gdx.controllers.desktop.ois.OisJoystick;
 import com.badlogic.gdx.controllers.desktop.ois.OisJoystick.OisPov;
 import com.badlogic.gdx.controllers.desktop.ois.OisListener;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 import java.awt.Component;
 import java.lang.reflect.Field;

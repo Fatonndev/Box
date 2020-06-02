@@ -37,9 +37,9 @@ import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Blending;
 import ru.obvilion.box.graphics.Pixmap.Format;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 /** An implementation of the {@link Graphics} interface based on Lwjgl.
  * @author mzechner */

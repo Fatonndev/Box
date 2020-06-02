@@ -31,7 +31,7 @@ import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.g3d.Model;
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.graphics.g3d.model.NodePart;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 %}
 
 %typemap(javacode) btBvhTriangleMeshShape %{

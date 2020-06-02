@@ -30,7 +30,7 @@ import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.Polar
 import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.Rotational3D;
 import ru.obvilion.box.graphics.g3d.particles.influencers.DynamicsModifier.TangentialAcceleration;
 import com.badlogic.gdx.tools.flame.FlameMain.ControllerType;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 public class DynamicsInfluencerPanel extends InfluencerPanel<DynamicsInfluencer> {

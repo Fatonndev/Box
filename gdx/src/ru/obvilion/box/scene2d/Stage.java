@@ -39,15 +39,15 @@ import ru.obvilion.box.scene2d.ui.Table.Debug;
 import ru.obvilion.box.scene2d.utils.FocusListener;
 import ru.obvilion.box.scene2d.utils.FocusListener.FocusEvent;
 import ru.obvilion.box.scene2d.utils.ScissorStack;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pool.Poolable;
-import com.badlogic.gdx.utils.Pools;
-import com.badlogic.gdx.utils.Scaling;
-import com.badlogic.gdx.utils.SnapshotArray;
-import com.badlogic.gdx.utils.viewport.ScalingViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pool.Poolable;
+import ru.obvilion.box.utils.Pools;
+import ru.obvilion.box.utils.Scaling;
+import ru.obvilion.box.utils.SnapshotArray;
+import ru.obvilion.box.utils.viewport.ScalingViewport;
+import ru.obvilion.box.utils.viewport.Viewport;
 
 /** A 2D scene graph containing hierarchies of {@link Actor actors}. Stage handles the viewport and distributes input events.
  * <p>

@@ -27,12 +27,12 @@ import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Page;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.ObjectSet;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectSet;
+import ru.obvilion.box.utils.StreamUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

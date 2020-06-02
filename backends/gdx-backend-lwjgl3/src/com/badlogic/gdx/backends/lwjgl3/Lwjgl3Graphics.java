@@ -32,7 +32,7 @@ import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.glutils.GLVersion;
 import ru.obvilion.box.graphics.glutils.HdpiMode;
 import ru.obvilion.box.graphics.Pixmap;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 import org.lwjgl.opengl.GL11;
 
 public class Lwjgl3Graphics implements Graphics, Disposable {

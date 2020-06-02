@@ -18,8 +18,8 @@ package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.math.*;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ShortArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.ShortArray;
 
 /**
  * Renders polygon filled with a repeating TextureRegion with specified density

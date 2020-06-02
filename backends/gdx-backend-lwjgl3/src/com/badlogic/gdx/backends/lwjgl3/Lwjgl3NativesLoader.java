@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.backends.lwjgl3;
 
-import com.badlogic.gdx.utils.GdxNativesLoader;
+import ru.obvilion.box.utils.GdxNativesLoader;
 
 public final class Lwjgl3NativesLoader {
 

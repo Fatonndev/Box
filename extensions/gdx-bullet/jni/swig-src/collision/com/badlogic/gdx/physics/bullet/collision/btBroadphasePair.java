@@ -60,7 +60,7 @@ public class btBroadphasePair extends BulletBase {
 		return temp;
 	}
 	/** Pool of btBroadphasePair instances, used by director interface to provide the arguments. */
-	protected static final com.badlogic.gdx.utils.Pool<btBroadphasePair> pool = new com.badlogic.gdx.utils.Pool<btBroadphasePair>() {
+	protected static final ru.obvilion.box.utils.Pool<btBroadphasePair> pool = new ru.obvilion.box.utils.Pool<btBroadphasePair>() {
 		@Override
 		protected btBroadphasePair newObject() {
 			return new btBroadphasePair(0, false);

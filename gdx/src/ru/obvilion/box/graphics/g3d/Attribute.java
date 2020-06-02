@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.graphics.g3d;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Extend this class to implement a material attribute. Register the attribute type by statically calling the
  * {@link #register(String)} method, whose return value should be used to instantiate the attribute. A class can implement

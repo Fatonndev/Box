@@ -1,6 +1,6 @@
 package ru.obvilion.box;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class Version {
 

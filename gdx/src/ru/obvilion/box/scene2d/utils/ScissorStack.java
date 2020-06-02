@@ -23,8 +23,8 @@ import ru.obvilion.box.graphics.glutils.HdpiUtils;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Rectangle;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
 
 /** A stack of {@link Rectangle} objects to be used for clipping via {@link GL20#glScissor(int, int, int, int)}. When a new
  * Rectangle is pushed onto the stack, it will be merged with the current top of stack. The minimum area of overlap is then set as

@@ -20,9 +20,9 @@ import java.io.InputStream;
 import java.util.Map;
 
 import ru.obvilion.box.constructors.Net.HttpRequest;
-import com.badlogic.gdx.utils.Base64Coder;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Base64Coder;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.Pools;
 
 /** A builder for {@link HttpRequest}s.
  * 

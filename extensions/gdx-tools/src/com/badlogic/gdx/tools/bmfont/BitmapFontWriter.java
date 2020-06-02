@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.PixmapIO;
 import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
 import ru.obvilion.box.graphics.g2d.BitmapFont.Glyph;
 import ru.obvilion.box.graphics.g2d.PixmapPacker.Page;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** A utility to output BitmapFontData to a FNT file. This can be useful for caching the result from TrueTypeFont, for faster load
  * times.

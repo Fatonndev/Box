@@ -26,8 +26,8 @@ import ru.obvilion.box.scene2d.InputEvent;
 import ru.obvilion.box.scene2d.InputListener;
 import ru.obvilion.box.scene2d.utils.ChangeListener.ChangeEvent;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pools;
 
 /** A slider is a horizontal indicator that allows a user to set a value. The slider has a range (min, max) and a stepping between
  * each value the slider represents.

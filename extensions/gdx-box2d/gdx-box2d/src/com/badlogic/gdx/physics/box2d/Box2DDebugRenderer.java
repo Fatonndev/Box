@@ -27,8 +27,8 @@ import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.JointDef.JointType;
 import com.badlogic.gdx.physics.box2d.Shape.Type;
 import com.badlogic.gdx.physics.box2d.joints.PulleyJoint;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
 
 public class Box2DDebugRenderer implements Disposable {
 

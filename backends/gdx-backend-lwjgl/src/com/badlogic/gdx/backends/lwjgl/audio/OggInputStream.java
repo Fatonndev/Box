@@ -27,8 +27,8 @@ import java.io.InputStream;
 import java.nio.ByteOrder;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 import com.jcraft.jogg.Packet;
 import com.jcraft.jogg.Page;
 import com.jcraft.jogg.StreamState;

@@ -3,7 +3,7 @@ package ru.obvilion.box.scene2d.utils;
 
 import java.util.Iterator;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** A selection that supports range selection by knowing about the array of items being selected.
  * @author Nathan Sweet */

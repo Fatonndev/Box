@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.scene2d.actions;
 
-import com.badlogic.gdx.utils.Align;
+import ru.obvilion.box.utils.Align;
 
 /** Moves an actor from its current position to a specific position.
  * @author Nathan Sweet */

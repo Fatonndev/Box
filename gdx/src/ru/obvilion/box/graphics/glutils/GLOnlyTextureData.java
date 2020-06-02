@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A {@link TextureData} implementation which should be used to create gl only textures. This TextureData fits perfectly for
  * FrameBuffer. The data is not managed. */

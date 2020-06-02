@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.gwt;
 import ru.obvilion.box.constructors.Files;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import com.google.gwt.storage.client.Storage;
 
 public class GwtFiles implements Files {

@@ -26,11 +26,11 @@ import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.headless.mock.audio.MockAudio;
 import com.badlogic.gdx.backends.headless.mock.graphics.MockGraphics;
 import com.badlogic.gdx.backends.headless.mock.input.MockInput;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.TimeUtils;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.TimeUtils;
 
 /** a headless implementation of a GDX Application primarily intended to be used in servers
  *  @author Jon Renner */

@@ -20,7 +20,7 @@ import java.nio.Buffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import com.google.gwt.webgl.client.WebGLRenderingContext;
 
 public class GwtGL20Debug extends GwtGL20 {

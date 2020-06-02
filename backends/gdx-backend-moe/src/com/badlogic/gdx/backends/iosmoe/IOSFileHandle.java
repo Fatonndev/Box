@@ -18,7 +18,7 @@ package com.badlogic.gdx.backends.iosmoe;
 
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 import java.io.File;
 

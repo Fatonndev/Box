@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.maps.objects.CircleMapObject;
 import ru.obvilion.box.maps.objects.TextureMapObject;
 import ru.obvilion.box.maps.tiled.TiledMap;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** A generic level map implementation.</p>
  * 

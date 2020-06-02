@@ -21,8 +21,8 @@ import ru.obvilion.box.graphics.glutils.ETC1;
 import ru.obvilion.box.graphics.glutils.ETC1.ETC1Data;
 import ru.obvilion.box.graphics.glutils.KTXTextureData;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class KTXProcessor {
 

@@ -23,9 +23,9 @@ import ru.obvilion.box.graphics.g2d.BitmapFontCache;
 import ru.obvilion.box.graphics.g2d.GlyphLayout;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.StringBuilder;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.StringBuilder;
 
 /** A text label, with optional word wrapping.
  * <p>

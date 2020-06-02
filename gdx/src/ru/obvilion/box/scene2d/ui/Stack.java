@@ -30,8 +30,8 @@ package ru.obvilion.box.scene2d.ui;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.Touchable;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.SnapshotArray;
 
 /** A stack is a container that sizes its children to its size and positions them at 0,0 on top of each other.
  * <p>

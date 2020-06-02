@@ -17,8 +17,8 @@
 package ru.obvilion.box.net;
 
 import ru.obvilion.box.constructors.Net.Protocol;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A server socket that accepts new incoming connections, returning {@link Socket} instances. The {@link #accept(SocketHints)}
  * method should preferably be called in a separate thread as it is blocking.

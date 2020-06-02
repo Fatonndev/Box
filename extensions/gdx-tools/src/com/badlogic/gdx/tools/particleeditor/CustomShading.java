@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.SpriteBatch;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class CustomShading {
 	private ShaderProgram shader;

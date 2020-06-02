@@ -20,10 +20,10 @@ import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.MapObjects;
 import ru.obvilion.box.maps.MapProperties;
 import ru.obvilion.box.maps.tiled.TiledMapTile;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.TimeUtils;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.TimeUtils;
 
 /** @brief Represents a changing {@link TiledMapTile}. */
 public class AnimatedTiledMapTile implements TiledMapTile {

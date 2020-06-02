@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.gwt.preloader;
 
 import com.badlogic.gdx.backends.gwt.preloader.AssetFilter.AssetType;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import com.google.gwt.dom.client.ImageElement;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.typedarrays.shared.Int8Array;

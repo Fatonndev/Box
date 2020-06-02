@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.graphics.g3d.decals;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.IntMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.IntMap;
 
 /** This class in combination with the {@link GroupPlug GroupPlugs} allows you to build a modular {@link GroupStrategy} out of
  * routines you already implemented. */

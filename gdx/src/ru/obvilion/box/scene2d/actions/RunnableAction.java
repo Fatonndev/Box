@@ -17,7 +17,7 @@
 package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.scene2d.Action;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Pool;
 
 /** An action that runs a {@link Runnable}. Alternatively, the {@link #run()} method can be overridden instead of setting a
  * runnable.

@@ -29,10 +29,10 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.GLTexture;
 import ru.obvilion.box.graphics.Pixmap;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /**
  * <p>

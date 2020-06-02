@@ -18,8 +18,8 @@ package ru.obvilion.box.math;
 
 import java.io.Serializable;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.NumberUtils;
 
 /** Encapsulates a 2D vector. Allows chaining methods by returning a reference to itself
  * @author badlogicgames@gmail.com */

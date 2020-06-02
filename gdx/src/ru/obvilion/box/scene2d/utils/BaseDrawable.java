@@ -17,8 +17,8 @@
 package ru.obvilion.box.scene2d.utils;
 
 import ru.obvilion.box.graphics.g2d.Batch;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** Drawable that stores the size information but doesn't draw anything.
  * @author Nathan Sweet */

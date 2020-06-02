@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A 3x3 grid of texture regions. Any of the regions may be omitted. Padding may be set as a hint on how to inset content on top
  * of the ninepatch (by default the eight "edge" textures of the nine-patch define the padding). When drawn the eight "edge"

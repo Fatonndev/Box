@@ -71,7 +71,7 @@ public class ContactListener extends BulletBase {
 	public ContactListener() {
 		this(false);
 		if (!setEvents())
-			throw new com.badlogic.gdx.utils.GdxRuntimeException("Only one method per callback event can be overridden.");
+			throw new ru.obvilion.box.utils.GdxRuntimeException("Only one method per callback event can be overridden.");
 		enable();
 	}
 

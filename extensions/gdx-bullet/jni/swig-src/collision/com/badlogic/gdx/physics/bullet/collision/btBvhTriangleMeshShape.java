@@ -11,7 +11,7 @@ package com.badlogic.gdx.physics.bullet.collision;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class btBvhTriangleMeshShape extends btTriangleMeshShape {
 	private long swigCPtr;

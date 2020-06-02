@@ -2,7 +2,7 @@
 package ru.obvilion.box.graphics;
 
 import ru.obvilion.box.constructors.Graphics;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** <p>
  * Represents a mouse cursor. Create a cursor via

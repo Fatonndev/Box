@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.Texture.TextureWrap;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** This is a {@link FrameBuffer} variant backed by a float texture. */
 public class FloatFrameBuffer extends FrameBuffer {

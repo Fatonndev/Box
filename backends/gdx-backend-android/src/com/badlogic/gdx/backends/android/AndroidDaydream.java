@@ -32,10 +32,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import com.badlogic.gdx.backends.android.surfaceview.FillResolutionStrategy;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
-import com.badlogic.gdx.utils.GdxNativesLoader;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
+import ru.obvilion.box.utils.GdxNativesLoader;
+import ru.obvilion.box.utils.SnapshotArray;
 import ru.obvilion.box.*;
 import ru.obvilion.box.constructors.*;
 

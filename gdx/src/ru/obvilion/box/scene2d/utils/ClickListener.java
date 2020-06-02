@@ -20,8 +20,8 @@ import ru.obvilion.box.constructors.Input.Buttons;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.InputEvent;
 import ru.obvilion.box.scene2d.InputListener;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.TimeUtils;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.TimeUtils;
 
 /** Detects mouse over, mouse or finger touch presses, and clicks on an actor. A touch must go down over the actor and is
  * considered pressed as long as it is over the actor or within the {@link #setTapSquareSize(float) tap square}. This behavior

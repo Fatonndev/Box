@@ -14,10 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils.reflect;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Modifier;
+package ru.obvilion.box.utils.reflect;
 
 import com.badlogic.gwtref.client.Parameter;
 

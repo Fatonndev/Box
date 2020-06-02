@@ -27,7 +27,7 @@ import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.TextureData;
 import ru.obvilion.box.graphics.glutils.FileTextureData;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class TextureLoader extends AsynchronousAssetLoader<Texture, TextureLoader.TextureParameter> {
 	TextureData data;

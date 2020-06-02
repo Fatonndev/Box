@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder;
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Helper class with static methods to build ellipse shapes using {@link MeshPartBuilder}.
  * @author xoppa */

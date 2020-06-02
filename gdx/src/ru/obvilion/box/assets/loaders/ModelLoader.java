@@ -28,9 +28,9 @@ import ru.obvilion.box.graphics.g3d.model.data.ModelData;
 import ru.obvilion.box.graphics.g3d.model.data.ModelMaterial;
 import ru.obvilion.box.graphics.g3d.model.data.ModelTexture;
 import ru.obvilion.box.graphics.g3d.utils.TextureProvider;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.ObjectMap;
 
 public abstract class ModelLoader<P extends ModelLoader.ModelParameters> extends AsynchronousAssetLoader<Model, P> {
 	public ModelLoader (FileHandleResolver resolver) {

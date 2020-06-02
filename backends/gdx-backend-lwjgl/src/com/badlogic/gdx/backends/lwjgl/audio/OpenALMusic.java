@@ -25,8 +25,8 @@ import org.lwjgl.openal.AL11;
 import ru.obvilion.box.audio.Music;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 import static org.lwjgl.openal.AL10.*;
 

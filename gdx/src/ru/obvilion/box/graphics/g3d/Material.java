@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.graphics.g3d;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class Material extends Attributes {
 	private static int counter = 0;

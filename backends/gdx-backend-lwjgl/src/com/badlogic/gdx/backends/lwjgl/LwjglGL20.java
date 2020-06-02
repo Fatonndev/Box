@@ -32,7 +32,7 @@ import org.lwjgl.opengl.GL14;
 import org.lwjgl.opengl.GL15;
 import org.lwjgl.opengl.GL20;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** An implementation of the {@link GL20} interface based on LWJGL. Note that LWJGL shaders and OpenGL ES shaders will not be 100%
  * compatible. Some glGetXXX methods are not implemented.
@@ -45,7 +45,7 @@ class LwjglGL20 implements ru.obvilion.box.graphics.GL20 {
 
 	private void ensureBufferCapacity (int numBytes) {
 		if (buffer == null || buffer.capacity() < numBytes) {
-			buffer = com.badlogic.gdx.utils.BufferUtils.newByteBuffer(numBytes);
+			buffer = ru.obvilion.box.utils.BufferUtils.newByteBuffer(numBytes);
 			floatBuffer = buffer.asFloatBuffer();
 			intBuffer = buffer.asIntBuffer();
 		}
@@ -54,14 +54,14 @@ class LwjglGL20 implements ru.obvilion.box.graphics.GL20 {
 	private FloatBuffer toFloatBuffer (float v[], int offset, int count) {
 		ensureBufferCapacity(count << 2);
 		floatBuffer.clear();
-		com.badlogic.gdx.utils.BufferUtils.copy(v, floatBuffer, count, offset);
+		ru.obvilion.box.utils.BufferUtils.copy(v, floatBuffer, count, offset);
 		return floatBuffer;
 	}
 
 	private IntBuffer toIntBuffer (int v[], int offset, int count) {
 		ensureBufferCapacity(count << 2);
 		intBuffer.clear();
-		com.badlogic.gdx.utils.BufferUtils.copy(v, count, offset, intBuffer);
+		ru.obvilion.box.utils.BufferUtils.copy(v, count, offset, intBuffer);
 		return intBuffer;
 	}
 

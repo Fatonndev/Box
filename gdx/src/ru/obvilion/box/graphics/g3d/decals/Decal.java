@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.NumberUtils;
 
 /** <p/>
  * Represents a sprite in 3d space. Typical 3d transformations such as translation, rotation and scaling are supported. The

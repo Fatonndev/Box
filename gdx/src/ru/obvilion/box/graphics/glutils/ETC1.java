@@ -27,10 +27,10 @@ import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Class for encoding and decoding ETC1 compressed images. Also provides methods to add a PKM header.
  * @author mzechner */

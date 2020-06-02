@@ -37,14 +37,14 @@ import ru.obvilion.box.scene2d.utils.ClickListener;
 import ru.obvilion.box.scene2d.utils.Disableable;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.UIUtils;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pools;
-import com.badlogic.gdx.utils.Timer;
-import com.badlogic.gdx.utils.Timer.Task;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pools;
+import ru.obvilion.box.utils.Timer;
+import ru.obvilion.box.utils.Timer.Task;
 
 /** A single-line text input field.
  * <p>

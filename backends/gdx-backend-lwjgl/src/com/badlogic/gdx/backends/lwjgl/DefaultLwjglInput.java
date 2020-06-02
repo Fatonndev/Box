@@ -35,7 +35,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import com.badlogic.gdx.utils.IntSet;
+import ru.obvilion.box.utils.IntSet;
 
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
@@ -44,7 +44,7 @@ import org.lwjgl.opengl.Display;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Pool;
 
 /** An implementation of the {@link LwjglInput} interface hooking a LWJGL panel for input.
  * 

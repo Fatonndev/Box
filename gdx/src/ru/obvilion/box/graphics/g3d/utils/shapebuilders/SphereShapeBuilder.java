@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.ShortArray;
+import ru.obvilion.box.utils.ShortArray;
 
 /** Helper class with static methods to build sphere shapes using {@link MeshPartBuilder}.
  * @author xoppa */

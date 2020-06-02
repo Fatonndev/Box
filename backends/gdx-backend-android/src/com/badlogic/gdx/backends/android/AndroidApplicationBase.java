@@ -25,8 +25,8 @@ import android.view.WindowManager;
 
 import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.LifecycleListener;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.SnapshotArray;
 
 /** Interface that abstracts the Android application class usages, so that libGDX can be used with a fragment (or with any other
  * client code)

@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.lwjgl3;
 import ru.obvilion.box.Box;
 import org.lwjgl.glfw.GLFW;
 
-import com.badlogic.gdx.utils.Clipboard;
+import ru.obvilion.box.utils.Clipboard;
 
 /** Clipboard implementation for desktop that uses the system clipboard via GLFW.
  * @author mzechner */

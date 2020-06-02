@@ -18,7 +18,7 @@ package ru.obvilion.box.math;
 
 import java.io.Serializable;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A specialized 3x3 matrix that can represent sequences of 2D translations, scales, flips, rotations, and shears. <a
  * href="http://en.wikipedia.org/wiki/Affine_transformation">Affine transformations</a> preserve straight lines, and

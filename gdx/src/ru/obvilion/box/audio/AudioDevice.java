@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.audio;
 
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** Encapsulates an audio device in mono or stereo mode. Use the {@link #writeSamples(float[], int, int)} and
  * {@link #writeSamples(short[], int, int)} methods to write float or 16-bit signed short PCM data directly to the audio device.

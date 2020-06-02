@@ -19,7 +19,7 @@ package ru.obvilion.box.scene2d.ui;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.ui.Label.LabelStyle;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** A tooltip that shows a label.
  * @author Nathan Sweet */

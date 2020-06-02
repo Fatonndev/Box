@@ -24,8 +24,8 @@ import ru.obvilion.box.graphics.g3d.particles.ParallelArray.ObjectChannel;
 import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData.SaveData;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 /** It's an {@link Influencer} which controls which {@link Model} will be assigned to the particles as {@link ModelInstance}.
  * @author Inferno */

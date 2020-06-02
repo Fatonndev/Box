@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.tools;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 import java.io.File;
 import java.io.FilenameFilter;

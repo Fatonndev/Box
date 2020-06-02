@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.graphics.g3d.particles.values;
 
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** A value which contains a single float variable.
  * @author Inferno */

@@ -43,9 +43,9 @@ import ru.obvilion.box.graphics.g2d.freetype.FreeType.SizeMetrics;
 import ru.obvilion.box.graphics.g2d.freetype.FreeType.Stroker;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Rectangle;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Generates {@link BitmapFont} and {@link BitmapFontData} instances from TrueType, OTF, and other FreeType supported fonts.
  * </p>

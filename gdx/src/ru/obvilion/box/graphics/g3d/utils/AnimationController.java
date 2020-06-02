@@ -20,8 +20,8 @@ import ru.obvilion.box.graphics.g3d.ModelInstance;
 import ru.obvilion.box.graphics.g3d.model.Animation;
 import ru.obvilion.box.graphics.g3d.model.Node;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Pool;
 
 /** Class to control one or more {@link Animation}s on a {@link ModelInstance}. Use the
  * {@link #setAnimation(String, int, float, AnimationListener)} method to change the current animation. Use the

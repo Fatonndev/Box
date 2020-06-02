@@ -30,12 +30,12 @@ import ru.obvilion.box.scene2d.utils.ChangeListener.ChangeEvent;
 import ru.obvilion.box.scene2d.utils.Cullable;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.UIUtils;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.ObjectSet;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.ObjectSet;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pools;
 
 /** A list (aka list box) displays textual items and highlights the currently selected item.
  * <p>

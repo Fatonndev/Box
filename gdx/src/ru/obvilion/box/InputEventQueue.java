@@ -16,8 +16,8 @@
 
 package ru.obvilion.box;
 
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.TimeUtils;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.TimeUtils;
 
 /** Queues events that are later passed to the wrapped {@link InputProcessor}.
  * @author Nathan Sweet */

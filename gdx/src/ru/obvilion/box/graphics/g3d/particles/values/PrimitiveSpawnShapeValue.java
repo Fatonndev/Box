@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g3d.particles.values;
 
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** The base class of all the {@link SpawnShapeValue} values which spawn the particles on a geometric primitive.
  * @author Inferno */

@@ -20,8 +20,8 @@ import ru.obvilion.box.math.Interpolation;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.scene2d.InputEvent;
 import ru.obvilion.box.scene2d.ui.ScrollPane;
-import com.badlogic.gdx.utils.Timer;
-import com.badlogic.gdx.utils.Timer.Task;
+import ru.obvilion.box.utils.Timer;
+import ru.obvilion.box.utils.Timer.Task;
 
 /** Causes a scroll pane to scroll when a drag goes outside the bounds of the scroll pane. Attach the listener to the actor which
  * will cause scrolling when dragged, usually the scroll pane or the scroll pane's actor.

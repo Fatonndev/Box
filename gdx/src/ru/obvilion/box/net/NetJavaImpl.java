@@ -36,9 +36,9 @@ import ru.obvilion.box.constructors.Net.HttpMethods;
 import ru.obvilion.box.constructors.Net.HttpRequest;
 import ru.obvilion.box.constructors.Net.HttpResponse;
 import ru.obvilion.box.constructors.Net.HttpResponseListener;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Implements part of the {@link Net} API using {@link HttpURLConnection}, to be easily reused between the Android and Desktop
  * backends.

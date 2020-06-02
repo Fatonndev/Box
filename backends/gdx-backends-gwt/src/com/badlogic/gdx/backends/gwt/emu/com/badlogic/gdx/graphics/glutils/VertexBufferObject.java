@@ -23,7 +23,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes;
 import ru.obvilion.box.graphics.VertexAttributes.Usage;
-import com.badlogic.gdx.utils.BufferUtils;
+import ru.obvilion.box.utils.BufferUtils;
 
 /** <p>
  * A {@link VertexData} implementation based on OpenGL vertex buffer objects.

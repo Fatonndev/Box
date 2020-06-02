@@ -22,8 +22,8 @@ import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.I18NBundle;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.I18NBundle;
 
 /** {@link AssetLoader} for {@link I18NBundle} instances. The I18NBundle is loaded asynchronously.
  * <p>

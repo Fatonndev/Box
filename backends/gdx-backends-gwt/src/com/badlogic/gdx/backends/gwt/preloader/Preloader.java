@@ -28,9 +28,9 @@ import com.badlogic.gdx.backends.gwt.GwtFileHandle;
 import com.badlogic.gdx.backends.gwt.preloader.AssetDownloader.AssetLoaderListener;
 import com.badlogic.gdx.backends.gwt.preloader.AssetFilter.AssetType;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.ImageElement;
 

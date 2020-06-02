@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.glutils;
 import java.nio.FloatBuffer;
 
 import ru.obvilion.box.graphics.VertexAttributes;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** A VertexData instance holds vertices for rendering with OpenGL. It is implemented as either a {@link VertexArray} or a
  * {@link VertexBufferObject}. Only the later supports OpenGL ES 2.0.

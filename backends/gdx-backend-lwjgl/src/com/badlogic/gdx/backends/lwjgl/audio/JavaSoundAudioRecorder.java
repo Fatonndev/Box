@@ -22,7 +22,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.TargetDataLine;
 
 import ru.obvilion.box.audio.AudioRecorder;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** @author mzechner */
 public class JavaSoundAudioRecorder implements AudioRecorder {

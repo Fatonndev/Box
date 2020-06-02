@@ -49,8 +49,8 @@ import ru.obvilion.box.graphics.g2d.SpriteBatch;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class ParticleEditor extends JFrame {
 	public static final String DEFAULT_PARTICLE = "particle.png";

@@ -36,8 +36,8 @@ import ru.obvilion.box.graphics.glutils.FrameBuffer;
 import ru.obvilion.box.graphics.glutils.GLVersion;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.WindowedMean;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.SnapshotArray;
 
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;

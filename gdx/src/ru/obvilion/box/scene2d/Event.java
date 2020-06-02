@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.scene2d;
 
-import com.badlogic.gdx.utils.Pool.Poolable;
+import ru.obvilion.box.utils.Pool.Poolable;
 
 /** The base class for all events.
  * <p>

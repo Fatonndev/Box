@@ -27,8 +27,8 @@ import ru.obvilion.box.scene2d.Stage;
 import ru.obvilion.box.scene2d.utils.ChangeListener.ChangeEvent;
 import ru.obvilion.box.scene2d.utils.Disableable;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pools;
 
 /** A progress bar is a widget that visually displays the progress of some activity or a value within given range. The progress
  * bar has a range (min, max) and a stepping between each value it represents. The percentage of completeness typically starts out

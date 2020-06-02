@@ -20,7 +20,7 @@ import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.g3d.particles.renderers.ParticleControllerRenderData;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** This class is used by particle batches to sort the particles before rendering.
  * @author Inferno */

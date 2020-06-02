@@ -26,9 +26,9 @@ import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.NinePatchDrawable;
 import ru.obvilion.box.scene2d.utils.TextureRegionDrawable;
 import ru.obvilion.box.scene2d.utils.TransformDrawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Scaling;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Scaling;
 
 /** Displays a {@link Drawable}, scaled various way within the widgets bounds. The preferred size is the min size of the drawable.
  * Only when using a {@link TextureRegionDrawable} will the actor's scale, rotation, and origin be used when drawing.

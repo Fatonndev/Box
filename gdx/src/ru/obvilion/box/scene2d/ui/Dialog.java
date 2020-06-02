@@ -31,8 +31,8 @@ import ru.obvilion.box.scene2d.ui.Label.LabelStyle;
 import ru.obvilion.box.scene2d.ui.TextButton.TextButtonStyle;
 import ru.obvilion.box.scene2d.utils.ChangeListener;
 import ru.obvilion.box.scene2d.utils.FocusListener;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.ObjectMap;
 
 /** Displays a dialog, which is a window with a title, a content table, and a button table. Methods are provided to add a label to
  * the content table and buttons to the button table, but any widgets can be added. When a button is clicked,

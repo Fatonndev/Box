@@ -39,8 +39,8 @@ import ru.obvilion.box.graphics.g3d.particles.ResourceData.SaveData;
 import ru.obvilion.box.graphics.g3d.particles.renderers.PointSpriteControllerRenderData;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 /** This class is used to draw particles as point sprites.
  * @author Inferno */

@@ -41,9 +41,9 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** <p>
  * A Mesh holds vertices composed of attributes specified by a {@link VertexAttributes} instance. The vertices are held either in

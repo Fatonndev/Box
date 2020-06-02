@@ -24,9 +24,9 @@ import org.moe.natj.general.ann.NInt;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputProcessor;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Pool;
 
 import apple.audiotoolbox.c.AudioToolbox;
 import apple.coregraphics.struct.CGPoint;

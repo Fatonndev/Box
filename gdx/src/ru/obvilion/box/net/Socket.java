@@ -21,7 +21,7 @@ import java.io.OutputStream;
 
 import ru.obvilion.box.constructors.Net;
 import ru.obvilion.box.constructors.Net.Protocol;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** A client socket that talks to a server socket via some {@link Protocol}. See
  * {@link Net#newClientSocket(Protocol, String, int, SocketHints)} and

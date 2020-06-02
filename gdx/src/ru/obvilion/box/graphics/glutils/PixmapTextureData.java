@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.glutils;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class PixmapTextureData implements TextureData {
 	final Pixmap pixmap;

@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.environment;
 
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class AmbientCubemap {
 	private static final int NUM_VALUES = 6 * 3;

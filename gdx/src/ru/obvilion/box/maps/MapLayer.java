@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Map layer containing a set of objects and properties */
 public class MapLayer {

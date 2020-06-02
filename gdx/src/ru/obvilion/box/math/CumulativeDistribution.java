@@ -1,6 +1,6 @@
 package ru.obvilion.box.math;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** This class represents a cumulative distribution.
  * It can be used in scenarios where there are values with different probabilities

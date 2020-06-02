@@ -29,8 +29,8 @@ import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.glutils.FileTextureData;
 import ru.obvilion.box.graphics.glutils.PixmapTextureData;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A Texture wraps a standard OpenGL ES texture.
  * <p>

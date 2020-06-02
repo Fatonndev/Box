@@ -33,9 +33,9 @@ import com.badlogic.gdx.backends.iosrobovm.custom.UIAcceleration;
 import com.badlogic.gdx.backends.iosrobovm.custom.UIAccelerometer;
 import com.badlogic.gdx.backends.iosrobovm.custom.UIAccelerometerDelegate;
 import com.badlogic.gdx.backends.iosrobovm.custom.UIAccelerometerDelegateAdapter;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Pool;
 
 public class DefaultIOSInput implements IOSInput {
 	static final int MAX_TOUCHES = 20;

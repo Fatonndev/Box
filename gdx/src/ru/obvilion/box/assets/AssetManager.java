@@ -48,20 +48,20 @@ import ru.obvilion.box.graphics.g3d.loader.G3dModelLoader;
 import ru.obvilion.box.graphics.g3d.loader.ObjLoader;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.scene2d.ui.Skin;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.I18NBundle;
-import com.badlogic.gdx.utils.JsonReader;
-import com.badlogic.gdx.utils.Logger;
-import com.badlogic.gdx.utils.ObjectIntMap;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.ObjectSet;
-import com.badlogic.gdx.utils.TimeUtils;
-import com.badlogic.gdx.utils.UBJsonReader;
-import com.badlogic.gdx.utils.async.AsyncExecutor;
-import com.badlogic.gdx.utils.async.ThreadUtils;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.I18NBundle;
+import ru.obvilion.box.utils.JsonReader;
+import ru.obvilion.box.utils.Logger;
+import ru.obvilion.box.utils.ObjectIntMap;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectSet;
+import ru.obvilion.box.utils.TimeUtils;
+import ru.obvilion.box.utils.UBJsonReader;
+import ru.obvilion.box.utils.async.AsyncExecutor;
+import ru.obvilion.box.utils.async.ThreadUtils;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** Loads and stores assets like textures, bitmapfonts, tile maps, sounds, music and so on.
  * @author mzechner */

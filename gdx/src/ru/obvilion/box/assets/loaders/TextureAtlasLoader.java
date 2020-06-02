@@ -25,7 +25,7 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Page;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** {@link AssetLoader} to load {@link TextureAtlas} instances. Passing a {@link TextureAtlasParameter} to
  * {@link AssetManager#load(String, Class, AssetLoaderParameters)} allows to specify whether the atlas regions should be flipped

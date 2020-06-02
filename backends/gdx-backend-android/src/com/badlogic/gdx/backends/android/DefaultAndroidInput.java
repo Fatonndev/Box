@@ -42,8 +42,8 @@ import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.constructors.Graphics.DisplayMode;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.utils.IntSet;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.IntSet;
+import ru.obvilion.box.utils.Pool;
 
 import java.util.ArrayList;
 import java.util.Arrays;

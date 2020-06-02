@@ -35,18 +35,18 @@ import ru.obvilion.box.scene2d.utils.NinePatchDrawable;
 import ru.obvilion.box.scene2d.utils.SpriteDrawable;
 import ru.obvilion.box.scene2d.utils.TextureRegionDrawable;
 import ru.obvilion.box.scene2d.utils.TiledDrawable;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.Json.ReadOnlySerializer;
-import com.badlogic.gdx.utils.JsonValue;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.SerializationException;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
-import com.badlogic.gdx.utils.reflect.Method;
-import com.badlogic.gdx.utils.reflect.ReflectionException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.Json.ReadOnlySerializer;
+import ru.obvilion.box.utils.JsonValue;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.SerializationException;
+import ru.obvilion.box.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.reflect.Method;
+import ru.obvilion.box.utils.reflect.ReflectionException;
 
 /** A skin stores resources for UI widgets to use (texture regions, ninepatches, fonts, colors, etc). Resources are named and can
  * be looked up by name and type. Resources can be described in JSON. Skin provides useful conversions, such as allowing access to

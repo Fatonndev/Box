@@ -20,7 +20,7 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 
 import ru.obvilion.box.audio.Sound;
-import com.badlogic.gdx.utils.IntArray;
+import ru.obvilion.box.utils.IntArray;
 
 final class AndroidSound implements Sound {
 	final SoundPool soundPool;

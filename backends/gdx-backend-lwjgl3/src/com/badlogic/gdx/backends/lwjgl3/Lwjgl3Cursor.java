@@ -25,8 +25,8 @@ import org.lwjgl.glfw.GLFWImage;
 import ru.obvilion.box.graphics.Cursor;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Blending;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class Lwjgl3Cursor implements Cursor {
 	static final Array<Lwjgl3Cursor> cursors = new Array<Lwjgl3Cursor>();

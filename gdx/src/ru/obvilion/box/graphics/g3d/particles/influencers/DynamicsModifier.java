@@ -24,8 +24,8 @@ import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** It's the base class for any kind of influencer which operates on angular velocity and acceleration of the particles. All the
  * classes that will inherit this base class can and should be used only as sub-influencer of an instance of

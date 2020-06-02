@@ -56,9 +56,9 @@ import ru.obvilion.box.maps.tiled.tiles.StaticTiledMapTile;
 import ru.obvilion.box.math.Vector2;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.ObjectMap;
 
 /** Given one or more TMX tilemaps, packs all tileset resources used across the maps, or the resources used per map, into a single,
  * or multiple (one per map), {@link TextureAtlas} and produces a new TMX file to be loaded with an AtlasTiledMapLoader loader.

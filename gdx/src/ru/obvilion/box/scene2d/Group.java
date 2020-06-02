@@ -23,9 +23,9 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Rectangle;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.scene2d.utils.Cullable;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.SnapshotArray;
 
 /** 2D scene graph node that may contain other actors.
  * <p>
@@ -336,7 +336,7 @@ public class Group extends Actor implements Cullable {
 
 	/** Removes an actor from this group. If the actor will not be used again and has actions, they should be
 	 * {@link Actor#clearActions() cleared} so the actions will be returned to their
-	 * {@link Action#setPool(com.badlogic.gdx.utils.Pool) pool}, if any. This is not done automatically.
+	 * {@link Action#setPool(ru.obvilion.box.utils.Pool) pool}, if any. This is not done automatically.
 	 * @param unfocus If true, {@link Stage#unfocus(Actor)} is called.
 	 * @return the actor removed from this group. */
 	public Actor removeActorAt (int index, boolean unfocus) {

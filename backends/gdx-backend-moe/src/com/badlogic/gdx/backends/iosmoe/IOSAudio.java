@@ -25,7 +25,7 @@ import ru.obvilion.box.audio.Sound;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALAudioTrack;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALSimpleAudio;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class IOSAudio implements Audio {
 

@@ -9,8 +9,8 @@ import org.lwjgl.LWJGLException;
 
 import ru.obvilion.box.graphics.Cursor;
 import ru.obvilion.box.graphics.Pixmap;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 public class LwjglCursor implements Cursor {
 	org.lwjgl.input.Cursor lwjglCursor = null;

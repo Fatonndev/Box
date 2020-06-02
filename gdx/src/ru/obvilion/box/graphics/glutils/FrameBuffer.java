@@ -64,7 +64,7 @@ public class FrameBuffer extends GLFrameBuffer<Texture> {
 	 * @param width the width of the framebuffer in pixels
 	 * @param height the height of the framebuffer in pixels
 	 * @param hasDepth whether to attach a depth buffer
-	 * @throws com.badlogic.gdx.utils.GdxRuntimeException in case the FrameBuffer could not be created */
+	 * @throws ru.obvilion.box.utils.GdxRuntimeException in case the FrameBuffer could not be created */
 	public FrameBuffer (Pixmap.Format format, int width, int height, boolean hasDepth, boolean hasStencil) {
 		FrameBufferBuilder frameBufferBuilder = new FrameBufferBuilder(width, height);
 		frameBufferBuilder.addBasicColorTextureAttachment(format);

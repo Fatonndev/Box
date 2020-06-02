@@ -21,9 +21,9 @@ import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** It's the base class of every {@link ParticleController} component. A component duty is to participate in one or some events
  * during the simulation. (i.e it can handle the particles emission or modify particle properties, etc.).

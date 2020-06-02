@@ -45,8 +45,8 @@ import ru.obvilion.box.constructors.Graphics;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.lwjgl.audio.OpenALLwjglAudio;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
 
 /** An OpenGL surface on an AWT Canvas, allowing OpenGL to be embedded in a Swing application. This uses {@link AWTGLCanvas},
  * which allows multiple LwjglAWTCanvas to be used in a single application. All OpenGL calls are done on the EDT. Note that you

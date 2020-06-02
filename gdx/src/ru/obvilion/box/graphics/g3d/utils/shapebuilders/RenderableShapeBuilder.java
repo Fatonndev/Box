@@ -22,8 +22,8 @@ import ru.obvilion.box.graphics.VertexAttributes.Usage;
 import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.graphics.g3d.RenderableProvider;
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FlushablePool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FlushablePool;
 
 /** RenderableShapeBuilder builds various properties of a renderable.
  * @author realitix */

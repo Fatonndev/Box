@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import com.badlogic.gdx.backends.gwt.preloader.AssetFilter.AssetType;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import com.google.gwt.core.ext.BadPropertyValueException;
 import com.google.gwt.core.ext.ConfigurationProperty;
 import com.google.gwt.core.ext.Generator;

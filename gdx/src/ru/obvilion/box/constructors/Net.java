@@ -31,9 +31,9 @@ import ru.obvilion.box.net.ServerSocket;
 import ru.obvilion.box.net.ServerSocketHints;
 import ru.obvilion.box.net.Socket;
 import ru.obvilion.box.net.SocketHints;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pool.Poolable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pool.Poolable;
 
 /** Provides methods to perform networking operations, such as simple HTTP get and post requests, and TCP server/client socket
  * communication.</p>

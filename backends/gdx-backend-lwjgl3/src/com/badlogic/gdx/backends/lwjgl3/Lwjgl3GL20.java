@@ -32,7 +32,7 @@ import org.lwjgl.opengl.GL14;
 import org.lwjgl.opengl.GL15;
 import org.lwjgl.opengl.GL20;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 class Lwjgl3GL20 implements ru.obvilion.box.graphics.GL20 {
 	private ByteBuffer buffer = null;
@@ -41,7 +41,7 @@ class Lwjgl3GL20 implements ru.obvilion.box.graphics.GL20 {
 
 	private void ensureBufferCapacity (int numBytes) {
 		if (buffer == null || buffer.capacity() < numBytes) {
-			buffer = com.badlogic.gdx.utils.BufferUtils.newByteBuffer(numBytes);
+			buffer = ru.obvilion.box.utils.BufferUtils.newByteBuffer(numBytes);
 			floatBuffer = buffer.asFloatBuffer();
 			intBuffer = buffer.asIntBuffer();
 		}

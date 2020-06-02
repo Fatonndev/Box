@@ -12,7 +12,7 @@ import javax.swing.JScrollPane;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.graphics.g3d.particles.influencers.RegionInfluencer;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 public class RegionInfluencerPanel extends InfluencerPanel<RegionInfluencer> implements RegionPickerPanel.Listener {

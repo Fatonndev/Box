@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.graphics.g3d.decals;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Handles a single group's pre and post render arrangements. Can be plugged into {@link PluggableGroupStrategy} to build modular
  * {@link GroupStrategy GroupStrategies}. */

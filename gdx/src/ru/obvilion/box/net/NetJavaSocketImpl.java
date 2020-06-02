@@ -21,7 +21,7 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 
 import ru.obvilion.box.constructors.Net.Protocol;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Socket implementation using java.net.Socket.
  * 

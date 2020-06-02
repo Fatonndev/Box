@@ -28,11 +28,11 @@ import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.lwjgl.audio.OpenALLwjglAudio;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.SnapshotArray;
 
 import java.awt.Canvas;
 

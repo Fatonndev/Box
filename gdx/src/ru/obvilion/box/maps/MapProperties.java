@@ -18,7 +18,7 @@ package ru.obvilion.box.maps;
 
 import java.util.Iterator;
 
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 /** @brief Set of string indexed values representing map elements' properties, allowing to retrieve, modify and add properties to
  *        the set. */

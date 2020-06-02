@@ -35,7 +35,7 @@ import ru.obvilion.box.graphics.g3d.utils.RenderContext;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** This is a custom shader to render the particles. Usually is not required, because the {@link DefaultShader} will be used
  * instead. This shader will be used when dealing with billboards using GPU mode or point sprites.

@@ -21,10 +21,10 @@ import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.constructors.Application.ApplicationType;
 import ru.obvilion.box.constructors.Graphics.GraphicsType;
 import ru.obvilion.box.LifecycleListener;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** Provides access to connected {@link Controller} instances. Query the available controllers via {@link #getControllers()}, add
  * and remove global {@link ControllerListener} instances via {@link #addListener(ControllerListener)} and

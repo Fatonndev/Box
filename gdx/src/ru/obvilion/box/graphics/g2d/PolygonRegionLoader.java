@@ -29,9 +29,9 @@ import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.PolygonRegionLoader.PolygonRegionParameters;
 import ru.obvilion.box.math.EarClippingTriangulator;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** loads {@link PolygonRegion PolygonRegions} using a {@link ru.obvilion.box.graphics.g2d.PolygonRegionLoader}
  * @author dermetfan */

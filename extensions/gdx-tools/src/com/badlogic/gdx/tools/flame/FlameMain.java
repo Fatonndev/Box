@@ -108,9 +108,9 @@ import ru.obvilion.box.scene2d.ui.Skin;
 import ru.obvilion.box.scene2d.ui.Table;
 import ru.obvilion.box.scene2d.ui.TextButton;
 import ru.obvilion.box.scene2d.utils.ClickListener;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.StreamUtils;
-import com.badlogic.gdx.utils.StringBuilder;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.StreamUtils;
+import ru.obvilion.box.utils.StringBuilder;
 
 /** @author Inferno */
 public class FlameMain extends JFrame implements AssetErrorListener {

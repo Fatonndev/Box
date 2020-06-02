@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.attributes;
 
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g3d.Attribute;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class ColorAttribute extends Attribute {
 	public final static String DiffuseAlias = "diffuseColor";

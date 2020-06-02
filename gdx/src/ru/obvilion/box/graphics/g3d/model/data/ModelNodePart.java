@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.g3d.model.data;
 
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.ArrayMap;
+import ru.obvilion.box.utils.ArrayMap;
 
 public class ModelNodePart {
 	public String materialId;

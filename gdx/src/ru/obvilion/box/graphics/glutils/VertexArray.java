@@ -22,7 +22,7 @@ import java.nio.FloatBuffer;
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes;
-import com.badlogic.gdx.utils.BufferUtils;
+import ru.obvilion.box.utils.BufferUtils;
 
 /** <p>
  * Convenience class for working with OpenGL vertex arrays. It interleaves all data in the order you specified in the constructor

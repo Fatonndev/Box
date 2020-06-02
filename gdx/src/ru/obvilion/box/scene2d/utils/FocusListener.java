@@ -19,7 +19,7 @@ package ru.obvilion.box.scene2d.utils;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.Event;
 import ru.obvilion.box.scene2d.EventListener;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** Listener for {@link FocusEvent}.
  * @author Nathan Sweet */

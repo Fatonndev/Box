@@ -20,7 +20,7 @@ import java.io.File;
 
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class IOSFileHandle extends FileHandle {
 	protected IOSFileHandle (String fileName, FileType type) {

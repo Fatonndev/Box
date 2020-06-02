@@ -32,11 +32,11 @@ import ru.obvilion.box.maps.MapProperties;
 import ru.obvilion.box.maps.tiled.TiledMapTileLayer.Cell;
 import ru.obvilion.box.maps.tiled.tiles.AnimatedTiledMapTile;
 import ru.obvilion.box.maps.tiled.tiles.StaticTiledMapTile;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.XmlReader;
-import com.badlogic.gdx.utils.XmlReader.Element;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.XmlReader;
+import ru.obvilion.box.utils.XmlReader.Element;
 
 import java.io.IOException;
 import java.util.StringTokenizer;

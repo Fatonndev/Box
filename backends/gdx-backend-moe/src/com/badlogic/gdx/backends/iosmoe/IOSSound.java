@@ -21,7 +21,7 @@ import com.badlogic.gdx.backends.iosmoe.objectal.ALChannelSource;
 import com.badlogic.gdx.backends.iosmoe.objectal.ALSource;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALSimpleAudio;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.IntArray;
+import ru.obvilion.box.utils.IntArray;
 import apple.foundation.NSArray;
 
 

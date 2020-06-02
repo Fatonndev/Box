@@ -24,7 +24,7 @@ import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** Renders points, lines, shape outlines and filled shapes.
  * <p>

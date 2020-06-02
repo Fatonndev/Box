@@ -32,11 +32,11 @@ import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.ObjectIntMap;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.ObjectIntMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 /** <p>
  * A shader program encapsulates a vertex and fragment shader pair linked to form a shader program.

@@ -24,7 +24,7 @@ import com.badlogic.gdx.backends.iosrobovm.objectal.ALChannelSource;
 import com.badlogic.gdx.backends.iosrobovm.objectal.ALSource;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALSimpleAudio;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.IntArray;
+import ru.obvilion.box.utils.IntArray;
 
 /** @author tescott
  *  @author Tomski

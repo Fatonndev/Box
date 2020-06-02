@@ -18,8 +18,8 @@ package ru.obvilion.box.graphics;
 
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.g2d.Gdx2DPixmap;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

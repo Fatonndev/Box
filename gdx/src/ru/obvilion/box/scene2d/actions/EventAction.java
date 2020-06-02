@@ -5,7 +5,7 @@ import ru.obvilion.box.scene2d.Action;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.Event;
 import ru.obvilion.box.scene2d.EventListener;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** Adds a listener to the actor for a specific event type and does not complete until {@link #handle(Event)} returns true.
  * @author JavadocMD

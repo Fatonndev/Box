@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.ParticleController;
 import ru.obvilion.box.graphics.g3d.particles.ParticleControllerComponent;
 import ru.obvilion.box.graphics.g3d.particles.batches.ParticleBatch;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A {@link ParticleControllerRenderer} which will render the {@link ParticleController} of each particle.
  * @author Inferno */

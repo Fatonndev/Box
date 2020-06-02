@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.g3d.particles.batches;
 import ru.obvilion.box.graphics.Camera;
 import ru.obvilion.box.graphics.g3d.particles.ParticleSorter;
 import ru.obvilion.box.graphics.g3d.particles.renderers.ParticleControllerRenderData;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Base class of all the batches requiring to buffer {@link ParticleControllerRenderData}
  * @author Inferno */
@@ -31,7 +31,7 @@ public abstract class BufferedParticleBatch<T extends ParticleControllerRenderDa
 
 	protected BufferedParticleBatch (Class<T> type) {
 		this.sorter = new ParticleSorter.Distance();
-		renderData = new com.badlogic.gdx.utils.Array<T>(false, 10, type);
+		renderData = new ru.obvilion.box.utils.Array<T>(false, 10, type);
 	}
 
 	public void begin () {

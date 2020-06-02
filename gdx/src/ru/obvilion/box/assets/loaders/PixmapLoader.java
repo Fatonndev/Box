@@ -21,7 +21,7 @@ import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Pixmap;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** {@link AssetLoader} for {@link Pixmap} instances. The Pixmap is loaded asynchronously.
  * @author mzechner */

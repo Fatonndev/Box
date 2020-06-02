@@ -1,9 +1,7 @@
 package org.jbox2d.common;
 
-import java.lang.reflect.Array;
-
-import com.badlogic.gdx.utils.reflect.ArrayReflection;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.reflect.ArrayReflection;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 public class BufferUtils {
   /** Reallocate a buffer. */

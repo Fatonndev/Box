@@ -21,8 +21,8 @@ import ru.obvilion.box.maps.tiled.tiles.AnimatedTiledMapTile;
 import ru.obvilion.box.maps.tiled.tiles.StaticTiledMapTile;
 import ru.obvilion.box.math.Polygon;
 import ru.obvilion.box.math.Polyline;
-import com.badlogic.gdx.utils.*;
-import com.badlogic.gdx.utils.XmlReader.Element;
+import ru.obvilion.box.utils.*;
+import ru.obvilion.box.utils.XmlReader.Element;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;

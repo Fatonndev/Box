@@ -31,10 +31,10 @@ import java.util.zip.InflaterInputStream;
 
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Pixmap.Format;
-import com.badlogic.gdx.utils.ByteArray;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.ByteArray;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Writes Pixmaps to various formats.
  * @author mzechner

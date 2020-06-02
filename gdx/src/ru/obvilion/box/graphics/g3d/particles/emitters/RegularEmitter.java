@@ -21,8 +21,8 @@ import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.ParticleControllerComponent;
 import ru.obvilion.box.graphics.g3d.particles.values.RangedNumericValue;
 import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** It's a generic use {@link Emitter} which fits most of the particles simulation scenarios.
  * @author Inferno */

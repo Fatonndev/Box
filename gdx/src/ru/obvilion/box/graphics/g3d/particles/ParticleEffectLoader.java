@@ -27,10 +27,10 @@ import com.badlogic.gdx.assets.loaders.FileHandleResolver;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData.AssetData;
 import ru.obvilion.box.graphics.g3d.particles.batches.ParticleBatch;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** This class can save and load a {@link ParticleEffect}. It should be added as {@link AsynchronousAssetLoader} to the
  * {@link AssetManager} so it will be able to load the effects. It's important to note that the two classes

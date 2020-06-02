@@ -22,10 +22,10 @@ import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.InputEvent;
 import ru.obvilion.box.scene2d.Stage;
 import ru.obvilion.box.scene2d.ui.ScrollPane;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.ObjectMap.Entry;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap.Entry;
 
 /** Manages drag and drop operations through registered drag sources and drop targets.
  * @author Nathan Sweet */

@@ -38,7 +38,7 @@ import javax.swing.ListSelectionModel;
 
 import ru.obvilion.box.graphics.g2d.ParticleEmitter;
 import ru.obvilion.box.graphics.g2d.ParticleEmitter.SpriteMode;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 class ImagePanel extends EditorPanel {
 	JPanel imagesPanel;

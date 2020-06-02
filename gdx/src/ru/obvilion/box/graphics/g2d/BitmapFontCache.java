@@ -20,12 +20,12 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
 import ru.obvilion.box.graphics.g2d.BitmapFont.Glyph;
 import ru.obvilion.box.graphics.g2d.GlyphLayout.GlyphRun;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.NumberUtils;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.NumberUtils;
+import ru.obvilion.box.utils.Pools;
 
 /** Caches glyph geometry for a BitmapFont, providing a fast way to render static text. This saves needing to compute the glyph
  * geometry each frame.

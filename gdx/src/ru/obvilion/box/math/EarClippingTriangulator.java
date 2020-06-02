@@ -16,9 +16,9 @@
 
 package ru.obvilion.box.math;
 
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.ShortArray;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.ShortArray;
 
 /** A simple implementation of the ear cutting algorithm to triangulate simple polygons without holes. For more information:
  * <ul>

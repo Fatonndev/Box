@@ -21,9 +21,9 @@ import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.Touchable;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.SnapshotArray;
 
 /** A group that lays out its children top to bottom vertically, with optional wrapping. {@link #getChildren()} can be sorted to
  * change the order of the actors (eg {@link Actor#setZIndex(int)}). This can be easier than using {@link Table} when actors need

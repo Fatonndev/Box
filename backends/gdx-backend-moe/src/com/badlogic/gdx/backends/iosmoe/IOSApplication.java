@@ -30,8 +30,8 @@ import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALAudioSession;
 import com.badlogic.gdx.backends.iosmoe.objectal.OALSimpleAudio;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
 
 import apple.NSObject;
 import apple.coregraphics.struct.CGPoint;

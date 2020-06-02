@@ -20,8 +20,8 @@ import ru.obvilion.box.graphics.g3d.particles.ParallelArray.ChannelDescriptor;
 import ru.obvilion.box.graphics.g3d.particles.ParallelArray.FloatChannel;
 import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** It's an {@link Influencer} which controls a generic channel of the particles. It handles the interpolation through time using
  * {@link ScaledNumericValue}.

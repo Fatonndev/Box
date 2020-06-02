@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.TextureArrayData;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** @author Tomski **/
 public class FileTextureArrayData implements TextureArrayData {

@@ -24,7 +24,7 @@ import org.lwjgl.openal.AL11;
 
 import ru.obvilion.box.audio.AudioDevice;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 import static org.lwjgl.openal.AL10.*;
 

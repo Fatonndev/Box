@@ -32,8 +32,8 @@ import android.content.res.AssetManager;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** @author mzechner
  * @author Nathan Sweet */

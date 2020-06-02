@@ -21,8 +21,8 @@ import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.values.GradientColorValue;
 import ru.obvilion.box.graphics.g3d.particles.values.ScaledNumericValue;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** It's an {@link Influencer} which controls particles color and transparency.
  * @author Inferno */

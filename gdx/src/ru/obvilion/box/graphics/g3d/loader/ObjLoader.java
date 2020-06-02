@@ -42,8 +42,8 @@ import ru.obvilion.box.graphics.g3d.model.data.ModelTexture;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FloatArray;
 
 /** {@link ModelLoader} to load Wavefront OBJ files. Only intended for testing basic models/meshes and educational usage. The
  * Wavefront specification is NOT fully implemented, only a subset of the specification is supported. Especially the

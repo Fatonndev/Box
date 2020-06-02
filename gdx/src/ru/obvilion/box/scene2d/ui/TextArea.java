@@ -24,11 +24,11 @@ import ru.obvilion.box.graphics.g2d.GlyphLayout;
 import ru.obvilion.box.scene2d.InputEvent;
 import ru.obvilion.box.scene2d.InputListener;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pools;
 
 /** A text input field with multiple lines. */
 public class TextArea extends TextField {

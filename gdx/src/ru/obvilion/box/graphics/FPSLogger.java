@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.TimeUtils;
+import ru.obvilion.box.utils.TimeUtils;
 
 /** A simple helper class to log the frames per seconds achieved. Just invoke the {@link #log()} method in your rendering method.
  * The output will be logged once per second.

@@ -25,7 +25,7 @@ import java.nio.ShortBuffer;
 
 import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.Pixmap;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.typedarrays.client.Uint8ArrayNative;

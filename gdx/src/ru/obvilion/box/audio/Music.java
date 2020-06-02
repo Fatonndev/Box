@@ -20,7 +20,7 @@ import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.ApplicationListener;
 import ru.obvilion.box.constructors.Audio;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** <p>
  * A Music instance represents a streamed audio file. The interface supports pausing, resuming

@@ -18,7 +18,7 @@ package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.scene2d.Actor;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** Sets the alpha for an actor's color (or a specified color), from the current alpha to the new alpha. Note this action
  * transitions from the alpha at the time the action starts to the specified alpha.

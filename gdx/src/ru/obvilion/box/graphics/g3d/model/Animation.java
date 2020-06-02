@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.g3d.model;
 
 import ru.obvilion.box.graphics.g3d.Model;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** An Animation has an id and a list of {@link NodeAnimation} instances. Each NodeAnimation animates a single {@link Node} in the
  * {@link Model}. Every {@link NodeAnimation} is assumed to have the same amount of keyframes, at the same timestamps, as all

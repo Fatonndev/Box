@@ -27,8 +27,8 @@ import ru.obvilion.box.scene2d.Stage;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.Layout;
 import ru.obvilion.box.scene2d.utils.ScissorStack;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Null;
 
 /** A container that contains two widgets and is divided either horizontally or vertically. The user may resize the widgets. The
  * child widgets are always sized to fill their side of the SplitPane.

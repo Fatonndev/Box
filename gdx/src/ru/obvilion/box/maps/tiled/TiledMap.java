@@ -18,8 +18,8 @@ package ru.obvilion.box.maps.tiled;
 
 import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.maps.Map;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
 
 /** @brief Represents a tiled map, adds the concept of tiles and tilesets.
  * 

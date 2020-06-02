@@ -1,6 +1,5 @@
 package org.jbox2d.particle;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 import org.jbox2d.callbacks.ParticleDestructionListener;
@@ -23,8 +22,8 @@ import org.jbox2d.dynamics.TimeStep;
 import org.jbox2d.dynamics.World;
 import org.jbox2d.particle.VoronoiDiagram.VoronoiDiagramCallback;
 
-import com.badlogic.gdx.utils.reflect.ArrayReflection;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.reflect.ArrayReflection;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 public class ParticleSystem {
   /** All particle types that require creating pairs */

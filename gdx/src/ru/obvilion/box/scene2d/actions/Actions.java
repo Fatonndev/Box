@@ -22,9 +22,9 @@ import ru.obvilion.box.scene2d.Action;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.EventListener;
 import ru.obvilion.box.scene2d.Touchable;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pools;
 
 /** Static convenience methods for using pooled actions, intended for static import.
  * @author Nathan Sweet */

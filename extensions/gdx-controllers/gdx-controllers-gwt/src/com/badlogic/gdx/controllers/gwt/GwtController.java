@@ -21,8 +21,8 @@ import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.PovDirection;
 import com.badlogic.gdx.controllers.gwt.support.Gamepad;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.IntFloatMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.IntFloatMap;
 
 public class GwtController implements Controller {
 

@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.g3d.attributes;
 import ru.obvilion.box.graphics.Cubemap;
 import ru.obvilion.box.graphics.g3d.Attribute;
 import ru.obvilion.box.graphics.g3d.utils.TextureDescriptor;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class CubemapAttribute extends Attribute {
 	public final static String EnvironmentMapAlias = "environmentCubemap";

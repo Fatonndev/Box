@@ -18,7 +18,7 @@ package ru.obvilion.box.audio;
 
 import ru.obvilion.box.constructors.Audio;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** <p>
  * A Sound is a short audio clip that can be played numerous times in parallel. It's completely loaded into memory so only load

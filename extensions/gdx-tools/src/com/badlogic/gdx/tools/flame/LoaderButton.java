@@ -13,8 +13,8 @@ import ru.obvilion.box.graphics.g3d.Model;
 import ru.obvilion.box.graphics.g3d.loader.G3dModelLoader;
 import ru.obvilion.box.graphics.g3d.loader.ObjLoader;
 import ru.obvilion.box.graphics.g3d.particles.ParticleEffect;
-import com.badlogic.gdx.utils.JsonReader;
-import com.badlogic.gdx.utils.UBJsonReader;
+import ru.obvilion.box.utils.JsonReader;
+import ru.obvilion.box.utils.UBJsonReader;
 
 /** @author Inferno */
 public abstract class LoaderButton<T> extends JButton{

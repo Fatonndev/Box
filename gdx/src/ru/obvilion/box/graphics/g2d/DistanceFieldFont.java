@@ -25,7 +25,7 @@ package ru.obvilion.box.graphics.g2d;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Renders bitmap fonts using distance field textures, see the <a
  * href="https://github.com/libgdx/libgdx/wiki/Distance-field-fonts">Distance Field Fonts wiki article</a> for usage. Initialize

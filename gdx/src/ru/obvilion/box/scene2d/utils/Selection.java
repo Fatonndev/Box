@@ -3,10 +3,10 @@ package ru.obvilion.box.scene2d.utils;
 
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.utils.ChangeListener.ChangeEvent;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.OrderedSet;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.OrderedSet;
+import ru.obvilion.box.utils.Pools;
 
 import java.util.Iterator;
 

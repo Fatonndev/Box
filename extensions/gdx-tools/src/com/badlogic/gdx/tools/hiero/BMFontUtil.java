@@ -42,7 +42,7 @@ import org.lwjgl.opengl.GL12;
 import com.badlogic.gdx.tools.hiero.unicodefont.Glyph;
 import com.badlogic.gdx.tools.hiero.unicodefont.GlyphPage;
 import com.badlogic.gdx.tools.hiero.unicodefont.UnicodeFont;
-import com.badlogic.gdx.utils.IntIntMap;
+import ru.obvilion.box.utils.IntIntMap;
 
 /** @author Nathan Sweet */
 public class BMFontUtil {

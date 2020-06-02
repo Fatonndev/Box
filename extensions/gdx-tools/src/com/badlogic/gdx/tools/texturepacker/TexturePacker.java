@@ -40,10 +40,10 @@ import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Json;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Json;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.glutils;
 
 import ru.obvilion.box.graphics.VertexAttributes;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 import java.nio.FloatBuffer;
 

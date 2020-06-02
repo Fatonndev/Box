@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Blending;
 import ru.obvilion.box.graphics.Texture;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class MipMapGenerator {
 

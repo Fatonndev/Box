@@ -24,8 +24,8 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker.Page;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.ProgressListener;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Rect;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Sort;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Sort;
 
 /** Packs pages of images using the maximal rectangles bin packing algorithm by Jukka Jylänki. A brute force binary search is
  * used to pack into the smallest bin possible.

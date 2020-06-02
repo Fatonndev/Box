@@ -45,8 +45,8 @@ import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALAudioSession;
 import com.badlogic.gdx.backends.iosrobovm.objectal.OALSimpleAudio;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
 
 public class IOSApplication implements Application {
 

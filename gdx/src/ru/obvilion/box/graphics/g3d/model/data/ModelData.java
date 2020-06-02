@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g3d.model.data;
 
 import com.badlogic.gdx.assets.loaders.ModelLoader;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Returned by a {@link ModelLoader}, contains meshes, materials, nodes and animations. OpenGL resources like textures or vertex
  * buffer objects are not stored. Instead, a ModelData instance needs to be converted to a Model first.

@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.profiling;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import static ru.obvilion.box.graphics.profiling.GLInterceptor.resolveErrorNumber;
 
 /** @see GLProfiler

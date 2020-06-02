@@ -6,7 +6,7 @@ import ru.obvilion.box.constructors.Input.Buttons;
 import ru.obvilion.box.constructors.Input.Keys;
 
 public class UIUtils {
-	//Adapted system checks from com.badlogic.gdx.utils.SharedLibraryLoader
+	//Adapted system checks from ru.obvilion.box.utils.SharedLibraryLoader
 	static public boolean isAndroid = System.getProperty("java.runtime.name").contains("Android");
 	static public boolean isMac = !isAndroid && System.getProperty("os.name").contains("Mac");
 	static public boolean isWindows = !isAndroid && System.getProperty("os.name").contains("Windows");

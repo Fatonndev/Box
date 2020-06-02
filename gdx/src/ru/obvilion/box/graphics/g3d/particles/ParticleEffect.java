@@ -22,8 +22,8 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
 
 /** It's a set of particles controllers. It can be updated, rendered, transformed which means the changes will be applied on all
  * the particles controllers.

@@ -25,7 +25,7 @@ import ru.obvilion.box.graphics.g3d.particles.ResourceData;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData.SaveData;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** The base class of all the {@link ParticleValue} values which spawn a particle on a mesh shape.
  * @author Inferno */

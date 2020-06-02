@@ -27,7 +27,7 @@ import java.io.Reader;
 import java.io.Writer;
 
 import ru.obvilion.box.constructors.Files.FileType;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class FileHandle {
 	protected File file;

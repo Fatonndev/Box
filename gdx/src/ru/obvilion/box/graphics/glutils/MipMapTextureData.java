@@ -4,7 +4,7 @@ import ru.obvilion.box.graphics.GLTexture;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** This class will load each contained TextureData to the chosen mipmap level.
  *  All the mipmap levels must be defined and cannot be null. */

@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.g3d.Model;
 import ru.obvilion.box.graphics.g3d.ModelInstance;
 import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.ArrayMap;
+import ru.obvilion.box.utils.ArrayMap;
 
 /** A combination of {@link MeshPart} and {@link Material}, used to represent a {@link Node}'s graphical properties. A NodePart is
  * the smallest visible part of a {@link Model}, each NodePart implies a render call.

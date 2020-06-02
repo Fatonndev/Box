@@ -18,7 +18,7 @@ package ru.obvilion.box.constructors;
 
 import ru.obvilion.box.ApplicationListener;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.utils.ObjectIntMap;
+import ru.obvilion.box.utils.ObjectIntMap;
 
 /** <p>
  * Interface to the input facilities. This allows polling the state of the keyboard, the touch screen and the accelerometer. On

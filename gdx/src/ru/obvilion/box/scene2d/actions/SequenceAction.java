@@ -17,7 +17,7 @@
 package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.scene2d.Action;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Pool;
 
 /** Executes a number of actions one at a time.
  * @author Nathan Sweet */

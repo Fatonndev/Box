@@ -1,7 +1,7 @@
 %module btCollisionObject
 
 %typemap(javainterfaces) btCollisionObject %{
-	com.badlogic.gdx.utils.Disposable
+	ru.obvilion.box.utils.Disposable
 %}
 
 %rename(internalSetCollisionShape) btCollisionObject::setCollisionShape;
@@ -21,7 +21,7 @@
 
 %typemap(javacode) btCollisionObject %{
 	/** Provides direct access to the instances this wrapper managed. */
-	public final static com.badlogic.gdx.utils.LongMap<btCollisionObject> instances = new com.badlogic.gdx.utils.LongMap<btCollisionObject>();
+	public final static ru.obvilion.box.utils.LongMap<btCollisionObject> instances = new ru.obvilion.box.utils.LongMap<btCollisionObject>();
 	
 	/** @return The existing instance for the specified pointer, or null if the instance doesn't exist */
 	public static btCollisionObject getInstance(final long swigCPtr) {

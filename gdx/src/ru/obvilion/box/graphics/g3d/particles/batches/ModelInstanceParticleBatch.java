@@ -20,8 +20,8 @@ import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData;
 import ru.obvilion.box.graphics.g3d.particles.renderers.ModelInstanceControllerRenderData;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 /*** This class is used to render particles having a model instance channel.
  * @author Inferno */

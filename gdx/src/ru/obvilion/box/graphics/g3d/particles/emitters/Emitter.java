@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g3d.particles.emitters;
 
 import ru.obvilion.box.graphics.g3d.particles.ParticleControllerComponent;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** An {@link Emitter} is a {@link ParticleControllerComponent} which will handle the particles emission. It must update the
  * {@link Emitter#percent} to reflect the current percentage of the current emission cycle. It should consider

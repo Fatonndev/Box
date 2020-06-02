@@ -45,11 +45,11 @@ import ru.obvilion.box.constructors.Graphics;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.constructors.Net;
 import com.badlogic.gdx.backends.lwjgl3.audio.mock.MockAudio;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Clipboard;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Clipboard;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 public class Lwjgl3Application implements Lwjgl3ApplicationBase {
 	private final Lwjgl3ApplicationConfiguration config;

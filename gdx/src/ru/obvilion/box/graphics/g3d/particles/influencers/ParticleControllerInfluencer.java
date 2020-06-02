@@ -26,9 +26,9 @@ import ru.obvilion.box.graphics.g3d.particles.ParticleController;
 import ru.obvilion.box.graphics.g3d.particles.ParticleEffect;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData.SaveData;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.Pool;
 
 /** It's an {@link Influencer} which controls which {@link ParticleController} will be assigned to a particle.
  * @author Inferno */

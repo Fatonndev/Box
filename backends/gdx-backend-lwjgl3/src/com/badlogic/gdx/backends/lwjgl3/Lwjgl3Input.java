@@ -1,7 +1,7 @@
 package com.badlogic.gdx.backends.lwjgl3;
 
 import ru.obvilion.box.constructors.Input;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 public interface Lwjgl3Input extends Input, Disposable {
 

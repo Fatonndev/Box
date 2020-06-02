@@ -25,7 +25,7 @@ import ru.obvilion.box.graphics.Pixmap.Blending;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.glutils.ETC1;
 import com.badlogic.gdx.tools.FileProcessor;
-import com.badlogic.gdx.utils.GdxNativesLoader;
+import ru.obvilion.box.utils.GdxNativesLoader;
 
 public class ETC1Compressor {
 	static class ETC1FileProcessor extends FileProcessor {

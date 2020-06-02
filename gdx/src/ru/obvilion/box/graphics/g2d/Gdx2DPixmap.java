@@ -22,8 +22,8 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 
 import ru.obvilion.box.graphics.GL20;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** @author mzechner */
 public class Gdx2DPixmap implements Disposable {

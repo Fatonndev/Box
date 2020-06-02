@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.graphics.g3d.particles.values;
 
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** Defines a variation of red, green and blue on a given time line.
  * @author Inferno */

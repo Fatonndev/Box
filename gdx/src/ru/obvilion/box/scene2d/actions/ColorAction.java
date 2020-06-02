@@ -18,7 +18,7 @@ package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.scene2d.Actor;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** Sets the actor's color (or a specified color), from the current to the new color. Note this action transitions from the color
  * at the time the action starts to the specified color.

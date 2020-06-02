@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.math;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Xoppa */
 public class BSpline<T extends Vector<T>> implements Path<T> {

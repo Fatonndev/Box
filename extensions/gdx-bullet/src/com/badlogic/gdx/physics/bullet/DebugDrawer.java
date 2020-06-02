@@ -24,9 +24,9 @@ import ru.obvilion.box.graphics.glutils.ShapeRenderer;
 import ru.obvilion.box.graphics.glutils.ShapeRenderer.ShapeType;
 import ru.obvilion.box.math.Vector3;
 import com.badlogic.gdx.physics.bullet.linearmath.btIDebugDraw;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.viewport.Viewport;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.viewport.Viewport;
 
 /** @author xoppa */
 public class DebugDrawer extends btIDebugDraw implements Disposable {

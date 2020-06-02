@@ -20,7 +20,7 @@ import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 /** Resolves an image by a string, wrapper around a Map or AssetManager to load maps either directly or via AssetManager.
  * @author mzechner */

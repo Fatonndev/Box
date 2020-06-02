@@ -20,8 +20,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import ru.obvilion.box.Preferences;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.ObjectMap;
 
 public class GwtPreferences implements Preferences {
 	final String prefix;

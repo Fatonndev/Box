@@ -18,7 +18,7 @@ package com.badlogic.gdx.backends.lwjgl.audio;
 
 import ru.obvilion.box.constructors.Audio;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 public interface LwjglAudio extends Audio, Disposable {
 

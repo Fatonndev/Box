@@ -25,7 +25,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.glutils.GLVersion;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 import com.google.gwt.canvas.client.Canvas;
 import com.google.gwt.dom.client.CanvasElement;
 import com.google.gwt.user.client.ui.Panel;

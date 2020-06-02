@@ -22,7 +22,7 @@ import ru.obvilion.box.audio.AudioRecorder;
 import ru.obvilion.box.audio.Music;
 import ru.obvilion.box.audio.Sound;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** This interface encapsulates the creation and management of audio resources. It allows you to get direct access to the audio
  * hardware via the {@link AudioDevice} and {@link AudioRecorder} interfaces, create sound effects via the {@link Sound} interface

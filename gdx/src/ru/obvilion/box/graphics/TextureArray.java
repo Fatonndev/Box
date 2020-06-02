@@ -19,8 +19,8 @@ package ru.obvilion.box.graphics;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 import java.util.HashMap;
 import java.util.Map;

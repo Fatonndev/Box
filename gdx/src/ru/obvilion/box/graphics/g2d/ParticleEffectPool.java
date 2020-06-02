@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g2d;
 
 import ru.obvilion.box.graphics.g2d.ParticleEffectPool.PooledEffect;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 public class ParticleEffectPool extends Pool<PooledEffect> {
 	private final ParticleEffect effect;

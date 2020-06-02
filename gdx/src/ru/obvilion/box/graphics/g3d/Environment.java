@@ -24,8 +24,8 @@ import ru.obvilion.box.graphics.g3d.environment.DirectionalLight;
 import ru.obvilion.box.graphics.g3d.environment.PointLight;
 import ru.obvilion.box.graphics.g3d.environment.ShadowMap;
 import ru.obvilion.box.graphics.g3d.environment.SpotLight;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class Environment extends Attributes {
 	/** @deprecated Experimental, likely to change, do not use! */

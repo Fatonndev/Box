@@ -53,7 +53,7 @@ import ru.obvilion.box.maps.tiled.TiledMapTileLayer;
 import ru.obvilion.box.maps.tiled.tiles.AnimatedTiledMapTile;
 import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Rectangle;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 public abstract class BatchTiledMapRenderer implements TiledMapRenderer, Disposable {
 	static protected final int NUM_VERTICES = 20;

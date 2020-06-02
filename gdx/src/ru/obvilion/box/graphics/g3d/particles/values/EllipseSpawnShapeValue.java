@@ -18,8 +18,8 @@ package ru.obvilion.box.graphics.g3d.particles.values;
 
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** Encapsulate the formulas to spawn a particle on a ellipse shape.
  * @author Inferno */

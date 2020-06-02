@@ -22,7 +22,7 @@ import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.audio.Music;
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** {@link AssetLoader} for {@link Music} instances. The Music instance is loaded synchronously.
  * @author mzechner */

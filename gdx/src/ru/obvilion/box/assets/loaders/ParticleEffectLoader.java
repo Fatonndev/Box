@@ -22,7 +22,7 @@ import com.badlogic.gdx.assets.AssetManager;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.g2d.ParticleEffect;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** {@link AssetLoader} to load {@link ParticleEffect} instances. Passing a {@link ParticleEffectParameter} to
  * {@link AssetManager#load(String, Class, AssetLoaderParameters)} allows to specify an atlas file or an image directory to be

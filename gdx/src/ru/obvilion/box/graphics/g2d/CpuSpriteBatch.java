@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.Affine2;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** CpuSpriteBatch behaves like SpriteBatch, except it doesn't flush automatically whenever the transformation matrix changes.
  * Instead, the vertices get adjusted on subsequent draws to match the running batch. This can improve performance through longer

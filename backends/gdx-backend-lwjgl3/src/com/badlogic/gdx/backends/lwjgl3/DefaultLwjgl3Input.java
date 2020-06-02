@@ -27,7 +27,7 @@ import ru.obvilion.box.graphics.glutils.HdpiMode;
 import ru.obvilion.box.constructors.Input;
 import ru.obvilion.box.InputEventQueue;
 import ru.obvilion.box.InputProcessor;
-import com.badlogic.gdx.utils.TimeUtils;
+import ru.obvilion.box.utils.TimeUtils;
 
 public class DefaultLwjgl3Input implements Lwjgl3Input {
 	final Lwjgl3Window window;

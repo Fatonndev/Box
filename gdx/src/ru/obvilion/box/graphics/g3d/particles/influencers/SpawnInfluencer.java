@@ -22,8 +22,8 @@ import ru.obvilion.box.graphics.g3d.particles.ParticleChannels;
 import ru.obvilion.box.graphics.g3d.particles.ResourceData;
 import ru.obvilion.box.graphics.g3d.particles.values.PointSpawnShapeValue;
 import ru.obvilion.box.graphics.g3d.particles.values.SpawnShapeValue;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** It's an {@link Influencer} which controls where the particles will be spawned.
  * @author Inferno */

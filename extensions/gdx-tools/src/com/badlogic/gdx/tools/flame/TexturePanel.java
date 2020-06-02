@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.graphics.glutils.FileTextureData;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 public class TexturePanel extends ImagePanel {

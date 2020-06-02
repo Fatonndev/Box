@@ -18,7 +18,7 @@ package ru.obvilion.box.scene2d.actions;
 
 import ru.obvilion.box.scene2d.Action;
 import ru.obvilion.box.scene2d.Actor;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Pool;
 
 /** Base class for an action that wraps another action.
  * @author Nathan Sweet */

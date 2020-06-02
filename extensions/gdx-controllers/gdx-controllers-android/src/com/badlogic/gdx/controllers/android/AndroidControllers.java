@@ -29,10 +29,10 @@ import com.badlogic.gdx.backends.android.AndroidInput;
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.ControllerManager;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.IntMap;
-import com.badlogic.gdx.utils.IntMap.Entry;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.IntMap;
+import ru.obvilion.box.utils.IntMap.Entry;
+import ru.obvilion.box.utils.Pool;
 
 public class AndroidControllers implements LifecycleListener, ControllerManager, OnKeyListener, OnGenericMotionListener {
 	private final static String TAG = "AndroidControllers";

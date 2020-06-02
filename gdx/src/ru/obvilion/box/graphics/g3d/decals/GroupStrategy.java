@@ -17,7 +17,7 @@
 package ru.obvilion.box.graphics.g3d.decals;
 
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** <p>
  * This class provides hooks which are invoked by {@link DecalBatch} to evaluate the group a sprite falls into, as well as to

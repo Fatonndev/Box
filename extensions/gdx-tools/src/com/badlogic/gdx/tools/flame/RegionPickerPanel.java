@@ -16,7 +16,7 @@ import javax.swing.JSeparator;
 import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 public class RegionPickerPanel extends JPanel{

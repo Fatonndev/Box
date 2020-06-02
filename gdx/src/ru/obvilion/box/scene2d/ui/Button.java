@@ -27,9 +27,9 @@ import ru.obvilion.box.scene2d.utils.ClickListener;
 import ru.obvilion.box.scene2d.utils.Disableable;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.FocusListener;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pools;
 
 /** A button is a {@link Table} with a checked state and additional {@link ButtonStyle style} fields for pressed, unpressed, and
  * checked. Each time a button is clicked, the checked state is toggled. Being a table, a button can contain any other actors.<br>

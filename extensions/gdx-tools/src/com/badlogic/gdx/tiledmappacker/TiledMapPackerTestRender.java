@@ -29,8 +29,8 @@ import ru.obvilion.box.graphics.OrthographicCamera;
 import ru.obvilion.box.maps.tiled.AtlasTmxMapLoader;
 import ru.obvilion.box.maps.tiled.TiledMap;
 import ru.obvilion.box.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.utils.viewport.FitViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
+import ru.obvilion.box.utils.viewport.FitViewport;
+import ru.obvilion.box.utils.viewport.Viewport;
 
 /** Renders and, optionally, deletes maps processed by TiledMapPackerTest. Run TiledMapPackerTest before running this */
 public class TiledMapPackerTestRender extends ApplicationAdapter {

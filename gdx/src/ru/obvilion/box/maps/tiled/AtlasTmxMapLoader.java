@@ -28,9 +28,9 @@ import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.maps.ImageResolver;
 import ru.obvilion.box.maps.MapProperties;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.XmlReader.Element;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.XmlReader.Element;
 
 /** A TiledMap Loader which loads tiles from a TextureAtlas instead of separate images.
  * 

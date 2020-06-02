@@ -21,8 +21,8 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 
 import ru.obvilion.box.files.FileHandle;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 public class Wav {
 	static public class Music extends OpenALMusic {

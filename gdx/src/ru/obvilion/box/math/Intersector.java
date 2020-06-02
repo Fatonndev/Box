@@ -19,8 +19,8 @@ package ru.obvilion.box.math;
 import ru.obvilion.box.math.Plane.PlaneSide;
 import ru.obvilion.box.math.collision.BoundingBox;
 import ru.obvilion.box.math.collision.Ray;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FloatArray;
 
 import java.util.Arrays;
 import java.util.List;

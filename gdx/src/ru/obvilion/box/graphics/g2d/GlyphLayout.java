@@ -20,12 +20,12 @@ import ru.obvilion.box.graphics.Color;
 import ru.obvilion.box.graphics.Colors;
 import ru.obvilion.box.graphics.g2d.BitmapFont.BitmapFontData;
 import ru.obvilion.box.graphics.g2d.BitmapFont.Glyph;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pool.Poolable;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pool.Poolable;
+import ru.obvilion.box.utils.Pools;
 
 /** Stores {@link GlyphRun runs} of glyphs for a piece of text. The text may contain newlines and color markup tags.
  * @author Nathan Sweet

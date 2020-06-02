@@ -28,8 +28,8 @@ import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.scene2d.ui.Skin;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** {@link AssetLoader} for {@link BitmapFont} instances. Loads the font description file (.fnt) asynchronously, loads the
  * {@link Texture} containing the glyphs as a dependency. The {@link BitmapFontParameter} allows you to set things like texture

@@ -37,12 +37,12 @@ import ru.obvilion.box.scene2d.utils.ChangeListener.ChangeEvent;
 import ru.obvilion.box.scene2d.utils.ClickListener;
 import ru.obvilion.box.scene2d.utils.Disableable;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.ObjectSet;
-import com.badlogic.gdx.utils.Pool;
-import com.badlogic.gdx.utils.Pools;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.ObjectSet;
+import ru.obvilion.box.utils.Pool;
+import ru.obvilion.box.utils.Pools;
 
 /** A select box (aka a drop-down list) allows a user to choose one of a number of values from a list. When inactive, the selected
  * value is displayed. When activated, it shows the list of values that may be selected.

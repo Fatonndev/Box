@@ -32,8 +32,8 @@ import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.Layout;
 import ru.obvilion.box.scene2d.utils.Selection;
 import ru.obvilion.box.scene2d.utils.UIUtils;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Null;
 
 /** A tree widget where each node has an icon, actor, and child nodes.
  * <p>

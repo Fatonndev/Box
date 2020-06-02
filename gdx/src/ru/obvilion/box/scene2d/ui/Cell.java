@@ -5,9 +5,9 @@ import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.ui.Value.Fixed;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Pool.Poolable;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Pool.Poolable;
 
 /** A cell for a {@link Table}.
  * @author Nathan Sweet */

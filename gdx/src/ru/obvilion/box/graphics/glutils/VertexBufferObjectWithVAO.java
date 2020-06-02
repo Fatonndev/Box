@@ -9,8 +9,8 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.IntArray;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.IntArray;
 
 /**
  * <p>

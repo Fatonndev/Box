@@ -18,8 +18,8 @@ package ru.obvilion.box.scene2d.ui;
 
 import ru.obvilion.box.graphics.g2d.Batch;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Null;
-import com.badlogic.gdx.utils.Scaling;
+import ru.obvilion.box.utils.Null;
+import ru.obvilion.box.utils.Scaling;
 
 /** A button with a child {@link Image} to display an image. This is useful when the button must be larger than the image and the
  * image centered on the button. If the image is the size of the button, a {@link Button} without any children can be used, where

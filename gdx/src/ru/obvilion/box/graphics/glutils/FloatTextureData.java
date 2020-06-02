@@ -25,8 +25,8 @@ import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.BufferUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** A {@link TextureData} implementation which should be used to create float textures. */
 public class FloatTextureData implements TextureData {

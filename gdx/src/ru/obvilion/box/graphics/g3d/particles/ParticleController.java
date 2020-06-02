@@ -26,10 +26,10 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
+import ru.obvilion.box.utils.reflect.ClassReflection;
 
 /** Base class of all the particle controllers. Encapsulate the generic structure of a controller and methods to update the
  * particles simulation.

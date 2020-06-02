@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.utils.shapebuilders;
 
 import ru.obvilion.box.graphics.g3d.utils.MeshPartBuilder;
 
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 /** Helper class with static methods to build capsule shapes using {@link MeshPartBuilder}.
  * @author xoppa */
 public class CapsuleShapeBuilder extends BaseShapeBuilder {

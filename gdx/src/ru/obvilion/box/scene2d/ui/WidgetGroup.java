@@ -21,7 +21,7 @@ import ru.obvilion.box.scene2d.Actor;
 import ru.obvilion.box.scene2d.Group;
 import ru.obvilion.box.scene2d.Stage;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.SnapshotArray;
+import ru.obvilion.box.utils.SnapshotArray;
 
 /** A {@link Group} that participates in layout and provides a minimum, preferred, and maximum size.
  * <p>

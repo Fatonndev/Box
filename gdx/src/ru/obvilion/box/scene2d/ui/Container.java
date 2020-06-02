@@ -11,8 +11,8 @@ import ru.obvilion.box.scene2d.ui.Value.Fixed;
 import ru.obvilion.box.scene2d.utils.Cullable;
 import ru.obvilion.box.scene2d.utils.Drawable;
 import ru.obvilion.box.scene2d.utils.Layout;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
 
 /** A group with a single child that sizes and positions the child using constraints. This provides layout similar to a
  * {@link Table} with a single cell but is more lightweight.

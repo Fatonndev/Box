@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.tools.hiero;
 
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.IntIntMap;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.IntIntMap;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

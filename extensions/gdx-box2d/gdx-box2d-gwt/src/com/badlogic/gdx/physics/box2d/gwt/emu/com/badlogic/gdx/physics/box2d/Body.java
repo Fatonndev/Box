@@ -20,7 +20,7 @@ import org.jbox2d.common.Vec2;
 
 import ru.obvilion.box.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** A rigid body. These are created via World.CreateBody.
  * @author mzechner */

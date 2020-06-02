@@ -8,7 +8,7 @@ import com.badlogic.gdx.assets.loaders.FileHandleResolver;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /**
  * Creates {@link BitmapFont} instances from FreeType font files. Requires a {@link FreeTypeFontLoaderParameter} to be

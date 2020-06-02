@@ -14,10 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.utils.async;
+package ru.obvilion.box.utils.async;
 
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** GWT emulation of AsynchExecutor, will call tasks immediately :D
  * @author badlogic */

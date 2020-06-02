@@ -21,7 +21,7 @@ import ru.obvilion.box.graphics.g3d.utils.BaseShaderProvider;
 import ru.obvilion.box.graphics.g3d.utils.RenderContext;
 import ru.obvilion.box.graphics.g3d.utils.ShaderProvider;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.utils.Disposable;
+import ru.obvilion.box.utils.Disposable;
 
 /** Interface which is used to render one or more {@link Renderable}s.</p>
  * 

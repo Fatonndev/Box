@@ -32,8 +32,8 @@ import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.glutils.FacedCubemapData;
 import ru.obvilion.box.graphics.glutils.PixmapTextureData;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 /** Wraps a standard OpenGL ES Cubemap. Must be disposed when it is no longer used.
  * @author Xoppa */

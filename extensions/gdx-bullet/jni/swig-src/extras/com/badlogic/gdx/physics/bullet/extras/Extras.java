@@ -20,7 +20,7 @@ public class Extras {
 	/** Temporary Vector3 instance, used by native methods that return a Vector3 instance */
 	public final static Vector3 staticVector3 = new Vector3();
 	/** Pool of Vector3, used by native (callback) method for the arguments */
-	public final static com.badlogic.gdx.utils.Pool<Vector3> poolVector3 = new com.badlogic.gdx.utils.Pool<Vector3>() {
+	public final static ru.obvilion.box.utils.Pool<Vector3> poolVector3 = new ru.obvilion.box.utils.Pool<Vector3>() {
 		@Override
 		protected Vector3 newObject() {
 			return new Vector3();
@@ -31,7 +31,7 @@ public class Extras {
 	/** Temporary Quaternion instance, used by native methods that return a Quaternion instance */
 	public final static Quaternion staticQuaternion = new Quaternion();
 	/** Pool of Quaternion, used by native (callback) method for the arguments */
-	public final static com.badlogic.gdx.utils.Pool<Quaternion> poolQuaternion = new com.badlogic.gdx.utils.Pool<Quaternion>() {
+	public final static ru.obvilion.box.utils.Pool<Quaternion> poolQuaternion = new ru.obvilion.box.utils.Pool<Quaternion>() {
 		@Override
 		protected Quaternion newObject() {
 			return new Quaternion();
@@ -42,7 +42,7 @@ public class Extras {
 	/** Temporary Matrix3 instance, used by native methods that return a Matrix3 instance */
 	public final static Matrix3 staticMatrix3 = new Matrix3();
 	/** Pool of Matrix3, used by native (callback) method for the arguments */
-	public final static com.badlogic.gdx.utils.Pool<Matrix3> poolMatrix3 = new com.badlogic.gdx.utils.Pool<Matrix3>() {
+	public final static ru.obvilion.box.utils.Pool<Matrix3> poolMatrix3 = new ru.obvilion.box.utils.Pool<Matrix3>() {
 		@Override
 		protected Matrix3 newObject() {
 			return new Matrix3();
@@ -53,7 +53,7 @@ public class Extras {
 	/** Temporary Matrix4 instance, used by native methods that return a Matrix4 instance */
 	public final static Matrix4 staticMatrix4 = new Matrix4();
 	/** Pool of Matrix4, used by native (callback) method for the arguments */
-	public final static com.badlogic.gdx.utils.Pool<Matrix4> poolMatrix4 = new com.badlogic.gdx.utils.Pool<Matrix4>() {
+	public final static ru.obvilion.box.utils.Pool<Matrix4> poolMatrix4 = new ru.obvilion.box.utils.Pool<Matrix4>() {
 		@Override
 		protected Matrix4 newObject() {
 			return new Matrix4();

@@ -16,8 +16,8 @@
 
 package ru.obvilion.box.graphics.g3d;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Pool;
 
 /** Returns a list of {@link Renderable} instances to be rendered by a {@link ModelBatch}.
  * @author badlogic */

@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.constructors;
 
-import com.badlogic.gdx.utils.Clipboard;
+import ru.obvilion.box.utils.Clipboard;
 import ru.obvilion.box.*;
 
 /** <p>

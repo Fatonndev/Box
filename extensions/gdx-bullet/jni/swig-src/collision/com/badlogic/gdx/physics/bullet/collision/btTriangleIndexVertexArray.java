@@ -10,7 +10,7 @@ package com.badlogic.gdx.physics.bullet.collision;
 
 import ru.obvilion.box.graphics.g3d.model.MeshPart;
 import ru.obvilion.box.graphics.g3d.model.NodePart;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public class btTriangleIndexVertexArray extends btStridingMeshInterface {
 	private long swigCPtr;

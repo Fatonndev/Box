@@ -39,11 +39,11 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Vector2;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntIntMap;
-import com.badlogic.gdx.utils.ShortArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.FloatArray;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntIntMap;
+import ru.obvilion.box.utils.ShortArray;
 
 /** Class to construct a mesh, optionally splitting it into one or more mesh parts. Before you can call any other method you must
  * call {@link #begin(VertexAttributes)} or {@link #begin(VertexAttributes, int)}. To use mesh parts you must call

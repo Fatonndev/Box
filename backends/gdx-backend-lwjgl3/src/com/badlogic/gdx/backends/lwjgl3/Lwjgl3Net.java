@@ -29,7 +29,7 @@ import ru.obvilion.box.net.ServerSocket;
 import ru.obvilion.box.net.ServerSocketHints;
 import ru.obvilion.box.net.Socket;
 import ru.obvilion.box.net.SocketHints;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 /** LWJGL implementation of the {@link Net} API, it could be reused in other Desktop backends since it doesn't depend on LWJGL.
  * @author acoppes */

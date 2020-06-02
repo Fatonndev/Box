@@ -41,8 +41,8 @@ import java.nio.channels.FileChannel.MapMode;
 import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Represents a file or directory on the filesystem, classpath, Android SD card, or Android assets directory. FileHandles are
  * created via a {@link Files} instance.

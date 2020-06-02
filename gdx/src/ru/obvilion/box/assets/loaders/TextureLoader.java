@@ -25,7 +25,7 @@ import ru.obvilion.box.graphics.Texture;
 import ru.obvilion.box.graphics.Texture.TextureFilter;
 import ru.obvilion.box.graphics.Texture.TextureWrap;
 import ru.obvilion.box.graphics.TextureData;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** {@link AssetLoader} for {@link Texture} instances. The pixel data is loaded asynchronously. The texture is then created on the
  * rendering thread, synchronously. Passing a {@link TextureParameter} to

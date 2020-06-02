@@ -25,9 +25,9 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.math.Quaternion;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ArrayMap;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.ArrayMap;
+import ru.obvilion.box.utils.Pool;
 
 /** An instance of a {@link Model}, allows to specify global transform and modify the materials, as it has a copy of the model's
  * materials. Multiple instances can be created from the same Model, all sharing the meshes and textures of the Model. The Model

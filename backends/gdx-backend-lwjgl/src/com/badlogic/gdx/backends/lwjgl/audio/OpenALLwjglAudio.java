@@ -27,12 +27,12 @@ import ru.obvilion.box.audio.AudioDevice;
 import ru.obvilion.box.audio.AudioRecorder;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntArray;
-import com.badlogic.gdx.utils.IntMap;
-import com.badlogic.gdx.utils.LongMap;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntArray;
+import ru.obvilion.box.utils.IntMap;
+import ru.obvilion.box.utils.LongMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 import static org.lwjgl.openal.AL10.*;
 

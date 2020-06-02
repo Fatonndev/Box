@@ -23,7 +23,7 @@ import ru.obvilion.box.scene2d.InputEvent;
 import ru.obvilion.box.scene2d.InputListener;
 import ru.obvilion.box.scene2d.Stage;
 import ru.obvilion.box.scene2d.Touchable;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Null;
 
 /** A listener that shows a tooltip actor when another actor is hovered over with the mouse.
  * @author Nathan Sweet */

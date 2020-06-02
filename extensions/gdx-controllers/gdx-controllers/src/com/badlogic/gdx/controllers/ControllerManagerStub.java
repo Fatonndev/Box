@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.controllers;
 
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** Used on platforms that don't support the extenions, e.g. HTML5 and iOS.
  * @author mzechner */

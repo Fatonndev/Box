@@ -20,7 +20,7 @@ import java.io.Serializable;
 
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Vector3;
-import com.badlogic.gdx.utils.NumberUtils;
+import ru.obvilion.box.utils.NumberUtils;
 
 /** Encapsulates a 3D sphere with a center and a radius
  * 

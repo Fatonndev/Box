@@ -34,7 +34,7 @@ import ru.obvilion.box.graphics.GL20;
 import ru.obvilion.box.graphics.GL30;
 import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.glutils.GLVersion;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 import apple.NSObject;
 import apple.coregraphics.struct.CGPoint;

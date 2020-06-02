@@ -15,7 +15,7 @@ import ru.obvilion.box.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.graphics.g2d.TextureAtlas.AtlasRegion;
 import ru.obvilion.box.graphics.g2d.TextureRegion;
 import ru.obvilion.box.graphics.glutils.FileTextureData;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 /** @author Inferno */
 public class TextureAtlasPanel extends JPanel {

@@ -32,10 +32,10 @@ import ru.obvilion.box.graphics.VertexAttributes.Usage;
 import ru.obvilion.box.graphics.glutils.ShaderProgram;
 import ru.obvilion.box.math.MathUtils;
 import ru.obvilion.box.math.Matrix4;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.IntArray;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.IntArray;
 
 /** Draws 2D images, optimized for geometry that does not change. Sprites and/or textures are cached and given an ID, which can
  * later be used for drawing. The size, color, and texture region for each cached image cannot be modified. This information is

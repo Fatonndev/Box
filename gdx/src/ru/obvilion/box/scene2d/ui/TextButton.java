@@ -21,8 +21,8 @@ import ru.obvilion.box.graphics.g2d.Batch;
 import ru.obvilion.box.graphics.g2d.BitmapFont;
 import ru.obvilion.box.scene2d.ui.Label.LabelStyle;
 import ru.obvilion.box.scene2d.utils.Drawable;
-import com.badlogic.gdx.utils.Align;
-import com.badlogic.gdx.utils.Null;
+import ru.obvilion.box.utils.Align;
+import ru.obvilion.box.utils.Null;
 
 /** A button with a child {@link Label} to display text.
  * @author Nathan Sweet */

@@ -33,9 +33,9 @@ import ru.obvilion.box.constructors.Application;
 import ru.obvilion.box.ApplicationListener;
 import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.graphics.Pixmap;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.SharedLibraryLoader;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.SharedLibraryLoader;
 
 public class Lwjgl3Window implements Disposable {
 	private long windowHandle;

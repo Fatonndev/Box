@@ -17,8 +17,8 @@
 package ru.obvilion.box.graphics.g3d.particles.values;
 
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
+import ru.obvilion.box.utils.Json;
+import ru.obvilion.box.utils.JsonValue;
 
 /** A value which has a defined minimum and maximum upper and lower bounds. Defines the variations of the value on a time line.
  * @author Inferno */

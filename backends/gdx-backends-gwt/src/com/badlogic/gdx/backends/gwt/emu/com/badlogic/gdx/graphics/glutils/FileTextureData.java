@@ -22,7 +22,7 @@ import ru.obvilion.box.graphics.Pixmap;
 import ru.obvilion.box.graphics.Pixmap.Format;
 import ru.obvilion.box.graphics.TextureData;
 import ru.obvilion.box.math.MathUtils;
-import com.badlogic.gdx.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.GdxRuntimeException;
 
 public class FileTextureData implements TextureData {
 	static public boolean copyToPOT;

@@ -19,7 +19,7 @@ package ru.obvilion.box.graphics.glutils;
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
 
-import com.badlogic.gdx.utils.BufferUtils;
+import ru.obvilion.box.utils.BufferUtils;
 
 public class IndexArray implements IndexData {
 	final ShortBuffer buffer;

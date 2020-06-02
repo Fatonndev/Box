@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.iosmoe;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.ObjectMap;
+import ru.obvilion.box.utils.ObjectMap;
 
 import apple.glkit.enums.GLKViewDrawableColorFormat;
 import apple.glkit.enums.GLKViewDrawableDepthFormat;

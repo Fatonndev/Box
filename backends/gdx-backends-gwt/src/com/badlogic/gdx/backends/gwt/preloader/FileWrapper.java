@@ -33,8 +33,8 @@ import java.io.Writer;
 import ru.obvilion.box.constructors.Files;
 import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.StreamUtils;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.StreamUtils;
 
 /** Used in PreloaderBundleGenerator to ease my pain. Since we emulate the original FileHandle, i have to make a copy...
  * @author mzechner

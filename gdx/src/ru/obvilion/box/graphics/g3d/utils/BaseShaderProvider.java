@@ -18,7 +18,7 @@ package ru.obvilion.box.graphics.g3d.utils;
 
 import ru.obvilion.box.graphics.g3d.Renderable;
 import ru.obvilion.box.graphics.g3d.Shader;
-import com.badlogic.gdx.utils.Array;
+import ru.obvilion.box.utils.Array;
 
 public abstract class BaseShaderProvider implements ShaderProvider {
 	protected Array<Shader> shaders = new Array<Shader>();

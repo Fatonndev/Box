@@ -25,11 +25,11 @@ import ru.obvilion.box.graphics.g3d.utils.DefaultTextureBinder;
 import ru.obvilion.box.graphics.g3d.utils.RenderContext;
 import ru.obvilion.box.graphics.g3d.utils.RenderableSorter;
 import ru.obvilion.box.graphics.g3d.utils.ShaderProvider;
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.FlushablePool;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.Pool;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.Disposable;
+import ru.obvilion.box.utils.FlushablePool;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.Pool;
 
 /** Batches {@link Renderable} instances, fetches {@link Shader}s for them, sorts them and then renders them. Fetching the shaders
  * is done using a {@link ShaderProvider}, which defaults to {@link DefaultShaderProvider}. Sorting the renderables is done using

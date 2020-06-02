@@ -16,9 +16,9 @@
 
 package ru.obvilion.box.graphics.g3d.particles;
 
-import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.reflect.ArrayReflection;
+import ru.obvilion.box.utils.Array;
+import ru.obvilion.box.utils.GdxRuntimeException;
+import ru.obvilion.box.utils.reflect.ArrayReflection;
 
 /** This class represents an group of elements like an array, but the properties of the elements are stored as separate arrays.
  * These arrays are called {@link Channel} and are represented by {@link ChannelDescriptor}. It's not necessary to store primitive
