@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.glutils.FileTextureArrayData;
 
 /** Used by a {@link TextureArray} to load the pixel data. The TextureArray will request the TextureArrayData to prepare itself through

@@ -21,7 +21,7 @@ import java.io.IOException;
 import android.media.MediaPlayer;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.audio.Music;
+import ru.obvilion.box.audio.Music;
 
 public class AndroidMusic implements Music, MediaPlayer.OnCompletionListener {
 	private final AndroidAudio audio;

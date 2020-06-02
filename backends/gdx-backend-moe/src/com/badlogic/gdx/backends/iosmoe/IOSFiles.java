@@ -17,7 +17,7 @@
 package com.badlogic.gdx.backends.iosmoe;
 
 import ru.obvilion.box.constructors.Files;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import apple.foundation.NSBundle;
 
 public class IOSFiles implements Files {

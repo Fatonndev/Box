@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.lwjgl3.audio;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import com.badlogic.gdx.audio.Sound;
+import ru.obvilion.box.audio.Sound;
 
 import static org.lwjgl.openal.AL10.*;
 

@@ -24,7 +24,7 @@
 };
 
 %typemap(javacode) btBulletWorldImporter %{
-	public boolean loadFile(final com.badlogic.gdx.files.FileHandle fileHandle) {
+	public boolean loadFile(final ru.obvilion.box.files.FileHandle fileHandle) {
 		final int len = (int)fileHandle.length();
 		if (len <= 0)
 			throw new com.badlogic.gdx.utils.GdxRuntimeException("Incorrect file specified");

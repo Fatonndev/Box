@@ -17,7 +17,7 @@
 package com.badlogic.gdx.audio;
 
 import ru.obvilion.box.constructors.Audio;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.Disposable;
 
 /** <p>
