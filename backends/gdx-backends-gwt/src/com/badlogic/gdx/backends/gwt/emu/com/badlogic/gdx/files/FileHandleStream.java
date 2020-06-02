@@ -23,7 +23,6 @@ import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.Box;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtFileHandle;
-import com.badlogic.gdx.files.FileHandle;
 
 /** A FileHandle intended to be subclassed for the purpose of implementing {@link #read()} and/or {@link #write(boolean)}. Methods
  * that would manipulate the file instead throw UnsupportedOperationException.

@@ -49,11 +49,11 @@
 		value="ru.obvilion.box.constructors.Net" />
 
 	<extend-configuration-property name="gdx.reflect.include"
-		value="com.badlogic.gdx.maps.MapObject" />
+		value="ru.obvilion.box.maps.MapObject" />
 	<extend-configuration-property name="gdx.reflect.include"
-		value="com.badlogic.gdx.maps.objects" />
+		value="ru.obvilion.box.maps.objects" />
 	<extend-configuration-property name="gdx.reflect.include"
-		value="com.badlogic.gdx.maps.tiled.objects" />
+		value="ru.obvilion.box.maps.tiled.objects" />
 	
 	<extend-configuration-property name="gdx.reflect.include"
 		value="com.badlogic.gdx.graphics.g3d.particles.ParticleEffect" />

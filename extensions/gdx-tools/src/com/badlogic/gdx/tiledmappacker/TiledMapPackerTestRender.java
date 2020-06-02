@@ -26,9 +26,9 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.maps.tiled.AtlasTmxMapLoader;
-import com.badlogic.gdx.maps.tiled.TiledMap;
-import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import ru.obvilion.box.maps.tiled.AtlasTmxMapLoader;
+import ru.obvilion.box.maps.tiled.TiledMap;
+import ru.obvilion.box.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
