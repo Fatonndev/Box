@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import com.badlogic.gdx.input.GestureDetector;
-import com.badlogic.gdx.input.GestureDetector.GestureAdapter;
+import ru.obvilion.box.input.GestureDetector;
+import ru.obvilion.box.input.GestureDetector.GestureAdapter;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Event;
@@ -36,12 +36,12 @@ public class ActorGestureListener implements EventListener {
 	InputEvent event;
 	Actor actor, touchDownTarget;
 
-	/** @see GestureDetector#GestureDetector(com.badlogic.gdx.input.GestureDetector.GestureListener) */
+	/** @see GestureDetector#GestureDetector(ru.obvilion.box.input.GestureDetector.GestureListener) */
 	public ActorGestureListener () {
 		this(20, 0.4f, 1.1f, 0.15f);
 	}
 
-	/** @see GestureDetector#GestureDetector(float, float, float, float, com.badlogic.gdx.input.GestureDetector.GestureListener) */
+	/** @see GestureDetector#GestureDetector(float, float, float, float, ru.obvilion.box.input.GestureDetector.GestureListener) */
 	public ActorGestureListener (float halfTapSquareSize, float tapCountInterval, float longPressDuration, float maxFlingDelay) {
 		detector = new GestureDetector(halfTapSquareSize, tapCountInterval, longPressDuration, maxFlingDelay, new GestureAdapter() {
 			private final Vector2 initialPointer1 = new Vector2(), initialPointer2 = new Vector2();
