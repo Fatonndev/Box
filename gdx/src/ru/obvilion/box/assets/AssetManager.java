@@ -14,25 +14,25 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.assets;
+package ru.obvilion.box.assets;
 
 import java.util.Stack;
 
 import ru.obvilion.box.constructors.Application;
-import com.badlogic.gdx.assets.loaders.AssetLoader;
-import com.badlogic.gdx.assets.loaders.BitmapFontLoader;
-import com.badlogic.gdx.assets.loaders.CubemapLoader;
-import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import com.badlogic.gdx.assets.loaders.I18NBundleLoader;
-import com.badlogic.gdx.assets.loaders.MusicLoader;
-import com.badlogic.gdx.assets.loaders.ParticleEffectLoader;
-import com.badlogic.gdx.assets.loaders.PixmapLoader;
-import com.badlogic.gdx.assets.loaders.ShaderProgramLoader;
-import com.badlogic.gdx.assets.loaders.SkinLoader;
-import com.badlogic.gdx.assets.loaders.SoundLoader;
-import com.badlogic.gdx.assets.loaders.TextureAtlasLoader;
-import com.badlogic.gdx.assets.loaders.TextureLoader;
-import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
+import ru.obvilion.box.assets.loaders.AssetLoader;
+import ru.obvilion.box.assets.loaders.BitmapFontLoader;
+import ru.obvilion.box.assets.loaders.CubemapLoader;
+import ru.obvilion.box.assets.loaders.FileHandleResolver;
+import ru.obvilion.box.assets.loaders.I18NBundleLoader;
+import ru.obvilion.box.assets.loaders.MusicLoader;
+import ru.obvilion.box.assets.loaders.ParticleEffectLoader;
+import ru.obvilion.box.assets.loaders.PixmapLoader;
+import ru.obvilion.box.assets.loaders.ShaderProgramLoader;
+import ru.obvilion.box.assets.loaders.SkinLoader;
+import ru.obvilion.box.assets.loaders.SoundLoader;
+import ru.obvilion.box.assets.loaders.TextureAtlasLoader;
+import ru.obvilion.box.assets.loaders.TextureLoader;
+import ru.obvilion.box.assets.loaders.resolvers.InternalFileHandleResolver;
 import ru.obvilion.box.audio.Music;
 import ru.obvilion.box.audio.Sound;
 import com.badlogic.gdx.graphics.Cubemap;

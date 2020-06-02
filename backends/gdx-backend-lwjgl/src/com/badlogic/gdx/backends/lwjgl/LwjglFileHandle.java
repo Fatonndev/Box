@@ -19,7 +19,7 @@ package com.badlogic.gdx.backends.lwjgl;
 import java.io.File;
 
 import ru.obvilion.box.constructors.Files.FileType;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** @author mzechner

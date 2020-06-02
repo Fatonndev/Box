@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.model.data;
 
-import com.badlogic.gdx.assets.loaders.ModelLoader;
+import ru.obvilion.box.assets.loaders.ModelLoader;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 

@@ -18,8 +18,8 @@ package com.badlogic.gdx.graphics.g3d.particles.influencers;
 
 import java.util.Iterator;
 
-import com.badlogic.gdx.assets.AssetDescriptor;
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetDescriptor;
+import ru.obvilion.box.assets.AssetManager;
 import com.badlogic.gdx.graphics.g3d.particles.ParallelArray.ObjectChannel;
 import com.badlogic.gdx.graphics.g3d.particles.ParticleChannels;
 import com.badlogic.gdx.graphics.g3d.particles.ParticleController;

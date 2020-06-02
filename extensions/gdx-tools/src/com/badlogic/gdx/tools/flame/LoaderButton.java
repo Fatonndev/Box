@@ -7,8 +7,8 @@ import java.io.File;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-import com.badlogic.gdx.assets.loaders.ModelLoader;
-import com.badlogic.gdx.assets.loaders.resolvers.AbsoluteFileHandleResolver;
+import ru.obvilion.box.assets.loaders.ModelLoader;
+import ru.obvilion.box.assets.loaders.resolvers.AbsoluteFileHandleResolver;
 import com.badlogic.gdx.graphics.g3d.Model;
 import com.badlogic.gdx.graphics.g3d.loader.G3dModelLoader;
 import com.badlogic.gdx.graphics.g3d.loader.ObjLoader;

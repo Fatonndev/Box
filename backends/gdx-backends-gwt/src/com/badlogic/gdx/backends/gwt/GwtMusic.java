@@ -22,7 +22,7 @@ import com.badlogic.gdx.backends.gwt.soundmanager2.SMSound;
 import com.badlogic.gdx.backends.gwt.soundmanager2.SMSound.SMSoundCallback;
 import com.badlogic.gdx.backends.gwt.soundmanager2.SMSoundOptions;
 import com.badlogic.gdx.backends.gwt.soundmanager2.SoundManager;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 public class GwtMusic implements Music, SMSoundCallback {
 	private boolean isPlaying = false;

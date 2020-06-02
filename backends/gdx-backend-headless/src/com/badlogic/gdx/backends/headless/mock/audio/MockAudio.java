@@ -21,7 +21,7 @@ import ru.obvilion.box.audio.AudioDevice;
 import ru.obvilion.box.audio.AudioRecorder;
 import ru.obvilion.box.audio.Music;
 import ru.obvilion.box.audio.Sound;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 /** The headless backend does its best to mock elements. This is intended to make code-sharing between
  * server and client as simple as possible.

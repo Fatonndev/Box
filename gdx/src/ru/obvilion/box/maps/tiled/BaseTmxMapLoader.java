@@ -1,12 +1,12 @@
 
 package ru.obvilion.box.maps.tiled;
 
-import com.badlogic.gdx.assets.AssetDescriptor;
-import com.badlogic.gdx.assets.AssetLoaderParameters;
-import com.badlogic.gdx.assets.loaders.AsynchronousAssetLoader;
-import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import com.badlogic.gdx.assets.loaders.TextureLoader;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.assets.AssetDescriptor;
+import ru.obvilion.box.assets.AssetLoaderParameters;
+import ru.obvilion.box.assets.loaders.AsynchronousAssetLoader;
+import ru.obvilion.box.assets.loaders.FileHandleResolver;
+import ru.obvilion.box.assets.loaders.TextureLoader;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;

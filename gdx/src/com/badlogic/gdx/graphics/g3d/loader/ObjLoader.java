@@ -21,10 +21,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import com.badlogic.gdx.assets.loaders.ModelLoader;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.assets.AssetManager;
+import ru.obvilion.box.assets.loaders.FileHandleResolver;
+import ru.obvilion.box.assets.loaders.ModelLoader;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.VertexAttribute;

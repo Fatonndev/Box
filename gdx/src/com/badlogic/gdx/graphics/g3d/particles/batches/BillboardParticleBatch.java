@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.particles.batches;
 
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Mesh;
 import com.badlogic.gdx.graphics.Texture;

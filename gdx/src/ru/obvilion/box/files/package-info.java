@@ -6,6 +6,6 @@
  *  
  */
 
-package com.badlogic.gdx.files;
+package ru.obvilion.box.files;
 
 // This is a doc-only file and has no actual content.

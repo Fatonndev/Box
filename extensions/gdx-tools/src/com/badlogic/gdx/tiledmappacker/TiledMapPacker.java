@@ -40,10 +40,10 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import ru.obvilion.box.ApplicationListener;
-import com.badlogic.gdx.assets.loaders.resolvers.AbsoluteFileHandleResolver;
+import ru.obvilion.box.assets.loaders.resolvers.AbsoluteFileHandleResolver;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import ru.obvilion.box.maps.MapLayer;
 import ru.obvilion.box.maps.tiled.TiledMap;

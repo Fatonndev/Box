@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.MissingResourceException;
 
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 
 /** A {@code I18NBundle} provides {@code Locale}-specific resources loaded from property files. A bundle contains a number of named
  * resources, whose names and values are {@code Strings}. A bundle may have a parent bundle, and when a resource is not found in a

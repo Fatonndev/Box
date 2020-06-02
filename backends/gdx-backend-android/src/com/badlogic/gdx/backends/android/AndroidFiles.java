@@ -26,7 +26,7 @@ import android.os.Environment;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Files;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 /** @author mzechner

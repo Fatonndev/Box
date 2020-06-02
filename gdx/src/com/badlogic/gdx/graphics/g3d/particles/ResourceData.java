@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.graphics.g3d.particles;
 
-import com.badlogic.gdx.assets.AssetDescriptor;
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetDescriptor;
+import ru.obvilion.box.assets.AssetManager;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.IntArray;

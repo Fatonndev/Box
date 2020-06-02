@@ -14,10 +14,10 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.assets.loaders;
+package ru.obvilion.box.assets.loaders;
 
-import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.assets.AssetManager;
+import ru.obvilion.box.files.FileHandle;
 
 /** Interface for classes the can map a file name to a {@link FileHandle}. Used to allow the {@link AssetManager} to load resources
  * from anywhere or implement caching strategies.

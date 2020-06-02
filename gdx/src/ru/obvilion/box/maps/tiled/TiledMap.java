@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.maps.tiled;
 
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetManager;
 import ru.obvilion.box.maps.Map;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;

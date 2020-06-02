@@ -9,7 +9,7 @@ import java.nio.IntBuffer;
 import java.util.zip.GZIPInputStream;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.graphics.Cubemap;
 import com.badlogic.gdx.graphics.CubemapData;
 import com.badlogic.gdx.graphics.GL20;

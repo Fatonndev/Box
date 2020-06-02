@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.graphics.g3d.particles.values;
 
-import com.badlogic.gdx.assets.AssetDescriptor;
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetDescriptor;
+import ru.obvilion.box.assets.AssetManager;
 import com.badlogic.gdx.graphics.Mesh;
 import com.badlogic.gdx.graphics.VertexAttributes.Usage;
 import com.badlogic.gdx.graphics.g3d.Model;

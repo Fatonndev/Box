@@ -34,7 +34,7 @@ import java.nio.channels.FileChannel;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Files.FileType;
 import com.badlogic.gdx.backends.gwt.preloader.Preloader;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 
 public class GwtFileHandle extends FileHandle {

@@ -17,7 +17,7 @@
 package com.badlogic.gdx.graphics.g3d.utils;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetManager;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g3d.Model;
 import com.badlogic.gdx.graphics.g3d.model.data.ModelData;

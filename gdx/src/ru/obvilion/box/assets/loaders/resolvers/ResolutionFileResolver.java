@@ -14,11 +14,11 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.assets.loaders.resolvers;
+package ru.obvilion.box.assets.loaders.resolvers;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import com.badlogic.gdx.files.FileHandle;
+import ru.obvilion.box.assets.loaders.FileHandleResolver;
+import ru.obvilion.box.files.FileHandle;
 
 /** This {@link FileHandleResolver} uses a given list of {@link Resolution}s to determine the best match based on the current
  * Screen size. An example of how this resolver works:

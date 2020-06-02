@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.graphics.g3d.particles;
 
-import com.badlogic.gdx.assets.AssetManager;
+import ru.obvilion.box.assets.AssetManager;
 import com.badlogic.gdx.math.Matrix3;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Quaternion;

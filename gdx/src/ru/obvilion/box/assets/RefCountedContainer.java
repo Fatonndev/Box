@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.assets;
+package ru.obvilion.box.assets;
 
 public class RefCountedContainer {
 	Object object;
