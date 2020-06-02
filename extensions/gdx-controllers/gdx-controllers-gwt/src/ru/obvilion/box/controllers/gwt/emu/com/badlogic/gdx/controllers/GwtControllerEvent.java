@@ -16,7 +16,7 @@
 
 package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers;
 
-import com.badlogic.gdx.controllers.PovDirection;
+import ru.obvilion.box.controllers.PovDirection;
 
 public class GwtControllerEvent {
 	

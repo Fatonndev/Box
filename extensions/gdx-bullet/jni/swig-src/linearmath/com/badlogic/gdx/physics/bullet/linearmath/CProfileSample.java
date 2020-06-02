@@ -8,7 +8,7 @@
 
 package com.badlogic.gdx.physics.bullet.linearmath;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 
 public class CProfileSample extends BulletBase {
 	private long swigCPtr;

@@ -21,7 +21,7 @@
 };
 
 %typemap(javaimports) btBvhTriangleMeshShape %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.Quaternion;

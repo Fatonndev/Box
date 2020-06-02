@@ -8,7 +8,7 @@
 
 package com.badlogic.gdx.physics.bullet.collision;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.VertexAttribute;
 import ru.obvilion.box.graphics.VertexAttributes.Usage;

@@ -8,7 +8,7 @@
 
 package com.badlogic.gdx.physics.bullet.extras;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 
 public class User2InternalIndex extends BulletBase {
 	private long swigCPtr;

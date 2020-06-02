@@ -8,7 +8,7 @@
 
 package com.badlogic.gdx.physics.bullet.dynamics;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import com.badlogic.gdx.physics.bullet.collision.*;
 import ru.obvilion.box.math.Vector3;

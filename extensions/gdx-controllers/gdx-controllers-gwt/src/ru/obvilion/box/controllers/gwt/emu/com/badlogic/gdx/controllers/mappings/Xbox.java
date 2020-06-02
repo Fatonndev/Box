@@ -14,9 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.controllers.mappings;
+package ru.obvilion.box.controllers.mappings;
 
-import com.badlogic.gdx.controllers.Controller;
+import ru.obvilion.box.controllers.Controller;
 
 /** Mappings for the Xbox series of controllers. Based on "standard" controller mapping.
  * 

@@ -8,7 +8,7 @@
 
 package com.badlogic.gdx.physics.bullet.dynamics;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 
 public class btGeneric6DofSpringConstraintDoubleData2 extends BulletBase {
 	private long swigCPtr;

@@ -17,9 +17,9 @@
 package ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers;
 
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.controllers.Controller;
-import com.badlogic.gdx.controllers.ControllerListener;
-import com.badlogic.gdx.controllers.ControllerManager;
+import ru.obvilion.box.controllers.Controller;
+import ru.obvilion.box.controllers.ControllerListener;
+import ru.obvilion.box.controllers.ControllerManager;
 import ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support.Gamepad;
 import ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support.GamepadButton;
 import ru.obvilion.box.controllers.gwt.emu.com.badlogic.gdx.controllers.support.GamepadSupport;

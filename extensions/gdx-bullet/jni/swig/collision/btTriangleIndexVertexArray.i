@@ -27,7 +27,7 @@
 };
 
 %typemap(javaimports) btIndexedMesh %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import ru.obvilion.box.graphics.Mesh;
 import ru.obvilion.box.graphics.VertexAttribute;
@@ -190,7 +190,7 @@ import java.nio.ShortBuffer;
 %ignore btTriangleIndexVertexArray::getIndexedMeshArray();
 
 %typemap(javaimports) btTriangleIndexVertexArray %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import ru.obvilion.box.math.Vector3;
 import ru.obvilion.box.math.Quaternion;

@@ -12,7 +12,7 @@
 %include "../../swig-src/softbody/classes.i"
 
 %typemap(javaimports) SWIGTYPE	%{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import com.badlogic.gdx.physics.bullet.collision.*;
 import com.badlogic.gdx.physics.bullet.dynamics.*;
@@ -22,7 +22,7 @@ import ru.obvilion.box.math.Matrix3;
 import ru.obvilion.box.math.Matrix4;
 %}
 %pragma(java) jniclassimports=%{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import com.badlogic.gdx.physics.bullet.collision.*;
 import com.badlogic.gdx.physics.bullet.dynamics.*;
@@ -33,7 +33,7 @@ import ru.obvilion.box.math.Matrix4;
 import ru.obvilion.box.utils.Pool;
 %}
 %pragma(java) moduleimports=%{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import com.badlogic.gdx.physics.bullet.collision.*;
 import com.badlogic.gdx.physics.bullet.dynamics.*;

@@ -24,17 +24,17 @@
 -dontwarn android.support.**
 -dontwarn com.badlogic.gdx.backends.android.AndroidFragmentApplication
 -dontwarn ru.obvilion.box.utils.GdxBuild
--dontwarn com.badlogic.gdx.physics.box2d.utils.Box2DBuild
+-dontwarn ru.obvilion.box.physics.box2d.utils.Box2DBuild
 -dontwarn ru.obvilion.box.jnigen.BuildTarget*
 -dontwarn ru.obvilion.box.graphics.g2d.freetype.FreetypeBuild
 
--keep class com.badlogic.gdx.controllers.android.AndroidControllers
+-keep class ru.obvilion.box.controllers.android.AndroidControllers
 
 -keepclassmembers class com.badlogic.gdx.backends.android.AndroidInput* {
    <init>(ru.obvilion.box.constructors.Application, android.content.Context, java.lang.Object, com.badlogic.gdx.backends.android.AndroidApplicationConfiguration);
 }
 
--keepclassmembers class com.badlogic.gdx.physics.box2d.World {
+-keepclassmembers class ru.obvilion.box.physics.box2d.World {
    boolean contactFilter(long, long);
    void    beginContact(long);
    void    endContact(long);

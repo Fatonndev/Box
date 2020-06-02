@@ -14,9 +14,9 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.controllers.mappings;
+package ru.obvilion.box.controllers.mappings;
 
-import com.badlogic.gdx.controllers.Controller;
+import ru.obvilion.box.controllers.Controller;
 
 /** Button and axis indices for the OUYA {@link Controller}.
  * @author mzechner */

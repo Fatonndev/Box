@@ -4,7 +4,7 @@
 %template(btSparseSdf3) btSparseSdf<3>;
 
 %typemap(javaimports) btSoftBody %{
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 import com.badlogic.gdx.physics.bullet.linearmath.*;
 import com.badlogic.gdx.physics.bullet.collision.*;
 import com.badlogic.gdx.physics.bullet.dynamics.*;

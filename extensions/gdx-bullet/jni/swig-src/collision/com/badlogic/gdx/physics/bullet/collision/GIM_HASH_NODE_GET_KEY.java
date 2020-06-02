@@ -8,7 +8,7 @@
 
 package com.badlogic.gdx.physics.bullet.collision;
 
-import com.badlogic.gdx.physics.bullet.BulletBase;
+import ru.obvilion.box.physics.bullet.BulletBase;
 
 public class GIM_HASH_NODE_GET_KEY extends BulletBase {
 	private long swigCPtr;
