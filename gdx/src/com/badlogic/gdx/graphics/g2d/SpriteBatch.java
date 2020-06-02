@@ -25,9 +25,9 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.VertexAttribute;
 import com.badlogic.gdx.graphics.VertexAttributes.Usage;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import ru.obvilion.box.math.Affine2;
-import ru.obvilion.box.math.MathUtils;
-import ru.obvilion.box.math.Matrix4;
+import com.badlogic.gdx.math.Affine2;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Matrix4;
 
 /** Draws batched quads using indices.
  * @see Batch

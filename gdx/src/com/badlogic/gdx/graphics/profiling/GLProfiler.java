@@ -18,7 +18,7 @@ package com.badlogic.gdx.graphics.profiling;
 
 import ru.obvilion.box.constructors.Graphics;
 import com.badlogic.gdx.graphics.GL30;
-import ru.obvilion.box.math.FloatCounter;
+import com.badlogic.gdx.math.FloatCounter;
 
 /** When enabled, collects statistics about GL calls and checks for GL errors.
  * Enabling will wrap Gdx.gl* instances with delegate classes which provide described functionality

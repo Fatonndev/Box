@@ -18,7 +18,7 @@ package com.badlogic.gdx.physics.box2d;
 
 import java.util.Iterator;
 
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.JointDef.JointType;
 import com.badlogic.gdx.physics.box2d.joints.DistanceJoint;
 import com.badlogic.gdx.physics.box2d.joints.DistanceJointDef;

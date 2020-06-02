@@ -11,7 +11,7 @@ LOCAL_ARM_MODE  := arm
  
 LOCAL_SRC_FILES := com.badlogic.gdx.graphics.glutils.ETC1.cpp\
 	etc1/etc1_utils.cpp\
-	ru.obvilion.box.math.Matrix4.cpp\
+	com.badlogic.gdx.math.Matrix4.cpp\
 	memcpy_wrap.c\
 	com.badlogic.gdx.graphics.g2d.Gdx2DPixmap.cpp\
 	gdx2d/gdx2d.c\

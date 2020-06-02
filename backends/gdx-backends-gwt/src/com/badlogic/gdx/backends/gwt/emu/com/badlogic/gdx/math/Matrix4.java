@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.math;
+package com.badlogic.gdx.math;
 
 import java.io.Serializable;
 

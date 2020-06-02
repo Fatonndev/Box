@@ -17,7 +17,7 @@
 package com.badlogic.gdx.maps;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import ru.obvilion.box.math.Matrix4;
+import com.badlogic.gdx.math.Matrix4;
 
 /** Models a common way of rendering {@link Map} objects */
 public interface MapRenderer {

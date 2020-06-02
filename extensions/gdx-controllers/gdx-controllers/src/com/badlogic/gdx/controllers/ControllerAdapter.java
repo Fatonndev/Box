@@ -16,7 +16,7 @@
 
 package com.badlogic.gdx.controllers;
 
-import ru.obvilion.box.math.Vector3;
+import com.badlogic.gdx.math.Vector3;
 
 /** A base implementation for {@link ControllerListener}. Subclass this if you are only interested in a few specific events.
  * @author mzechner */

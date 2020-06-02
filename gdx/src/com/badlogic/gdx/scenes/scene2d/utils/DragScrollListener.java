@@ -16,8 +16,8 @@
 
 package com.badlogic.gdx.scenes.scene2d.utils;
 
-import ru.obvilion.box.math.Interpolation;
-import ru.obvilion.box.math.Vector2;
+import com.badlogic.gdx.math.Interpolation;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.utils.Timer;

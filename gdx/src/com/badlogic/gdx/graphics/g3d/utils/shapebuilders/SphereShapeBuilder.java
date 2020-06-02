@@ -18,9 +18,9 @@ package com.badlogic.gdx.graphics.g3d.utils.shapebuilders;
 
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder;
 import com.badlogic.gdx.graphics.g3d.utils.MeshPartBuilder.VertexInfo;
-import ru.obvilion.box.math.MathUtils;
-import ru.obvilion.box.math.Matrix3;
-import ru.obvilion.box.math.Matrix4;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Matrix3;
+import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.utils.ShortArray;
 
 /** Helper class with static methods to build sphere shapes using {@link MeshPartBuilder}.
