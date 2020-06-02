@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.setup;
+package com.badlogic.gdx.setup;
 
 /**
  * A file in a {@link Project}, the resourceName specifies the location

@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.setup;
+package com.badlogic.gdx.setup;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package ru.obvilion.box.setup;
+package com.badlogic.gdx.setup;
 
 public enum Language {
 	JAVA ("java", "", "", "", "java-library;java-library;android;java-library,robovm;java-library,moe;java-library,gwt,war", true) ,
