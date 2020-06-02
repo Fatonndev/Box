@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package ru.obvilion.box.input;
+package com.badlogic.gdx.input;
 
 import java.io.DataInputStream;
 import java.io.IOException;
