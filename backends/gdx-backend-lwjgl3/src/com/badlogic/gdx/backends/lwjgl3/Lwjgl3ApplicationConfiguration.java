@@ -31,7 +31,7 @@ import ru.obvilion.box.constructors.Files.FileType;
 import ru.obvilion.box.constructors.Graphics.DisplayMode;
 import ru.obvilion.box.constructors.Graphics.Monitor;
 import ru.obvilion.box.Preferences;
-import com.badlogic.gdx.audio.Music;
+import ru.obvilion.box.audio.Music;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Graphics.Lwjgl3Monitor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.HdpiMode;
