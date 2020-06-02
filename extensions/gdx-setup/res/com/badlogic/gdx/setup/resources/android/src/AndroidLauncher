@@ -2,8 +2,8 @@ package %PACKAGE%;
 
 import android.os.Bundle;
 
-import com.badlogic.gdx.backends.android.AndroidApplication;
-import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
+import ru.obvilion.box.backends.android.AndroidApplication;
+import ru.obvilion.box.backends.android.AndroidApplicationConfiguration;
 import %PACKAGE%.%MAIN_CLASS%;
 
 public class AndroidLauncher extends AndroidApplication {

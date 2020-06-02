@@ -1,8 +1,8 @@
 package %PACKAGE%.client;
 
 import ru.obvilion.box.ApplicationListener;
-import com.badlogic.gdx.backends.gwt.GwtApplication;
-import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
+import ru.obvilion.box.backends.gwt.GwtApplication;
+import ru.obvilion.box.backends.gwt.GwtApplicationConfiguration;
 import %PACKAGE%.%MAIN_CLASS%;
 
 public class HtmlLauncher extends GwtApplication {

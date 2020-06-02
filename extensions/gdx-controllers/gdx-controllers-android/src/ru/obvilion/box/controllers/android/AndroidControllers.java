@@ -25,7 +25,7 @@ import android.view.View.OnKeyListener;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.LifecycleListener;
-import com.badlogic.gdx.backends.android.AndroidInput;
+import ru.obvilion.box.backends.android.AndroidInput;
 import ru.obvilion.box.controllers.Controller;
 import ru.obvilion.box.controllers.ControllerListener;
 import ru.obvilion.box.controllers.ControllerManager;

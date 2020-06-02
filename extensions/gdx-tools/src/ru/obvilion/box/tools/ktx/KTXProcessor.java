@@ -9,7 +9,7 @@ import java.util.zip.GZIPOutputStream;
 
 import ru.obvilion.box.ApplicationAdapter;
 import ru.obvilion.box.Box;
-import com.badlogic.gdx.backends.headless.HeadlessApplication;
+import ru.obvilion.box.backends.headless.HeadlessApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglNativesLoader;
 import ru.obvilion.box.files.FileHandle;
 import ru.obvilion.box.graphics.GL20;

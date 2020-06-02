@@ -22,7 +22,7 @@
 -verbose
 
 -dontwarn android.support.**
--dontwarn com.badlogic.gdx.backends.android.AndroidFragmentApplication
+-dontwarn ru.obvilion.box.backends.android.AndroidFragmentApplication
 -dontwarn ru.obvilion.box.utils.GdxBuild
 -dontwarn ru.obvilion.box.physics.box2d.utils.Box2DBuild
 -dontwarn ru.obvilion.box.jnigen.BuildTarget*
@@ -30,8 +30,8 @@
 
 -keep class ru.obvilion.box.controllers.android.AndroidControllers
 
--keepclassmembers class com.badlogic.gdx.backends.android.AndroidInput* {
-   <init>(ru.obvilion.box.constructors.Application, android.content.Context, java.lang.Object, com.badlogic.gdx.backends.android.AndroidApplicationConfiguration);
+-keepclassmembers class ru.obvilion.box.backends.android.AndroidInput* {
+   <init>(ru.obvilion.box.constructors.Application, android.content.Context, java.lang.Object, ru.obvilion.box.backends.android.AndroidApplicationConfiguration);
 }
 
 -keepclassmembers class ru.obvilion.box.physics.box2d.World {

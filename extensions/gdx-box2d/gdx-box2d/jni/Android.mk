@@ -9,27 +9,27 @@ LOCAL_CPPFLAGS := $(LOCAL_C_INCLUDES:%=-I%) -O2 -Wall -D__ANDROID__
 LOCAL_LDLIBS := -lm
 LOCAL_ARM_MODE  := arm
  
-LOCAL_SRC_FILES := com.badlogic.gdx.physics.box2d.Shape.cpp\
-	com.badlogic.gdx.physics.box2d.CircleShape.cpp\
-	com.badlogic.gdx.physics.box2d.joints.RopeJoint.cpp\
-	com.badlogic.gdx.physics.box2d.joints.GearJoint.cpp\
-	com.badlogic.gdx.physics.box2d.Manifold.cpp\
-	com.badlogic.gdx.physics.box2d.Contact.cpp\
+LOCAL_SRC_FILES := ru.obvilion.box.physics.box2d.Shape.cpp\
+	ru.obvilion.box.physics.box2d.CircleShape.cpp\
+	ru.obvilion.box.physics.box2d.joints.RopeJoint.cpp\
+	ru.obvilion.box.physics.box2d.joints.GearJoint.cpp\
+	ru.obvilion.box.physics.box2d.Manifold.cpp\
+	ru.obvilion.box.physics.box2d.Contact.cpp\
 	memcpy_wrap.c\
-	com.badlogic.gdx.physics.box2d.Body.cpp\
-	com.badlogic.gdx.physics.box2d.joints.MotorJoint.cpp\
-	com.badlogic.gdx.physics.box2d.joints.RevoluteJoint.cpp\
-	com.badlogic.gdx.physics.box2d.PolygonShape.cpp\
-	com.badlogic.gdx.physics.box2d.joints.PulleyJoint.cpp\
-	com.badlogic.gdx.physics.box2d.World.cpp\
-	com.badlogic.gdx.physics.box2d.joints.WheelJoint.cpp\
-	com.badlogic.gdx.physics.box2d.ContactImpulse.cpp\
-	com.badlogic.gdx.physics.box2d.joints.DistanceJoint.cpp\
-	com.badlogic.gdx.physics.box2d.EdgeShape.cpp\
-	com.badlogic.gdx.physics.box2d.ChainShape.cpp\
-	com.badlogic.gdx.physics.box2d.Fixture.cpp\
-	com.badlogic.gdx.physics.box2d.joints.PrismaticJoint.cpp\
-	com.badlogic.gdx.physics.box2d.Joint.cpp\
+	ru.obvilion.box.physics.box2d.Body.cpp\
+	ru.obvilion.box.physics.box2d.joints.MotorJoint.cpp\
+	ru.obvilion.box.physics.box2d.joints.RevoluteJoint.cpp\
+	ru.obvilion.box.physics.box2d.PolygonShape.cpp\
+	ru.obvilion.box.physics.box2d.joints.PulleyJoint.cpp\
+	ru.obvilion.box.physics.box2d.World.cpp\
+	ru.obvilion.box.physics.box2d.joints.WheelJoint.cpp\
+	ru.obvilion.box.physics.box2d.ContactImpulse.cpp\
+	ru.obvilion.box.physics.box2d.joints.DistanceJoint.cpp\
+	ru.obvilion.box.physics.box2d.EdgeShape.cpp\
+	ru.obvilion.box.physics.box2d.ChainShape.cpp\
+	ru.obvilion.box.physics.box2d.Fixture.cpp\
+	ru.obvilion.box.physics.box2d.joints.PrismaticJoint.cpp\
+	ru.obvilion.box.physics.box2d.Joint.cpp\
 	Box2D/Dynamics/b2Body.cpp\
 	Box2D/Dynamics/b2World.cpp\
 	Box2D/Dynamics/b2Fixture.cpp\
@@ -76,8 +76,8 @@ LOCAL_SRC_FILES := com.badlogic.gdx.physics.box2d.Shape.cpp\
 	Box2D/Collision/b2BroadPhase.cpp\
 	Box2D/Collision/b2CollideEdge.cpp\
 	Box2D/Collision/b2Collision.cpp\
-	com.badlogic.gdx.physics.box2d.joints.MouseJoint.cpp\
-	com.badlogic.gdx.physics.box2d.joints.FrictionJoint.cpp\
-	com.badlogic.gdx.physics.box2d.joints.WeldJoint.cpp
+	ru.obvilion.box.physics.box2d.joints.MouseJoint.cpp\
+	ru.obvilion.box.physics.box2d.joints.FrictionJoint.cpp\
+	ru.obvilion.box.physics.box2d.joints.WeldJoint.cpp
  
 include $(BUILD_SHARED_LIBRARY)

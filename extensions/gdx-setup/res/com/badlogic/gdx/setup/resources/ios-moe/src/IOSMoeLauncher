@@ -1,7 +1,7 @@
 package %PACKAGE%;
 
-import com.badlogic.gdx.backends.iosmoe.IOSApplication;
-import com.badlogic.gdx.backends.iosmoe.IOSApplicationConfiguration;
+import ru.obvilion.box.backends.iosmoe.IOSApplication;
+import ru.obvilion.box.backends.iosmoe.IOSApplicationConfiguration;
 import org.moe.natj.general.Pointer;
 import %PACKAGE%.%MAIN_CLASS%;
 

@@ -22,7 +22,7 @@ import android.hardware.input.InputManager.InputDeviceListener;
 
 import ru.obvilion.box.Box;
 import ru.obvilion.box.LifecycleListener;
-import com.badlogic.gdx.backends.android.AndroidApplication;
+import ru.obvilion.box.backends.android.AndroidApplication;
 
 /**
  * Used on +4.1 to get events on device connects/disconnects.
