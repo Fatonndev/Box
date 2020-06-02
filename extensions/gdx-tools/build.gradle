@@ -25,10 +25,10 @@ dependencies {
 sourceSets.main.resources.srcDirs = ["assets"]
 
 ext {
-    particles2DMainClass = "com.badlogic.gdx.tools.particleeditor.ParticleEditor"
-    particles3DMainClass = "com.badlogic.gdx.tools.flame.FlameMain"
-    hieroMainClass = "com.badlogic.gdx.tools.hiero.Hiero"
-    texturePackerMainClass = "com.badlogic.gdx.tools.texturepacker.TexturePacker"
+    particles2DMainClass = "ru.obvilion.box.tools.particleeditor.ParticleEditor"
+    particles3DMainClass = "ru.obvilion.box.tools.flame.FlameMain"
+    hieroMainClass = "ru.obvilion.box.tools.hiero.Hiero"
+    texturePackerMainClass = "ru.obvilion.box.tools.texturepacker.TexturePacker"
 
     toolsAssetsDir = ["assets"]
 }
