@@ -20,7 +20,7 @@ import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input.Keys;
 import ru.obvilion.box.constructors.Input.Buttons;
 import com.badlogic.gdx.graphics.Camera;
-import com.badlogic.gdx.input.GestureDetector;
+import ru.obvilion.box.input.GestureDetector;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;

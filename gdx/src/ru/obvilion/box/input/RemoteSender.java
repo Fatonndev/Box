@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.input;
+package ru.obvilion.box.input;
 
 import java.io.DataOutputStream;
 import java.net.Socket;
@@ -22,6 +22,7 @@ import java.net.Socket;
 import ru.obvilion.box.Box;
 import ru.obvilion.box.constructors.Input.Peripheral;
 import ru.obvilion.box.InputProcessor;
+import ru.obvilion.box.input.RemoteInput;
 
 /** Sends all inputs from touch, key, accelerometer and compass to a {@link RemoteInput} at the given ip/port. Instantiate this and
  * call sendUpdate() periodically.
