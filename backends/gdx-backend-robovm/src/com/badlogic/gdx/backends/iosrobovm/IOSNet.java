@@ -20,13 +20,13 @@ import org.robovm.apple.foundation.NSURL;
 import org.robovm.apple.uikit.UIApplication;
 
 import ru.obvilion.box.constructors.Net;
-import ru.obvilion.box.net.NetJavaImpl;
-import ru.obvilion.box.net.NetJavaServerSocketImpl;
-import ru.obvilion.box.net.NetJavaSocketImpl;
-import ru.obvilion.box.net.ServerSocket;
-import ru.obvilion.box.net.ServerSocketHints;
-import ru.obvilion.box.net.Socket;
-import ru.obvilion.box.net.SocketHints;
+import com.badlogic.gdx.net.NetJavaImpl;
+import com.badlogic.gdx.net.NetJavaServerSocketImpl;
+import com.badlogic.gdx.net.NetJavaSocketImpl;
+import com.badlogic.gdx.net.ServerSocket;
+import com.badlogic.gdx.net.ServerSocketHints;
+import com.badlogic.gdx.net.Socket;
+import com.badlogic.gdx.net.SocketHints;
 
 public class IOSNet implements Net {
 

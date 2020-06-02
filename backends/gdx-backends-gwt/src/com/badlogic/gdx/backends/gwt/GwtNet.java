@@ -24,11 +24,11 @@ import java.util.Map;
 import java.util.Set;
 
 import ru.obvilion.box.constructors.Net;
-import ru.obvilion.box.net.HttpStatus;
-import ru.obvilion.box.net.ServerSocket;
-import ru.obvilion.box.net.ServerSocketHints;
-import ru.obvilion.box.net.Socket;
-import ru.obvilion.box.net.SocketHints;
+import com.badlogic.gdx.net.HttpStatus;
+import com.badlogic.gdx.net.ServerSocket;
+import com.badlogic.gdx.net.ServerSocketHints;
+import com.badlogic.gdx.net.Socket;
+import com.badlogic.gdx.net.SocketHints;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.google.gwt.http.client.Header;
