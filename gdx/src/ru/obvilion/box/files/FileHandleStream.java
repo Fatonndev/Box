@@ -14,7 +14,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package com.badlogic.gdx.files;
+package ru.obvilion.box.files;
 
 import java.io.File;
 import java.io.InputStream;
