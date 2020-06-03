@@ -45,14 +45,14 @@
 			<pathelement location="${distDir}/extensions/gdx-jnigen/gdx-jnigen.jar"/>
 		</path>
 		<fileset id="resourcefiles" dir="gdx/res">
-			<include name="ru/obvilion/box/graphics/g3d/particles/particles.fragment.glsl"/>
-			<include name="ru/obvilion/box/graphics/g3d/particles/particles.vertex.glsl"/>
-			<include name="ru/obvilion/box/graphics/g3d/shaders/default.fragment.glsl"/>
-			<include name="ru/obvilion/box/graphics/g3d/shaders/default.vertex.glsl"/>
-			<include name="ru/obvilion/box/graphics/g3d/shaders/depth.fragment.glsl"/>
-			<include name="ru/obvilion/box/graphics/g3d/shaders/depth.vertex.glsl"/>
-			<include name="ru/obvilion/box/utils/arial-15.png"/>
-			<include name="ru/obvilion/box/utils/arial-15.fnt"/>
+			<include name="com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl"/>
+			<include name="com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl"/>
+			<include name="com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl"/>
+			<include name="com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl"/>
+			<include name="com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl"/>
+			<include name="com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl"/>
+			<include name="com/badlogic/gdx/utils/arial-15.png"/>
+			<include name="com/badlogic/gdx/utils/arial-15.fnt"/>
 		</fileset>
 		<ant antfile="../build-template.xml" dir="gdx">
 			<property name="javacTarget" value="${javacTarget}"/>
@@ -352,6 +352,9 @@ depends="clean,gdx-setup,gdx-core,gdx-backend-lwjgl,gdx-backend-lwjgl3,gdx-backe
 		<!-- copy distribution files (licences etc.) -->
 		<copy tofile="${distDir}/README" file="README.md"/>
 		<copy tofile="${distDir}/LICENSE" file="LICENSE"/>
+		<copy tofile="${distDir}/CC-LICENSE" file="CC-LICENSE"/>
+		<copy tofile="${distDir}/AUTHORS" file="AUTHORS"/>
+		<copy tofile="${distDir}/CONTRIBUTORS" file="CONTRIBUTORS"/>
 
 		<!-- zip dist dir -->
 		<zip destfile="libgdx-${version}.zip" basedir="${distDir}"/>
