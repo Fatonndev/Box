@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.obvilion'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}

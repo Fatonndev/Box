@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+ru.obvilion.box.Main-Class: ru.obvilion.box.Main
+

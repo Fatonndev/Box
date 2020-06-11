@@ -1,28 +1,7 @@
+rootProject.name = 'Box'
+include 'core'
+include 'desktop'
+include 'android'
+include 'desktop'
+include 'desktop'
 
-include ":gdx"
-
-include ":backends"
-include ":backends:gdx-backend-android"
-include ":backends:gdx-backend-headless"
-include ":backends:gdx-backend-lwjgl"
-include ":backends:gdx-backend-lwjgl3"
-include ":backends:gdx-backend-robovm"
-include ":backends:gdx-backend-moe"
-include ":backends:gdx-backends-gwt"
-
-include ":extensions:gdx-box2d:gdx-box2d"
-include ":extensions:gdx-box2d:gdx-box2d-gwt"
-include ":extensions:gdx-bullet"
-include ":extensions:gdx-controllers:gdx-controllers"
-include ":extensions:gdx-controllers:gdx-controllers-android"
-include ":extensions:gdx-controllers:gdx-controllers-desktop"
-include ":extensions:gdx-controllers:gdx-controllers-lwjgl3"
-include ":extensions:gdx-controllers:gdx-controllers-gwt"
-include ":extensions:gdx-freetype"
-include ":extensions:gdx-jnigen"
-include ":extensions:gdx-setup"
-include ":extensions:gdx-tools"
-
-rootProject.name = "libgdx"
-project(":extensions:gdx-box2d:gdx-box2d").name = "gdx-box2d-core"
-project(":extensions:gdx-controllers:gdx-controllers").name = "gdx-controllers-core"
