@@ -39,8 +39,6 @@ public class GameScreen implements Screen {
     }
 
     private void loadResources() {
-        AssetPool.getShader("assets/shaders/default.vert", "assets/shaders/default.frag");
-
         AssetPool.addSpritesheet("assets/images/spritesheet.png",
                 new Spritesheet(AssetPool.getTexture("assets/images/spritesheet.png"),
                         8, 8, 16, 0));

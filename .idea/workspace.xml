@@ -49,7 +49,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ObvilionNetworkBot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Buildination" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -61,7 +61,20 @@
       <recent name="D:\Box" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Launcher">
+    <configuration name="AudioMaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.obvilion.box.audio.AudioMaster" />
+      <module name="Box.desktop.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.obvilion.box.audio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Launcher" />
       <module name="Box.desktop.test" />
@@ -71,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AudioMaster" />
         <item itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
@@ -137,30 +151,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="407" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1591192455632" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1591619505336">
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1592148611846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591619505336" />
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592148611846" />
     <state x="784" y="422" key="Github.CreateGistDialog" timestamp="1591394272525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="784" y="422" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591394272525" />
-    <state width="1877" height="153" key="GridCell.Tab.0.bottom" timestamp="1591619506599">
+    <state width="938" height="123" key="GridCell.Tab.0.bottom" timestamp="1592148612892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591619506599" />
-    <state width="1877" height="153" key="GridCell.Tab.0.center" timestamp="1591619506599">
+    <state width="938" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592148612892" />
+    <state width="938" height="123" key="GridCell.Tab.0.center" timestamp="1592148612892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="153" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591619506599" />
-    <state width="1877" height="153" key="GridCell.Tab.0.left" timestamp="1591619506599">
+    <state width="938" height="123" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592148612892" />
+    <state width="938" height="123" key="GridCell.Tab.0.left" timestamp="1592148612892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="153" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591619506599" />
-    <state width="1877" height="153" key="GridCell.Tab.0.right" timestamp="1591619506599">
+    <state width="938" height="123" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592148612892" />
+    <state width="938" height="123" key="GridCell.Tab.0.right" timestamp="1592148612892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="153" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591619506599" />
+    <state width="938" height="123" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592148612892" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1591874725239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591874725239" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1591874725239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591874725239" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1591874725239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591874725239" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1591874725239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591874725239" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1591456497390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
