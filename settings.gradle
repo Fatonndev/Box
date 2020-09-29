@@ -1,7 +1,0 @@
-rootProject.name = 'Box'
-include 'core'
-include 'desktop'
-include 'android'
-include 'desktop'
-include 'desktop'
-
