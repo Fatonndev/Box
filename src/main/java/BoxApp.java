@@ -1,5 +1,4 @@
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
@@ -43,11 +42,7 @@ public class BoxApp extends Application {
 
     public static void run(BoxWindow app) {
         currentApp = app;
-        //launch();
-
-            new BoxApp().start(new Stage());
-        
-
+        launch();
     }
 
     @Override

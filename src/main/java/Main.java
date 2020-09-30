@@ -74,7 +74,6 @@ public class Main {
         BoxWindow app = new BoxWindow("Test");
 
         app.run();
-        app.run();
     }
 
 }

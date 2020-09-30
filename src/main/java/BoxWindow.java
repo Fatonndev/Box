@@ -1,10 +1,9 @@
 public class BoxWindow {
     public String appName;
+    public BoxApp appWindow;
 
     public int appHeight;
     public int appWidth;
-
-    public BoxApp appWindow;
 
     public BoxWindow(String name) {
         this(name, 800, 500);
